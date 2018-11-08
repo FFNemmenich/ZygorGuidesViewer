@@ -1,0 +1,7 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/FrameXML/UI.xsd">
+	<Script file="eu_khazgoroth.lua" />
+	<Script file="eu_khazgoroth_h.lua" />
+	<Script file="eu_malygos.lua" />
+	<Script file="eu_malygos_h.lua" />
+	<Script file="xx_global.lua" />
+</Ui>
