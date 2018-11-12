@@ -41,10 +41,6 @@ ZGV.Quest_Cache_Ally = {
 ["PROFESSIONS\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"] = {
 	{ids="36773,36766,36768"},
 },
-["PROFESSIONS\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide"] = {
-	{ids="35168"},
-	includes = {"Garrison_Small_Building","Garrison_ArchitectTable"},
-},
 ["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"] = {
 	{ids="36202,36199,34194,36201"},
 },
@@ -1037,23 +1033,29 @@ ZGV.Quest_Cache_Ally = {
 	{ids="13957,13955,13930,13927,13938,13951,13934"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Quests"] = {
-	{ids="29514",step_onlyif=function() return skill("Herbalism")>74 end},
-	{ids="29506",step_onlyif=function() return skill("Alchemy")>74 end},
-	{ids="29508",step_onlyif=function() return skill("Blacksmithing")>74 end},
-	{ids="29517",step_onlyif=function() return skill("Leatherworking")>74 end},
-	{ids="29510",step_onlyif=function() return skill("Enchanting")>74 end},
-	{ids="29507",step_onlyif=function() return skill("Archaeology")>74 end},
-	{ids="29518",step_onlyif=function() return skill("Mining")>74 end},
-	{ids="29516",step_onlyif=function() return skill("Jewelcrafting")>74 end},
-	{ids="29509",step_onlyif=function() return skill("Cooking")>74 end},
-	{ids="29513",step_onlyif=function() return skill("Fishing")>74 end},
-	{ids="29511",step_onlyif=function() return skill("Engineering")>74 end},
-	{ids="29515",step_onlyif=function() return skill("Inscription")>74 end},
-	{ids="29519",step_onlyif=function() return skill("Skinning")>74 end},
-	{ids="29456,29445,29464,29457,29446,29443,37819,29458,29444,29433,7905,29451"},
+	{ids="29518",step_onlyif=function() return skill("Mining") >= 75 end},
+	{ids="29510",step_onlyif=function() return skill("Enchanting") >= 75 end},
+	{ids="29519",step_onlyif=function() return skill("Skinning") >= 75 end},
+	{ids="29517",step_onlyif=function() return skill("Leatherworking") >= 75 end},
+	{ids="29508",step_onlyif=function() return skill("Blacksmithing") >= 75 end},
+	{ids="29507",step_onlyif=function() return skill("Archaeology") >= 75 end},
+	{ids="29509",step_onlyif=function() return skill("Cooking") >= 75 end},
+	{ids="29520",step_onlyif=function() return skill("Tailoring") >= 75 end},
+	{ids="29514",step_onlyif=function() return skill("Herbalism") >= 75 end},
+	{ids="29506",step_onlyif=function() return skill("Alchemy") >= 75 end},
+	{ids="29511",step_onlyif=function() return skill("Engineering") >= 75 end},
+	{ids="29516",step_onlyif=function() return skill("Jewelcrafting") >= 75 end},
+	{ids="29513",step_onlyif=function() return skill("Fishing") >= 75 end},
+	{ids="29515",step_onlyif=function() return skill("Inscription") >= 75 end},
+	{ids="29456,29445,29464,29457,29446,29443,29451,29458,29444,29433,7905,37819"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Dailies"] = {
-	{ids="29434,29438,36481,29436,29455,37910,29463,33756,37911"},
+	{ids="37910",goal_onlyif=function() return not completedq(37910) end},
+	{ids="37911",goal_onlyif=function() return not completedq(37911) end},
+	{ids="29463,29436,37868,29438,29455,33756,29434,36481"},
+},
+["EVENTS\\Darkmoon Faire\\Achievements\\Ace Tonk Commander"] = {
+	{ids="29434"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Achievements"] = {
 	{ids="29456,29445,29464,37868,29457,29446,29443,37911,29451,37910,29444,29433,33756,29458"},
@@ -1181,7 +1183,7 @@ ZGV.Quest_Cache_Ally = {
 	{ids="54134,54136,53711,54138,53701,51982"},
 },
 ["EVENTS\\Battle for Azeroth\\Tyrande's Ascension"] = {
-	{ids="53990,54041,53847,53989,53988,53849"},
+	{ids="53990,54041,53847,53989,54871,53988,53849"},
 },
 ["PETSMOUNTS\\Mounts\\Ground Mounts\\Miscellaneous\\Bone-White Primal Raptor"] = {
 	{ids="32617"},
@@ -2735,9 +2737,6 @@ ZGV.Quest_Cache_Ally = {
 ["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide"] = {
 	includes = {"follow_path_herbs","trainer_Herbalism"},
 },
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide"] = {
-	includes = {"trainer_Jewelcrafting","follow_path_mine","vendor_Jewelcrafting"},
-},
 ["PROFESSIONS\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide"] = {
 	includes = {"follow_path_mine","trainer_Mining"},
 },
@@ -3996,6 +3995,9 @@ ZGV.Quest_Cache_Ally = {
 	{ids="50248",step_onlyif=function() return completedq(48962) end},
 	{ids="49698,50239,50071,49266,49929"},
 },
+["LEVELING\\Battle for Azeroth (110-120)\\Allied Races\\Dark Iron Dwarf Race Unlock"] = {
+	{ids="51813,51474,53352,53342,53351,53566"},
+},
 ["LEVELING\\Battle for Azeroth (110-120)\\Kul Tiras\\Drustvar Loremaster (Story Quest Only)"] = {
 	{ids="47968,48111,50151,48504,50036,48520,50306,50445,50453,48171,50588,48941,48945,50092,50481,50370,47961,50001,48108,49890,49259,50533,48517,48521,49926,49803,49807,50446,50327,50585,48942,48946,48986,47978,47982,48113,50530,48518,48522,50177,49804,48538,49939,48165,49443,48943,48963,50253,50003,50265,48110,48622,49896,48519,48523,50583,50584,50457,50063,50173,50325,50329,50172,47979,48944,48170,48109,48184,48198,47981,50903,50149,48283,49295"},
 	includes = {"LEVELING\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice"},
@@ -4005,7 +4007,7 @@ ZGV.Quest_Cache_Ally = {
 	includes = {"LEVELING\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice"},
 },
 ["LEVELING\\Battle for Azeroth (110-120)\\Kul Tiras\\Tiragarde Sound Loremaster (Story Quest Only)"] = {
-	{ids="49869,48353,48365,47488,48004,48516,49302,48421,48195,48080,48088,49239,48354,48616,48366,48370,47485,48505,49398,48005,48009,50573,48196,48077,49736,48597,48347,48355,48367,47486,49268,49399,49292,48419,48939,50972,50790,50788,47181,50789,50110,50787,49737,49741,48348,48352,48356,50795,49740,48368,48372,47487,49738,48003,49404,48773,52787,48089,48070,48540,48670,49178,52431,47489,53041,52750,50531,49401,49405,48558,47960,49218,49181,49226,48087,49230"},
+	{ids="49869,48353,48365,47488,48004,48516,49302,48421,48195,48080,48088,49239,48354,48616,48366,48370,47485,48505,49398,48005,48009,50573,48196,48077,49736,48597,48347,48355,48367,47486,49268,49399,49292,48419,48939,50972,50790,50788,50789,47181,50787,50110,50795,49737,49741,48348,48352,48356,49740,49738,48368,48372,47487,52787,48003,49404,48773,48089,53041,48540,48670,48539,49178,52431,48558,47489,52750,48070,50531,49401,49405,47960,49218,49181,49226,48087,49230"},
 	includes = {"LEVELING\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice"},
 },
 ["LEVELING\\Legion (100-110)\\Death Knight Intro & Artifacts"] = {
@@ -4475,9 +4477,6 @@ ZGV.Quest_Cache_Ally = {
 ["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"] = {
 	includes = {"follow_path_herbs","--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Herbalism"},
 },
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"] = {
-	includes = {"Tin_Path","Obsidium_Path","--@@TRIALONLYLINE end_of_prof_trial_150","Saronite_Path","Thorium_Ore_Path","trainer_Jewelcrafting","follow_path_mine","Copper_Path","maincity_anvil","Mithril_Ore_Path","trainer_Mining","Iron_Ore_Path"},
-},
 ["PROFESSIONS\\Mining\\Farming Guides\\Ore"] = {
 	includes = {"follow_path_mine"},
 },
@@ -4507,6 +4506,9 @@ ZGV.Quest_Cache_Ally = {
 },
 ["PROFESSIONS\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide"] = {
 	includes = {"GC_TL_Path","GC_TL_AT_Path","SV_CB_Path","vendor_Inscription","follow_path_herbs","trainer_Inscription","FW_DG_Path"},
+},
+["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"] = {
+	includes = {"Tin_Path","Obsidium_Path","--@@TRIALONLYLINE end_of_prof_trial_150","Saronite_Path","Thorium_Ore_Path","trainer_Jewelcrafting","follow_path_mine","Copper_Path","maincity_anvil","Mithril_Ore_Path","trainer_Mining","Iron_Ore_Path"},
 },
 ["PROFESSIONS\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide"] = {
 	includes = {"trainer_Leatherworking","--@@TRIALONLYLINE end_of_prof_trial_150","vendor_Leatherworking"},
@@ -6412,7 +6414,7 @@ ZGV.Quest_Cache_Horde = {
 	{ids="40528",goal_onlyif=function() return havequest(40528) or completedq(40528) end},
 	{ids="40544",goal_onlyif=function() return havequest(40544) or completedq(40544) end},
 	{ids="40542",goal_onlyif=function() return havequest(40542) or completedq(40542) end},
-	{ids="40535,40536,40538,40539,40540,40541,40546,40547,40561,40523,40524,40525,40560,40558,40559,40529,40530,40531,40562,40556,42214"},
+	{ids="40535,40536,40538,40539,40540,40541,40546,40547,40562,40523,40524,40525,40561,40558,40559,40529,40530,40531,40560,40556,42214"},
 },
 ["PROFESSIONS\\Jewelcrafting\\Quest Guides\\Argus Jewelcrafting Quest Line"] = {
 	{ids="48075,48076"},
@@ -7711,23 +7713,29 @@ ZGV.Quest_Cache_Horde = {
 	{ids="13957,13955,13930,13927,13938,13951,13934"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Quests"] = {
-	{ids="29514",step_onlyif=function() return skill("Herbalism")>74 end},
-	{ids="29506",step_onlyif=function() return skill("Alchemy")>74 end},
-	{ids="29508",step_onlyif=function() return skill("Blacksmithing")>74 end},
-	{ids="29517",step_onlyif=function() return skill("Leatherworking")>74 end},
-	{ids="29510",step_onlyif=function() return skill("Enchanting")>74 end},
-	{ids="29518",step_onlyif=function() return skill("Mining")>74 end},
-	{ids="29516",step_onlyif=function() return skill("Jewelcrafting")>74 end},
-	{ids="29520",step_onlyif=function() return skill("Tailoring")>74 end},
-	{ids="29509",step_onlyif=function() return skill("Cooking")>74 end},
-	{ids="29513",step_onlyif=function() return skill("Fishing")>74 end},
-	{ids="29511",step_onlyif=function() return skill("Engineering")>74 end},
-	{ids="29515",step_onlyif=function() return skill("Inscription")>74 end},
-	{ids="29519",step_onlyif=function() return skill("Skinning")>74 end},
-	{ids="37819,7926,29433"},
+	{ids="29518",step_onlyif=function() return skill("Mining") >= 75 end},
+	{ids="29510",step_onlyif=function() return skill("Enchanting") >= 75 end},
+	{ids="29519",step_onlyif=function() return skill("Skinning") >= 75 end},
+	{ids="29517",step_onlyif=function() return skill("Leatherworking") >= 75 end},
+	{ids="29508",step_onlyif=function() return skill("Blacksmithing") >= 75 end},
+	{ids="29507",step_onlyif=function() return skill("Archaeology") >= 75 end},
+	{ids="29509",step_onlyif=function() return skill("Cooking") >= 75 end},
+	{ids="29520",step_onlyif=function() return skill("Tailoring") >= 75 end},
+	{ids="29514",step_onlyif=function() return skill("Herbalism") >= 75 end},
+	{ids="29506",step_onlyif=function() return skill("Alchemy") >= 75 end},
+	{ids="29511",step_onlyif=function() return skill("Engineering") >= 75 end},
+	{ids="29516",step_onlyif=function() return skill("Jewelcrafting") >= 75 end},
+	{ids="29513",step_onlyif=function() return skill("Fishing") >= 75 end},
+	{ids="29515",step_onlyif=function() return skill("Inscription") >= 75 end},
+	{ids="29456,29445,29464,29457,29446,29443,29451,29458,29444,29433,7926,37819"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Dailies"] = {
-	{ids="29434,29438,36481,37868,29436,29455,37910,29463,33756,37911"},
+	{ids="37910",goal_onlyif=function() return not completedq(37910) end},
+	{ids="37911",goal_onlyif=function() return not completedq(37911) end},
+	{ids="29463,29436,37868,29438,29455,33756,29434,36481"},
+},
+["EVENTS\\Darkmoon Faire\\Achievements\\Ace Tonk Commander"] = {
+	{ids="29434"},
 },
 ["EVENTS\\Darkmoon Faire\\Darkmoon Faire Achievements"] = {
 	{ids="29514",step_onlyif=function() return skill("Herbalism")>74 end},
@@ -7857,19 +7865,14 @@ ZGV.Quest_Cache_Horde = {
 ["EVENTS\\Battle for Azeroth\\The Fate of Saurfang"] = {
 	{ids="54104,54097,54105,54106,54099,54107,54100,54108,54101,54109,54102,54103,54754"},
 },
-["PROFESSIONS\\Engineering\\Leveling Guides\\Engineering 600-700 Leveling Guide"] = {
-	{ids="37571"},
-	includes = {"Garrison_Small_Building","Garrison_ArchitectTable"},
+["EVENTS\\Battle for Azeroth\\Trouble in Darkshore"] = {
+	{ids="54059,54045,54046,54047,54049,54042,54050,54043,54044"},
 },
 ["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"] = {
 	{ids="36131,36132,36141,34758"},
 },
 ["PROFESSIONS\\Herbalism\\Farming Guides\\Herbs (Pre-Legion)"] = {
 	includes = {"follow_path_herbs"},
-},
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide"] = {
-	{ids="37573"},
-	includes = {"Garrison_Small_Building","Garrison_ArchitectTable"},
 },
 ["PROFESSIONS\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide"] = {
 	{ids="37575"},
@@ -8580,9 +8583,6 @@ ZGV.Quest_Cache_Horde = {
 ["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"] = {
 	includes = {"--@@TRIALONLYLINE end_of_prof_trial_150","follow_path_herbs","trainer_HerbalismUC","trainer_Herbalism"},
 },
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"] = {
-	includes = {"maincity_anvil","--@@TRIALONLYLINE end_of_prof_trial_150","Saronite_Path","Obsidium_Path","Cobalt_Path","Iron_Ore_Path","trainer_Mining","Thorium_Ore_Path","Fel_Iron_Path","trainer_Jewelcrafting","follow_path_mine","Copper_Path","Silver_Tin_Path","Mithril_Ore_Path","Adamantite_Path","maincity_forge2"},
-},
 ["PROFESSIONS\\Mining\\Farming Guides\\Ore"] = {
 	includes = {"follow_path_mine"},
 },
@@ -9261,15 +9261,13 @@ ZGV.Quest_Cache_Horde = {
 	{ids="53405,50973,53406"},
 },
 ["LEVELING\\Battle for Azeroth (110-120)\\Allied Races\\Nightborne Race Unlock"] = {
-	{ids="50254",step_onlyif=function() return completedq(48433) end},
 	{ids="49930,50242,49614,49973,49613,49354"},
 },
 ["LEVELING\\Battle for Azeroth (110-120)\\Allied Races\\Highmountain Tauren Race Unlock"] = {
-	{ids="50254",step_onlyif=function() return completedq(49614) end},
 	{ids="48067,49930,41840,50242,41815,48079,41882,41884,41764,48433,48403,41841,48185,41800,48434,49756,41799,48066,48190"},
 },
 ["LEVELING\\Battle for Azeroth (110-120)\\Allied Races\\Mag'har Orc Race Unlock"] = {
-	{ids="53353,53467,53355,52942,53466,52943,52945,53354"},
+	{ids="53354,52942,53355,52943,49930,51479,53467,52945,52955,53353,53466,50242"},
 },
 ["LEVELING\\Battle for Azeroth (110-120)\\Zandalar\\Zuldazar Loremaster (Story Quest Only)"] = {
 	{ids="49488,49492,51663,47734,47738,47742,49905,49147,48897,49663,47897,47520,47528,49310,49965,47433,47437,50235,47445,49489,49493,46846,47739,51680,49144,49148,47509,49422,47521,50835,51101,47422,47434,48454,49490,49494,47736,51677,49145,49149,47514,47518,47522,47915,47423,47435,47439,47963,49491,49495,49122,47733,47737,51678,49146,49426,49425,49421,49424,47735,47741,49309,47740,51679,49615,46929,46926,51111,47432,46928,47440,47438,48452,50881,46927"},
@@ -10513,9 +10511,6 @@ ZGV.Quest_Cache_Horde = {
 },
 ["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide"] = {
 	includes = {"follow_path_herbs","trainer_Herbalism"},
-},
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide"] = {
-	includes = {"trainer_Jewelcrafting","follow_path_mine","vendor_Jewelcrafting"},
 },
 ["PROFESSIONS\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide"] = {
 	includes = {"follow_path_mine","trainer_Mining"},

@@ -1205,96 +1205,50 @@ step
 _Congratulations!_
 You Reached 75 Pandaria Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Pandaria Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Pandaria Jewelcrafting') >= 75 end,
-condition_suggested=function() return skill('Pandaria Jewelcrafting') > 0 and skill('Pandaria Jewelcrafting') < 75 and level >= 85 end,
+condition_suggested=function() return skill('Jewelcrafting') > 0 and skill('Pandaria Jewelcrafting') < 75 and level >= 78 end,
 },[[
 step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,600
+talk Mai the Jade Shaper##65098
+Train Pandaria Jewelcrafting |skillmax Pandaria Jewelcrafting,75 |goto The Jade Forest/0 48.08,34.95
+|tip You must be at least level 78.
 step
-map Krasarang Wilds
-path follow loose;loop;ants straight;dist 40
-path	70.3,9.7	66.1,18.5	64.5,21.5
-path	61.6,21.9	52.0,30.2	40.2,27.5
-path	38.0,28.1	33.4,32.1	33.0,28.9
-path	28.2,37.9	18.4,33.3	14.8,41.8
-path	15.8,47.6	13.1,52.8	9.8,54.9
-path	13.6,64.2	32.3,80.1	35.6,69.0
-path	39.5,77.9	41.7,89.1	46.3,94.4
-path	48.3,92.3	50.0,90.5	45.6,68.2
-path	44.5,65.3	48.3,45.4	55.9,34.3
-path	58.6,36.7	65.1,35.6	69.2,28.7
-path	74.8,24.3	75.5,35.0	77.7,34.9
-path	79.8,17.9	82.3,17.8	85.3,21.4
-path	86.8,26.6	88.2,23.8	85.0,9.9
-#include "follow_path_mine"
-|cast Prospecting##31252
-collect 5 Lapis Lazuli##76133 |condition skill("Jewelcrafting")>=600
-collect 5 Sunstone##76134 |condition skill("Jewelcrafting")>=600
-collect 5 Tiger Opal##76130 |condition skill("Jewelcrafting")>=600
-collect 5 Alexandrite##76137 |condition skill("Jewelcrafting")>=600
-collect 5 Pandarian Garnet##76136 |condition skill("Jewelcrafting")>=600
-collect 5 Roguestone##76135 |condition skill("Jewelcrafting")>=600
-Gather _{_G.max(0 , (58-itemcount(76133,76134,76130,76137,76136,76135)))}_ gems
-You will also need 5 additional gems of each kind listed above
-collect 13 Primordial Ruby##76131 |condition skill("Jewelcrafting")>=600
+talk Mai the Jade Shaper##65098
+Train Etched Roguestone |learn Etched Roguestone##107630 |goto 48.08,34.95
 step
-#include "trainer_Jewelcrafting"
-learn Ornate Band##122661 |condition skill("Jewelcrafting")>=600
+collect 80 Roguestone##76135
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Pandaria Jewelcrafting") < 60
 step
-#include "vendor_Jewelcrafting"
-buy 9 Jeweler's Setting##52188 |condition skill("Jewelcrafting")>=600
+Open Your Jewelcrafting Crafting Panel:
+_<Create 80 Etched Roguestone>_
+Reach Level 60 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,60
 step
-create Ornate Band##122661,Jewelcrafting,512
+talk Mai the Jade Shaper##65098
+Train Vermilion Onyx |learn Vermilion Onyx##131690 |goto 48.08,34.95
 step
-#include "trainer_Jewelcrafting"
-learn Shadowfire Necklace##122662 |condition skill("Jewelcrafting")>=600
+collect 17 Vermilion Onyx##76140
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Pandaria Jewelcrafting") < 75
 step
-create Shadowfire Necklace##122662,Jewelcrafting,527
+Open Your Jewelcrafting Crafting Panel:
+_<Create 1 Vermilion Onyx>_
+|tip You can only make this once per day and crafting it will teach you a more advanced Vermilion Onyx recipe.
+Reach Level 61 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,61
 step
-#include "trainer_Jewelcrafting"
-learn Artful Tiger Opal##107646 |condition skill("Jewelcrafting")>=600
-learn Etched Roguestone##107630 |condition skill("Jewelcrafting")>=600
-learn Lightning Alexandrite##107604 |condition skill("Jewelcrafting")>=600
-learn Rigid Lapis Lazuli##107617 |condition skill("Jewelcrafting")>=600
+Open Your Jewelcrafting Crafting Panel:
+_<Create 14 of the learned recipe>_
+|tip You should have discovered one new Vermilion Onyx recipe.
+Reach Level 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
 step
-Create any of the following:
-create Artful Tiger Opal##107646,Jewelcrafting,530
-create Etched Roguestone##107630,Jewelcrafting,530
-create Lightning Alexandrite##107604,Jewelcrafting,530
-create Rigid Lapis Lazuli##107617,Jewelcrafting,530
-step
-#include "trainer_Jewelcrafting"
-learn Delicate Pandarian Garnet##107624 |condition skill("Jewelcrafting")>=600
-step
-Create any of the following:
-create Artful Tiger Opal##107646,Jewelcrafting,535
-create Etched Roguestone##107630,Jewelcrafting,535
-create Lightning Alexandrite##107604,Jewelcrafting,535
-create Rigid Lapis Lazuli##107617,Jewelcrafting,535
-create Delicate Pandarian Garnet##107624,Jewelcrafting,535
-step
-#include "trainer_Jewelcrafting"
-learn Fractured Sunstone##107640 |condition skill("Jewelcrafting")>=600
-step
-Create any of the following:
-create Artful Tiger Opal##107646,Jewelcrafting,580
-create Etched Roguestone##107630,Jewelcrafting,580
-create Lightning Alexandrite##107604,Jewelcrafting,580
-create Rigid Lapis Lazuli##107617,Jewelcrafting,580
-create Delicate Pandarian Garnet##107624,Jewelcrafting,580
-create Fractured Sunstone##107640,Jewelcrafting,580
-step
-create Primordial Ruby##131686,Jewelcrafting,580
-step
-The research you performed in the previous step has given you a new pattern for Yellow Gems. Create that Yellow gem until you are 600 Jewelcrafting
-skill Jewelcrafting,600
-step
-Congratulations, you are now a Zen Master Jewelcrafter!
+_Congratulations!_
+You Reached 75 Pandaria Jewelcrafting Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Pandaria Leatherworking 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Leatherworking skill from 1-75.",

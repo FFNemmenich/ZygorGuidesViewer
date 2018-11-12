@@ -2070,7 +2070,7 @@ function Pointer:DoAudioCues(targetangle,playerangle,dist)
 
 		-- warning beeps
 		if self.ArrowFrame.arrow:IsVisible()  then
-			local perc = mabs(1-angle*0.3183)  -- 1/pi
+			local perc = mabs(1-targetangle*0.3183)  -- 1/pi
 			if perc<=0.9 then
 				if t-lastbeeptime>2 then
 					--PlaySoundFile( [[Sound\Item\Weapons\Ethereal\Ethereal2H3.wav]] )
@@ -4692,6 +4692,7 @@ local minimap_size = {
     },
 }
 
+local lastmap
 function Pointer:AnimateAnts()
 	if not self.ready then return end
 
@@ -4790,6 +4791,8 @@ function Pointer:AnimateAnts()
 	if WorldMapFrame:IsVisible() then
 
 		local map = WorldMapFrame:GetMapID()
+		if map~=lastmap then self:ResetAnts() end
+		lastmap=map
 
 		--local overworld = (map==13 or map==14 or map==0 or map==689 or map==-1 or map==485 or map==466 or map==862 or map==962)
 		local spacing = ZGV.db.profile.antspacing*ants_mapspacing[map]
@@ -5305,8 +5308,12 @@ function Pointer:SetWaypointByCommandLine(input,justparse)
 	if not map then x,y = input:match("^([0-9%.]+)[ ,;:]+([0-9%.]+)") end
 	if not map and not x then map=input end
 
-	if map=="Shadowmoon Valley" and ZGV:GetPlayerPreciseLevel()>=90 then map="Shadowmoon Valley D" end
-	if map=="Nagrand" and ZGV:GetPlayerPreciseLevel()>=90 then map="Nagrand D" end
+	if map=="Shadowmoon Valley" and ZGV:GetPlayerPreciseLevel()>=90 then 
+		ZGV:Print("Setting waypoint to TBC zone. If you meant WOD one, please use |cffddff00Shadowmoon Valley D|r as map name.")
+	end
+	if map=="Nagrand" and ZGV:GetPlayerPreciseLevel()>=90 then 
+		ZGV:Print("Setting waypoint to TBC zone. If you meant WOD one, please use |cffddff00Nagrand D|r as map name.")
+	end
 
 	-- just a few random aliases
 	if map and map:upper()=="SW" then  map = "Stormwind City" end

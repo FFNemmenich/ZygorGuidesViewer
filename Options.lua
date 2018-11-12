@@ -1442,6 +1442,29 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('gear_2',{ name=PLAYER_DIFFICULTY2,  type='toggle', width="100", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
 			AddOption('gear_23',{ name=PLAYER_DIFFICULTY6,  type='toggle', width="100", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
 			AddOption('gear_24',{ name=PLAYER_DIFFICULTY_TIMEWALKER,  type='toggle', width="120", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
+
+			AddOption('gear_23_plus',{
+				name="Mythic difficulty",
+				type = 'select',
+				style = 'slider',
+				values={ 
+					[1]="     0", 
+					[2]="+2", 
+					[3]="+3", 
+					[4]="+4", 
+					[5]="+5", 
+					[6]="+6", 
+					[7]="+7", 
+					[8]="+8", 
+					[9]="+9", 
+					[10]= "+10   ", 
+				},
+				_default=1,
+				width=400,
+				hidden=function() return not self.db.profile.gear_23 end,
+				set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not (self.db.profile.autogear and self.db.profile.gear_23) end, })
+
+
 			AddOptionSpace()
 		AddOption('',{ type = "description", name = L["opt_gear_sources_raids"]:format(), font=ZGV.font_dialog_gray, width="full" })
 			AddOption('gear_17',{ name=PLAYER_DIFFICULTY3, type='toggle', width="100", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })

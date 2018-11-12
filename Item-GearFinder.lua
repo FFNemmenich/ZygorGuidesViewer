@@ -56,6 +56,7 @@ end
 --	future - bool - may contains upgrades later (level, ilvl, attunment)
 --	ident - string or int - identificator of dungeon
 --	maxscale - int - maximum level up to which drops are scaled
+--	mythic - bool - is this a mythic dungeon
 --	comment - string - verbose message
 function GearFinder:IsValidDungeon(dungeon, instanceId)
 	local ident = dungeon
@@ -66,25 +67,27 @@ function GearFinder:IsValidDungeon(dungeon, instanceId)
 	if not dungeon then return false, false, ident, 0, "no dungeon" end
 
 	-- handle permanent rejects
-	if dungeon.expansionLevel>GetExpansionLevel() then return false, false, ident, 0, "no expansion" end
-	if dungeon.difficulty and not ZGV.db.profile["gear_"..dungeon.difficulty] then return false, false, ident, 0, "instance filtered out" end
-	if dungeon.isHoliday then return false, false, ident, 0, "holiday dungeons not supported" end
-	if dungeon.minLevel and dungeon.minLevel > (ItemScore.playerlevel+FUTURE_DUNGEONS_LIMIT) then return false, false, ident, 0, "need way higher level" end
-	if dungeon.maxScaleLevel < (ItemScore.playerlevel-PAST_DUNGEONS_LIMIT) then return false, false, ident, 0, "outleveled" end
+	if dungeon.expansionLevel>GetExpansionLevel() then return false, false, ident, 0, false, "no expansion" end
+	if dungeon.difficulty and not ZGV.db.profile["gear_"..dungeon.difficulty] then return false, false, ident, 0, false, "instance filtered out" end
+	if dungeon.isHoliday then return false, false, ident, 0, false, "holiday dungeons not supported" end
+	if dungeon.minLevel and dungeon.minLevel > (ItemScore.playerlevel+FUTURE_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "need way higher level" end
+	if dungeon.maxScaleLevel < (ItemScore.playerlevel-PAST_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "outleveled" end
+
+	local mythic = dungeon.difficulty==23 and dungeon.maxScaleLevel == MAX_PLAYER_LEVEL_TABLE[GetAccountExpansionLevel()]
 
 	-- handle future rejects
-	if dungeon.minLevel and dungeon.minLevel > ItemScore.playerlevel then return false, true, ident, dungeon.maxScaleLevel, "need higher level" end
-	if dungeon.min_ilevel and dungeon.min_ilevel > ItemScore.playeritemlvl then return false, true, ident, dungeon.maxScaleLevel, "need higher item level" end
+	if dungeon.minLevel and dungeon.minLevel > ItemScore.playerlevel then return false, true, ident, dungeon.maxScaleLevel, mythic, "need higher level" end
+	if dungeon.min_ilevel and dungeon.min_ilevel > ItemScore.playeritemlvl then return false, true, ident, dungeon.maxScaleLevel, mythic, "need higher item level" end
 
 	-- attunements
 	if dungeon.attunement_achieve then
 		local _,_,_,complete = GetAchievementInfo(dungeon.attunement_achieve)
-		if not complete then return false, true, ident, dungeon.maxScaleLevel, "attunement needed" end
+		if not complete then return false, true, ident, dungeon.maxScaleLevel, mythic, "attunement needed" end
 	end	
-	if dungeon.attunement_quest and not IsQuestFlaggedCompleted(dungeon.attunement_quest) then return false, true, ident, dungeon.maxScaleLevel, "attunement needed" end
-	if dungeon.attunement_queston and not (IsQuestFlaggedCompleted(dungeon.attunement_queston) or ZGV.Parser.ConditionEnv.havequest(dungeon.attunement_queston)) then return false, true, ident, dungeon.maxScaleLevel, "attunement needed" end
+	if dungeon.attunement_quest and not IsQuestFlaggedCompleted(dungeon.attunement_quest) then return false, true, ident, dungeon.maxScaleLevel, mythic, "attunement needed" end
+	if dungeon.attunement_queston and not (IsQuestFlaggedCompleted(dungeon.attunement_queston) or ZGV.Parser.ConditionEnv.havequest(dungeon.attunement_queston)) then return false, true, ident, dungeon.maxScaleLevel, mythic, "attunement needed" end
 
-	return true, true, ident, dungeon.maxScaleLevel, "ok"
+	return true, true, ident, dungeon.maxScaleLevel, mythic, "ok"
 end
 
 GearFinder.UpgradeQueue = {
@@ -339,8 +342,10 @@ function GearFinder:ScoreDungeonItems()
 
 	local faction = self.playerfaction=="Alliance" and 1 or 2
 
+	local mythic_bonus = ItemScore.MythicPlusMods[ZGV.db.profile.gear_23_plus]
+
 	for dungeon,dungeondata in pairs(ZygorGuidesViewer.ItemScore.Items) do
-		local valid, future, ident, maxscale, comment = GearFinder:IsValidDungeon(dungeondata.dungeon, dungeondata.instanceId)
+		local valid, future, ident, maxscale, mythic, comment = GearFinder:IsValidDungeon(dungeondata.dungeon, dungeondata.instanceId)
 		local capped_player_level = math.min(maxscale, ItemScore.playerlevel)
 
 		if valid then
@@ -350,6 +355,14 @@ function GearFinder:ScoreDungeonItems()
 					for _,itemlink in pairs(bossdata[player]) do
 						if type(itemlink)=="number" then itemlink = "item:"..itemlink end
 						itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
+						if mythic and mythic_bonus then
+							itemlink = ZGV.ItemLink.RemoveBonus(itemlink,3524)
+							if C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemlink) then
+								itemlink = ZGV.ItemLink.AddBonus(itemlink,mythic_bonus[2])
+							else
+								itemlink = ZGV.ItemLink.AddBonus(itemlink,mythic_bonus[1])
+							end
+						end
 						local qname if bossdata.quest and bossdata.quest[faction] then qname=C_QuestLog.GetQuestInfo(bossdata.quest[faction]) end -- prefetch quest name
 						table.insert(GearFinder.ItemsToScore[ident],{itemlink=itemlink,boss=bossdata.boss, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
 					end
@@ -367,6 +380,14 @@ function GearFinder:ScoreDungeonItems()
 					for _,itemlink in pairs(bossdata[player]) do
 						if type(itemlink)=="number" then itemlink = "item:"..itemlink end
 						itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
+						if mythic and mythic_bonus then
+							itemlink = ZGV.ItemLink.RemoveBonus(itemlink,3524)
+							if C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemlink) then
+								itemlink = ZGV.ItemLink.AddBonus(itemlink,mythic_bonus[2])
+							else
+								itemlink = ZGV.ItemLink.AddBonus(itemlink,mythic_bonus[1])
+							end
+						end
 						local qname if bossdata.quest and bossdata.quest[faction] then qname=C_QuestLog.GetQuestInfo(bossdata.quest[faction]) end -- prefetch quest name
 						table.insert(GearFinder.ItemsToMaybeScore[ident],{itemlink=itemlink,boss=bossdata.boss, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
 					end

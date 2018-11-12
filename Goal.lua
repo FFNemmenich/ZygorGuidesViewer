@@ -2385,11 +2385,36 @@ function Goal:IsVisible()
 	--if ZGV.db.profile.showwrongsteps then return true end
 	if not self:IsFitting() then return false end
 	if self.hidden then return false end
-	if self.grouprole and self.grouprole~="EVERYONE" and not ZGV.db.profile.showallroles and UnitGroupRolesAssigned("Player")~="NONE" then
+	if self.grouprole and self.grouprole~="EVERYONE" and not ZGV.db.profile.showallroles then
 		local role,role2 = self.grouprole,self.grouprole2
 		if role=="DPS" or role=="DAMAGE" then role="DAMAGER" end
 		if role2=="DPS" or role2=="DAMAGE" then role2="DAMAGER" end
-		if UnitGroupRolesAssigned("Player")~=role and UnitGroupRolesAssigned("Player")~=role2 then return false end
+
+		local current_role = UnitGroupRolesAssigned("Player")
+		if UnitGroupRolesAssigned("Player")=="NONE" then			
+			local pc = ZGV.ItemScore.playerclass
+			local ps = ZGV.ItemScore.playerspec
+			if	(pc=="DRUID" and ps==4) or
+				(pc=="MONK" and ps==2) or
+				(pc=="PALADIN" and ps==1) or
+				(pc=="PRIEST" and ps==1) or
+				(pc=="PRIEST" and ps==2) or
+				(pc=="SHAMAN" and ps==3)
+			then
+				current_role = "HEALER"
+			elseif	(pc=="DEATHKNIGHT" and ps==1) or
+				(pc=="DEMONHUNTER" and ps==2) or
+				(pc=="DRUID" and ps==3) or
+				(pc=="MONK" and ps==1) or
+				(pc=="PALADIN" and ps==2) or
+				(pc=="WARRIOR" and ps==3)
+			then
+				current_role = "TANK"
+			else
+				current_role = "DAMAGER"
+			end
+		end
+		if current_role~=role and current_role~=role2 then return false end
 	end
 	if self.condition_visible then
 		if self.condition_visible_raw=="default" then

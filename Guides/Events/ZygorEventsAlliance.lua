@@ -1103,645 +1103,913 @@ step
 _Congratulations!_
 You Earned the "For the Children" Achievement |achieve 1793
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests",{
 condition_suggested=function() return isevent('Darkmoon Faire') end,
 description="This guide will help you navigate through the Darkmoon Faire Event",
 },[[
 step
 talk Darkmoon Faire Mystic Mage##54334
-|tip Clicking on any of the quests will direct you to one of the four main cities.
-accept The Darkmoon Faire##7905 |goto Stormwind City/0 62.3,73.0
-accept The Darkmoon Faire##7905 |goto Ironforge/0 27.6,73.2
-accept The Darkmoon Faire##7905 |goto Darnassus/0 38.6,49.4
-accept The Darkmoon Faire##7905 |goto The Exodar/0 51.3,42.0
-step
-talk Stanly McCormick##30730
-buy 5 Light Parchment##39354 |condition itemcount(39354) >= 5 |goto Stormwind City 49.6,74.9
-only if skill("Inscription")>74
+accept The Darkmoon Faire##7905 |goto Stormwind City/0 62.26,72.96
 step
 talk Innkeeper Farley##295
-buy 5 Moonberry Juice##1645 |condition itemcount(1645) >= 5 |q 29506 |goto Elwynn Forest 43.8,65.8
-only if skill("Alchemy")>74
+|tip Inside the building.
+buy 5 Moonberry Juice##1645 |goto Elwynn Forest/0 43.77,65.81 |q 29506 |future
+|only if skill("Alchemy") >= 75
 step
 talk Tharynn Bouden##66
-buy 1 Coarse Thread##2320 |condition itemcount(2320) >= 1 |goto Elwynn Forest 42.0,67.0
-buy 1 Blue Dye##6260 |condition itemcount(6260) >= 1 |goto Elwynn Forest 42.0,67.0
-buy 1 Red Dye##2604 |condition itemcount(2604) >= 1 |goto Elwynn Forest 42.0,67.0
-only if skill("Tailoring")>74
+buy 5 Light Parchment##39354 |goto 41.89,67.08 |q 29515 |future
+|only if skill("Inscription") >= 75
 step
 talk Tharynn Bouden##66
-buy 5 Coarse Thread##2320 |condition itemcount(2320) >= 5 |goto Elwynn Forest 42.0,67.0
-buy 5 Blue Dye##6260 |condition itemcount(6260) >= 5 |goto Elwynn Forest 42.0,67.0
-buy 10 Shiny Bauble##6529 |condition itemcount(6529) >= 10 |goto Elwynn Forest 42.0,67.0
-only if skill("Leatherworking")>74
+buy 1 Coarse Thread##2320 |goto 41.89,67.08 |q 29520 |future
+buy 1 Blue Dye##6260 |goto 41.89,67.08 |q 29520 |future
+buy 1 Red Dye##2604 |goto 41.89,67.08 |q 29520 |future
+|only if skill("Tailoring") >= 75
 step
 talk Tharynn Bouden##66
-buy 5 Simple Flour##30817 |condition itemcount(30817) >= 5 |q 29509 |goto Elwynn Forest 42.0,67.0
-only if skill("Cooking")>74
+buy 5 Coarse Thread##2320 |goto 41.89,67.08 |q 29517 |future
+buy 5 Blue Dye##6260 |goto 41.89,67.08 |q 29517 |future
+buy 10 Shiny Bauble##6529 |goto 41.89,67.08 |q 29517 |future
+|only if skill("Leatherworking") >= 75
+step
+talk Tharynn Bouden##66
+buy 5 Simple Flour##30817 |goto 41.89,67.08 |q 29509 |future
+|only if skill("Cooking") >= 75
+step
+clicknpc Darkmoon Strider##68491
+Mount the Darkmoon Strider |havebuff 132198 |goto Darkmoon Island/0 51.64,24.67
+|only if level < 20
 step
 talk Zina Sharpworth##55266
-buy Sack o' Tokens##78909 |n |goto Darkmoon Island/0 54.44,53.13 < 5
-use Sack o' Tokens##78909 |only if itemcount(78909)>= 1
-use Sack o' Tokens##78910 |only if itemcount(78910)>= 1
-collect 20 Darkmoon Faire Game Tokens##71083
+buy 1 Sack o' Tokens##78898 |goto 54.34,53.15 |q 29433 |future |only if level <= 60
+buy 1 Sack o' Tokens##78905 |goto 54.34,53.15 |q 29433 |future |only if level > 60 and level <= 70
+buy 1 Sack o' Tokens##78906 |goto 54.34,53.15 |q 29433 |future |only if level > 70 and level <= 80
+buy 1 Sack o' Tokens##78907 |goto 54.34,53.15 |q 29433 |future |only if level > 80 and level <= 85
+buy 1 Sack o' Tokens##78908 |goto 54.34,53.15 |q 29433 |future |only if level > 85 and level <= 90
+buy 1 Sack o' Tokens##78909 |goto 54.34,53.15 |q 29433 |future |only if level > 90 and level <= 100
+buy 1 Sack o' Tokens##78910 |goto 54.34,53.15 |q 29433 |future |only if level > 100 and level <= 120
+step
+use the Sack o' Tokens##78905 |only if itemcount(78905) >= 1
+use the Sack o' Tokens##78906 |only if itemcount(78906) >= 1
+use the Sack o' Tokens##78907 |only if itemcount(78907) >= 1
+use the Sack o' Tokens##78908 |only if itemcount(78908) >= 1
+use the Sack o' Tokens##78909 |only if itemcount(78909) >= 1
+use the Sack o' Tokens##78910 |only if itemcount(78910) >= 1
+use the Sack o' Tokens##78898 |only if itemcount(78898) >= 1
+collect 20 Darkmoon Faire Game Token##71083 |q 7905
 step
 talk Gelvas Grimegate##14828
-turnin The Darkmoon Faire##7905 |goto Darkmoon Island/0 47.90,64.74
+turnin The Darkmoon Faire##7905 |goto 47.90,64.74
 step
 talk Selina Dourman##10445
-accept Banners, Banners Everywhere!##29520 |goto Darkmoon Island/0 55.4,54.8
-only if skill("Tailoring")>74
+accept Banners, Banners Everywhere!##29520 |goto 55.56,55.00
+|only if skill("Tailoring") >= 75
 step
 talk Professor Thaddeus Paleo##14847
-accept Fun for the Little Ones##29507 |goto Darkmoon Island/0 51.9,60.9
-only if skill("Archaeology")>74
+accept Fun for the Little Ones##29507 |goto 51.89,60.93
+|only if skill("Archaeology") >= 75
 step
 talk Rinling##14841
-accept Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
+accept Rearm, Reuse, Recycle##29518 |goto 49.25,60.78
+|only if skill("Mining") >= 75
 step
 talk Rinling##14841
-accept Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
+accept Talkin' Tonks##29511 |goto 49.25,60.78
+|only if skill("Engineering") >= 75
 step
 talk Rinling##14841
-accept Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
+accept Eyes on the Prizes##29517 |goto 49.25,60.78
+|only if skill("Leatherworking") >= 75
 step
 talk Stamp Thunderhorn##14845
-accept Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Kerri Hicks##14832
-accept Test Your Strength##29433 |goto 47.91,67.09
-step
-talk Malle Earnhard##74056
-accept Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-Walk over either the Rocketeer or the Racing Strider at this location |goto Darkmoon Island/0 48.4,87.6
-Choose the _Racing Strider_ |havebuff 179750 |or
-Choose the _Rocketeer_ |havebuff 179252 |or
-only if havequest(37819)
-step
-Enter the Start Banner with a Darkmoon Game Token |q Welcome to the Darkmoon Races##37819/1 |goto 47.59,88.36
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	40.2,85.5	31.8,76.7	26.5,66.5
-Avoid the _Electrified Chains_ and the _Race MiniZeps_ while traversing the course
-Reach the Island |q Welcome to the Darkmoon Races##37819/2
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	30.6,73.9	35.8,82.0	40.8,86.3
-path	47.5,88.3
-Hit the Power Ups as you return to the start
-Complete the race |q Welcome to the Darkmoon Races##37819/3
-only if havequest(37819)
-step
-talk Malle Earnhard##74056
-turnin Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-use Plump Frogs##72056
-collect 5 Breaded Frog##72057 |n
-use Breaded Frog##72057
-Fry #5# Crunchy Frogs |q 29509/1 |goto Darkmoon Island/0 52.7,68.1
-only if skill("Cooking")>74
+accept Putting the Crunch in the Frog##29509 |goto 52.89,67.94
+|only if skill("Cooking") >= 75
 step
 talk Stamp Thunderhorn##14845
-turnin Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Stamp Thunderhorn##14845
-accept Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
+accept Spoilin' for Salty Sea Dogs##29513 |goto 52.89,67.94
+|only if skill("Fishing") >= 75
 step
 talk Sayge##14822
-accept Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
+accept Writing the Future##29515 |goto 53.23,75.84
+|only if skill("Inscription") >= 75
 step
 talk Chronos##14833
-accept Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
+accept Tan My Hide##29519 |goto 54.99,70.77
+|only if skill("Skinning") >= 75
 step
 talk Chronos##14833
-accept Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
+accept Herbs for Healing##29514 |goto 54.99,70.77
+|only if skill("Herbalism") >= 75
 step
 talk Sylannia##14844
-accept A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
+accept A Fizzy Fusion##29506 |goto 50.53,69.57
+|only if skill("Alchemy") >= 75
 step
 talk Chronos##14833
-accept Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
+accept Keeping the Faire Sparkling##29516 |goto 54.99,70.77
+|only if skill("Jewelcrafting") >= 75
 step
 talk Sayge##14822
-accept Putting Trash to Good Use##29510 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Enchanting")>74
+accept Putting Trash to Good Use##29510 |goto 53.23,75.84
+|only if skill("Enchanting") >= 75
 step
 talk Yebb Neblegear##14829
-accept Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
+accept Baby Needs Two Pair of Shoes##29508 |goto 51.10,82.04
+|only if skill("Blacksmithing") >= 75
 step
-Equip your Fishing Pole |equipped Fishing Pole##6256 |use Fishing Pole##6256 |q 29513
-Use your Fishing ability to catch _Sea Herrings_ |cast Fishing##7620
-Catch #5# Great Sea Herring |q 29513/1 |goto Darkmoon Island/0 51.7,91.6
-only if skill("Fishing")>74
+use the Plump Frogs##72056
+collect 5 Breaded Frog##72057 |q 29509
+|only if skill("Cooking") >= 75
 step
-All around the Island
-click Discarded Weapon##209283
-collect 6 Discarded Weapon##72018 |n
-Disenchant the Discarded Weapons |use Discarded Weapon##72018
-Collect #6# Soothsayer's Dust |q 29510/1
-only if skill("Enchanting")>74
+use the Breaded Frog##72057
+|tip Use it five times.
+Prepare #5# Crunchy Frogs |q 29509/1 |goto 52.7,68.1
+|only if skill("Cooking") >= 75
 step
-All around the Island
+cast Fishing##7620
+|tip Equip a fishing pole if you have one.
+collect 5 Great Sea Herring##73269 |q 29513/1 |goto 51.74,91.31
+|only if skill("Fishing") >= 75
+step
+click Discarded Weapon##209283+
+|tip They look like sparkling piles of rubble on the ground around this area.
+collect 6 Discarded Weapon##72018 |goto 49.47,71.33 |q 29510
+|only if skill("Enchanting") >= 75
+step
+use the Discarded Weapon##72018
+|tip Use it six times.
+collect 6 Soothsayer's Dust##71979 |q 29510/1
+|only if skill("Enchanting") >= 75
+step
 click Tonk Scrap##209275
-Collect #6# Pieces of Tonk Scrap |q 29518/1
-only if skill("Mining")>74
+|tip They look like random pieces of metal on the ground around this area.
+collect 6 Tonk Scrap##71968 |q 29518/1 |goto 49.47,71.33
+|only if skill("Mining") >= 75
 step
-All around the Island
-click Bits of Glass##238
-collect 5 Bits of Glass##72052 |n
-use Bit of Glass##72052
-Make #5# Sparkling Gemstones |q 29516/1
-only if skill("Jewelcrafting")>74
+click Bit of Glass##209287+
+|tip They look like small green pieces of broken glass on the ground around this area.
+|tip You can find these all over the island.
+collect 5 Bits of Glass##72052 |goto 49.47,71.33 |q 29516
+|only if skill("Jewelcrafting") >= 75
 step
-All around the Island
-use Battered Wrench##72110
-Repair #5# Damaged Tonk's |q 29511/1
-only if skill("Engineering")>74
+use the Bit of Glass##72052
+|tip Use it five times.
+collect 5 Sparkling 'Gemstone'##72050 |q 29516/1
+|only if skill("Jewelcrafting") >= 75
 step
-All around the Island
-click Darkblossom##209284
-Gather #6# Darkblossom |q 29514/1
-only if skill("Herbalism")>74
+clicknpc Damaged Tonk##54504+
+|tip They look like broken Tonk toys on the ground around this area.
+use the Battered Wrench##72110
+|tip Use it on Damaged Tonks.
+Repair #5# Damaged Tonk's |q 29511/1 |goto 49.47,71.33
+|only if skill("Engineering") >= 75
 step
-All around the Island
-click Staked Skins##209276
-Scrape #4# Staked Skins |q 29519/1
-only if skill("Skinning")>74
+click Darkblossom##209284+
+|tip They look like small purple flowers on the ground around this area.
+|tip You can find these all over the island.
+collect 6 Darkblossom##72046 |q 29514/1 |goto 49.47,71.33
+|only if skill("Herbalism") >= 75
+step
+click Staked Skin##209276+
+|tip They look like wooden frames with a hide stretched tight inside on the ground around this area.
+|tip You can find these all over the island.
+Scrape #4# Staked Skins |q 29519/1 |goto 49.47,71.33
+|only if skill("Skinning") >= 75
 step
 talk Sylannia##14844
-buy 5 Fizzy Faire Drink##19299 |condition itemcount(19299) >= 5 |q 29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
+buy 5 Fizzy Faire Drink##19299 |q 29506 |goto 50.53,69.57
+|only if skill("Alchemy") >= 75
 step
-click Portal to Elwynn Forest##04396 |goto Darkmoon Island/0 50.7,90.8
-Teleport to Elwynn Forest |goto Elwynn Forest |noway |c
-only if skill("Archaeology")>74
+use the Cocktail Shaker##72043
+|tip Use it five times.
+Create #5# Servings of Moonberry Fizz |q 29506/1
+|only if skill("Alchemy") >= 75
 step
-Open your world map, find dig sites in Kalimdor and go to them
-|tip They look like small shovel icons on your world map that spawn in random places. Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-You can find _Fossil Fragments_ in these locations:
-Desolace
-Dustwallow Marsh
-Stonetalon Mountains
-Southern Barrens
-Tanaris
-Un'Goro Crater
-Use your Survey ability inside the dig site area and follow the Telesope until you find a fragment |cast Survey##80451
+cast Survey##80451
+|tip Use this ability at Fossil Digsites across Kalimdor.
+|tip You can find them in Desolace, Dustwallow Marsh, Stonetalon Mountains, Southern Barrens, Tanaris, and Un'Goro Crater.
 earn 15 Fossil Fragments##393 |q 29507
-only if skill("Archaeology")>74
+|only if skill("Archaeology") >= 75
 step
-click Portal to Darkmoon Island |goto Elwynn Forest 41.8,69.6
-Telport to Darkmoon Island |goto Darkmoon Island/0 |noway |c
-only if skill("Archaeology")>74
+use the Darkmoon Banner Kit##72048
+Plant a Darkmoon Banner |q 29520/1 |goto 48.65,72.75
+|only if skill("Tailoring") >= 75
 step
-Follow the Path to the Darkmoon Faire |goto Darkmoon Island/0 56.0,52.9 < 10 |noway |c
-only skill("Archaeology")>74
-step
-use Cocktail Shaker##72043
-Create #5# Servings of Moonberry Fizz |q 29506/1 |goto Darkmoon Island/0 50.4,69.5
-only if skill("Alchemy")>74
-step
-use Darkmoon Banner Kit##72048
-Plant a Darkmoon Banner |q 29520/1 |goto Darkmoon Island/0 50.0,66.2
-only if skill("Tailoring")>74
-step
-use Iron Stock##71964
-collect 4 Horseshoes##71967 |q 29508 |goto 55.3,71.7
-only if skill("Blacksmithing")>74
-step
-use Bundle of Exotic Herbs##71971
-collect Prophetic Ink##71972 |n
-use Prophetic Ink##71972
-|tip Each one requires 1 Light Parchment to create.
-collect 5 Fortune##71974 |q 29515/1
-only if skill("Inscription")>74
-step
-use Darkmoon Craftsman's Kit##71977
-collect 5 Darkmoon Prize##71976 |q 29517/1
-only if skill("Leatherworking")>74
-step
-In order to collect _Grisley Trophies_ you will need to kill enemies that give Honor OR Experience
-|tip This means they absolutely need to be green level minimal.
-You will also need the _Darkmoon Adventurer's Guide_ in your inventory |condition itemcount(71634) >= 1
-You don't have a _Darkmoon Adventurer's Guide_ in your inventory! |only if itemcount(71634) < 1
-collect 250 Grisly Trophy##71096 |q 29433/1
-If you have misplaced your book somehow, you can talk to _Selina Dourman_ located here |goto Darkmoon Island/0 55.5,54.9
-only if havequest(29433)
-step
-talk Professor Thaddeus Paleo##14847
-turnin Fun for the Little Ones##29507 |goto Darkmoon Island/0 51.9,60.9
-only if skill("Archaeology")>74
-step
-talk Stamp Thunderhorn##14845
-turnin Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
-step
-talk Sayge##14822
-turnin Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
-step
-talk Chronos##14833
-turnin Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
-step
-talk Chronos##14833
-turnin Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
-step
-talk Rinling##14841
-turnin Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
-step
-talk Rinling##14841
-turnin Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
-step
-talk Chronos##14833
-turnin Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
-step
-talk Sylannia##14844
-turnin A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-talk Rinling##14841
-turnin Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
-step
-talk Sayge##14822
-turnin Putting Trash to Good Use##29510 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Enchanting")>74
+use the Iron Stock##71964
+|tip Use it next to the Forge.
+collect 4 Horseshoes##71967 |q 29508 |goto 55.12,71.56
+|only if skill("Blacksmithing") >= 75
 step
 use Horseshoe##71967
-Put New Horshoes On Baby |q 29508/1 |goto Darkmoon Island/0 51.3,81.8
-only if skill("Blacksmithing")>74
+Put New Horshoes On Baby |q 29508/1 |goto 51.3,81.8
+|only if skill("Blacksmithing") >= 75
 step
-talk Yebb Neblegear##14829
-turnin Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
+use the Bundle of Exotic Herbs##71971
+collect Prophetic Ink##71972 |q 29515
+|only if skill("Inscription") >= 75
 step
-talk Kerri Hicks##14832
-accept Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
+use Prophetic Ink##71972
+|tip Each Fortune requires 1 Light Parchment to create.
+|tip Use it five times.
+collect 5 Fortune##71974 |q 29515/1
+|only if skill("Inscription") >= 75
 step
-talk Selina Dourman##10445
-Tell her:
-<Darkmoon Adventurer's Guide?>
-collect Darkmoon Adventurer's Guide##71634 |q 29433 |goto Darkmoon Island/0 55.6,55.0
+use the Darkmoon Craftsman's Kit##71977
+|tip Use it five times.
+collect 5 Darkmoon Prize##71976 |q 29517/1
+|only if skill("Leatherworking") >= 75
 step
-These next 3 items have to be _obtained from Battlegrounds_
-When you kill an opponent, _loot_ their body for a chance to get _each item_
-collect Adventurer's Journal##71953 |n
-accept The Captured Journal##29458 |use Adventurer's Journal##71953
-collect Banner of the Fallen##71951 |n
-accept A Captured Banner##29456 |use Banner of the Fallen##71951
-collect Captured Insignia##71952 |n
-accept The Enemy's Insignia##29457 |use Captured Insignia##71952
-step
-These next 5 items have to be _obtained from Dungeons_ listed below
-collect 1 Mysterious Grimoire##71637 |n
-|tip You can get this in Heroic Scholomance from Darkmaster Gandling.
-accept An Inriguing Grimoire##29445 |use Mysterious Grimoire##71637
-collect 1 Monstrous Egg##71636 |n
-|tip You can get this in Stormstout Brewery from Hoptallus.
-accept An Exotic Egg##29444 |use Monstrous Egg##71636
-collect 1 A Treatise on Strategy##71715 |n
-|tip You can get this in Stormstout Brewery from Hoptallus.
-accept The Master Strategist##29451 |use A Treatise on Strategy##71715
-collect 1 Ornate Weapon##71638 |n
-|tip You can get this in Heroic Scarlet Monastery from Brother Korloff.
-accept A Wondrous Weapon##29446 |use Ornate Weapon##71638
-collect 1 Imbued Crystal##71635 |n
-|tip You can get this in Heroic Scarlet Monastery from High Inquisitor Whitemane.
-accept A Curious Crystal##29443 |use Imbued Crystal##71635
-step
-The next item can only be obtained from any 10 man Cataclysm Raid Boss
-collect Soothsayer's Runes##71716 |n
-accept Tools of Divination##29464 |use Soothsayer's Runes##71716
-step
-Kill any Creature Player or NPC that gives _experience or honor_ to gain Grisly Trophies
-|tip You need to leave Darkmoon Island to find anything to kill.
-collect 250 Grisly Trophy##71096 |q 29433/1
-step
-talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
+talk Stamp Thunderhorn##14845
+turnin Putting the Crunch in the Frog##29509 |goto 52.89,67.94
+|only if skill("Cooking") >= 75
 step
 talk Professor Thaddeus Paleo##14847
-turnin The Captured Journal##29458 |goto Darkmoon Island/0 51.9,60.9
-turnin A Captured Banner##29456 |goto Darkmoon Island/0 51.9,60.9
-turnin The Enemy's Insignia##29457 |goto Darkmoon Island/0 51.9,60.9
-turnin The Master Strategist##29451 |goto Darkmoon Island/0 51.9,60.9
-turnin A Wondrous Weapon##29446 |goto Darkmoon Island/0 51.9,60.9
-turnin A Curious Crystal##29443 |goto Darkmoon Island/0 51.9,60.9
-turnin Tools of Divination##29464 |goto Darkmoon Island/0 51.9,60.9
+turnin Fun for the Little Ones##29507 |goto 51.89,60.93
+|only if skill("Archaeology") >= 75
 step
-talk Yebb Neblegear##14829
-turnin An Exotic Egg##29444 |goto Darkmoon Island/0 51.0,81.2
+talk Stamp Thunderhorn##14845
+turnin Spoilin' for Salty Sea Dogs##29513 |goto 52.89,67.94
+|only if skill("Fishing") >= 75
+step
+talk Selina Dourman##10445
+turnin Banners, Banners Everywhere!##29520 |goto 55.56,55.00
+|only if skill("Tailoring") >= 75
 step
 talk Sayge##14822
-turnin An Intriguing Grimoire##29445 |goto Darkmoon Island/0 53.6,76.0
+turnin Writing the Future##29515 |goto 53.23,75.84
+|only if skill("Inscription") >= 75
+step
+talk Chronos##14833
+turnin Tan My Hide##29519 |goto 54.99,70.77
+|only if skill("Skinning") >= 75
+step
+talk Chronos##14833
+turnin Keeping the Faire Sparkling##29516 |goto 54.99,70.77
+|only if skill("Jewelcrafting") >= 75
+step
+talk Rinling##14841
+turnin Eyes on the Prizes##29517 |goto 49.25,60.78
+|only if skill("Leatherworking") >= 75
+step
+talk Rinling##14841
+turnin Talkin' Tonks##29511 |goto 49.25,60.78
+|only if skill("Engineering") >= 75
+step
+talk Chronos##14833
+turnin Herbs for Healing##29514 |goto 54.99,70.77
+|only if skill("Herbalism") >= 75
+step
+talk Sylannia##14844
+turnin A Fizzy Fusion##29506 |goto 50.53,69.57
+|only if skill("Alchemy") >= 75
+step
+talk Rinling##14841
+turnin Rearm, Reuse, Recycle##29518 |goto 49.25,60.78
+|only if skill("Mining") >= 75
+step
+talk Sayge##14822
+turnin Putting Trash to Good Use##29510 |goto 53.23,75.84
+|only if skill("Enchanting") >= 75
+step
+talk Yebb Neblegear##14829
+turnin Baby Needs Two Pair of Shoes##29508 |goto 51.10,82.04
+|only if skill("Blacksmithing") >= 75
 step
 talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
+accept Test Your Strength##29433 |goto 47.90,67.12
+step
+talk Malle Earnhard##74056
+accept Welcome to the Darkmoon Races##37819 |goto 48.98,88.32
+step
+Mount a Racing Strider or Rocketeer |condition hasbuff(132198) or hasbuff(298587) or hasbuff(894222) or hasbuff(132240) |goto 48.36,88.25 |q 37819
+|tip Walk across the pad of any mount you choose.
+step
+Enter the Start Banner with a Darkmoon Game Token |q 37819/1 |goto 47.39,88.35
+step
+map Darkmoon Island/0
+path follow smart; loop off; ants curved
+path	44.70,87.93	42.31,86.59	36.82,83.29	31.80,76.81	30.36,71.04
+path	26.32,66.82
+Hit the Blue Post |q 37819/2
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Use the spring at the end of the path to get onto the island.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
+step
+map Darkmoon Island/0
+path follow smart; loop off; ants curved
+path	28.27,67.92	30.58,71.30	33.27,74.94	36.39,79.51	40.58,84.84
+path	44.78,88.09	47.72,88.35
+Return to the Start Banner |q 37819/3
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
+step
+Complete the Race |q 37819/4 |goto 48.35,88.28
+step
+Click the Complete Quest Box:
+turnin Welcome to the Darkmoon Races##37819
+step
+talk Selina Dourman##10445
+Ask her _"Darkmoon Adventurer's Guide?"_
+collect 1 Darkmoon Adventurer's Guide##71634 |goto 55.56,55.00 |q 29433
+|only if havequest(29433)
+step
+Kill enemies or players
+|tip Only enemies and players that yield experience or honor will award Grisly Trophies.
+|tip You will need to keep the Darkmoon Adventurer's Guide in your inventory.
+|tip You can kill these anywhere you choose.
+collect 250 Grisly Trophy##71096 |q 29433/1
+|only if havequest(29433)
+step
+talk Kerri Hicks##14832
+turnin Test Your Strength##29433 |goto 47.90,67.12
+step
+Kill enemies in dungeons
+|tip Darkmoon dungeon items can be dropped by trash mobs and bosses from appropriate level dungeons.
+|tip Appropriate dungeons are those that still yield experience or those that are max level.
+|tip You will need to keep the Darkmoon Adventurer's Guide in your inventory.
+Collect the Five Darkmoon Dungeon Items |condition completedq(29445) and completedq(29444) and completedq(29451) and completedq(29446) and completedq(29443)
+|tip You still need to collect the following items: |only if not completedq(29445) and not completedq(29444) and not completedq(29451) and not completedq(29446) and not completedq(29443)
+|tip Mysterious Grimoire |only if not completedq(29445)
+|tip Monstrous Egg |only if not completedq(29444)
+|tip A Treatise on Strategy |only if not completedq(29451)
+|tip Ornate Weapon |only if not completedq(29446)
+|tip Imbued Crystal |only if not completedq(29443)
+step
+use the Mysterious Grimoire##71637
+accept An Inriguing Grimoire##29445
+step
+talk Sayge##14822
+turnin An Intriguing Grimoire##29445 |goto 53.23,75.84
+step
+use the Monstrous Egg##71636
+accept An Exotic Egg##29444
+step
+talk Yebb Neblegear##14829
+turnin An Exotic Egg##29444 |goto 51.10,82.04
+step
+use A Treatise on Strategy##71715
+accept The Master Strategist##29451
+step
+use the Ornate Weapon##71638
+accept A Wondrous Weapon##29446
+step
+use the Imbued Crystal##71635
+accept A Curious Crystal##29443
+step
+talk Professor Thaddeus Paleo##14847
+turnin The Master Strategist##29451 |goto 51.89,60.93
+turnin A Wondrous Weapon##29446 |goto 51.89,60.93
+turnin A Curious Crystal##29443 |goto 51.89,60.93
+step
+Kill enemies in raids
+|tip This item can be dropped by trash mobs and bosses from appropriate level raids.
+|tip Appropriate raids are those that still yield experience or those that are max level.
+|tip You will need to keep the Darkmoon Adventurer's Guide in your inventory.
+collect Soothsayer's Runes##71716 |q 29464 |future
+step
+use the Soothsayer's Runes##71716
+accept Tools of Divination##29464
+step
+talk Professor Thaddeus Paleo##14847
+turnin Tools of Divination##29464 |goto 51.89,60.93
+step
+Kill enemies in Battlegrounds
+|tip Darkmoon Battleground items can be dropped by trash mobs and enemy players from PvP Battlegrounds.
+|tip You will need to keep the Darkmoon Adventurer's Guide in your inventory.
+|tip Loot the bodies for a chance to pick up a Darkmoon Faire quest item.
+Collect the Three Darkmoon Battleground Items |condition completedq(29458) and completedq(29456) and completedq(29457)
+|tip You still need to collect the following items: |only if not completedq(29458) and not completedq(29456) and not completedq(29457)
+|tip Fallen Adventurer's Journal |only if not completedq(29458)
+|tip Banner of the Fallen |only if not completedq(29456)
+|tip Captured Insignia |only if not completedq(29457)
+step
+use the Adventurer's Journal##71953
+accept The Captured Journal##29458
+step
+use the Banner of the Fallen##71951
+accept A Captured Banner##29456
+step
+use the Captured Insignia##71952
+accept The Enemy's Insignia##29457
+step
+talk Professor Thaddeus Paleo##14847
+turnin The Captured Journal##29458 |goto 51.89,60.93
+turnin A Captured Banner##29456 |goto 51.89,60.93
+turnin The Enemy's Insignia##29457 |goto 51.89,60.93
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies", {
 condition_suggested=function() return isevent('Darkmoon Faire') end,
 description="This guide will help you navigate through the Darkmoon Faire Event",
 },[[
 step
-It is recommended that you complete the quest portion of the Dark Moon Faire guides before starting the daily portion.
-confirm always
-step
-label "start"
+label "Guide_Home"
 talk Zina Sharpworth##55266
-buy 1 Sack o' Tokens##78910 |n
-Open your Sack o' Tokens in your bags |use Sack o' Tokens##78910
-collect 20 Darkmoon Faire Game Tokens##71083 |goto Darkmoon Island/0 54.3,53.1
+buy 1 Sack o' Tokens##78898 |goto Darkmoon Island/0 54.34,53.15 |q 29463 |future |only if level <= 60
+buy 1 Sack o' Tokens##78905 |goto 54.34,53.15 |q 29463 |future |only if level > 60 and level <= 70
+buy 1 Sack o' Tokens##78906 |goto 54.34,53.15 |q 29463 |future |only if level > 70 and level <= 80
+buy 1 Sack o' Tokens##78907 |goto 54.34,53.15 |q 29463 |future |only if level > 80 and level <= 85
+buy 1 Sack o' Tokens##78908 |goto 54.34,53.15 |q 29463 |future |only if level > 85 and level <= 90
+buy 1 Sack o' Tokens##78909 |goto 54.34,53.15 |q 29463 |future |only if level > 90 and level <= 100
+buy 1 Sack o' Tokens##78910 |goto 54.34,53.15 |q 29463 |future |only if level > 100 and level <= 120
+step
+use the Sack o' Tokens##78905 |only if itemcount(78905) >= 1
+use the Sack o' Tokens##78906 |only if itemcount(78906) >= 1
+use the Sack o' Tokens##78907 |only if itemcount(78907) >= 1
+use the Sack o' Tokens##78908 |only if itemcount(78908) >= 1
+use the Sack o' Tokens##78909 |only if itemcount(78909) >= 1
+use the Sack o' Tokens##78910 |only if itemcount(78910) >= 1
+use the Sack o' Tokens##78898 |only if itemcount(78898) >= 1
+collect 20 Darkmoon Faire Game Token##71083 |q 29463
 step
 talk Mola##54601
-accept It's Hammer Time##29463 |goto Darkmoon Island/0 53.3,54.4
+accept It's Hammer Time##29463 |goto Darkmoon Island/0 53.29,54.36
 step
 talk Mola##54601
-Tell her _"Ready to whack!"_ |havebuff 537060  |goto Darkmoon Island/0 53.3,54.4
-only if havequest(29463)
+Tell her _"Ready to whack!"_
+Gain the "Whack-a-Gnoll!" Buff |havebuff 537060  |goto 53.29,54.36 |q 29463
 step
-Use the _Whack!_ on your bar and whack the Gnolls in the Barrels
-The Gnolls will pop up in the Barrels, but be careful not to hit the _Doll_ or you will get stunned
-Whack #30# Gnolls |q 29463/1
+Whack #30# Gnolls |q 29463/1 |goto 52.59,53.42
+|tip Use the "Whack!" ability on your action bar to whack the Gnolls as they appear.
+|tip Do not whack the Doll or you will be stunned for a few seconds.
 step
 talk Mola##54601
-turnin It's Hammer Time##29463 |goto Darkmoon Island/0 53.3,54.4
+turnin It's Hammer Time##29463 |goto 53.29,54.36
 step
 talk Maxima Blastenheimer##15303
-accept The Humanoid Cannonball##29436 |goto Darkmoon Island/0 52.5,56.2
-|next "quest"
+accept The Humanoid Cannonball##29436 |goto 52.50,56.14
+|next "The_Humanoid_Cannonball_Start"
 step
-label "target"
-talk Teleportologist Fozlebub##57850 |goto Darkmoon Island/0 57.1,89.6
-Tell him "_Teleport me to the cannon._" |goto 52.7,56.0,1 |noway |c
-only if havequest(29436)
+label "The_Humanoid_Cannonball_Missed"
+talk Teleportologist Fozlebub##57850 |goto 57.09,89.70
+Tell him "_Teleport me to the cannon._"
+Teleport to the Cannon |goto 52.73,56.03 < 25 |noway |c |q 29436
 step
-label "quest"
+label "The_Humanoid_Cannonball_Start"
 talk Maxima Blastenheimer##15303
-Tell her "_Launch me!_"
-Wait for the Cannon to Launch you |havebuff 135992 |goto Darkmoon Island/0 52.5,56.2
-only if havequest(29436)
+Tell her "_Launch me! (Darkmoon Game Token)_"
+Wait for the Cannon to Launch You |havebuff 135992 |goto 52.50,56.14 |q 29436
 step
-You will be launched through the air
-Use the ability on your action bar to drop dpwn into the target. You will gain more points for getting closer to the middle
-Earn 5 Target Points |q 29436/1 |goto Darkmoon Island/0 56.4,93.3
-Click here to try again |confirm |next "target"
+Accrue #5# Cannon Target Points |q 29436/1 |goto 56.33,93.17 |next "Turnin_The_Humanoid_Cannonball" |or
+|tip Use the "Cancel Magic Wings" ability on your action bar.
+|tip You will continue your forward momentum, so aim appropriately.
+If you Missed, Click Here |confirm |next "The_Humanoid_Cannonball_Missed" |or |q 29436
 step
-talk Teleportologist Fozlebub##57850 |goto Darkmoon Island/0 57.1,89.6
-Tell him _"Teleport me to the cannon."_ |goto 52.7,56.0,1 |noway |c
-only if havequest(29436)
+label "Turnin_The_Humanoid_Cannonball"
+talk Teleportologist Fozlebub##57850 |goto 57.09,89.70
+Tell him "_Teleport me to the cannon._"
+Teleport to the Cannon |goto 52.73,56.03 < 25 |noway |c |q 29436
 step
 talk Maxima Blastenheimer##15303
-turnin The Humanoid Cannonball##29436 |goto Darkmoon Island/0 52.5,56.2
+turnin The Humanoid Cannonball##29436 |goto 52.50,56.14
 step
 talk Rinling##14841
-accept He Shoots, He Scores!##29438 |goto 49.3,60.8
+accept He Shoots, He Scores!##29438 |goto 49.25,60.78
 step
 talk Rinling##14841
-Tell him: _"Let's shoot!"_ |havebuff Interface\Icons\INV_Weapon_Rifle_05 |goto 49.3,60.8
-only if havequest(29438)
+Tell him _"Let's shoot! (Darkmoon Game Token)"_
+Gain the "Crack Shot!" Buff |havebuff 135614 |goto 49.25,60.78 |q 29438
 step
-Shoot at the 3 targets
-When you see a green marker appear over a target, make sure that you are aimed at it and _shoot_
-|tip To aim, simply move the camera to face your current target.
-Shoot #25# Targets |q 29438/1
+Hit #25# Targets |q 29438/1 |goto 49.46,60.68
+|tip Use the "Shoot" ability on the target with a green icon above it.
+|tip Make sure you are directly facing the target before you shoot.
 step
 talk Rinling##14841
-turnin He Shoots, He Scores!##29438 |goto 49.3,60.8
+turnin He Shoots, He Scores!##29438 |goto 49.25,60.78
 step
 talk Finlay Coolshot##54605
-accept Tonk Commander##29434 |goto Darkmoon Island/0 50.7,65.1
+accept Tonk Commander##29434 |goto 50.69,65.14
 step
 talk Finlay Coolshot##54605
-Tell him _"Ready to Play."_ |invehicle |c |goto Darkmoon Island/0 50.7,65.1
-only if havequest(29434)
+Tell him _"Ready to Play! (Darkmoon Game Token)"_
+Control a Tonk |invehicle |goto 50.69,65.14 |q 29434
 step
-Use your _Cannon_ ability to shoot _Tonk Targets_
 kill Tonk Target##33081+
-Destroy 30 Tonk Targets |q 29434/1
+|tip Use the "Cannon" ability on your action bar.
+|tip If you get "Marked," use the "Nitrous Boost" ability on your action bar.
+Destroy #30# Targets |q 29434/1 |goto 52.05,65.60
+step
+Leave the Vehicle |outvehicle |q 29434
+|tip Use the "Exit" ability on your action bar.
 step
 talk Finlay Coolshot##54605
-turnin Tonk Commander##29434 |goto Darkmoon Island/0 50.7,65.1
+turnin Tonk Commander##29434 |goto 50.69,65.14
 step
 talk Ziggie Sparks##85546
 accept Firebird's Challenge##36481 |goto 48.37,71.36
 step
+label "Firebird's_Challenge_Aquire_Buff"
 talk Ziggie Sparks##85546
-Tell her _"Ready to fly!"_ |havebuff INTERFACE\ICONS\inv_shoulder_leather_firelandsdruid_d_01 |goto 48.37,71.36
-only if havequest(36481)
+Tell her _"Ready to fly! (Darkmoon Game Token)"_
+Gain the "Wings of Flame" Buff |havebuff 514340 |goto 48.37,71.36 |q 36481
 step
-Fly through the rings all around the Darkmoon Faire
-|tip Try and go as fast as you can, as the buff falls off in 9 seconds.
-Collect #15# Rings |q 36481/1
+Collect #15# Rings |q 36481/1 |next "Turnin_Firebird's_Challenge" |or
+|tip Fly through the rings around the Darkmoon Faire
+|tip The buff lasts for 10 seconds and only refreshes when collecting a ring, so you need to be quick.
+Click Here if you Failed to Collect Them All |next "Firebird's_Challenge_Aquire_Buff" |or |q 36481
 step
+label "Turnin_Firebird's_Challenge"
 talk Ziggie Sparks##85546
 turnin Firebird's Challenge##36481 |goto 48.37,71.36
 step
 talk Jessica Rogers##54485
-accept Target: Turtle##29455 |goto 51.6,77.8
+accept Target: Turtle##29455 |goto 51.51,77.71
 step
 talk Jessica Rogers##54485
-Tell her _"Ready to play!"_ |havebuff Interface\Icons\INV_Jewelry_Ring_03 |goto 51.6,77.8
-only if havequest(29455)
+Tell her _"Ready to play! (Darkmoon Game Token)"_
+Start the Ring Toss Game |havebuff 133345 |goto 51.51,77.71
 step
-Use your _Ring Toss_ ability to throw rings on the turtle.
-|tip When aiming, move the marker over the middle of the turtle.
-Land 3 Rings on Dubenko |q 29455/1
+Land #3# Rings on Dubenko |q 29455/1 |goto 51.64,78.00
+|tip Use the "Ring Toss" ability on your action bar.
+|tip Throw rings on the turtle.
+|tip There is a one second cast time plus travel time, so aim accordingly.
 step
 talk Jessica Rogers##54485
-turnin Target: Turtle##29455 |goto 51.6,77.8
+turnin Target: Turtle##29455 |goto 51.51,77.71
 step
 talk Malle Earnhard##74056
-accept The Real Race##37910 |goto 49.04,88.21
+accept The Real Race##37910 |goto 48.98,88.32
 step
-Select a mount |goto Darkmoon Island/0 48.4,87.7
-Choose the _Racing Strider_ |havebuff Interface\Icons\ability_hunter_pet_tallstrider |or
-Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or
+Mount a Racing Strider or Rocketeer |condition hasbuff(132198) or hasbuff(298587) or hasbuff(894222) or hasbuff(132240) |goto 48.36,88.25 |q 37910
+|tip Walk across the pad of any mount you choose.
 step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Race##37910/1 |goto 47.71,88.27
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	42.4,86.7	36.7,83.2	31.8,76.9
-path	30.6,71.5	26.7,66.7
-Follow the provided path, using the provided abilities to run the track
-Reach the Blue Post |q The Real Race##37910/2
+Enter the Start Banner with a Darkmoon Game Token |q 37910/1 |goto 47.39,88.35
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	28.8,63.3	27.6,56.7	29.6,45.8
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Race##37910/3
+path follow smart; loop off; ants curved
+path	44.70,87.93	42.31,86.59	36.82,83.29	31.80,76.81	30.36,71.04
+path	26.32,66.82
+Reach the Blue Post |q 37910/2
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Use the spring at the end of the path to get onto the island.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	33.4,48.5	36.5,51.2	41.3,51.1
-path	43.6,50.4
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Race##37910/4
+path follow smart; loop off; ants curved
+path	27.65,56.60	28.76,49.61	29.59,46.06
+Reach the Green Post |q 37910/3
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	44.9,54.7	44.3,60.3	41.7,68.1
-path	41.3,74.2	39.7,80.3	44.3,86.7
-path	47.8,88.3
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Race##37910/5
+path follow smart; loop off; ants curved
+path	33.44,48.45	36.34,51.03	41.33,51.06	43.54,50.08
+Reach the Red Post |q 37910/4
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
-label "race1"
+map Darkmoon Island/0
+path follow smart; loop off; ants curved
+path	44.92,54.75	44.35,60.20	41.71,67.93	41.36,73.97	39.61,79.94
+path	41.83,84.81	44.46,86.87	47.72,88.33
+Return to the Start Banner |q 37910/5
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
+step
+Complete the Race |q 37910/6 |goto 48.35,88.28
+step
+label "Let's_Keep_Racing"
 talk Malle Earnhard##74056
-turnin The Real Race##37910 |goto 49.04,88.21
-accept Let's Keep Racing!##33756 |goto 48.96,88.15
+turnin The Real Race##37910 |goto 48.98,88.32 |only if not completedq(37910)
+accept Let's Keep Racing!##33756 |goto 48.98,88.32
 step
-Select a mount |goto Darkmoon Island/0 48.4,87.7
-Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or
-Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or
-only if havequest(37910) or havequest(33756)
+Mount a Racing Strider or Rocketeer |condition hasbuff(132198) or hasbuff(298587) or hasbuff(894222) or hasbuff(132240) |goto 48.36,88.25 |q 33756
+|tip Walk across the pad of any mount you choose.
 step
-Enter the Start Banner with a Darkmoon Game Token |q Let's Keep Racing##33756/1 |goto 47.71,88.27
+Enter the Start Banner with a Darkmoon Game Token |q 33756/1 |goto 47.39,88.35
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	42.4,86.7	36.7,83.2	31.8,76.9
-path	30.6,71.5	26.7,66.7
-Follow the provided path, using the provided abilities to run the track
-Reach the Blue Post |q The Real Race##33756/2
+path follow smart; loop off; ants curved
+path	44.70,87.93	42.31,86.59	36.82,83.29	31.80,76.81	30.36,71.04
+path	26.32,66.82
+Reach the Blue Post |q 33756/2
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Use the spring at the end of the path to get onto the island.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	28.8,63.3	27.6,56.7	29.6,45.8
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Race##33756/3
+path follow smart; loop off; ants curved
+path	27.65,56.60	28.76,49.61	29.59,46.06
+Reach the Green Post |q 33756/3
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	33.4,48.5	36.5,51.2	41.3,51.1
-path	43.6,50.4
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Race##33756/4
+path follow smart; loop off; ants curved
+path	33.44,48.45	36.34,51.03	41.33,51.06	43.54,50.08
+Reach the Red Post |q 33756/4
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	44.9,54.7	44.3,60.3	41.7,68.1
-path	41.3,74.2	39.7,80.3	44.3,86.7
-path	47.8,88.3
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Race##33756/5
+path follow smart; loop off; ants curved
+path	44.92,54.75	44.35,60.20	41.71,67.93	41.36,73.97	39.61,79.94
+path	41.83,84.81	44.46,86.87	47.72,88.33
+Return to the Start Banner |q 33756/5
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
+step
+Complete the Race |q 33756/6 |goto 48.35,88.28
 step
 talk Malle Earnhard##74056
-turnin Let's Keep Racing!##33756 |goto 48.96,88.15
+turnin Let's Keep Racing!##33756 |goto 48.98,88.32
 step
 talk Patti Earnhard##90473
-accept The Real Big Race##37911 |goto 53.18,87.56
+accept The Real Big Race##37911 |goto 53.25,87.60
 step
-Select a mount |goto Darkmoon Island/0 48.4,87.7
-Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or
-Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or
-only if havequest(37911) or havequest(37868)
+Mount a Racing Strider or Rocketeer |condition hasbuff(132198) or hasbuff(298587) or hasbuff(894222) or hasbuff(132240) |goto 53.74,88.21 |q 37911
+|tip Walk across the pad of any mount you choose.
 step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37911/1 |goto Darkmoon Island/0 54.5,88.3
+Enter the Start Banner with a Darkmoon Game Token |q 37911/1 |goto 54.48,88.24
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	60.0,86.6	65.6,88.1	70.3,89.9
-path	74.1,87.0	78.4,80.2	78.5,75.0
-path	76.1,61.2	74.6,62.0	73.5,61.9
-path	71.8,60.6	71.7,67.2	70.3,71.6
-Follow the provided path, using the provided abilities to run the track
-Reach the Purple Post |q The Real Big Race##37911/2
+path follow smart; loop off; ants curved
+path	59.99,86.73	65.32,88.03	70.35,89.94	74.57,86.70	78.79,79.94
+path	78.45,75.06	76.06,61.19	74.72,62.30	73.39,61.62	71.94,60.50
+path	71.81,67.78	70.39,71.96
+Reach the Purple Post |q 37911/2
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Use the spring at the end of the path to get onto the island.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	69.7,67.1	70.3,57.2	68.0,50.8
-path	67.9,47.3	66.8,36.4	64.5,19.9
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Big Race##37911/3
+path follow smart; loop off; ants curved
+path	69.81,66.88	70.40,56.85	68.00,50.65	67.87,47.19	66.95,34.66
+path	63.28,21.70	64.67,19.94
+Reach the Green Post |q 37911/3
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	60.7,24.1	58.1,22.1	57.4,27.6
-path	56.2,27.3	55.8,23.8	54.6,20.3
-path	53.0,18.3	50.9,18.2
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Big Race##37911/4
+path follow smart; loop off; ants curved
+path	60.64,24.21	58.29,22.30	57.40,27.87	56.21,27.32	55.85,23.73
+path	54.62,20.20	53.12,18.33	50.83,18.06
+Reach the Red Post |q 37911/4
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	51.1,25.0	53.1,29.9	52.9,36.5
-path	55.5,37.1	56.7,43.2	57.7,49.6
-path	51.7,59.4	49.3,66.0	49.4,72.3
-path	49.9,81.4	51.7,87.9	54.7,88.2
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Big Race##37911/5
+path follow smart; loop off; ants curved
+path	50.60,20.26	51.25,25.52	53.03,29.90	52.98,36.63	55.54,37.35
+path	56.72,43.52	57.96,48.79	55.00,54.07	51.11,60.23	49.07,66.16
+path	49.70,73.27	49.88,82.36	51.08,87.57	54.55,88.25
+Return to the Start Banner |q 37911/5
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
-label "race2"
+Complete the Race |q 37911/6 |goto 54.55,88.25
+step
+label "More_Big_Racing"
 talk Patti Earnhard##90473
-turnin The Real Big Race##37911 |goto 53.18,87.56
-accept More Big Racing!##37868 |goto 53.11,87.71
+turnin The Real Big Race##37911 |goto 53.25,87.60 |only if not completedq(37911)
+accept More Big Racing!##37868 |goto 53.25,87.60
 step
-Select a mount |goto Darkmoon Island/0 48.4,87.7
-Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or
-Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or
-only if havequest(37911) or havequest(37868)
+Mount a Racing Strider or Rocketeer |condition hasbuff(132198) or hasbuff(298587) or hasbuff(894222) or hasbuff(132240) |goto 53.74,88.21 |q 37868
+|tip Walk across the pad of any mount you choose.
 step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37868/1 |goto Darkmoon Island/0 54.5,88.3
+Enter the Start Banner with a Darkmoon Game Token |q 37868/1 |goto 54.48,88.24
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	60.0,86.6	65.6,88.1	70.3,89.9
-path	74.1,87.0	78.4,80.2	78.5,75.0
-path	76.1,61.2	74.6,62.0	73.5,61.9
-path	71.8,60.6	71.7,67.2	70.3,71.6
-Follow the provided path, using the provided abilities to run the track
-Reach the Purple Post |q The Real Big Race##37868/2
+path follow smart; loop off; ants curved
+path	59.99,86.73	65.32,88.03	70.35,89.94	74.57,86.70	78.79,79.94
+path	78.45,75.06	76.06,61.19	74.72,62.30	73.39,61.62	71.94,60.50
+path	71.81,67.78	70.39,71.96
+Reach the Purple Post |q 37868/2
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Use the spring at the end of the path to get onto the island.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	69.7,67.1	70.3,57.2	68.0,50.8
-path	67.9,47.3	66.8,36.4	64.5,19.9
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Big Race##37868/3
+path follow smart; loop off; ants curved
+path	69.81,66.88	70.40,56.85	68.00,50.65	67.87,47.19	66.95,34.66
+path	63.28,21.70	64.67,19.94
+Reach the Green Post |q 37868/3
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	60.7,24.1	58.1,22.1	57.4,27.6
-path	56.2,27.3	55.8,23.8	54.6,20.3
-path	53.0,18.3	50.9,18.2
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Big Race##37868/4
+path follow smart; loop off; ants curved
+path	60.64,24.21	58.29,22.30	57.40,27.87	56.21,27.32	55.85,23.73
+path	54.62,20.20	53.12,18.33	50.83,18.06
+Reach the Red Post |q 37868/4
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
 map Darkmoon Island/0
-path loop off; dist 15
-path	51.1,25.0	53.1,29.9	52.9,36.5
-path	55.5,37.1	56.7,43.2	57.7,49.6
-path	51.7,59.4	49.3,66.0	49.4,72.3
-path	49.9,81.4	51.7,87.9	54.7,88.2
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Big Race##37868/5
+path follow smart; loop off; ants curved
+path	50.60,20.26	51.25,25.52	53.03,29.90	52.98,36.63	55.54,37.35
+path	56.72,43.52	57.96,48.79	55.00,54.07	51.11,60.23	49.07,66.16
+path	49.70,73.27	49.88,82.36	51.08,87.57	54.55,88.25
+Return to the Start Banner |q 37868/5
+|tip Boxes with glowing purple springs will shoot you up in the air.
+|tip Boxes with glowing blue portals will launch you forward.
+|tip Boxes with glowing red and yellow boots will give you a brief speed boost.
+|tip Boxes with small pouches above them will give you Racing Regs reagents.
+|tip Race MiniZeps look like small zeppelins and should be avoided.
+|tip Electrified Chains look like grey chain bars with crackling lightning and should be avoided.
+|tip If a Race MiniZep aggros you, use the "Summon Aggrobots" ability on your action bar. |only if hasbuff(894222)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Danger Zone" ability on your action bar. |only if hasbuff(132240)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Rocket Barrage" ability on your action bar. |only if hasbuff(298587)
+|tip If a Race MiniZep aggros you and you have a Racing Reg, use the "Jump To Racer" ability on your action bar. |only if hasbuff(132198)
 step
-Click here if you would like to do "Let's Keep Racing!" |confirm |next "race1"
-Click here if you would like to do "More Big Racing!" |confirm |next "race2"
-Click here if you are finished with the daily guide |confirm |next "start"
+Complete the Race |q 37868/6 |goto 54.55,88.25
+step
+talk Patti Earnhard##90473
+turnin More Big Racing!##37868 |goto 53.25,87.60
+step
+Click Here to Repeat the "Let's Keep Racing!" Quest |confirm |next "Let's_Keep_Racing"
+Click Here to Repeat the "More Big Racing!" Quest |confirm |next "More_Big_Racing"
+Click Here if Dailies Have Reset |confirm |next "Guide_Home"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Achievements\\Ace Tonk Commander",{
+author="support@zygorguides.com",
+description="Score 45 hits in one session of the Tonk Challenge.",
+condition_suggested=function() return isevent('Darkmoon Faire') end,
+achieveid={9885},
+},[[
+step
+talk Zina Sharpworth##55266
+buy 1 Sack o' Tokens##78898 |goto Darkmoon Island/0 54.34,53.15 |q 29434 |future |only if level <= 60 |or
+buy 1 Sack o' Tokens##78905 |goto 54.34,53.15 |q 29434 |future |only if level > 60 and level <= 70 |or
+buy 1 Sack o' Tokens##78906 |goto 54.34,53.15 |q 29434 |future |only if level > 70 and level <= 80 |or
+buy 1 Sack o' Tokens##78907 |goto 54.34,53.15 |q 29434 |future |only if level > 80 and level <= 85 |or
+buy 1 Sack o' Tokens##78908 |goto 54.34,53.15 |q 29434 |future |only if level > 85 and level <= 90 |or
+buy 1 Sack o' Tokens##78909 |goto 54.34,53.15 |q 29434 |future |only if level > 90 and level <= 100 |or
+buy 1 Sack o' Tokens##78910 |goto 54.34,53.15 |q 29434 |future |only if level > 100 and level <= 120 |or
+'|next "Achievement_Complete" |only if achieved(9885) |or
+step
+use the Sack o' Tokens##78905 |only if itemcount(78905) >= 1
+use the Sack o' Tokens##78906 |only if itemcount(78906) >= 1
+use the Sack o' Tokens##78907 |only if itemcount(78907) >= 1
+use the Sack o' Tokens##78908 |only if itemcount(78908) >= 1
+use the Sack o' Tokens##78909 |only if itemcount(78909) >= 1
+use the Sack o' Tokens##78910 |only if itemcount(78910) >= 1
+use the Sack o' Tokens##78898 |only if itemcount(78898) >= 1
+collect 20 Darkmoon Faire Game Token##71083 |q 29434 |future
+step
+talk Finlay Coolshot##54605
+accept Tonk Commander##29434 |goto Darkmoon Island/0 50.69,65.14
+step
+label "Start_Controlling_Tonk"
+talk Finlay Coolshot##54605
+Tell him _"Ready to Play! (Darkmoon Game Token)"_
+Control a Tonk |invehicle |goto 50.69,65.14 |q 29434
+step
+kill Tonk Target##33081+
+|tip Use the "Cannon" ability on your action bar.
+|tip If you get "Marked," use the "Nitrous Boost" ability on your action bar.
+|tip You must hit at least 45 targets before your buff expires.
+|tip It helps to have a friend accept the quest and idle their tonk to spawn more targets.
+Earn the "Ace Tonk Commander" Achievement |achieve 9885 |goto 52.05,65.60 |next "Complete_Tonk_Commander_Quest" |or
+'|outvehicle |next "Start_Controlling_Tonk" |only if not achieved(9885) |or
+step
+label "Complete_Tonk_Commander_Quest"
+Destroy #30# Targets |q 29434/1 |goto 52.05,65.60
+step
+Leave the Vehicle |outvehicle |q 29434
+|tip Use the "Exit" ability on your action bar.
+step
+talk Finlay Coolshot##54605
+turnin Tonk Commander##29434 |goto 50.69,65.14
+step
+label "Achievement_Complete"
+_Congratulations!_
+You Earned the "Ace Tonk Commander" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements", {
 condition_suggested=function() return isevent('Darkmoon Faire') end,
@@ -1810,22 +2078,22 @@ collect Soothsayer's Runes##71716 |n
 accept Tools of Divination##29464 |use Soothsayer's Runes##71716
 step
 talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
+turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.90,67.12
 step
 talk Professor Thaddeus Paleo##14847
-turnin The Captured Journal##29458 |goto Darkmoon Island/0 51.9,60.9
-turnin A Captured Banner##29456 |goto Darkmoon Island/0 51.9,60.9
-turnin The Enemy's Insignia##29457 |goto Darkmoon Island/0 51.9,60.9
-turnin The Master Strategist##29451 |goto Darkmoon Island/0 51.9,60.9
-turnin A Wondrous Weapon##29446 |goto Darkmoon Island/0 51.9,60.9
-turnin A Curious Crystal##29443 |goto Darkmoon Island/0 51.9,60.9
-turnin Tools of Divination##29464 |goto Darkmoon Island/0 51.9,60.9
+turnin The Captured Journal##29458 |goto Darkmoon Island/0 51.89,60.93
+turnin A Captured Banner##29456 |goto Darkmoon Island/0 51.89,60.93
+turnin The Enemy's Insignia##29457 |goto Darkmoon Island/0 51.89,60.93
+turnin The Master Strategist##29451 |goto Darkmoon Island/0 51.89,60.93
+turnin A Wondrous Weapon##29446 |goto Darkmoon Island/0 51.89,60.93
+turnin A Curious Crystal##29443 |goto Darkmoon Island/0 51.89,60.93
+turnin Tools of Divination##29464 |goto Darkmoon Island/0 51.89,60.93
 step
 talk Yebb Neblegear##14829
-turnin An Exotic Egg##29444 |goto Darkmoon Island/0 51.0,81.2
+turnin An Exotic Egg##29444 |goto Darkmoon Island/0 51.10,82.04
 step
 talk Sayge##14822
-turnin An Intriguing Grimoire##29445 |goto Darkmoon Island/0 53.6,76.0
+turnin An Intriguing Grimoire##29445 |goto Darkmoon Island/0 53.23,75.84
 |next "main"
 step
 label "no_quest"
@@ -1840,43 +2108,43 @@ You still need to earn the I Was Promised a Pony! |achieve 6025 |only if not ach
 confirm always
 step
 talk Sylannia##14844
-buy 1 Cheap Beer##19222 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Cheap Beer##19222 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Cheap Beer |achieve 6026/12 |use Cheap Beer##19222
-buy 1 Darkmoon Special Reserve##19221 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Darkmoon Special Reserve##19221 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Darkmoon Special Reserve |achieve 6026/13 |use Special Reserve##19221
-buy 1 Fizzy Faire Drink##19299 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Fizzy Faire Drink##19299 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Fizzy Faire Drink |achieve 6026/14 |use Fizzy Faire Drink##19299
-buy 1 Bottled Winterspring Water##19300 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Bottled Winterspring Water##19300 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Bottled Winterspring Water |achieve 6026/11 |use Bottled Winterspring Water##19300
-buy 1 Iced Berry Slush##33234 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Iced Berry Slush##33234 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Iced Berry Slush |achieve 6026/17 |use Iced Berry Slush##33234
-buy 1 Fizzy Faire Drink "Classic"##33236 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Fizzy Faire Drink "Classic"##33236 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Fizzy Faire Drink "Classic" |achieve 6026/15 |use Fizzy Faire Drink "Classic"##33236
-buy 1 Fresh-Squeezed Limeade##44941 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Fresh-Squeezed Limeade##44941 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Fresh-Squeezed Limeade |achieve 6026/16 |use Fresh-Squeezed Limeade##44941
-buy 1 Sasparilla Sinker##74822 |n |goto Darkmoon Island/0 50.5,69.5
+buy 1 Sasparilla Sinker##74822 |n |goto Darkmoon Island/0 50.53,69.57
 Drink Sasparilla Sinker |achieve 6026/18 |use Sasparilla Sinker##74822
 step
 talk Stamp Thunderhorn##14845
-buy 1 Darkmoon Dog##19223 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Darkmoon Dog##19223 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Darkmoon Dog |achieve 6026/3 |use Darkmoon Dog##19223
-buy 1 Spiced Beef Jerky##19304 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Spiced Beef Jerky##19304 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Spiced Beef Jerky |achieve 6026/10 |use Spiced Beef Jerky##19304
-buy 1 Pickled Kodo Foot##19305 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Pickled Kodo Foot##19305 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Pickled Kodo Foot |achieve 6026/7 |use Pickled Kodo Foot##19305
-buy 1 Red Hot Wings##19224 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Red Hot Wings##19224 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Red Hot Wings |achieve 6026/8 |use Red Hot Wings##19224
-buy 1 Crunchy Frog##19306 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Crunchy Frog##19306 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Crunchy Frog |achieve 6026/2 |use Crunchy Frog##19306
-buy 1 Deep Fried Candybar##19225 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Deep Fried Candybar##19225 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Deep Fried Candybar |achieve 6026/4 |use Deep Fried Candybar##19225
-buy 1 Funnel Cake##33246 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Funnel Cake##33246 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Funnel Cake |achieve 6026/6 |use Funnel Cake##33246
-buy 1 Forest Strider Drumstick##33254 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Forest Strider Drumstick##33254 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Forest Strider Drumstick |achieve 6026/5 |use Forest Strider Drumstick##33254
-buy 1 Corn-Breaded Sausage##44940 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Corn-Breaded Sausage##44940 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Corn-Breaded Sausage |achieve 6026/1 |use Corn-Breaded Sausage##44940
-buy 1 Salty Sea Dog##73260 |n |goto Darkmoon Island/0 52.8,68.0
+buy 1 Salty Sea Dog##73260 |n |goto Darkmoon Island/0 52.89,67.94
 Eat Salty Sea Dog |achieve 6026/9 |use Salty Sea Dog##73260
 Earn the Achievement Fairegoer's Feast |achieve 6026
 step
@@ -1924,7 +2192,7 @@ Click here to move onto the racing quests |confirm
 stickystart "4fold"
 step
 talk Malle Earnhard##74056
-accept The Real Race##37910 |goto 49.04,88.21
+accept The Real Race##37910 |goto 48.98,88.32
 step
 Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |goto Darkmoon Island/0 48.4,87.7
 only if havequest(37910)
@@ -1961,8 +2229,8 @@ Return to the Start Banner |q The Real Race##37910/5
 step
 label "dualrace"
 talk Malle Earnhard##74056
-turnin The Real Race##37910 |goto 49.04,88.21
-accept Let's Keep Racing!##33756 |goto 48.96,88.15
+turnin The Real Race##37910 |goto 48.98,88.32
+accept Let's Keep Racing!##33756 |goto 48.98,88.32
 step
 Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |goto Darkmoon Island/0 48.4,87.7
 only if havequest(33756)
@@ -1998,7 +2266,7 @@ Follow the provided path, using the provided abilities to run the track
 Return to the Start Banner |q The Real Race##33756/5
 step
 talk Malle Earnhard##74056
-turnin Let's Keep Racing!##33756 |goto 48.96,88.15
+turnin Let's Keep Racing!##33756 |goto 48.98,88.32
 step
 label "4fold"
 Be sure to hit all of the _Speed Boots_ while racing

@@ -565,20 +565,21 @@ step
 label quest-54143
 accept Bird's-Eye View##54143 |goto Drustvar/0 37.75,48.66
 |tip You will accept this quest automatically.
-step
-label "Collect_Spy_Gear_
-click Spy Gear+
-|tip They look like various shaped objects on the ground around the edge of town around Arom's Stand.
-|tip They can also be on buildings around this area.
-|tip Use the "Grizzek Rocket Hop" ability to jump to them.
-|tip It appears as a button on the screen.
-Collect #8# Spy Gear |q 54143/2 |goto 37.75,48.66
+stickystart "Collect_Spy_Gear_54143"
 step
 kill 8 Horde Shadoweye##146819 |q 54143/1 |goto 37.75,48.66
 |tip They are all around the edge of town around Arom's Stand.
 |tip They can also be on buildings around this area.
 |tip Use the "Grizzek Rocket Hop" ability to jump to them.
 |tip It appears as a button on the screen.
+step
+label "Collect_Spy_Gear_54143"
+click Spy Gear+
+|tip They look like various shaped objects on the ground around the edge of town around Arom's Stand.
+|tip They can also be on buildings around this area.
+|tip Use the "Grizzek Rocket Hop" ability to jump to them.
+|tip It appears as a button on the screen.
+Collect #8# Spy Gear |q 54143/2 |goto 37.75,48.66
 |next "Tortollan_Seekers_WQ"
 step
 label quest-54662
@@ -1218,6 +1219,13 @@ Follow the path up |goto 35.14,32.10 < 20 |only if walking
 kill Maddok the Sniper##148723 |q 54690/1 |goto 34.85,33.11
 |next "Tortollan_Seekers_WQ"
 step
+label quest-54686
+accept Medical Emergency##54686 |goto Drustvar/0 31.77,41.58
+|tip You will accept this quest automatically.
+step
+kill Doctor Lazane##148695 |q 54686/1 |goto 31.77,41.58
+|next "Tortollan_Seekers_WQ"
+step
 label quest-54692
 accept Magister Crystalynn##54692 |goto Drustvar/0 39.69,34.65
 |tip You will accept this quest automatically.
@@ -1245,6 +1253,16 @@ accept Matron Morana##51433 |goto Drustvar/0 34.84,19.87
 |tip You will accept this quest automatically.
 step
 kill Matron Morana##137704 |q 51433/1 |goto 34.84,19.87
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54650
+accept Muk'luk##54650 |goto Drustvar/0 33.72,37.51
+|tip You will accept this quest automatically.
+step
+kill Goblin Beast Wrangler##148163+
+|tip There are 2 of them holding ropes on Muk'luk.
+|tip Kill them to be able to attack Muk'luk.
+kill Muk'luk##148155 |q 54650/1 |goto 33.72,37.51
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51707
@@ -2040,6 +2058,16 @@ talk Quartermaster Alcorn##135815
 turnin Work Order: Monelite Ore##50987 |goto 37.91,48.94
 |next "Tortollan_Seekers_WQ"
 step
+label quest-54711
+accept Zillie Wunderwrench and Grizzwald##54711 |goto Drustvar/0 39.84,41.39
+|tip You will accept this quest automatically.
+step
+kill Grizzwald##148860
+|tip It looks like a mechanical spider that walks around this area.
+kill Zillie Wunderwrench##148862 |q 54711/1 |goto 39.84,41.39
+|tip She appears after you kill Grizzwald.
+|next "Tortollan_Seekers_WQ"
+step
 label "Tortollan_Seekers_WQ"
 #include "BFA_World_Quest_Emissaries"
 ]])
@@ -2748,6 +2776,16 @@ accept Lost Scroll##50566 |goto Nazmir/0 81.68,61.07
 step
 click Lost Scroll##134295
 kill Enraged Water Elemental##134294 |q 50566/1 |goto 81.68,61.07
+|next "Tortollan_Seekers_WQ"
+step
+label quest-53321
+Follow the path up |goto Nazmir/0 34.92,84.51 < 20 |only if walking
+accept Luminous Monelite##53321 |goto 33.89,86.48
+|tip You will accept this quest automatically.
+|polish
+step
+click Luminous Monelite Deposit##297618
+collect Luminous Monelite##163609 |q 53321/1 |goto 33.89,86.48
 |next "Tortollan_Seekers_WQ"
 step
 label quest-50517
@@ -5594,7 +5632,7 @@ label quest-52459
 accept Whirlwing##52459 |goto Stormsong Valley/0 46.90,42.14
 |tip You will accept this quest automatically.
 step
-kill Whirlwing##142088 |q 52459/1 |goto 46.90,42.141
+kill Whirlwing##142088 |q 52459/1 |goto 46.90,42.14
 |tip He flies in the air around this area.
 |next "Tortollan_Seekers_WQ"
 step
@@ -9103,6 +9141,23 @@ kill Captain Stef "Marrow" Quin##136346 |q 51120/1 |goto 41.32,24.18
 |tip She walks around this area.
 |next "Tortollan_Seekers_WQ"
 step
+label quest-51377
+accept Temple of Sethraliss: Ecological Research##51377
+|tip Use the Group Finder to enter the "Temple of Sethraliss" dungeon.
+|tip You will accept this quest automatically.
+step
+clicknpc Krolusk Larva##137857
+|tip They look like tiny grey spiked dinosaur-like creatures on the ground throughout the dungeon.
+|tip They are typically found in rooms with bosses.
+|tip Create a macro for "/tar Krolusk Larva" and use it frequently until you find one.
+Capture a Krolusk Larva |q 51377/1
+step
+kill Avatar of Sethraliss##133392
+|tip It is the final boss in the "Temple of Sethraliss" dungeon.
+|tip Use the "Temple of Sethraliss" dungeon guide to accomplish this.
+Restore the Avatar of Sethraliss |q 51377/2
+|next "Tortollan_Seekers_WQ"
+step
 label quest-51379
 accept Temple of Sethraliss: Navigating Currents##51379
 |tip Use the Group Finder to enter the "Temple of Sethraliss" dungeon.
@@ -9122,7 +9177,7 @@ step
 kill Avatar of Sethraliss##133392
 |tip It is the final boss in the "Temple of Sethraliss" dungeon.
 |tip Use the "Temple of Sethraliss" dungeon guide to accomplish this.
-Restor the Avatar of Sethraliss |q 51379/3
+Restore the Avatar of Sethraliss |q 51379/3
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51378
@@ -10049,17 +10104,17 @@ kill Pterrordax Rider##147839+
 Repel #10# Pterrordax |q 54298/2 |goto 78.73,53.16
 |next "Tortollan_Seekers_WQ"
 step
-label quest-50765
+label quest-54162
 accept Hard Landing##54162 |goto Zuldazar/0 76.80,48.94
 |tip You will accept this quest automatically.
-|polish
 step
-click No Fly Zone Enforcer##311900
-collect No Fly Zone Enforcer##165877 |q 54162/1 |goto 76.80,48.94
+click BOOM-O-MATIC 9000
+Obtain the BOOM-O-MATIC 9000 |q 54162/1 |goto 76.80,48.94
 step
-clicknpc Alliance Gyropilot##147778+
-|tip They look like helicopters flying around this area.
-Repel #10# Alliance Gyrocopters |q 54162/2 |goto 77.75,51.41
+Repel #10# Alliance Gyrocopters |q 54162/2 |goto 77.78,50.91
+|tip Use the "BOOM-O-MATIC 9000" ability on 7th Legion Gyropilots.
+|tip It appears as a button on the screen.
+|tip They look like helicopters flying in the around around this area.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-50765
@@ -10458,6 +10513,18 @@ step
 Kill enemies around this area
 |tip Each Loa champion will spawn after the last one dies.
 Defeat #4# Loa Champions |q 50964/1 |goto 43.63,7.37
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54712
+accept Spell Components##54712 |goto Zuldazar/0 71.15,38.87
+|tip You will accept this quest automatically.
+step
+talk Magister Umbric##148895
+Tell him _"Ready to test."_
+Report to Magister Umbric in the Feeding Grounds |q 54712/1 |goto 71.15,38.87
+step
+kill Savagemane Ravasaur##122504+
+collect 20 Fresh Ravasaur Bits##166460 |q 54712/2 |goto 70.29,39.31
 |next "Tortollan_Seekers_WQ"
 step
 label quest-54504
@@ -10997,6 +11064,18 @@ Kill Da'kani enemies around this area
 click Gorilla Totem+
 |tip They look like clusters of sticks on the ground around this area.
 Disrupt the Da'kani Gorillas |q 51374/1 |goto 49.01,54.17
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54701
+accept Wrath of the Ravasaur##54701 |goto Zuldazar/0 68.94,40.42
+|tip You will accept this quest automatically.
+step
+talk Gonk##148849
+Tell him _"Grant me your boon."_
+Report to Gonk in Warbeast Kraal |q 54701/1 |goto 68.94,40.42
+step
+kill 7th Legion Voidshaper##148778+
+collect 8 Void Elf Head##166441 |q 54701/2 |goto 70.25,39.48
 |next "Tortollan_Seekers_WQ"
 step
 label quest-50782

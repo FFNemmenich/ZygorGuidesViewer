@@ -162,6 +162,16 @@ local function GetMAPDATAFromGWP()
 		MAPDATA[i]={_,d1.y,d1.x,d1.y-d2.y,d1.x-d2.x} -- WTF? Does GWPFMP mix its x and y !?
 	until true end
 end
+local function CloneHBDMap(src,dst,force,changes)
+	local srct=ZGV.HBD.mapData[src]  if not srct then return end
+	local dstt=ZGV.HBD.mapData[dst]  if dstt and not force then return end
+	dstt={}  ZGV.HBD.mapData[dst]=dstt
+	for k,v in pairs(srct) do dstt[k]=v end
+	if changes then for k,v in pairs(changes) do dstt[k]=v end end
+end
+local function FixHBD()
+	CloneHBDMap(543,1170,false)
+end
 local function GetMAPDATAFromHBD()
 	for i=1,2000 do repeat
 		local d=ZGV.HBD.mapData[i]
@@ -178,7 +188,16 @@ local function FixMAPDATA()
 	MAPDATA[1036]=MAPDATA[939]
 	MAPDATA[1037]=MAPDATA[939]
 	MAPDATA[1036]=MAPDATA[939]
+	MAPDATA[1170]=MAPDATA[543]  -- Gorgrond - Mag'har scenario
+	MAPDATA[1333]={ -- darkshore battlefront
+	  [1] = 2129,
+	  [2] = 1541.6700439453,
+	  [3] = 7864.580078125,
+	  [4] = 3056.25,
+	  [5] = 2037.5,
+	}
 end
+FixHBD()
 GetMAPDATAFromHBD()
 FixMAPDATA()
 

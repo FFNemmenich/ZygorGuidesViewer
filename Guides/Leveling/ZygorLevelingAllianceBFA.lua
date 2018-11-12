@@ -9122,6 +9122,151 @@ _Island Expeditions and Warfronts:_
 |tip Completing the island expedition quest "Azerite for the Alliance" will award 1,500 reputation.
 Gain Exalted Reputation with the 7th Legion |achieve 12954
 step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+accept Blackrock Depths##51813 |goto Stormwind City/0 52.03,13.75
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+Tell her _"(Quest) I am ready to go to Blackrock Depths."_
+Transport to Blackrock Depths |scenariostart |goto 52.03,13.75 |q 51813
+step
+Meet the Dark Iron at the Black Anvil |scenariogoal 1/40480 |goto Blackrock Scenario/0 56.66,31.33 |q 51813
+step
+click Crate o' Azerite##292617
+Pick up the Azerite Crate |havebuff 132765 |goto 55.84,31.93 |q 51813
+step
+click Place Crate o' Azerite##292882
+Place Azerite on the Black Anvil |scenariogoal 2/40528 |goto 56.66,31.33 |q 51813
+step
+Kill Azerite enemies around this area
+Defeat Azerite Elementals |scenariogoal 3/40527 |goto 56.66,31.33 |q 51813
+step
+Watch the dialogue
+Receive Orders from Moira |scenariogoal 4/40540 |goto 57.05,30.34 |q 51813
+step
+kill 8 Venture Co. Skyscorcher##139268 |scenariogoal 5/40539 |goto 47.51,45.31 |q 51813
+step
+Follow the path |goto 44.61,49.89 < 10 |walk
+Continue following the path |goto 35.39,60.14 < 20 |walk
+Kill enemies around this area
+|tip Avoid the spiked metal mines on the ground around this area.
+Defend the Dark Iron Highway |scenariogoal 6/40545 |goto 29.27,56.58 |q 51813
+step
+kill Rixxa Fluxflame##139273 |scenariogoal 7/40547 |goto 35.72,63.83 |q 51813
+|tip You only need to drop her to 70% or so.
+step
+Follow the path |goto 44.70,49.97 < 10 |walk
+Return to the Black Anvil |scenariogoal 8/40548 |goto 56.66,31.33 |q 51813
+step
+Complete the Blackrock Depths Scenario |q 51813/1 |goto 57.04,30.34
+step
+talk Moira Thaurissan##140309
+turnin Blackrock Depths##51813 |goto 57.04,30.34
+accept The MOTHERLODE!!: Ironfoe##53351 |goto 57.04,30.34
+step
+clicknpc Mole Machine to Stormwind##143567 |goto 57.50,30.09
+Return to Stormwind |goto Stormwind City/0 54.49,17.25 < 1000 |c |noway |q 53351
+step
+Enter "The MOTHERLODE!!" Dungeon |goto The MOTHERLODE!!/0 0.00,0.00 |c |noway |q 53351
+|tip Use the Dungeon Finder tool or enter the dungeon with you group.
+step
+kill Mogul Razdunk##132713
+|tip Razdunk is the final boss of the instance.
+collect 1 Ironfoe##163708 |q 53351/1
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+turnin The MOTHERLODE!!: Ironfoe##53351 |goto Stormwind City/0 52.02,13.74
+accept Molten Core##53342 |goto 52.02,13.74
+step
+Watch the dialogue
+Retrieve a Shocking Amount o' Dark Iron Ingots |q 53342/1 |goto 52.02,13.74
+step
+talk Moira Thaurissan##133197 |goto 52.03,13.75
+|tip Inside the building.
+Tell her _"(Quest) I am ready to go to the Molten Core."_
+Transport to Molten Core |goto Blackrock Scenario/1 27.73,27.43 < 1000 |c |noway |q 53342
+step
+clicknpc The Tank##143390
+Get in The Tank |invehicle |goto 29.15,26.42 |q 53342
+step
+map Blackrock Scenario/1
+path follow smart; loop off; ants curved
+path	34.31,18.20	40.86,11.97	45.98,20.63	40.63,27.98	36.36,38.61
+path	40.79,59.83	52.84,65.18
+Ride Through The Molten Core |outvehicle |q 53342
+|tip Follow the path, using the abilities on your action bar to deal with any enemies you encounter.
+step
+Follow the path |goto 61.64,62.41 < 20 |walk
+Continue following the path |goto 61.31,48.71 < 20 |walk
+Continue following the path |goto 49.61,49.23 < 20 |walk
+Watch the dialogue
+kill Flamewalker Sentinel##143415
+click Molten Core##297702
+collect Fragment o' the Molten Core##163693 |q 53342/2 |goto 56.08,56.67
+step
+clicknpc Mole Machine to Stormwind##143567 |goto 57.24,59.13
+Return to Stormwind |goto Stormwind City/0 54.49,17.25 < 1000 |c |noway |q 53342
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+turnin Molten Core##53342 |goto 52.03,13.74
+accept Firelands##53352 |goto 52.03,13.74
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+Tell her _"(Quest) I am ready to go to the Firelands."_
+Transport to the Firelands |scenariostart |goto 52.03,13.75 |q 53352
+step
+Watch the dialogue
+|tip Straight ahead.
+kill Flamewalker Sentinel##143415
+Speak with the Bridgekeeper |scenariogoal 1/41550 |q 53352
+step
+Kill enemies around this area
+|tip Fight you way across the bridge, up the stairs, and into the building.
+Slay the Cultists |scenariogoal 2/41551 |q 53352
+step
+Watch the dialoguef
+|tip Run all the way to the end of the hall.
+Confront High-Justice Grimstone |scenariogoal 3/41563 |q 53352
+step
+kill High Justice Grimstone##143607 |scenariogoal 4/41561 |q 53352
+step
+Watch the dialogue
+|tip Approach the lava pool to infuse the Molten Core with the power of Ragnaros.
+|tip Walk into the glowing orb of flame and stand still.
+Infuse the Power |scenariogoal 5/41562 |q 53352
+step
+clicknpc Mole Machine to Stormwind##143567
+|tip Behind you.
+Return to Stormwind |goto Stormwind City/0 54.49,17.25 < 1000 |c |noway |q 53352
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+turnin Firelands##53352 |goto 52.03,13.74
+accept Forged in Fire an' Flame##51474 |goto 52.03,13.74
+step
+talk Moira Thaurissan##133197
+|tip Inside the building.
+Tell her _"(Quest) I am ready to go to Blackrock Depths."_
+Transport to Blackrock Depths |goto Blackrock Scenario/0 60.86,25.04 < 1000 |c |noway |q 51474
+step
+click Fragment 'o the Molten Core##298887
+Repair the Black Anvil |q 51474/1 |goto 56.65,31.36
+step
+talk Moira Thaurissan##133197
+turnin Forged in Fire an' Flame##51474 |goto 57.19,30.88
+accept Dark Iron Dwarves##53566 |goto 57.19,30.88
+step
+clicknpc Mole Machine to Stormwind##143567 |goto 57.50,30.09
+Return to Stormwind |goto Stormwind City/0 54.49,17.25 < 1000 |c |noway |q 53566
+step
+talk Anduin Wrynn##126301
+|tip Inside the building.
+turnin Dark Iron Dwarves##53566 |goto 52.08,13.43
+step
 _Congratulations!_
 You Unlocked the "Dark Iron Dwarf" Allied Race.
 ]])
@@ -13782,4 +13927,58 @@ Join the Battle for Lordaeron |goto Ruins of Lordaeron/0 51.54,16.29 < 50 |noway
 |tip Click "Enter Scenario" when the popup appears on the screen.
 |tip It may take a bit.
 |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Allied Races\\Dark Iron Dwarf Mole Machine Locations",{
+author="support@zygorguides.com",
+description="Unlock the various Dark Iron Mole Machines across Eastern Kingdoms, Kalimdor, Outland, Nothrend, Pandaria, Draenor, and Broken Shore.",
+condition_end=function() return completedq(53589) end,
+},[[
+step
+clicknpc Dark Iron Mole Machine##144281
+Unlock the Throne of Flame Mole Machine |goto Mount Hyjal/0 57.17,77.11 |q 53601 |future
+step
+clicknpc Dark Iron Mole Machine##144280
+Unlock The Great Divide Mole Machine |goto Southern Barrens/0 39.12,9.29 |q 53600 |future
+step
+clicknpc Dark Iron Mole Machine##144271
+Unlock the Fire Plume Ridge Mole Machine |goto Un'Goro Crater/0 52.90,55.77 |q 53591 |future
+step
+clicknpc Dark Iron Mole Machine##144274
+Unlock the Nethergarde Keep Mole Machine |goto Blasted Lands/0 61.97,12.81 |q 53594 |future
+step
+clicknpc Dark Iron Mole Machine##144265
+Unlock the Aerie Peak Mole Machine |goto The Hinterlands/0 13.52,46.80 |q 53585 |future
+step
+clicknpc Dark Iron Mole Machine##144267
+Unlock The Masonary Mole Machine |goto Burning Steppes/16 33.33,24.77 |q 53587 |future
+step
+clicknpc Dark Iron Mole Machine##144279
+Unlock the Fel Pits Mole Machine |goto Shadowmoon Valley/0 50.77,35.31 |q 53599 |future
+step
+clicknpc Dark Iron Mole Machine##144277
+Unlock the Skald Mole Machine |goto Blade's Edge Mountains/0 72.42,17.66 |q 53597 |future
+step
+clicknpc Dark Iron Mole Machine##144276
+Unlock the Ruby Dragonshrine Mole Machine |goto Dragonblight/0 45.35,49.92 |q 53596 |future
+step
+clicknpc Dark Iron Mole Machine##144266
+Unlock the Argent Tournament Grounds Mole Machine |goto Icecrown/0 76.97,18.67 |q 53586 |future
+step
+clicknpc Dark Iron Mole Machine##144278
+Unlock the Stormstout Brewery Mole Machine |goto Valley of the Four Winds/0 31.52,73.61 |q 53598 |future
+step
+clicknpc Dark Iron Mole Machine##144275
+Unlock the One Keg Mole Machine |goto Kun-Lai Summit/0 57.70,62.80 |q 53595 |future
+step
+clicknpc Dark Iron Mole Machine##144268
+Unlock the Blackrock Foundry Overlook Mole Machine |goto Gorgrond/0 46.69,38.75 |q 53588 |future
+step
+clicknpc Dark Iron Mole Machine##144270
+Unlock the Elemental Plateau Machine |goto Nagrand D/0 65.74,8.27 |q 53590 |future
+step
+clicknpc Dark Iron Mole Machine##144273
+Unlock the Neltharion's Vault Mole Machine |goto Highmountain/0 44.66,72.89 |q 53593 |future
+step
+clicknpc Dark Iron Mole Machine##144269
+Unlock the Broken Shore Mole Machine |goto Broken Shore/0 71.71,48.01 |q 53589 |future
 ]])

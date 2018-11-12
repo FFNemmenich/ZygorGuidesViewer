@@ -371,6 +371,21 @@ ItemScore.Item_Armor_Types = {
 	[6] = "SHIELD",
 	}
 
+-- Dugi, fancy seeing you here
+ItemScore.MythicPlusMods = {
+	-- level, bonus pack for regular gear, for azerite gear, ilvl of normal gear, ilvl of azerite gear
+	 [1]={nil,nil}, -- mythic baseline has no bonus ids
+	 [2]={"5018:1517", "5018:1512"}, -- 345    340
+	 [3]={"5019:1517", "5019:1512"}, -- 345    340
+	 [4]={"5020:1522", "5020:1532"}, -- 350    355
+	 [5]={"5021:1527", "5021:1532"}, -- 355    355
+	 [6]={"5022:1527", "5022:1532"}, -- 355    355
+	 [7]={"5023:1532", "5023:1542"}, -- 360    370
+	 [8]={"5024:1537", "5024:1542"}, -- 365    370
+	 [9]={"5025:1537", "5025:1542"}, -- 365    370
+	[10]={"5026:1542", "5026:1557"}, -- 370    385
+}
+
 ItemScore.TypeToSlot = {
 	INVTYPE_WEAPON = INVSLOT_MAINHAND, -- dual wield handled in GetValidSlots
 	INVTYPE_WEAPONMAINHAND = INVSLOT_MAINHAND,

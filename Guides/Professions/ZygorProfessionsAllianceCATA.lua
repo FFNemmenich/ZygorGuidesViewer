@@ -1128,6 +1128,107 @@ step
 _Congratulations!_
 You Reached 75 Northrend Blacksmithing Skill.
 ]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Cataclysm Blacksmithing 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Cataclysm Blacksmithing skill from 1-75.",
+condition_end=function() return skill('Cataclysm Blacksmithing') >= 75 end,
+condition_suggested=function() return skill('Cataclysm Blacksmithing') > 0 and skill('Cataclysm Blacksmithing') < 75 end,
+},[[
+step
+talk Therum Deepforge##5511
+Train Cataclysm Blacksmithing |skillmax Cataclysm Blacksmithing,75 |goto Stormwind City/0 63.67,37.00
+|tip You must be at least level 78.
+step
+collect 390 Obsidium Bar##54849
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+collect 340 Elementium Bar##52186
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+collect 10 Volatile Earth##52327
+|tip Farm them with the "Volatile Earth" guide or purchase them from the Auction House.
+step
+collect 150 Volatile Fire##52325
+|tip Farm them with the "Volatile Fire" guide or purchase them from the Auction House.
+step
+collect 2 Hardened Elementium Bar##53039
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 195 Folded Obsidium>_
+|tip Make all of these, you will need them later.
+Reach Level 5 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,5 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Redsteel Bracers |learn Redsteel Bracers##76262 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 5 Redsteel Bracers>_
+Reach Level 10 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,10 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Redsteel Belt |learn Redsteel Belt##76264 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Redsteel Belt>_
+Reach Level 20 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,20 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Redsteel Boots |learn Redsteel Boots##76265 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 5 Redsteel Boots>_
+Reach Level 25 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,25 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Obsidium Skeleton Key |learn Obsidium Skeleton Key##76438 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Obsidium Skeleton Key>_
+Reach Level 35 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,35 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Redsteel Shoulders |learn Redsteel Shoulders##76266 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 5 Redsteel Shoulders>_
+Reach Level 40 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,40 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Redsteel Legguards |learn Redsteel Legguards##76267 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Redsteel Legguards>_
+Reach Level 50 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,50 |goto 63.66,36.64
+step
+talk Therum Deepforge##5511
+Train Hardened Obsidium Breastplate |learn Hardened Obsidium Breastplate##76261 |goto 63.67,37.00
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Hardened Obsidium Breastplate>_
+Reach Level 60 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,60 |goto 63.66,36.64
+step
+talk Kaita Deepforge##5512
+buy 1 Plans: Vicious Pyrium Belt##66119 |n
+use the Plans: Vicious Pyrium Belt##66119
+Train Vicious Pyrium Belt |learn Vicious Pyrium Belt##76458 |goto 63.63,37.76
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Vicious Pyrium Belt>_
+Reach Level 70 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,70 |goto 63.66,36.64
+step
+talk Kaita Deepforge##5512
+buy 1 Plans: Vicious Pyrium Boots##66120 |n
+use the Plans: Vicious Pyrium Boots##66120
+Train Vicious Pyrium Boots |learn Vicious Pyrium Boots##76459 |goto 63.63,37.76
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 10 Vicious Pyrium Boots>_
+Reach Level 75 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,75 |goto 63.66,36.64
+step
+_Congratulations!_
+You Reached 75 Cataclysm Blacksmithing Skill.
+]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide",{
 author="support@zygorguides.com",
@@ -3607,490 +3708,560 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Jewelcrafting skill from 1-300.",
+condition_end=function() return skill('Jewelcrafting') >= 300 end,
+condition_suggested=function() return skill('Jewelcrafting') > 0 and skill('Jewelcrafting') < 300 end,
 },[[
 step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,75
-step
-talk Brooke Stonebraid##5514
-buy Jeweler's Kit##20815 |goto Stormwind City 59.2,37.5 |condition itemcount(20815) >= 1 or skill("Jewelcrafting")>=50
-step
-#include "Copper_Path"
-#include "follow_path_mine"
-|cast Prospecting##31252
-collect Tigerseye##818 |condition skill("Jewelcrafting")>=50
-|tip You can use the prospect ability on the Copper Ore in your bags to get this item.
-collect Malachite##774 |condition skill("Jewelcrafting")>=50
-collect 270 Copper Ore##2770 |condition skill("Jewelcrafting")>=50
-Gather _{_G.max(0 , (20-itemcount(818,774)))}_ gems |condition skill("Jewelcrafting")>=50
-|tip You can also buy these materials from the Auction House.
-collect Shadowgem##1210 |n |tip Save these for later use.
-condition skill("Jewelcrafting")>=50
-step
-#include "maincity_anvil"
-create Copper Bar##2657,Mining,170 total |n
-collect 170 Copper Bar##2840 |condition skill("Jewelcrafting")>=50
-step
-create 60 Delicate Copper Wire##25255,Jewelcrafting,60 total |n
-Save all Delicate Copper Wires for later
-collect 60 Delicate Copper Wire##20816 |condition skill("Jewelcrafting")>=50
-step
-#include "trainer_Jewelcrafting"
-Learn Prospecting |condition _G.IsSpellKnown(31252) or skill("Jewelcrafting")>=50
-step
-Prospect the remaining Copper Ore to collect Tigerseyes and Malachite |cast Prospecting##31252
-collect Tigerseyes##818 |n
-collect Malachite##774 |n
-Gather around _{_G.max(0 , (20-itemcount(818,774)))}_ gems |condition skill("Jewelcrafting")>=50
-step
-#include "trainer_Jewelcrafting"
-learn Malachite Pendant##32178 |condition skill("Jewelcrafting")>=50
-step
-#include "trainer_Jewelcrafting"
-learn Tigerseye Band##32179  |condition skill("Jewelcrafting")>=50
-step
-create Malachite Pendant##32178,Jewelcrafting,50
-|tip If you didn't get enough Malachite but more Tigerseyes from Prospecting, make Tigerseye Band instead.
-create Tigerseye Band##32179,Jewelcrafting,50
-step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,150
-step
-#include "trainer_Jewelcrafting"
-learn Bronze Setting##25278 |condition skill("Jewelcrafting")>=150
-step
-#include "Tin_Path"
-#include "follow_path_mine"
-Prospect the ores you come across |cast Prospecting##31252
-collect 20 Shadowgem##1210 |condition skill("Jewelcrafting")>=150
-collect 30 Moss Agate##1206 |condition skill("Jewelcrafting")>=150
-collect 40 Silver Ore##2775 |condition skill("Jewelcrafting")>=150
-collect 50 Tin Ore##2771 |condition skill("Jewelcrafting")>=150
-|tip You can also buy these materials from the Auction House.
-collect Citrine##3864 |n
-collect Aquamarine##7909 |n
-|tip Save the Citrine and Aquamarine for later.
-step
-#include "Iron_Ore_Path"
-#include "follow_path_mine"
-collect 80 Heavy Stone##2838 |condition skill("Jewelcrafting")>=150
-|tip Keep the Iron Ore you get for prospecting later.
-|tip You can also buy these materials from the Auction House.
-collect Citrine##3864 |n
-collect Aquamarine##7909 |n
-collect Star Ruby##7910 |n
-Save the Citrine, Aquamarine and Star Rubies for later
-step
-#include "maincity_anvil"
-create Silver Bar##2658,Mining,40 total |condition skill("Jewelcrafting")>=150
-step
-#include "maincity_anvil"
-create Tin Bar##3304,Mining,50 total |condition skill("Jewelcrafting")>=150
-step
-#include "maincity_anvil"
-create Bronze Bar##2659,Mining,50 total |n
-collect 100 Bronze Bar##2841 |condition skill("Jewelcrafting")>=150
-step
-create 50 Bronze Setting##25278,Jewelcrafting,50 total |n
-Save these, you will need them later
-skill Jewelcrafting,80
-step
-#include "trainer_Jewelcrafting"
-learn Ring of Silver Might##25317 |condition skill("Jewelcrafting")>=150
-step
-create Ring of Silver Might##25317,Jewelcrafting,100
-step
-#include "trainer_Jewelcrafting"
-learn Ring of Twilight Shadows##25318 |condition skill("Jewelcrafting")>=150
-step
-create 10 Ring of Twilight Shadows##25318,Jewelcrafting,110
-step
-#include "trainer_Jewelcrafting"
-learn Heavy Stone Statue##32807 |condition skill("Jewelcrafting")>=150
-step
-create 10 Heavy Stone Statue##32807,Jewelcrafting,120
-step
-#include "trainer_Jewelcrafting"
-learn Pendant of the Agate Shield##25610 |condition skill("Jewelcrafting")>=150
+talk Catarina Stanford##30713
+Train Jewelcrafting |skillmax Jewelcrafting,300 |goto Stormwind City/0 63.48,61.84
+|tip You must be at least level 5.
 step
-create Pendant of the Agate Shield##25610,Jewelcrafting,150
+talk Terrance Denman##44583
+buy 1 Jeweler's Kit##20815 |goto 63.20,61.68
 step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,225
+collect 100 Copper Bar##2840
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 step
-#include "trainer_Jewelcrafting"
-learn Mithril Filigree##25615 |condition skill("Jewelcrafting")>=150
+collect 20 Tigerseye##818
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-#include "Mithril_Ore_Path"
-#include "follow_path_mine"
-|cast Prospecting##31252
-collect 300 Mithril Ore##3858 |condition skill("Jewelcrafting")>=225
-collect 15 Truesilver Ore##7911 |condition skill("Jewelcrafting")>=225
-|tip You can also buy these materials from the Auction House.
-collect 25 Citrine##3864 |n
-collect 5 Aquamarine##7909 |n
-|tip These can be prospected from Mithril Ore later.
-collect Star Ruby##7910 |n |tip These can be used later.
+collect 120 Bronze Bar##2841
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 step
-#include "maincity_anvil"
-create Mithril Bar##10097,Mining,130 total |n
-collect 180 Mithril Bar##3860 |condition skill("Jewelcrafting")>=225
-|tip You can also buy these materials from the Auction House.
+collect 20 Shadowgem##1210
+|tip Farm them with the "Shadowgem, Moss Agate, Lesser Moonstone, Jade" guide or purchase them from the Auction House.
 step
-#include "trainer_Mining"
-learn Smelt Truesilver##10098 |condition skill("Jewelcrafting")>=225
+Open Your Jewelcrafting Crafting Panel:
+_<Create 30 Delicate Copper Wire>_
+Reach Level 30 Jewelcrafting |skill Jewelcrafting,30
 step
-#include "maincity_anvil"
-create Truesilver Bar##10098,Mining,15 total |n
-collect 15 Truesilver Bar##6037 |condition skill("Jewelcrafting")>=225
-|tip You can also buy these materials from the Auction House.
+talk Catarina Stanford##30713
+Train Tigerseye Band |learn Tigerseye Band##32179 |goto 63.48,61.84
 step
-create Mithril Filigree##25615,Jewelcrafting,40 total |n
-Save these for later
-skill Jewelcrafting,180 |condition skill("Jewelcrafting")>=225
-step
-#include "trainer_Jewelcrafting"
-learn Engraved Truesilver Ring##25620 |condition skill("Jewelcrafting")>=225
-step
-create Engraved Truesilver Ring##25620,Jewelcrafting,200
-step
-Prospect any Mithril Ore you have left over |cast Prospecting##31252
-collect 25 Citrine##3864 |condition skill("Jewelcrafting")>=225
-collect 5 Aquamarine##7909 |condition skill("Jewelcrafting")>=225
-step
-#include "trainer_Jewelcrafting"
-learn Citrine Ring of Rapid Healing##25621 |condition skill("Jewelcrafting")>=225
-step
-create 20 Citrine Ring of Rapid Heaing##25621,Jewelcrafting,220
-step
-#include "trainer_Jewelcrafting"
-learn Aquamarine Pendant of the Warrior##26876 |condition skill("Jewelcrafting")>=225
-step
-create 5 Aquamarine Pendant of the Warrior##26876,Jewelcrafting,225
-step
-talk Theresa Denman##44582 |goto 63.5,61.8
-skillmax Jewelcrafting,300
-step
-#include "trainer_Jewelcrafting"
-learn Thorium Setting##26880 |condition skill("Jewelcrafting")>=300
-step
-#include "Thorium_Ore_Path"
-#include "follow_path_mine"
-collect Star Ruby##7910 |n
-collect Huge Emerald##12364 |n
-collect Large Opal##12799 |n
-collect Azerothian Diamond##12800 |n
-collect 50 Thorium Ore##10620 |condition skill("Jewelcrafting")>=300
-|tip You can also buy these materials from the Auction House.
-step
-create Thorium Bar##16153,Mining,50 total |n |goto Winterspring 59.4,51.1
-collect 50 Thorium Bar##12359 |condition skill("Jewelcrafting")>=300
-|tip You can also buy these materials from the Auction House.
-step
-create Thorium Setting##26880,Jewelcrafting,50 total |n
-Save these for later use
-collect 50 Thorium Setting##21752 |condition skill("Jewelcrafting")>=300
-|tip You can also buy these materials from the Auction House.
-step
-#include "Thorium_Ore_Path"
-#include "follow_path_mine"
-collect Thorium Ore##10620 |n
-Prospect the Thorium in your bags. |cast Prospecting##31252
-collect 5 Star Ruby##7910 |condition skill("Jewelcrafting")>=300
-collect 20 Huge Emerald##12364 |condition skill("Jewelcrafting")>=300
-collect 20 Large Opal##12799 |condition skill("Jewelcrafting")>=300
-collect 20 Azerothian Diamond##12800 |condition skill("Jewelcrafting")>=300
-|tip You can also buy these materials from the Auction House.
-step
-#include "trainer_Jewelcrafting"
-learn Thorium Setting##26880 |condition skill("Jewelcrafting")>=300
-step
-create Thorium Setting##26880,Jewelcrafting,50 total |n
-Save these for later use
-skill Jewelcrafting,250
-step
-#include "trainer_Jewelcrafting"
-learn Ruby Pendant of Fire##26883 |condition skill("Jewelcrafting")>=300
-step
-create Ruby Pendant of Fire##26883,Jewelcrafting,260
-step
-#include "trainer_Jewelcrafting"
-learn Simple Opal Ring##26902 |condition skill("Jewelcrafting")>=300
-step
-create Simple Opal Ring##26902,Jewelcrafting,280
-step
-#include "trainer_Jewelcrafting"
-learn Glowing Thorium Band##34960 |condition skill("Jewelcrafting")>=300
-step
-create Glowing Thorium Band##34960,Jewelcrafting,290
-step
-#include "trainer_Jewelcrafting"
-learn Emerald Lion Ring##34961 |condition skill("Jewelcrafting")>=300
-step
-create Emerald Lion Ring##34961,Jewelcrafting,300
-step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,375
-step
-map Hellfire Peninsula
-path    69.3,47.5	74.5,38.7	68.2,37.7
-path	62.0,31.0	58.0,32.8	54.0,26.7
-path	46.0,29.3	34.1,29.1	32.0,34.5
-path	38.5,38.2	35.7,40.7	33.4,49.8
-path	30.3,48.6	32.5,43.3	28.5,39.3
-path	26.5,45.5	22.6,45.1	18.0,38.3
-path	12.5,36.1	17.9,46.3	11.8,41.9
-path	12.0,47.0	06.2,49.5	15.4,62.4
-path	20.3,52.9	24.0,61.1	21.2,62.7
-path	28.1,80.8	27.7,69.5	30.5,72.8
-path	30.3,59.9	34.8,66.6	37.7,53.3
-path	46.9,46.3	49.3,49.5	60.3,48.6
-path	60.8,52.8	52.1,52.7	47.2,57.7
-path	45.9,75.5	33.5,89.6	33.1,92.6
-path	49.1,77.5	44.6,86.2	55.5,82.8
-path	58.7,78.8	56.5,72.3	65.8,63.6
-path	67.1,71.7	63.0,73.3	65.8,77.9
-path	68.7,77.6	71.0,71.7	70.1,68.6
-path	65.0,59.8	65.6,56.0	75.0,63.9
-path	78.4,80.2	80.7,77.5	77.3,63.7
-path	72.7,60.2	71.5,53.1	68.3,52.0
-#include "follow_path_mine"
-collect Fel Iron Ore##23424 |n
-|cast Prospecting##31252
-You must use the prospect ability on the Fel Iron Ore in your bags to get these items:
-collect Blood Garnet##23077 |n
-collect Flame Spessparite##21929 |n
-collect Deep Peridot##23079 |n
-Gather _{_G.max(0 , (20-itemcount(23077,23079,21929)))}_ of the gems listed |condition skill("Jewelcrafting")>=350
-collect Shadow Draenite##23107 |n
-Gather _{_G.max(0 , (5-itemcount(23107)))}_ Shadow Draenite |condition skill("Jewelcrafting")>=350
-|tip You can also buy these materials from the Auction House.
-collect Mote of Earth##22573 |n
-use Mote of Earth##22573
-collect 10 Primal Earth##22452 |n
-step
-map Nagrand
-path	72.7,64.7	74.3,60.5	69.1,48.6
-path	72.3,43.1	66.1,32.3	57.7,30.8
-path	59.5,27.3	49.3,24.1	47.1,20.2
-path	39.6,20.4	28.2,12.1	25.7,16.5
-path	26.8,23.6	30.9,21.9	27.9,25.3
-path	27.5,32.1	23.2,27.8	7.1,39.9
-path	25.2,61.1	31.9,81.9	41.8,81.8
-path	43.5,73.7	57.4,78.3	43.0,62.2
-path	32.2,60.3	29.2,54.1	34.0,52.6
-path	29.7,45.7	34.1,44.3	35.5,47.3
-path	38.8,36.9	45.5,43.9	42.4,50.9
-path	48.0,57.5	51.5,55.6	60.5,56.9
-path	56.7,64.0	70.1,83.3	69.8,72.5
-#include "follow_path_mine"
-collect 220 Adamantite Ore##23425 |condition skill("Jewelcrafting")>=350
-|tip Go into any caves you find as there is lots of ore.
-collect Mote of Earth##22573 |n
-use Mote of Earth##22573
-collect 10 Primal Earth##22452 |condition skill("Jewelcrafting")>=350
-|tip You can also buy these materials from the Auction House.
-step
-#include "trainer_Mining"
-learn Smelt Adamantite##29358 |condition skill("Jewelcrafting")>=350
-step
-#include "maincity_anvil"
-create Adamantite Bar##29358,Mining,10 total |n
-collect 10 Adamantite Bar##23446 |condition skill("Jewelcrafting")>=350
-step
-#include "trainer_Jewelcrafting"
-learn Delicate Blood Garnet##34590 |condition skill("Jewelcrafting")>=350
-step
-#include "trainer_Jewelcrafting"
-learn Inscribed Flame Spessarite##28910 |condition skill("Jewelcrafting")>=350
-step
-#include "trainer_Jewelcrafting"
-learn Jagged Deep Peridot##28917 |condition skill("Jewelcrafting")>=350
-step
-Make as many as it takes of these gems to get to 320 Jewelcrafting
-create Delicate Blood Garnet##34590,Jewelcrafting,320
-create Inscribed Flame Spessarite##28910,Jewelcrafting,320
-create Jagged Deep Peridot##28917,Jewelcrafting,320
-step
-#include "trainer_Jewelcrafting"
-learn Glinting Shadow Draenite##28914 |condition skill("Jewelcrafting")>=350
-step
-Make as many as it takes of these gems to get to 320 Jewelcrafting
-create Glinting Shadow Draenite##28914,Jewelcrafting,325
-step
-Prospect all of your Adamantite Ore |cast Prospecting##31252
-collect 40 Adamantite Powder##24243 |condition skill("Jewelcrafting")>=350
-|tip Save EVERY extra gem you receive for later use.
-step
-#include "trainer_Jewelcrafting"
-learn Mercurial Adamantite##38068 |condition skill("Jewelcrafting")>=350
-step
-#include "maincity_anvil"
-create 10 Mercurial Adamantite##38068,Jewelcrafting,10 total |n
-Save these, you will need them later
-collect 10 Mercurial Adamantite##31079 |condition skill("Jewelcrafting")>=350
-step
-#include "trainer_Jewelcrafting"
-learn Sovereign Shadow Draenite##28936 |condition skill("Jewelcrafting")>=350
-step
-#include "trainer_Jewelcrafting"
-learn Rigid Azure Moonstone##28948 |condition skill("Jewelcrafting")>=350
-step
-Make as many as it takes of these two gems to get to 340 Jewelcrafting
-create Sovereign Shadow Draenite##28936,Jewelcrafting,340
-create Rigid Azure Moonstone##28948,Jewelcrafting,340
-step
-#include "trainer_Jewelcrafting"
-learn Heavy Adamantite Ring##31052 |condition skill("Jewelcrafting")>=350
-step
-create 10 Heavy Adamantite Ring##31052,Jewelcrafting,350
-step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,450
-step
-#include "trainer_Jewelcrafting"
-learn Bloodstone Band##56193 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Deft Huge Citrine##53880 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Energized Dark Jade##53925 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Glinting Shadow Crystal##53861 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Solid Chalcedony##53934 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Quick Sun Crystal##53856 |condition skill("Jewelcrafting")>=425
-step
-map Howling Fjord
-path	83.0,44.8	78.1,39.4	72.7,38.3
-path	71.0,31.8	75.3,22.9	70.2,8.3
-path	63.2,13.7	61.4,23.6	57.7,18.3
-path	51.4,14.2	45.5,13.3	38.1,18.9
-path	31.1,10.9	28.9,10.3	21.7,12.8
-path	19.4,23.5	24.2,27.4	27.6,22.6
-path	27.3,30.8	38.1,29.0	47.6,32.7
-path	53.0,31.9	63.5,37.1	65.5,48.7
-path	66.9,62.7	64.4,67.8	64.4,72.4
-path	67.9,76.5	71.3,73.6	72.5,67.9
-path	77.3,67.2	77.2,60.8	74.9,55.3
-path	79.1,50.4
-#include "follow_path_mine"
-collect Cobalt Ore##36909 |n
-Prospect the Cobalt Ore in your bags to get these items: |cast Prospecting##31252
-collect Chalcedony##36923 |n
-collect Sun Crystal##36920 |n
-collect Shadow Crystal##36926 |n
-collect Huge Citrine##36929 |n
-collect Dark Jade##36932 |n
-Gather _{_G.max(0 , (60-itemcount(36923,36920,36926,36929,36932)))}_ gems |condition skill("Jewelcrafting")>=425
-|tip You can also buy these materials from the Auction House.
-collect 5 Bloodstone##36917 |n
-All extra Bloodstones should be kept for later use.
-collect 5 Forest Emerald##36933 |n
-collect 10 Crystallized Earth##37701 |condition skill("Jewelcrafting")>=425
-|tip You can also buy these materials from the Auction House.
-collect Crystallized Earth##37701 |n
-use Crystallized Earth##37701 |n
-collect 46 Eternal Earth##35624 |n
-collect 46 Eternal Earth##35624 |n
-step
-#include "Saronite_Path"
-#include "follow_path_mine"
-collect 10 Titanium Ore##36910 |condition skill("Jewelcrafting")>=425
-collect 10 Crystallized Earth##37701 |condition skill("Jewelcrafting")>=425
-collect Crystallized Earth##37701 |n
-use Crystallized Earth##37701 |n
-collect 46 Eternal Earth##35624 |condition skill("Jewelcrafting")>=425
-|tip You can also buy these materials from the Auction House.
-step
-#include "trainer_Mining"
-learn Smelt Titanium##55211 |condition skill("Jewelcrafting")>=425
-step
-#include "maincity_anvil"
-create Titanium Bar##55211,Mining,5 total |n
-collect 5 Titanium Bar##41163 |condition skill("Jewelcrafting")>=425
-|tip You can also buy these materials from the Auction House.
-step
-Make as many as it takes of these gems to get to 395 Jewelcrafting
-create Deft Huge Citrine##53880,Jewelcrafting,395
-create Energized Dark Jade##53925,Jewelcrafting,395
-create Glinting Shadow Crystal##53861,Jewelcrafting,395
-create Solid Chalcedony##53934,Jewelcrafting,395
-create Quick Sun Crystal##53856,Jewelcrafting,395
-step
-create 5 Bloodstone Band##56193,Jewelcrafting,400
-step
-|cast Prospecting##31252
-Prospect any Saronite Ore you have to get _Forest Emeralds_.
-collect 5 Forest Emerald##36933 |condition skill("Jewelcrafting")>=425
-step
-#include "trainer_Jewelcrafting"
-learn Stoneguard Band##58145 |condition skill("Jewelcrafting")>=425
-step
-create Stoneguard Band##58145,Jewelcrafting,420
-step
-#include "trainer_Jewelcrafting"
-learn Dream Signet##56197 |condition skill("Jewelcrafting")>=425
-step
-create Dream Signet##56197,Jewelcrafting,425
-step
-#include "trainer_Jewelcrafting"
-skillmax Jewelcrafting,525
-step
-#include "trainer_Jewelcrafting"
-learn Brilliant Carnelian##73225 |condition skill("Jewelcrafting")>=500
-step
-#include "trainer_Jewelcrafting"
-learn Quick Alicite##73234 |condition skill("Jewelcrafting")>=500
-step
-#include "trainer_Jewelcrafting"
-learn Puissant Jasper##73279 |condition skill("Jewelcrafting")>=500
-step
-#include "trainer_Jewelcrafting"
-learn Rigid Zephyrite##73230 |condition skill("Jewelcrafting")>=500
-step
-#include "Obsidium_Path"
-#include "follow_path_mine"
-|cast Prospecting##31252
-collect Carnelian##52177 |n
-collect Alicite##52179 |n
-collect Jasper##52182 |n
-collect Zephyrite##52178 |n
-Gather {_G.max(0 , (25-itemcount(52182,52178,52179,52177))*1)} more of the gems above
-collect 30 Nightstone##52180 |condition skill("Jewelcrafting")>=500
-collect 70 Hessonite##52181 |condition skill("Jewelcrafting")>=500
-|tip You can also buy these materials from the Auction House.
-step
-talk Brooke Stonebraid##5514
-buy 50 Jeweler's Setting##52188 |goto Stormwind City 59.2,37.5 |condition itemcount(52188) >= 50 or skill("Jewelcrafting")>=500
-step
-Make as many as it takes of these gems to get to 450 Jewelcrafting
-create Brilliant Carnelian##73225,Jewelcrafting,450
-create Quick Alicite##73234,Jewelcrafting,450
-create Puissant Jasper##73279,Jewelcrafting,450
-create Rigid Zephyrite##73230,Jewelcrafting,450
-step
-#include "trainer_Jewelcrafting"
-learn Hessonite Band##73495 |condition skill("Jewelcrafting")>=500
-step
-create Hessonite Band##73495,Jewelcrafting,485
-step
-#include "trainer_Jewelcrafting"
-learn Nightstone Choker##73497 |condition skill("Jewelcrafting")>=500
-step
-create Nightstone Choker##73497,Jewelcrafting,500
-step
-confirm |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide"
-|tip This will take you to the Jewelcrafting 500 - 600 guides.
+Open Your Jewelcrafting Crafting Panel:
+_<Create 20 Tigerseye Band>_
+Reach Level 50 Jewelcrafting |skill Jewelcrafting,50
+step
+talk Catarina Stanford##30713
+Train Bronze Setting |learn Bronze Setting##25278 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 50 Bronze Setting>_
+|tip Make all of these, you will need them later.
+Reach Level 80 Jewelcrafting |skill Jewelcrafting,80
+step
+talk Catarina Stanford##30713
+Train Simple Pearl Ring |learn Simple Pearl Ring##25284 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 20 Simple Pearl Ring>_
+Reach Level 100 Jewelcrafting |skill Jewelcrafting,100
+step
+talk Catarina Stanford##30713
+Train Ring of Twilight Shadows |learn Ring of Twilight Shadows##25318 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Ring of Twilight Shadows>_
+Reach Level 110 Jewelcrafting |skill Jewelcrafting,110
+step
+collect 80 Heavy Stone##2838
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 90 Mithril Bar##3860
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+collect 30 Moss Agate##1206
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+talk Catarina Stanford##30713
+Train Heavy Stone Statue |learn Heavy Stone Statue##32807 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Heavy Stone Statue>_
+Reach Level 120 Jewelcrafting |skill Jewelcrafting,120
+step
+talk Catarina Stanford##30713
+Train Pendant of the Agate Shield |learn Pendant of the Agate Shield##25610 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 30 Pendant of the Agate Shield>_
+Reach Level 150 Jewelcrafting |skill Jewelcrafting,150
+step
+talk Catarina Stanford##30713
+Train Mithril Filigree |learn Mithril Filigree##25615 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 45 Mithril Filigree>_
+|tip Make all of these, you'll need them later.
+Reach Level 180 Jewelcrafting |skill Jewelcrafting,180
+step
+collect 80 Solid Stone##7912
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 15 Truesilver Bar##6037
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+collect 25 Citrine##3864
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 50 Mithril Bar##3860
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+collect 5 Aquamarine##7909
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 50 Thorium Bar##12359
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+talk Catarina Stanford##30713
+Train Solid Stone Statue |learn Solid Stone Statue##32808 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 8 Solid Stone Statue>_
+Reach Level 185 Jewelcrafting |skill Jewelcrafting,185
+step
+talk Catarina Stanford##30713
+Train Engraved Truesilver Ring |learn Engraved Truesilver Ring##25620 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Engraved Truesilver Ring>_
+Reach Level 200 Jewelcrafting |skill Jewelcrafting,200
+step
+talk Catarina Stanford##30713
+Train Citrine Ring of Rapid Healing |learn Citrine Ring of Rapid Healing##25621 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 25 Citrine Ring of Rapid Healing>_
+Reach Level 220 Jewelcrafting |skill Jewelcrafting,220
+step
+talk Catarina Stanford##30713
+Train Aquamarine Pendant of the Warrior |learn Aquamarine Pendant of the Warrior##26876 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 5 Aquamarine Pendant of the Warrior>_
+Reach Level 225 Jewelcrafting |skill Jewelcrafting,225
+step
+talk Catarina Stanford##30713
+Train Thorium Setting |learn Thorium Setting##26880 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 50 Thorium Setting>_
+|tip Make all of these, you'll need them later.
+Reach Level 250 Jewelcrafting |skill Jewelcrafting,250
+step
+collect 10 Star Ruby##7910
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 20 Large Opal##12799
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 7 Azerothian Diamond##12800
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 3 Blue Sapphire##12361
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 3 Essence of Undeath##12808
+|tip Farm them with the "Essence of Undeath" guide or purchase them from the Auction House.
+step
+collect 20 Huge Emerald##12364
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+talk Catarina Stanford##30713
+Train Ruby Pendant of Fire |learn Ruby Pendant of Fire##26883 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Ruby Pendant of Fire>_
+Reach Level 260 Jewelcrafting |skill Jewelcrafting,260
+step
+talk Catarina Stanford##30713
+Train Simple Opal Ring |learn Simple Opal Ring##26902 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 20 Simple Opal Ring>_
+Reach Level 280 Jewelcrafting |skill Jewelcrafting,280
+step
+talk Catarina Stanford##30713
+Train Diamond Focus Ring |learn Diamond Focus Ring##36526 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 7 Diamond Focus Ring>_
+Reach Level 287 Jewelcrafting |skill Jewelcrafting,287
+step
+talk Catarina Stanford##30713
+Train Sapphire Pendant of Winter Night |learn Sapphire Pendant of Winter Night##26908 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 3 Sapphire Pendant of Winter Night>_
+Reach Level 290 Jewelcrafting |skill Jewelcrafting,290
+step
+talk Catarina Stanford##30713
+Train Emerald Lion Ring |learn Emerald Lion Ring##34961 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Emerald Lion Ring>_
+Reach Level 300 Jewelcrafting |skill Jewelcrafting,300
+step
+_Congratulations!_
+You Reached Level 300 Jewelcrafting Skill.
 ]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Outland Jewelcrafting 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Outland Jewelcrafting skill from 1-75.",
+condition_end=function() return skill('Outland Jewelcrafting') >= 75 end,
+condition_suggested=function() return skill('Outland Jewelcrafting') > 0 and skill('Outland Jewelcrafting') < 75 end,
+},[[
+step
+Enter the building |goto Shattrath City/0 45.21,84.06 < 5 |walk
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Outland Jewelcrafting |skillmax Outland Jewelcrafting,75 |goto 43.63,90.65
+|tip You must be at least level 58.
+only if rep ('The Scryers') >= Neutral
+step
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Inscribed Flame Spessarite |learn Inscribed Flame Spessarite##28910 |goto 43.63,90.65
+only if rep ('The Scryers') >= Neutral
+step
+Enter the building |goto 35.81,46.09 < 5 |walk
+talk Nemiha##33680
+|tip Inside the building.
+Train Outland Jewelcrafting |skillmax Outland Jewelcrafting,75 |goto 36.00,48.02
+|tip You must be at least level 58.
+only if rep ('The Aldor') >= Neutral
+step
+talk Nemiha##33680
+|tip Inside the building.
+Train Inscribed Flame Spessarite |learn Inscribed Flame Spessarite##28910 |goto 36.00,48.02
+only if rep ('The Aldor') >= Neutral
+step
+collect 30 Flame Spessarite##21929
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 7 Blood Garnet##23077
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 30 Inscribed Flame Spessarite>_
+Reach Level 20 Outland Jewelcrafting |skill Outland Jewelcrafting,20
+step
+Enter the building |goto 45.21,84.06 < 5 |walk
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Bold Blood Garnet |learn Bold Blood Garnet##28905 |goto 43.63,90.65
+only if rep ('The Scryers') >= Neutral
+step
+Enter the building |goto 35.81,46.09 < 5 |walk
+talk Nemiha##33680
+|tip Inside the building.
+Train Bold Blood Garnet |learn Bold Blood Garnet##28905 |goto 36.00,48.02
+only if rep ('The Aldor') >= Neutral
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 7 Bold Blood Garnet>_
+Reach Level 25 Outland Jewelcrafting |skill Outland Jewelcrafting,25
+step
+collect 40 Adamantite Powder##24243
+|tip Farm and Prospect them from Adamantite Ore or purchase them from the Auction House.
+step
+collect 10 Primal Earth##22452
+|tip Farm them with the "Primal Earth" guide or purchase them from the Auction House.
+step
+Enter the building |goto 45.21,84.06 < 5 |walk
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Mercurial Adamantite |learn Mercurial Adamantite##38068 |goto 43.63,90.65
+only if rep ('The Scryers') >= Neutral
+step
+Enter the building |goto 35.81,46.09 < 5 |walk
+talk Nemiha##33680
+|tip Inside the building.
+Train Mercurial Adamantite |learn Mercurial Adamantite##38068 |goto 36.00,48.02
+only if rep ('The Aldor') >= Neutral
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Mercurial Adamantite>_
+|tip Make all of these, you'll need them later.
+Reach Level 30 Outland Jewelcrafting |skill Outland Jewelcrafting,30 |goto 69.35,42.90
+step
+Enter the building |goto 45.21,84.06 < 5 |walk
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Sovereign Shadow Draenite |learn Sovereign Shadow Draenite##28936 |goto 43.63,90.65
+only if rep ('The Scryers') >= Neutral
+step
+Enter the building |goto 35.81,46.09 < 5 |walk
+talk Nemiha##33680
+|tip Inside the building.
+Train Sovereign Shadow Draenite |learn Sovereign Shadow Draenite##28936 |goto 36.00,48.02
+only if rep ('The Aldor') >= Neutral
+step
+collect 20 Shadow Draenite##23107
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 20 Sovereign Shadow Draenite>_
+Reach Level 40 Outland Jewelcrafting |skill Outland Jewelcrafting,40
+step
+Enter the building |goto 45.21,84.06 < 5 |walk
+clicknpc Jewelcrafting##33614
+|tip Inside the building.
+Train Heavy Adamantite Ring |learn Heavy Adamantite Ring##31052 |goto 43.63,90.65
+only if rep ('The Scryers') >= Neutral
+step
+Enter the building |goto 35.81,46.09 < 5 |walk
+talk Nemiha##33680
+|tip Inside the building.
+Train Heavy Adamantite Ring |learn Heavy Adamantite Ring##31052 |goto 36.00,48.02
+only if rep ('The Aldor') >= Neutral
+step
+collect 10 Adamantite Bar##23446
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Heavy Adamantite Ring>_
+Reach Level 50 Outland Jewelcrafting |skill Outland Jewelcrafting,50
+step
+talk Aldraan##21485
+buy 1 Design: Mystic Dawnstone##24208 |n
+|tip These are in limited supply from this vendor, so it may not be available.
+|tip It will respawn in 20-30 minutes.
+use the Design: Mystic Dawnstone##24208
+Train Mystic Dawnstone |learn Mystic Dawnstone##31101 |goto Nagrand/0 42.87,42.45
+step
+collect 15 Dawnstone##23440
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Mystic Dawnstone>_
+Reach Level 60 Outland Jewelcrafting |skill Outland Jewelcrafting,60
+step
+Reach Honored with The Sha'tar |condition rep ("The Sha'tar") >= Honored
+|tip Use "The Sha'tar" reputation guide to accomplish this.
+step
+talk Almaador##21432
+buy 1 Design: Kailee's Rose##33155 |n
+use the Design: Kailee's Rose##33155
+Train Kailee's Rose |learn Kailee's Rose##42588 |goto Shattrath City/0 50.98,41.71
+step
+collect 10 Living Ruby##23436
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Kailee's Rose>_
+Reach Level 70 Outland Jewelcrafting |skill Outland Jewelcrafting,70
+step
+talk Almaador##21432
+buy 1 Design: Insightful Earthstorm Diamond##25904 |n
+use the Design: Insightful Earthstorm Diamond##25904
+Train Insightful Earthstorm Diamond |learn Insightful Earthstorm Diamond##32870 |goto 50.98,41.71
+step
+collect 5 Earthstorm Diamond##25867
+|tip Have an Alchemist make these for you or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 5 Insightful Earthstorm Diamond>_
+Reach Level 75 Outland Jewelcrafting |skill Outland Jewelcrafting,75
+step
+_Congratulations!_
+You Reached 75 Outland Jewelcrafting Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Northrend Jewelcrafting 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Northrend Jewelcrafting skill from 1-75.",
+condition_end=function() return skill('Northrend Jewelcrafting') >= 75 end,
+condition_suggested=function() return skill('Northrend Jewelcrafting') > 0 and skill('Northrend Jewelcrafting') < 75 end,
+},[[
+step
+Enter the building |goto Dalaran/1 39.48,34.99 < 5 |walk
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Northrend Jewelcrafting |skillmax Northrend Jewelcrafting,75 |goto 40.68,35.35
+|tip You must be at least level 58.
+step
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Quick Sun Crystal |learn Quick Sun Crystal##53856 |goto 40.68,35.35
+step
+talk Tiffany Cartier##28721
+|tip Inside the building.
+buy 1 Jeweler's Kit##20815 |goto 40.71,34.53
+step
+collect 35 Sun Crystal##36920
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 35 Quick Sun Crystal>_
+Reach Level 20 Northrend Jewelcrafting |skill Northrend Jewelcrafting,20
+step
+Enter the building |goto 39.48,34.99 < 5 |walk
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Bloodstone Band |learn Bloodstone Band##56193 |goto 40.68,35.35
+step
+collect 8 Bloodstone##36917
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 16 Crystallized Earth##37701
+|tip Farm them with the "Eternal Earth, Crystallized Earth" guide or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 5 Bloodstone Band>_
+Reach Level 25 Northrend Jewelcrafting |skill Northrend Jewelcrafting,25
+step
+Enter the building |goto 39.48,34.99 < 5 |walk
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Stoneguard Band |learn Stoneguard Band##58145 |goto 40.68,35.35
+step
+collect 46 Eternal Earth##35624
+|tip Farm them with the "Eternal Earth, Crystallized Earth" guide or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 23 Stoneguard Band>_
+Reach Level 45 Northrend Jewelcrafting |skill Northrend Jewelcrafting,45
+step
+Enter the building |goto 39.48,34.99 < 5 |walk
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Powerful Earthsiege Diamond |learn Powerful Earthsiege Diamond##55399 |goto 40.68,35.35
+step
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Swift Skyflare Diamond |learn Swift Skyflare Diamond##55394 |goto 40.68,35.35
+step
+collect 15 Earthsiege Diamond##41334
+|tip Have an Alchemist make these for you or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Powerful Earthsiege Diamond>_
+Reach Level 58 Northrend Jewelcrafting |skill Northrend Jewelcrafting,58
+step
+collect 15 Skyflare Diamond##41266
+|tip Have an Alchemist make these for you or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Swift Skyflare Diamond>_
+Reach Level 70 Northrend Jewelcrafting |skill Northrend Jewelcrafting,70
+step
+Enter the building |goto 39.48,34.99 < 5 |walk
+talk Timothy Jones##28701
+|tip Inside the building.
+Train Icy Prism |learn Icy Prism##62242 |goto 40.68,35.35
+step
+collect 15 Frozen Orb##43102
+|tip Farm them with the "Frozen Orb, Chaos Orb" guide or purchase them from the Auction House.
+step
+collect 15 Chalcedony##36923
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 15 Shadow Crystal##36926
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+collect 15 Dark Jade##36932
+|tip Farm them with Mining or purchase them from the Auction House.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Icy Prism>_
+Reach Level 75 Northrend Jewelcrafting |skill Northrend Jewelcrafting,75
+step
+_Congratulations!_
+You Reached 75 Northrend Jewelcrafting Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Cataclysm Jewelcrafting 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Cataclysm Jewelcrafting skill from 1-75.",
+condition_end=function() return skill('Cataclysm Jewelcrafting') >= 75 end,
+condition_suggested=function() return skill('Cataclysm Jewelcrafting') > 0 and skill('Cataclysm Jewelcrafting') < 75 end,
+},[[
+step
+talk Catarina Stanford##30713
+Train Cataclysm Jewelcrafting |skillmax Cataclysm Jewelcrafting,75 |goto Stormwind City/0 63.48,61.84
+|tip You must be at least level 78.
+step
+talk Catarina Stanford##30713
+Train Jasper Ring |learn Jasper Ring##73494 |goto 63.48,61.84
+step
+talk Terrance Denman##44583
+buy 72 Jeweler's Setting##52188 |goto 63.20,61.68
+|only if skill("Cataclysm Jewelcrafting") < 50
+step
+collect 30 Jasper##52182
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 50
+step
+collect 34 Hessonite##52181
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 50
+step
+collect 30 Nightstone##52180
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 50
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 30 Jasper Ring>_
+Reach Level 18 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,18
+step
+talk Catarina Stanford##30713
+Train Hessonite Band |learn Hessonite Band##73495 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 17 Hessonite Band>_
+Reach Level 35 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,35
+step
+talk Catarina Stanford##30713
+Train Nightstone Choker |learn Nightstone Choker##73497 |goto 63.48,61.84
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 15 Nightstone Choker>_
+Reach Level 50 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,50
+step
+collect 4 Illustrious Jewelcrafter's Token |condition curcount(361) >= 4
+|tip You get these from doing Jewelcrafting dailies.
+|tip Use the "Jewelcrafting Daily Guide" to accomplish this.
+|only if skill("Cataclysm Jewelcrafting") < 70
+step
+talk Isabel Jones##50480
+buy 1 Design: Forlorn Shadowspirit Diamond##52445 |n
+use the Design: Forlorn Shadowspirit Diamond##52445
+Train Forlorn Shadowspirit Diamond |learn Forlorn Shadowspirit Diamond##73476 |goto 63.77,61.51
+step
+collect 23 Shadowspirit Diamond##52303
+|tip Have an Alchemist make these for you or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 70
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 23 Forlorn Shadowspirit Diamond>_
+Reach Level 70 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,70
+step
+talk Catarina Stanford##30713
+Train Vicious Sapphire Necklace |learn Vicious Sapphire Necklace##99542 |goto 63.48,61.84
+step
+collect 25 Ocean Sapphire##52191
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 75
+step
+collect 40 Volatile Air##52328
+|tip Farm them with the "Volatile Air" guide or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 75
+step
+collect 20 Volatile Fire##52325
+|tip Farm them with the "Volatile Fire" guide or purchase them from the Auction House.
+|only if skill("Cataclysm Jewelcrafting") < 75
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 5 Vicious Sapphire Necklace>_
+Reach Level 75 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,75
+step
+_Congratulations!_
+You Reached 75 Cataclysm Jewelcrafting Skill.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Leatherworking skill from 1-300.",

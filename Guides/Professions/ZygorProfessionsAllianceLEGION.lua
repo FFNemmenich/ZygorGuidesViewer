@@ -1508,139 +1508,84 @@ label "Archaeology_Quests_Finished"
 _Congratulations!_
 You completed the Archaeology questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Leveling Guides\\Legion Blacksmithing 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Blacksmithing profession from 700-800.",
+description="This guide will walk you through leveling your Legion Blacksmithing skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Blacksmithing') >= 100 end,
 condition_suggested=function() return skill('Legion Blacksmithing') > 0 and skill('Legion Blacksmithing') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Blacksmithing Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Blacksmithing Quest Line" Guide
+Click here to load the "Legion Blacksmithing Quest Line" guide |confirm |next "Zygor's Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line"
+only if not completedq(38533)
 step
-collect 39 Leystone Ore##123918 |c |skill Blacksmithing,739
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
+collect 8 Demonsteel Bar##124461
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 step
-collect 78 Felslate##123919 |c |skill Blacksmithing,739
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 39 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-Reach Level 739 Blacksmithing |skill Blacksmithing,739 |goto Highmountain/0 54.56,84.08
-step
-collect 20 Felslate##123919 |c |learn Demonsteel Waistguard##182945
-|tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 20 Unbroken Tooth##124439 |c |learn Demonsteel Waistguard##182945
+collect 40 Unbroken Tooth##124439
 |tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
 |tip You can also purchase them from the Auction House.
 step
-Follow the path up |goto Suramar/0 32.96,48.33 < 20 |only if walking
-Follow the path |goto Suramar/0 30.94,53.17 < 30 |only if walking
-talk Urael##92265
-buy Recipe: Demonsteel Waistguard##123921 |n
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123921
-Learn the Rank 1 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182945
+collect 140 Felslate##123919
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-collect 20 Unbroken Tooth##124439 |c |skill Blacksmithing,743
-|tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
+collect 60 Leystone Ore##123918
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-collect 3 Blood of Sargeras##124124 |c |skill Blacksmithing,743
+collect 31 Blood of Sargeras##124124
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
 |tip You can also get them by gathering with gathering professions at rank 2 or higher.
 |tip Use the Farming guides to accomplish this.
 step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
+talk Urael##92265
+|tip He walks around this small camp.
+buy 1 Recipe: Demonsteel Waistguard |n
+use the Recipe: Demonsteel Waistguard
+Train Demonsteel Waistguard (Rank 1) |learn Demonsteel Waistguard##182945 |goto Suramar/0 30.11,53.26
+step
 click Firmament Stone
 _<Create 1 Demonsteel Waistguard>_
-Reach Level 743 Blacksmithing |skill Blacksmithing,743 |goto Highmountain/0 54.56,84.08
+collect 1 Demonsteel Waistguard##123916 |goto Highmountain/0 54.63,84.07
+only if skill('Legion Blacksmithing') <= 75
 step
 talk Muirn Ironhorn##92243
-accept Demonsteel Waistguard##38536 |instant |goto 54.55,84.14
+accept Demonsteel Waistguard##38536 |goto 54.55,84.15
 step
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123941
-Learn the Rank 2 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182975
+Open Your Blacksmithing Crafting Panel:
+_<Create 60 Demonsteel Bar>_
+|tip Make all of these, you will need them later.
+Reach Level 60 Legion Blacksmithing |skill Legion Blacksmithing,60 |goto 54.63,84.07
 step
 talk Raethan##97359
-|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking, or being attacked by, other players.
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking or being attacked by other players.
 |tip The bodyguard lasts for 5 minutes.
 Kill enemies around this area
-|tip Named enemies will appear throughtout the Underbelly.
+|tip Named enemies will appear throughout the Underbelly.
 |tip You can see them on your minimap as gold star icons.
-|tip You can also kill other players, if you enjoy PvP.
+|tip You can also kill other players if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
 collect 500 Sightless Eyes |condition curcount(1149) >= 500 |goto Dalaran L/11 68.95,58.41
 step
-Follow the path down |goto 64.41,58.55 < 15 |walk
-Run up the stairs |goto 59.34,76.48 < 15 |walk
+Run up the stairs |goto 60.64,78.01 < 5 |only if walking
 talk Strap Bucklebolt##107760
-buy Recipe: Demonsteel Waistguard##123949 |n
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123949
-Learn the Rank 3 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182983 |goto 66.42,81.48
-step
-collect 9 Leystone Ore##123918 |c |skill Blacksmithing,783
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 18 Felslate##123919 |c |skill Blacksmithing,783
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 20 Blood of Sargeras##124124 |c |skill Blacksmithing,783
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides to accomplish this.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 9 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-collect 40 Demonsteel Bar##124461 |c |skill Blacksmithing,783 |goto Highmountain/0 54.56,84.08
+buy 1 Recipe: Demonsteel Waistguard##123949 |n
+|tip It costs 500 Sightless Eyes and 1,500 gold.
+use the Recipe: Demonsteel Waistguard##123949
+Train Demonsteel Waistguard (Rank 3) |learn Demonsteel Waistguard##182983 |goto 66.37,81.42
 step
 click Firmament Stone
-_<Create 10 Demonsteel Waistguard>_
-Reach Level 783 Blacksmithing |skill Blacksmithing,783 |goto 54.56,84.08
-step
-collect 180 Leystone Ore##123918 |c |skill Blacksmithing,800
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 360 Felslate##123919 |c |skill Blacksmithing,800
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 90 Blood of Sargeras##124124 |c |skill Blacksmithing,800
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides to accomplish this.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 180 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-collect 180 Demonsteel Bar##124461 |c |skill Blacksmithing,800
-step
-click Firmament Stone
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 45 Demonsteel Waistguard>_
-Reach Level 800 Blacksmithing |skill Blacksmithing,800 |goto 54.56,84.08
+_<Create 14 Demonsteel Waistguard>_
+Reach Level 100 Legion Blacksmithing |skill Legion Blacksmithing,100 |goto Highmountain/0 54.63,84.07
 step
 _Congratulations!_
-You reached level 800 with the Blacksmithing profession.
+You Reached 100 Legion Blacksmithing Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Blacksmithing quest line.",
@@ -1649,10 +1594,12 @@ condition_end=function() return completedq(38533) end,
 condition_suggested=function() return skill('Legion Blacksmithing') > 0 and level >= 100 and not completedq(38533) end,
 },[[
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-Learn the Blacksmithing Profession |condition skill("Blacksmithing")>=1 |goto Dalaran L/10 44.15,28.71
+Learn the Blacksmithing Profession |condition skill("Blacksmithing")>=1 |goto 44.15,28.71
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Strange New Ores##38499 |goto 44.15,28.71
@@ -1661,12 +1608,14 @@ collect 10 Leystone Ore##123918 |q 38499/1
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to accomplish this, if you have Mining.
 |tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Strange New Ores##38499 |goto 44.15,28.71
 accept The Properties of Leystone##39681 |goto 44.15,28.71
 step
 Watch the dialogue
+|tip Inside the building.
 Observe Alard's Work |q 39681/1 |goto 44.15,28.71
 step
 talk Alard Schmied##97261
@@ -1676,15 +1625,15 @@ accept The Methods of the Nightfallen##38502 |goto 44.15,28.71
 accept Hatecoil Hammerwork##38501 |goto 44.15,28.71
 step
 Follow the path |goto Azsuna/0 46.43,44.40 < 30 |only if walking
-Follow the road |goto Azsuna/0 49.02,42.78 < 30 |only if walking
-Cross the bridge |goto Azsuna/0 50.43,43.65 < 20 |only if walking
-Enter the building |goto Azsuna/0 51.93,43.92 < 15 |walk
+Follow the road |goto 49.02,42.78 < 30 |only if walking
+Cross the bridge |goto 50.43,43.65 < 20 |only if walking
+Enter the building |goto 51.93,43.92 < 15 |walk
 kill Ancient Sentry Construct##104640
 |tip Downstairs inside the building.
-collect Ancient Sentry Construct Memory Core##123976 |q 38502/1 |goto Azsuna/0 52.02,43.84
+collect Ancient Sentry Construct Memory Core##123976 |q 38502/1 |goto 52.02,43.84
 stickystart "Masterwork_Hatecoil_Pauldrons_Blacksmithing"
 step
-Leave the building |goto Azsuna/0 52.23,43.08 < 15 |walk
+Leave the building |goto 52.23,43.08 < 15 |walk
 Kill enemies around this area
 |tip The Hatecoil Harpooners won't drop the quest items.
 collect Masterwork Hatecoil Breastplate##123971 |q 38501/1 |goto 54.36,42.63
@@ -1694,31 +1643,37 @@ Kill enemies around this area
 |tip The Hatecoil Harpooners won't drop the quest items.
 collect Masterwork Hatecoil Pauldrons##123972 |q 38501/2 |goto 54.36,42.63
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin The Methods of the Nightfallen##38502 |goto Dalaran L/10 44.15,28.71
-turnin Hatecoil Hammerwork##38501 |goto Dalaran L/10 44.15,28.71
+turnin The Methods of the Nightfallen##38502 |goto 44.15,28.71
+turnin Hatecoil Hammerwork##38501 |goto 44.15,28.71
 step
 Reach Level 102 |ding 102
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Engineers: Not COMPLETELY Useless##38505 |goto 44.15,28.71
 step
+Enter the building |goto 38.53,27.15 < 5 |walk
 talk Timofey Oshenko##92194
 |tip Inside the building.
 turnin Engineers: Not COMPLETELY Useless##38505 |goto 37.90,26.12
 accept Chicken Scratch##38506 |goto 37.90,26.12
 step
 Watch the dialogue
+|tip Inside the building.
 collect Ancient Highborne Data Printout##123978 |q 38506/1 |goto 37.90,26.12
 step
+Enter the building |goto 41.90,37.70 < 5 |walk
 talk Professor Pallin##92195
 |tip Inside the building.
 turnin Chicken Scratch##38506 |goto 41.29,37.05
 accept Secrets of Leysmithing##38507 |goto 41.29,37.05
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Secrets of Leysmithing##38507 |goto 44.15,28.71
@@ -1728,32 +1683,38 @@ collect 10 Foxflower##124103 |q 38515
 |tip Use the Foxflower farming guide to accomplish this, if you have Herbalism.
 |tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Nature Provides##38515 |goto 44.15,28.71
 accept Leysmithing Mastery##38500 |goto 44.15,28.71
 step
 click Alard's Forge
-_<Create 4 Leystone Bar>_
+|tip Inside the building.
+Select _<Create 4 Leystone Bar>_
 |tip Save the bars you create.
 collect 4 Leystone Bar##124007 |goto 44.01,28.16 |q 38500
 step
 click Alard's Forge
-_<Create 4 Heated Leystone Bar>_
+|tip Inside the building.
+Select _<Create 4 Heated Leystone Bar>_
 |tip Save the bars you create.
 collect 4 Heated Leystone Bar##128777 |goto 44.01,28.16 |q 38500
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Cuffplate>_
 |tip Save the Leystone Cuffplate you create.
 collect Leystone Cuffplate##124009 |goto 45.00,29.16 |q 38500
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Fingerguard>_
 |tip Save the Leystone Fingerguard you create.
 collect Leystone Fingerguard##124010 |goto 45.00,29.16 |q 38500
 step
 click Alard's Workbench
+|tip Inside the building.
 _<Create 1 Handcrafted Leystone Gauntlets>_
 collect Handcrafted Leystone Gauntlets##124049 |q 38500/1 |goto 45.72,28.67
 step
@@ -1762,15 +1723,19 @@ talk Alard Schmied##92183
 turnin Leysmithing Mastery##38500 |goto 44.15,28.71
 accept Flower-Pickers and Potion-Quaffers##38563 |goto 44.15,28.71
 step
+Enter the building |goto 43.39,35.16 < 5 |walk
 talk Kuhuine Tenderstride##92464
 |tip Inside the building.
+Tell her _"Alard at the blacksmith shop will need a regular supply of foxflower. Do you have any?"_
 Speak with Kuhuine Tenderstride |q 38563/2 |goto 43.00,33.37
 step
+Enter the building |goto 41.23,31.54 < 5 |walk
 talk Linzy Blackbolt##92456
 |tip Inside the building.
 Tell her _"Alard at the blacksmith shop will need a regular supply of foxflower flux. Can you make any?"_
 Speak with Linzy Blackbolt |q 38563/1 |goto 42.01,31.80
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Flower-Pickers and Potion-Quaffers##38563 |goto 44.15,28.71
@@ -1778,17 +1743,18 @@ step
 Reach Level 104 |ding 104
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept The Highmountain Smiths##38513 |goto 44.15,28.71
 step
 talk Imindril Spearsong##92184
-buy Blacksmith Hammer##5956 |n
-collect Blacksmith Hammer##5956 |goto 46.56,26.83 |q 38519 |future
+|tip Inside the building.
+buy 1 Blacksmith Hammer##5956 |goto 46.56,26.83 |q 38519 |future
 step
 talk Imindril Spearsong##92184
-buy 3 Foxflower Flux##124436 |n
-collect 3 Foxflower Flux##124436 |goto 46.56,26.83 |q 38519 |future
+|tip Inside the building.
+buy 3 Foxflower Flux##124436 |goto 46.56,26.83 |q 38519 |future
 step
 collect 24 Leystone Ore##123918 |q 38519 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather these, if you have Mining.
@@ -1796,30 +1762,30 @@ collect 24 Leystone Ore##123918 |q 38519 |future
 step
 Follow the path |goto Thunder Totem/0 50.81,45.57 < 30 |only if walking
 Follow the path |goto Highmountain/0 50.83,64.38 < 30 |only if walking
-Follow the path up |goto Highmountain/0 47.99,68.22 < 30 |only if walking
-Follow the path up |goto Highmountain/0 48.10,69.01 < 20 |only if walking
-Follow the path up |goto Highmountain/0 49.09,69.27 < 20 |only if walking
-Follow the path up the mountain |goto Highmountain/0 48.27,70.64 < 20 |only if walking
-Follow the path up |goto Highmountain/0 48.51,74.89 < 20 |only if walking
-Follow the narrow path up |goto Highmountain/0 49.80,73.44 < 20 |only if walking
-Continue following the path up |goto Highmountain/0 51.41,73.37 < 20 |only if walking
-Follow the path up |goto Highmountain/0 50.76,76.11 < 20 |only if walking
-Crossing the hanging bridge |goto Highmountain/0 49.89,79.69 < 20 |only if walking
-Follow the path |goto Highmountain/0 51.89,83.50 < 20 |only if walking
-Follow the path down |goto Highmountain/0 53.52,81.90 < 30 |only if walking
-Follow the path |goto Highmountain/0 56.20,80.17 < 30 |only if walking
-Follow the path down |goto Highmountain/0 56.21,81.79 < 20 |only if walking
-Follow the path up |goto Highmountain/0 55.93,85.31 < 20 |only if walking
+Follow the path up |goto 47.99,68.22 < 30 |only if walking
+Follow the path up |goto 48.10,69.01 < 20 |only if walking
+Follow the path up |goto 49.09,69.27 < 20 |only if walking
+Follow the path up the mountain |goto 48.27,70.64 < 20 |only if walking
+Follow the path up |goto 48.51,74.89 < 20 |only if walking
+Follow the narrow path up |goto 49.80,73.44 < 20 |only if walking
+Continue following the path up |goto 51.41,73.37 < 20 |only if walking
+Follow the path up |goto 50.76,76.11 < 20 |only if walking
+Crossing the hanging bridge |goto 49.89,79.69 < 20 |only if walking
+Follow the path |goto 51.89,83.50 < 20 |only if walking
+Follow the path down |goto 53.52,81.90 < 30 |only if walking
+Follow the path |goto 56.20,80.17 < 30 |only if walking
+Follow the path down |goto 56.21,81.79 < 20 |only if walking
+Follow the path up |goto 55.93,85.31 < 20 |only if walking
 talk Poca Firemantle##98966
-fpath Ironhorn Enclave |goto Highmountain/0 56.82,83.85
+fpath Ironhorn Enclave |goto 56.82,83.85
 step
 talk Barm Stonebreaker##92242
-turnin The Highmountain Smiths##38513 |goto Highmountain/0 55.18,84.19
-accept You Are Not Worthy##38514 |goto Highmountain/0 55.18,84.19
+turnin The Highmountain Smiths##38513 |goto 55.18,84.19
+accept You Are Not Worthy##38514 |goto 55.18,84.19
 step
 click Greenhoof's Anvil
 _<Create 1 Leystone Gauntlets>_
-Craft Leystone Gauntlets |q 38514/1 |goto 54.90,84.42
+Craft Leystone Gauntlets |q 38514/1 |goto 54.88,84.41
 step
 talk Barm Stonebreaker##92242
 turnin You Are Not Worthy##38514 |goto 55.18,84.19
@@ -1827,12 +1793,12 @@ accept Ironhorn Leysmithing##39699 |goto 55.18,84.19
 stickystart "Medium_Metal_Scraps_Blacksmithing"
 stickystart "Large_Metal_Scraps_Blacksmithing"
 step
-click Small Metal Scraps##241633
+click Small Metal Scraps##241633+
 |tip They look like pieces of metal on the ground around this area.
 collect 5 Small Metal Scrap##124402 |goto 55.11,84.53 |q 39699
 step
 label "Medium_Metal_Scraps_Blacksmithing"
-click Medium Metal Scraps##241634
+click Medium Metal Scraps##241634+
 |tip They look like pieces of metal on the ground around this area.
 collect 2 Medium Metal Scrap##124403 |goto 55.11,84.53 |q 39699
 step
@@ -1873,7 +1839,7 @@ talk Barm Stonebreaker##92242
 turnin Ironhorn Leysmithing##39699 |goto 55.18,84.19
 step
 talk Thala Steeltotem##92245
-|tip She walks around.
+|tip She walks around this area.
 accept Grayheft##38519 |goto 54.95,84.49
 step
 Cross the bridge |goto 58.52,64.43 < 20 |only if walking
@@ -1887,64 +1853,61 @@ Enter the cave |goto 53.48,76.08 < 20 |walk
 Cross the bridge |goto 52.46,74.08 < 20 |walk
 Jump down here |goto 51.67,73.14 < 10 |walk
 kill Kubrul##93021
+|tip Inside the cave.
 Retrieve Grayheft, Ancent Hammer of the Highmountain Tauren |q 38519/1 |goto 53.14,73.12
 step
-Follow the path up |goto 51.00,73.94 < 20 |walk
-Continue up the path |goto 51.15,73.09 < 30 |walk
-Cross the bridge |goto 51.95,73.04 < 20 |walk
-Leave the cave |goto 53.48,76.08 < 20 |walk
-Follow the path down |goto 54.06,75.86 < 20 |only if walking
-Follow the path down |goto 54.81,72.34 < 20 |only if walking
-Follow the path |goto 55.59,70.50 < 30 |only if walking
-Follow the path |goto 54.58,66.42 < 30 |only if walking
-Follow the path down |goto 56.21,63.62 < 30 |only if walking
-Cross the bridge |goto 57.94,63.64 < 20 |only if walking
-talk Lassa Skymane##100559 |goto 59.23,65.05 |n
-Fly to Ironhorn Enclave, Highmountain |goto 56.87,83.96 < 50 |noway |c |q 38519
-step
 talk Thala Steeltotem##92245
-|tip She walks around.
+|tip She walks around this area.
 turnin Grayheft##38519 |goto 54.95,84.49
 step
 talk Barm Stonebreaker##92242
 accept From One Master to Another##38518 |goto 55.18,84.20
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin From One Master to Another##38518 |goto Dalaran L/10 44.15,28.73
+turnin From One Master to Another##38518 |goto 44.15,28.73
 step
 Reach Level 106 |ding 106
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Not Just Weapons and Armor##38522 |goto 44.15,28.73
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 4 Leystone Slag>_
 collect 4 Leystone Slag##124418 |goto 44.04,28.14 |q 38522
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 4 Hard Leystone Bar>_
 collect 4 Hard Leystone Bar##124419 |q 38522/1 |goto 44.73,29.87
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Shards>_
 collect 24 Leystone Shard##124420 |goto 45.00,29.18 |q 38522
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 1 Lumps of Leystone Slag>_
 collect 24 Lump of Leystone Slag##124421 |goto 44.04,28.14 |q 38522
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 1 Hard Leystone Ingots>_
 collect 24 Hard Leystone Ingot##124422 |goto 44.73,29.87 |q 38522
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 24 Heated Hard Leystone Ingots>_
 collect 24 Heated Hard Leystone Ingot##124423 |goto 44.04,28.14 |q 38522
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Hard Leystone Nail>_
 collect 24 Hard Leystone Nail##124424 |q 38522/2 |goto 45.00,29.18
 step
@@ -1960,6 +1923,7 @@ Tell her _"Can you fit these hoofplates on my mount?"_
 Watch the dialogue
 Bring the Mount to Mei Francis |q 38523/1 |goto 57.65,42.08
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Leystone Hoofplates##38523 |goto 44.15,28.73
@@ -1967,19 +1931,20 @@ step
 Reach Level 108 |ding 108
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Legend of Black Rook Hold##39702 |goto 44.15,28.73
 step
 Follow the path |goto Val'sharah/0 40.50,59.10 < 30 |only if walking
-Follow the path up |goto Val'sharah/0 38.48,57.29 < 20 |only if walking
-Continue up the path |goto Val'sharah/0 37.71,55.82 < 30 |only if walking
-Run up the stairs |goto Val'sharah/0 39.14,53.61 < 20 |only if walking
-Run up the stairs |goto Val'sharah/0 39.77,53.04 < 20 |only if walking
-Run down the stairs |goto Val'sharah/0 41.44,52.99 < 20 |only if walking
+Follow the path up |goto 38.48,57.29 < 20 |only if walking
+Continue up the path |goto 37.71,55.82 < 30 |only if walking
+Run up the stairs |goto 39.14,53.61 < 20 |only if walking
+Run up the stairs |goto 39.77,53.04 < 20 |only if walking
+Run down the stairs |goto 41.44,52.99 < 20 |only if walking
 click Ancient Anvil##243969
 kill Saris Swifthammer##96726
-Find Saris Swifthammer |q 39702/1 |goto Val'sharah/0 42.08,52.02
+Find Saris Swifthammer |q 39702/1 |goto 42.08,52.02
 step
 Run up the stairs |goto 41.81,52.98 < 20 |only if walking
 talk Saris Swifthammer##96763
@@ -1993,6 +1958,7 @@ Follow the path down |goto 37.56,54.79 < 20 |only if walking
 Enter the cave |goto 36.13,53.01 < 20 |walk
 Follow the path down |goto 36.86,52.13 < 20 |walk
 click Saris' Hammer##244000
+|tip Inside the cave.
 collect Saris' Hammer##128745 |q 39680/1 |goto 38.14,54.55
 step
 Follow the path up |goto 37.55,52.89 < 20 |walk
@@ -2014,43 +1980,49 @@ step
 click Saris' Research##244001
 collect Saris' Research##128746 |q 39729/1 |goto 39.86,54.81
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin The Knowledge of Black Rook##39729 |goto Dalaran L/10 44.13,28.74
-accept A Sweet Bargain##38564 |goto Dalaran L/10 44.13,28.74
+turnin The Knowledge of Black Rook##39729 |goto 44.13,28.74
+accept A Sweet Bargain##38564 |goto 44.13,28.74
 step
 talk Glaciela Rimebang##92438
 Speak with Glaciela Rimebang |q 38564/1 |goto 50.30,29.60
 step
 talk Aimee##92936
-buy 20 Nightberry Truffle##124398 |n
-collect 20 Nightberry Truffle##124398 |q 38564/2 |goto 50.85,29.09
+buy 20 Nightberry Truffle##124398 |q 38564/2 |goto 50.85,29.09
 step
 clicknpc Glaciela Rimebang##92438
 Speak with Glaciela Rimebang Again |q 38564/3 |goto 50.30,29.62
 step
+Enter the building |goto 46.48,28.35 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin A Sweet Bargain##38564 |goto 44.15,28.73
 accept Advanced Quenching##44449 |goto 44.15,28.73
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 2 Leystone Slag>_
 collect 2 Leystone Slag##124393 |goto 44.04,28.14 |q 44449
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 2 Hard Leystone Bar>_
 collect 2 Hard Leystone Bar##124394 |goto 44.73,29.87 |q 44449
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 2 Heated Hard Leystone Bar>_
 collect 2 Heated Hard Leystone Bar##124395 |goto 44.04,28.14 |q 44449
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Dull Hard Leystone Armguards>_
 collect Dull Hard Leystone Armguards##124396 |goto 45.00,29.18 |q 44449
 step
 click Alard's Whetstone
+|tip Inside the building.
 _<Create 1 Hard Leystone Armguards>_
 collect Hard Leystone Armguards##124397 |q 44449/1 |goto 43.95,28.91
 step
@@ -2064,13 +2036,13 @@ step
 Unlock World Quests |condition completedq(43341)
 |tip Use the "World Quests" dailies guide to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Felsmith Nal'ryssa##38524 |goto 44.15,28.73
 step
 talk Imindril Spearsong##92184
-buy 1 Foxflower Flux##124436 |n
-collect 1 Foxflower Flux##124436 |goto 46.56,26.83 |q 38527 |future
+buy 1 Foxflower Flux##124436 |goto 46.56,26.83 |q 38527 |future
 stickystart "Felslate_Blacksmithing_Nalryssas_Technique"
 step
 collect 60 Leystone Ore##123918 |q 38527 |future
@@ -2199,7 +2171,7 @@ _<Create 1 Brimstone-Crusted Armguards>_
 collect Brimstone-Crusted Leystone Armguards##124454 |goto 29.88,53.38 |q 38528
 step
 click Felsmith Anvil
-_<Create 1 Chiseled Masterwork Armguards>_
+_<Create 1 Masterwork Leystone Armguards>_
 collect Masterwork Leystone Armguards##124455 |q 38528/1 |goto 29.83,53.34
 step
 talk Felsmith Nal'ryssa##92264
@@ -2207,24 +2179,22 @@ talk Felsmith Nal'ryssa##92264
 turnin Leystone's Potential##38528 |goto 29.99,53.33
 accept The Firmament Stone##38530 |goto 29.99,53.33
 step
-collect 162 Leystone Ore##123918 |q 38532
+collect 162 Leystone Ore##123918 |q 38532 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
 |tip You can also purchase them from the Auction House.
 step
 talk Barm Stonebreaker##92242
 turnin The Firmament Stone##38530 |goto Highmountain/0 55.18,84.19
-accept Leystone Mastery##38531 |goto Highmountain/0 55.18,84.19
-accept Hammered By The Storm##38532 |goto Highmountain/0 55.18,84.19
+accept Leystone Mastery##38531 |goto 55.18,84.19
+accept Hammered By The Storm##38532 |goto 55.18,84.19
 step
 talk Thala Steeltotem##92245
 |tip She walks around.
-buy Leystone Armor Stand##124024 |n
-collect Leystone Armor Stand##124024 |goto 54.96,84.48 |q 38531
+buy Leystone Armor Stand##124024 |goto 54.96,84.48 |q 38531
 step
 talk Thala Steeltotem##92245
 |tip She walks around.
-buy 8 Foxflower Flux##124436 |n
-collect 8 Foxflower Flux##124436 |goto 54.96,84.48 |q 38531
+buy 8 Foxflower Flux##124436 |goto 54.96,84.48 |q 38531
 step
 click Greenhoof's Anvil
 _<Create 1 Leystone Gauntlets>_
@@ -2258,24 +2228,26 @@ click Greenhoof's Anvil
 _<Create 1 Leystone Waistguard>_
 collect Leystone Waistguard##123897 |goto 54.89,84.40 |q 38531
 step
-Use the Leystone Armor Stand |use Leystone Armor Stand##124024
+use the Leystone Armor Stand##124024
 Assemble the Leystone Armor Set |q 38531/1
 step
 talk Barm Stonebreaker##92242
 turnin Leystone Mastery##38531 |goto 55.18,84.20
 step
-_Enter the Maw of Souls Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Maw of Souls Dungeon, or enter it normally
+Enter the Maw of Souls |goto Helmouth Cliffs/1 47.49,77.69 < 1000  |q 38532
+only if skill('Legion Blacksmithing') <= 75
+step
 kill Helya##96759
+|tip She is the last boss of the dungeon.
 |tip Use the Maw of Souls dungeon guide to accomplish this.
 collect Ancient Vrykul Hammer##124025 |q 38532/1
 step
 talk Barm Stonebreaker##92242
-turnin Hammered By The Storm##38532 |goto 55.18,84.19
+turnin Hammered By The Storm##38532 |goto Highmountain/0 55.18,84.19
 accept Worthy of the Stone##38559 |goto 55.18,84.20
 step
 talk Muirn Ironhorn##92243
-|tip Up on the platform.
 turnin Worthy of the Stone##38559 |goto 54.55,84.15
 accept The Art of Demonsteel##38833 |goto 54.55,84.15
 step
@@ -2289,18 +2261,14 @@ click Firmament Stone
 Strike HARDER!! |q 38833/3 |goto 54.58,84.10
 step
 talk Muirn Ironhorn##92243
-|tip Up on the platform.
 turnin The Art of Demonsteel##38833 |goto 54.55,84.15
 accept Tribal Knowledge##38533 |goto 54.55,84.15
 step
 Follow the path up |goto Suramar/0 32.96,48.34 < 20 |only if walking
-Follow the path |goto Suramar/0 30.88,53.21 < 30 |only if walking
+Follow the path |goto 30.88,53.21 < 30 |only if walking
 talk Felsmith Nal'ryssa##92264
 |tip She walks around this small camp.
-turnin Tribal Knowledge##38533 |goto Suramar/0 29.93,53.29
-step
-_Congratulations!_
-You completed the Blacksmithing questline.
+turnin Tribal Knowledge##38533 |goto 29.93,53.29
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Quest Guides\\Argus Blacksmithing Quest Line",{
 author="support@zygorguides.com",

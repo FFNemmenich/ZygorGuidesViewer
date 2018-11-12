@@ -145,6 +145,7 @@ do
 			use_ghearth = true,
 			use_astral_recall = true,
 			frown_on_portals = false,
+			blow_item_cd_ratio = 0,
 
 			remove_hairpins = true,
 			remove_standing = true
@@ -1526,13 +1527,10 @@ do
 						item.destination = SmartAddNode(item.destination)
 						if not item.destination then item.ERROR="bad destination" break end -- Invalid location.
 					end
-					-- special handling for astral recall.
-					if item.spell==556 then
-						item.destination="_HEARTH"
-					end
 					if type(dest)=="table" then -- all is correct
 						item.destination.onlyhardwire = true
 					end
+					if item.spell==1459 then item.subtype="deathgate" end  -- unused?
 
 					item.link=item.link or {}
 					local link=item.link
@@ -1551,7 +1549,7 @@ do
 
 			for i,namefunc in ipairs(Lib.startup_modules_funcs) do
 				local name,func = unpack(namefunc)
-				func()
+				func(Lib)
 				yield(name,1)
 			end
 			
@@ -1816,11 +1814,10 @@ do
 		--]]
 
 		-- Adds instant travel modes to starting node
-		function Lib:SetupInitialQuickTravel(current)
-			local hearthlocation;
-			local bind=GetBindLocation()
+		function Lib:SetupInitialQuickTravel(startnode)
 			local userlevel = UnitLevel("player")
 
+			local bind=GetBindLocation()
 			if bind=="The Vindicaar" then
 				bind = bind..", "..Lib:GetVindicaarPosition()
 			end
@@ -1857,47 +1854,14 @@ do
 				return nil
 			end
 
-			if Lib.cfg.use_mage_teleport then
-				--local is_mage = select(2,UnitClass("player"))=="MAGE"
-				-- teleports allowed at all
-				for i,node in ipairs(Lib.nodes.mageteleport) do
-					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 and (not node.cond_fun or node:cond_fun()) then
-						local meta = {mode="teleport",cost=MAGE_TELEPORT_COST}
-						local valid_spell=true
-						if (node.spell==50977 and tonumber(node.zone)==current.m and (current.f==1 or current.f==2)) or -- Deathgate only outside of acherus/1,2 brokenshores/1,2
-						   (node.spell==126892 and tonumber(node.zone)==current.m) then -- zen pilgrimage only outside new classhall
-							valid_spell = false
-						end
-						--ax,ay,am,af = LibRover:GetPlayerPosition()
-						if valid_spell then current:AddNeigh(node,meta) end
-						if node.spell==50977 then node.subtype="deathgate" end
-						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
-					elseif Lib.cfg.use_last_resort then
-						if node.faction and (node.faction=="B" or node.faction~=enemyfac) then
-							current:AddNeigh(node,{mode="courtesy",cost=20000}) --Crazy cost to not use it unless this is only way to get to this continent.
-							node.subtype="courtesymage"
-						end
-					end
-				end
-			end
-
-			hearthlocation = FindBindLocation(bind)
-
+			local base=2
+			local logbase=log(base)
+			Lib.debug_portkeys={}
+			local bindlocation = FindBindLocation(bind)
 			for i,port in ipairs(Lib.data.portkeys) do repeat
 				-- first let's get rid of bad conditions
-				if port.cond and not port.cond() then port.costdesc="cond unmet" break end
-				if port.use_hearth_cd and not Lib.cfg.use_hearth then  break  end  -- obviously
-				if port.mode=="ghearth" and not Lib.cfg.use_ghearth then break  end  -- obviously
-				if port.mode=="dhearth" and not Lib.cfg.use_dhearth then break  end  -- obviously
-				if not port.use_hearth_cd and port.item and port.item~=110560 and not Lib.cfg.use_item_teleports then  break  end  -- don't use items other then hearthstone(s)
-				if port.is_astral and not Lib.cfg.use_astral_recall then  break  end  -- captain?
-				if port.maxlevel and userlevel>port.maxlevel then  break  end -- we can't use this item
-				if port.item and port.toy then
-					if not PlayerHasToy(port.item) then break end -- toy not collected
-				end
-				if port.item and (not port.toy) and (GetItemCount(port.item)==0 or not IsUsableItem(port.item)) then break  end
-				if port.spell and not IsSpellKnown(port.spell) then  break  end
 
+				-- move item kill conditions back here
 				local cdFunc = port.spell and GetSpellCooldown or GetItemCooldown
 				local coolstart,cooldur,coolavail = cdFunc(port.spell or port.item or 0)
 				local coolrem = max(0,coolstart+cooldur-GetTime())
@@ -1924,29 +1888,118 @@ do
 				local dest,link=port.destination,port.link
 
 				-- make sure it's pointing to a node.
-				if dest=="_HEARTH" then  dest = hearthlocation
+				if dest=="_HEARTH" then  dest = bindlocation
 				elseif dest=="_G_HEARTH" then  dest = FindGarrisonBindLocation()
 				elseif dest=="_TAXIWHISTLE" then  dest = self.TaxiWhistlePredictor:PredictWhistle()
 				end
 				
-				if not dest then  break  end ---------------- continue
+				if not dest then  break  end ---------------- continue   -- destination NOT found!
 
-				local raritycost = (port.cooldown or 0)/72 --30m cd = 25 extra cost.
 
+				--local rarity_min = 0
+				--local rarity_max = base*(log(max(port.cooldown or 0,2))/logbase - 1)
+				local raritycost = 0--Lerp(rarity_min,rarity_max,1-Lib.cfg.blow_item_cd_ratio) --30m cd = 25 extra cost.
+
+				local old_raritycost = (port.cooldown or 0)/72 --30m cd = 25 extra cost.
+
+
+				-- denial conditions
+				local rejected=true
+				repeat
+					if port.cond and not port.cond() then port.costdesc="cond unmet" break end
+					if port.mode=="hearth" and not Lib.cfg.use_hearth then  break  end  -- obviously
+					if port.mode=="ghearth" and not Lib.cfg.use_ghearth then break  end  -- obviously
+					if port.mode=="dhearth" and not Lib.cfg.use_dhearth then break  end  -- obviously
+					if not Lib.cfg.use_item_teleports and --[[ it's not a HS ]] not port.use_hearth_cd and port.item and port.item~=110560 and port.item~=140192 then  break  end  -- don't use items other then hearthstone(s)
+					if port.is_astral and not Lib.cfg.use_astral_recall then  break  end  -- captain?
+					if port.maxlevel and userlevel>port.maxlevel then  break  end -- we can't use this item
+					if port.item then
+						if port.toy and not PlayerHasToy(port.item) then break end -- toy not collected
+						if Lib.debug_fake_item~=port.item and (GetItemCount(port.item)==0 or not IsUsableItem(port.item)) then break  end
+					end
+					if port.spell and not IsSpellKnown(port.spell) then  break  end
+					rejected=false
+				until true
+
+				
+				local casttime=20
 				if port.item then
 					link.mode = port.mode or "useitem"
 					link.toy = port.toy
-					link.cost = (port.cost or 0) + coolrem + raritycost
-					if port.item==140192 and (current.m==1101 or current.m==1101) then link.cost=9999 end  -- don't use Dalaran HS in Class Halls
+					link.cost = casttime + coolrem + (port.cost or 99)
+					if port.item==140192 and (startnode.m==1101 or startnode.m==1101) then link.cost=9999 end  -- don't use Dalaran HS in Class Halls
 				elseif port.spell then
 					link.mode = "spell"
-					link.cost = (port.cost or 0) + coolrem + raritycost
+					link.cost = casttime + coolrem + (port.cost or 0)
 				end
-				link.time = 20
+				link.time = casttime
+
+				if port.title then
+					link.title = port.title
+					dest.title = port.title
+				end
+
+				tinsert(Lib.debug_portkeys,("%s #%d - cost:|cffffff44%.1f|rs, cd:|cff88ff00%.1f|rs, item cd:|cff00ff88%.1f|rs, old rarity:|cffff88ff%.1f|rs; final cost:|cff88aaff%.1f|rs, %s")
+					:format(port.item and GetItemInfo(port.item) or GetSpellInfo(port.spell),port.item or port.spell,
+						port.cost or 0,coolrem,port.cooldown or 0,old_raritycost,link.cost,rejected and "|cffff0000-rejected-|r" or "|cff00ff00USABLE|r")
+					)
+				if rejected then break end
 
 				link.spell=port.spell
-				current:AddNeigh(dest,link)
+				startnode:AddNeigh(dest,link)
 			until true end
+
+			if Lib.MoleMachineHandler.ready then
+				local mole = Lib.MoleMachineHandler:GetMoleLocation()
+				if mole then
+					--[[
+					local mole_node = Lib.nodes['mole'] and Lib.nodes['mole'][1]
+					if mole_node then
+						mole_node.m=mole.m
+						mole_node.x=mole.x
+						mole_node.y=mole.y
+					else
+						LibRover_Node:New{m=mole.m,x=mole.x,y=mole.y,type="mole",noskip=true}
+						AddNode(mole_node,"dontlink")
+						Lib.nodes['mole'] = Lib.nodes['mole'] or {}
+						tinsert(Lib.nodes['mole'],mole_node)
+					end
+					]]
+					local mole_node = LibRover_Node:New{m=mole.m,x=mole.x,y=mole.y,type="temp",noskip=true}
+					AddNode(mole_node,"dontlink")
+					startnode:AddNeigh(mole_node,{mode="walk"})
+
+					local destinations = Lib.MoleMachineHandler:GetDestinations()
+					local meta = {mode="mole",cost=10}
+					for i,dest in ipairs(destinations) do
+						mole_node:AddNeigh(dest,meta)
+					end
+				end
+			end
+
+			if Lib.cfg.use_mage_teleport then
+				--local is_mage = select(2,UnitClass("player"))=="MAGE"
+				-- teleports allowed at all
+				for i,node in ipairs(Lib.nodes.mageteleport) do
+					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 and (not node.cond_fun or node:cond_fun()) then
+						local meta = {mode="teleport",cost=MAGE_TELEPORT_COST}
+						local valid_spell=true
+						if (node.spell==50977 and tonumber(node.zone)==startnode.m and (startnode.f==1 or startnode.f==2)) or -- Deathgate only outside of acherus/1,2 brokenshores/1,2
+						   (node.spell==126892 and tonumber(node.zone)==startnode.m) then -- zen pilgrimage only outside new classhall
+							valid_spell = false
+						end
+						--ax,ay,am,af = LibRover:GetPlayerPosition()
+						if valid_spell then startnode:AddNeigh(node,meta) end
+						if node.spell==50977 then node.subtype="deathgate" end
+						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
+					elseif Lib.cfg.use_last_resort then
+						if node.faction and (node.faction=="B" or node.faction~=enemyfac) then
+							startnode:AddNeigh(node,{mode="courtesy",cost=20000}) --Crazy cost to not use it unless this is only way to get to this continent.
+							node.subtype="courtesymage"
+						end
+					end
+				end
+			end
 
 		end
 
@@ -3333,7 +3386,7 @@ do
 
 					text=text or "walk"
 
-					if (a_b=="taxi_taxi" or a_b=="ship_ship" or a_b=="zeppelin_zeppelin" or a_b=="portal_portal" or text=="arrive" or a_b=="taxi_argusportal" or a_b=="taxi_ferry")
+					if (a_b=="taxi_taxi" or a_b=="ship_ship" or a_b=="zeppelin_zeppelin" or a_b=="portal_portal" or a_b=="mole_misc" or text=="arrive" or a_b=="taxi_argusportal" or a_b=="taxi_ferry")
 					 and node~=self.force_next then  -- prepare to skip the point... oh shit oh shit
 						node.is_arrival=true
 					end
@@ -3356,6 +3409,7 @@ do
 						:gsub("{next_name}",nextnode and (nextnode.taxiDestination and TryBZL(nextnode.taxiDestination.localname or nextnode.taxiDestination.name) or TryBZL(nextnode.extitle) or TryBZL(nextnode.localname) or TryBZL(nextnode.name)) or "?")
 						:gsub("{map}",TryBZL(MapName(node)))
 						:gsub("{next_map}",nextnode and nextnode.title and TryBZL(nextnode.title) or TryBZL(nextmap) or "?")
+						:gsub("{next_title}",nextnode and nextnode.title and TryBZL(nextnode.title) or "?")
 						:gsub("{next_port}",nextnode and nextnode.port and TryBZL(nextnode.port)..", "..TryBZL(nextmap) or TryBZL(nextmap) or "?port?")
 						:gsub("{bordermap}",nextnode and nextnode.border==node and TryBZL(MapName(nextnode)) or TryBZL(MapName(node)))
 						:gsub("{item}", ZGV:GetItemInfo(node.item or (node.link and node.link.item) or 0) or "item")
@@ -3689,7 +3743,7 @@ do
 					local slot_time=debugprofilestop()
 
 					local debug_time_onerun_1=debugprofilestop()
-					if co_status(self.thread)=="dead" then return end
+					if co_status(self.thread)=="dead" then self.calculating=false return end
 					resumed,code,ret = resume(self.thread,self,time_slot_remaining) -- returns num as count of nodes covered. nil if ending.
 					if self.initializing_path then
 						Lib.debug_time.initpath = Lib.debug_time.initpath+debugprofilestop()-debug_time_onerun_1
@@ -3713,7 +3767,9 @@ do
 							time_slot_remaining=0
 						end
 					else
-						error("{{"..(code or "").."}}")
+						ZGV:Error("Travel System crashed!\n"..(code or ""))
+						self.calculating=false
+						return
 					end
 
 					slot_time=debugprofilestop()-slot_time
@@ -3800,7 +3856,7 @@ do
 					Lib:Debug("Path ERROR in %s frames, %d calcs, %.1f ms.", Lib.debug_frames_total,Lib.calculation_step,Lib.debug_time.all)
 					self:ReportFail("Error finding path.")
 				else
-					error("WTF_CALC? Code %s, endnode %s",code,self.success_endnode and "YES" or "NO")
+					error("WTF_CALC? Code "..code.." endnode "..(self.success_endnode and "YES" or "NO"))
 				end
 
 				--ZGV:Debug("&LibRover Ela %.2f, sec_per %.2f, Time slot: %.2f, taken: %.2f, covered %d steps", elapsed*1000,sec_per_frame*1000, time_slot,time_slot-time_slot_remaining,self.calculation_step)
@@ -4802,17 +4858,15 @@ do
 			
 		end
 	
-
-
 		do -- TaxiWhistle predictor
 			
 			local TaxiWhistlePredictor = {}
 			Lib.TaxiWhistlePredictor = TaxiWhistlePredictor
-
+			Lib.TWP = TaxiWhistlePredictor
 			local TWP=TaxiWhistlePredictor
 			
 			function TWP:SetupListener()
-				local TWLF = CreateFrame("FRAME","LibRoverTaxiWhistleListenerFrame")
+				local TWLF = CreateFrame("FRAME")
 				TWLF:SetScript("OnEvent", self.FrameOnEvent)
 
 				-- listed in usual startup order
@@ -4984,12 +5038,69 @@ do
 			end
 
 			tinsert(Lib.startup_modules_funcs,{"Setting up Taxi Whistle predictor",function(self)
-				--if ZGV.DEV then
-					TWP:SetupListener()
-				--end
+				self.TaxiWhistlePredictor:SetupListener()
 				if ZGV.DEV then
 					--if TWP.ready then TWP.verbose=true end
 				end
+			end})
+
+		end
+
+
+		do -- Mole Machine handler
+			local MoleMachineHandler = {}
+			Lib.MoleMachineHandler = MoleMachineHandler
+			Lib.MMH = MoleMachineHandler
+			local MMH = MoleMachineHandler
+
+			MMH.mole_wait_time = 3*60
+
+			function MMH:SetupListener()
+				if select(2,UnitRace("player"))~="DarkIronDwarf" and not ZGV.db.profile.debug_fake_darkiron then return end
+				self.ListenerFrame = CreateFrame("FRAME")
+				self.ListenerFrame:SetScript("OnEvent", self.FrameOnEvent)
+				self.ListenerFrame:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
+				self.ready=true
+			end
+
+			function MMH.FrameOnEvent(frame,event,arg1,arg2,arg3)
+				if event=="UNIT_SPELLCAST_SUCCEEDED" then
+					if (arg3==265225 --[[D.I.Mole Machine]] or arg3==168657 --[[bubble wand toy]]) then
+						ZGV:Debug("Mole Machine appeared!")
+						local x,y,m = LibRover:GetPlayerPosition()
+						MMH.last_mole = {time=time(), m=m, x=x, y=y}
+						Lib:UpdateNow()
+					elseif (arg3>=280906 and arg3<=280924) or arg3==280928 then
+						MMH.last_mole = nil
+					--[[
+					elseif ZGV.DEV and MMH.last_mole and MMH.last_mole.time and time()-MMH.last_mole.time<30 then
+						local spellname = GetSpellInfo(arg3)
+						if spellname and spellname:find("Mole") then
+							ZGV:Error("Mole machine arrival spell: "..arg3)
+						end
+					--]]
+					end
+				end
+			end
+
+			function MMH:GetMoleLocation()
+				if MMH.last_mole and MMH.last_mole.time and time()-MMH.last_mole.time<self.mole_wait_time then
+					return MMH.last_mole
+				end
+			end
+
+			function MMH:GetDestinations()
+				if not self.destinations then
+					self.destinations = {}
+					for i,item in ipairs(Lib.data.portkeys) do  if item.spell==265225 then
+						tinsert(self.destinations,item.destination)
+					end end
+				end
+				return self.destinations
+			end
+
+			tinsert(Lib.startup_modules_funcs,{"Setting up Mole Machine handler",function(self)
+				self.MoleMachineHandler:SetupListener()
 			end})
 
 		end

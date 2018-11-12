@@ -1127,90 +1127,51 @@ _Congratulations!_
 You Reached Level 100 Draenor Inscription Skill.
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Draenor Jewelcrafting 1-100",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Jewelcrafting skill from 1-100.",
 condition_end=function() return skill('Draenor Jewelcrafting') >= 100 end,
-condition_suggested=function() return skill('Draenor Jewelcrafting') > 0 and skill('Draenor Jewelcrafting') < 100 and level >= 90 end,
+condition_suggested=function() return skill('Draenor Jewelcrafting') > 0 and skill('Draenor Jewelcrafting') < 100 end,
 },[[
 step
-Before you continue, open your Jewelcrafting window to detect your profession |cast Jewelcrafting##25229
-skillmax Jewelcrafting,600
+talk Kaevan Highwit##87548
+buy Draenor Jewelcrafting##115359 |n
+use the Draenor Jewelcrafting##115359
+Train Draenor Jewelcrafting |skillmax Draenor Jewelcrafting,100 |goto Warspear/0 60.41,40.64
 step
-#include "Garrison_ArchitectTable"
-Select the _Small_ tab at the top
-Drag _Gem Boutique_ to a _Small Plot_
-Build your Gem Boutique |havebuilding Jewelcrafting
+collect 1005 Blackrock Ore##109118
+|tip These are gathered with the Mining profession.
+|tip They come from Blackrock Deposits.
+|tip Refer to the Blackrock Ore farming guide to accomplish this.
+|tip You can also purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 100
 step
-#include "Garrison_Small_Building",action="talk Dorogarr##79832",building="Jewelcrafting"
-buy Draenor Jewelcrafting##115359 |condition skillmax("Jewelcrafting") >= 700 or itemcount(115359) >= 1
+collect 200 Gorgrond Flytrap##109126
+|tip These are gathered with the Herbalism profession.
+|tip Refer to the Gorgrond Flytrap farming guide to accomplish this.
+|tip You can also purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 100
 step
-use Draenor Jewelcrafting##115359
-skillmax Jewelcrafting,700
+Open Your Jewelcrafting Crafting Panel:
+_<Research 1 Secrets of Draenor Jewelcrafting>_
+|tip You will only be able to make one of these per day.
+collect 1 Secret of Draenor Jewelcrafting##118723
+|only if skill("Draenor Jewelcrafting") < 100
 step
-map Frostfire Ridge
-path follow loose; loop on; ants curved
-path	43.0,58.3	40.8,60.5	38.4,59.3
-path	36.0,57.0	34.3,54.6	31.6,54.8
-path	28.5,49.5	27.9,44.6	24.5,39.7
-path	23.9,34.1	27.9,30.9	31.9,27.0
-path	32.6,25.7	33.5,20.5	36.3,21.0
-path	37.8,26.5	41.0,28.9	42.1,30.6
-path	43.0,31.0	44.7,31.2	49.7,35.4
-path	52.4,38.3	54.3,39.5	48.5,50.1
-path	47.6,54.9	46.2,58.3	43.3,57.9
-Make sure you are tracking minerals, and gather all _Black Rock Ore_ you see as you follow this path
-collect 1020 Blackrock Ore##109118 |condition skill("Jewelcrafting")>=700
-|tip You can also buy these materials from the Auction House.
+talk Kaevan Highwit##87548
+buy Recipe: Versatility Taladite##116100 |n
+use the Recipe: Versatility Taladite##116100
+learn Versatility Taladite##170723 |goto 60.41,40.64
 step
-map Frostfire Ridge
-path follow loose;loop;ants straight;dist 60
-path	31.1,53.3	26.1,53.7	24.2,49.0
-path	23.2,45.2	20.7,39.5	22.2,33.9
-path	21.8,29.7	20.9,25.4	23.1,23.6
-path	25.1,24.6	27.2,22.3	29.7,21.4
-path	31.2,22.0	32.8,21.7	35.1,19.5
-path	36.9,24.3	38.1,26.8	40.8,28.9
-path	41.6,30.6	42.8,29.9	42.9,31.1
-path	44.4,31.1	46.2,31.7	48.9,34.4
-path	51.6,36.9	53.7,35.1	54.5,30.3
-path	56.5,26.1	59.1,28.4	60.0,31.9
-path	61.2,34.9	63.1,40.9	63.4,45.0
-path	60.9,46.9	62.2,52.4	60.3,55.3
-path	57.9,57.5	53.8,55.8	50.6,54.7
-path	47.7,55.6	45.9,58.9	43.1,60.8
-path	40.3,62.1	37.7,58.7	36.5,56.5
-path	35.5,53.3	33.6,49.2	31.1,51.2
-Follow the path and gather Fireweed
-|tip Make sure you have find herbs turned on.
-collect 200 Fireweed##109125 |condition skill("Jewelcrafting")>=700
-You will need to buy these unless you have a character with Herbalism
+Open Your Jewelcrafting Crafting Panel:
+_<Create 99 Versatility Taladites>_
+Reach Level 100 Draenor Jewelcrafting |skill Draenor Jewelcrafting,100
 step
-#include "Garrison_Small_Building",action="talk Dorogarr##79832",building="Jewelcrafting"
-accept Your First Jewelcrafting Work Order##37573
-step
-#include "Garrison_Small_Building",action="talk Elrondir Surrion##79830",building="Jewelcrafting"
-Tell him _"I would like to place a work order."_ |q Your First Jewelcrafting Work Order##37573/1
-step
-#include "Garrison_Small_Building",action="Click Jewelcrafting Work Order",building="Jewelcrafting"
-Jewelcrafting Work Order Collected |q Your First Jewelcrafting Work Order##37573/2
-step
-#include "Garrison_Small_Building",action="talk Elrondir Surrion##79830",building="Jewelcrafting"
-turnin Your First Jewelcrafting Work Order##37573
-step
-create 1 Secrets of Draenor Jewelcrafting##176087,Jewelcrafting,1 total |n
-collect Secrets of Draenor Jewelcrafting##118723 |condition skillmax("Jewelcrafting") >= 700
-step
-#include "Garrison_Small_Building",action="talk Dorogarr##79832",building="Jewelcrafting"
-buy 1 Recipe: Critical Strike Taladite##116096 |condition _G.IsSpellKnown(170719) or itemcount(116096) >= 1 or skillmax("Jewelcrafting") >= 700
-step
-use Recipe: Taladite Recrystalizer##116078
-learn Critical Strike Taladite##170719 |condition skill("Jewelcrafting")>=700
-step
-create Critical Strike Taladite##170719,Jewelcrafting,700
-step
-Congratulations, you have reached level 700 in Jewelcrafting!
+_Congratulations!_
+You Reached Level 100 Draenor Jewelcrafting Skill.
 ]])
+ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Draenor Leatherworking 1-100",{
 author="support@zygorguides.com",

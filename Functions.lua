@@ -1152,7 +1152,7 @@ function IL.ProcessItemLink(itemlink,keepDecor,...) --  (warning, potential smal
 
 	-- Prepare data
 	local tab={strsplit(":",itemstring)}
-	for i=2,15 do tab[i]=tab[i] or "" end  -- empty fill
+	for i=2,13 do tab[i]=tab[i] or "" end  -- empty fill
 
 	-- Replace fields based on input params
 	for i=1,select("#",...),2 do tab[select(i,...)]=select(i+1,...) end
@@ -1221,6 +1221,40 @@ function IL.GetItemBonuses(itemlink)
 	for i=1,#tab do tab[i]=nil end
 
 	return tab
+end
+
+-- adds specified bonuses to given itemlink
+-- params:
+--	itemlink - string
+--	bonuses - string - : separated list of bonus ids
+-- returns:
+--	itemlink - string
+function IL.AddBonus(itemlink,bonuses)
+	if not itemlink then return itemlink,"BAD" end
+	if not bonuses then return itemlink,"no bonus" end
+
+	-- clean up decorations
+	local itemlink = IL.ProcessItemLink(itemlink,false)
+	local tab={strsplit(":",itemlink)}
+
+	local _, count = string.gsub(bonuses, ":", "")
+	tab[14] = (tab[14] or 0)+(count+1)
+	table.insert(tab,bonuses)
+	return table.concat(tab,":")
+end
+
+function IL.RemoveBonus(itemlink,bonusid)
+	if not itemlink then return itemlink,"BAD" end
+	if not bonusid then return itemlink,"no bonus" end
+
+	-- clean up decorations
+	local itemlink = IL.ProcessItemLink(itemlink,false)
+	itemlink = itemlink:gsub(":"..bonusid,"")
+	local tab={strsplit(":",itemlink)}
+
+	tab[14] = tab[14]-1
+	table.insert(tab,bonuses)
+	return table.concat(tab,":")
 end
 
 -- TESTING:

@@ -104,75 +104,47 @@ step
 Click the _Quest Complete_ Box:
 turnin Pristine Mortar and Pestle##36766
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Draenor Blacksmithing 1-100",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Blacksmithing skill from 1-100.",
 condition_end=function() return skill('Draenor Blacksmithing') >= 100 end,
 condition_suggested=function() return skill('Draenor Blacksmithing') > 0 and skill('Draenor Blacksmithing') < 100 and level >= 90 end,
 },[[
 step
-Before you can continue, open your Blacksmithing window to detect your skill |cast Blacksmithing##2018
-skillmax Blacksmithing,600
+talk Royce Bigbeard##87062
+buy 1 Draenor Blacksmithing##115356 |n
+use the Draenor Blacksmithing##115356
+Train Draenor Blacksmithing |skillmax Draenor Blacksmithing,100 |goto Stormshield/0 48.95,48.73
+|tip You must be at least level 90.
 step
-#include "Garrison_ArchitectTable"
-Select the _Small_ tab at the top
-Drag _The Forge_ to a _Small Plot_
-Build your Forge |havebuilding Blacksmithing
+collect 5 True Iron Ore##109119
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-#include "Garrison_Small_Building",action="talk Auria Irondreamer##77359",building="Blacksmithing"
-buy 1 Draenor Blacksmithing##115356 |condition skillmax("Blacksmithing")>=700 or itemcount(115356) >= 1
+Open Your Blacksmithing Crafting Panel:
+_<Create 1 Secrets of Draenor Blacksmithing>_
+|tip You can only do this once per day.
+collect 1 Secrets of Draenor Blacksmithing##118720 |goto 49.99,47.98
 step
-use Draenor Blacksmithing##115356
-skillmax Blacksmithing,700
+talk Royce Bigbeard##87062
+buy 1 Recipe: Truesteel Grinder##116734 |n
+use the Recipe: Truesteel Grinder##116734
+Train Truesteel Grinder |learn Truesteel Grinder##171699 |goto 48.95,48.73
 step
-map Shadowmoon Valley D
-path follow loose; loop; ants straight
-path	47.7,25.9	54.5,30.9	57.2,33.0
-path	66.2,30.2	66.9,34.5	63.6,36.6
-path	60.9,48.5	62.8,49.8	66.1,58.2
-path	61.3,57.7	58.1,60.3	62.4,62.4
-path	61.4,69.4	55.5,61.1	53.4,64.5
-path	53.6,69.0	56.8,72.8	54.5,75.1
-path	49.3,67.2	43.0,72.4	38.1,73.9
-path	37.1,66.9	34.4,63.4	38.2,57.2
-path	41.7,52.2	40.1,46.7	39.3,41.2
-path	35.1,35.5	30.9,36.5	26.7,31.2
-path	25.0,28.7	21.5,25.1	24.4,21.9
-path	25.5,19.6	24.0,15.9	24.3,8.3
-path	29.1,13.2	26.9,14.6	31.6,19.3
-path	33.2,22.7	33.9,26.6	37.5,21.8
-path	43.0,27.4
-Make sure you are tracking minerals, and gather all _Blackrock_ and _True Iron_ ore you see as you follow this path
-collect 390 True Iron Ore##109119 |condition skill("Blacksmithing")>=700
-collect 700 Blackrock Ore##109118 |condition skill("Blacksmithing")>=700
-|tip You can also buy these materials from the Auction House.
+collect 1960 Blackrock Ore##109118
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-#include "Garrison_Small_Building",action="talk Auria Irondreamer##77359",building="Blacksmithing"
-accept Your First Blacksmithing Work Order##35168
+collect 980 True Iron Ore##109119
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-#include "Garrison_Small_Building",action="talk Yulia Samras##77792",building="Blacksmithing"
-Tell her _I would like to place a work order._
-Start your first work order |q Your First Blacksmithing Work Order##35168/1
+Open Your Blacksmithing Crafting Panel:
+_<Create 98 Truesteel Grinder>_
+Reach Level 100 Draenor Blacksmithing |skill Draenor Blacksmithing,100 |goto 49.99,47.98
 step
-#include "Garrison_Small_Building",action="click Blacksmithing Work Order##112971",building="Blacksmithing"
-Gather the work order shipment |q Your First Blacksmithing Work Order##35168/2
-step
-#include "Garrison_Small_Building",action="talk Yulia Samras##77792",building="Blacksmithing"
-turnin Your First Blacksmithing Work Order##35168
-step
-create 1 Secrets of Draenor Blacksmithing##176090,Blacksmithing,1 total |n
-create 1 Secrets of Draenor Blacksmithing##118720,Blacksmithing
-step
-#include "Garrison_Small_Building",action="talk Auria Irondreamer##77359",building="Blacksmithing"
-buy 1 Recipe: Truesteel Grinder##116734 |condition _G.IsSpellKnown(171699) or itemcount(116734) >= 1 or skill("Blacksmithing")>=700
-step
-use Recipe: Truesteel Grinder##116734
-learn Truesteel Grinder##171699 |condition skill("Blacksmithing")>=700
-step
-create Truesteel Grinder##171699,Blacksmithing,700
-step
-Congratulations! You are now a Draenor Master Blacksmith
+_Congratulations!_
+You Reached 100 Draenor Blacksmithing Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 600-700 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Cooking skill from 1-100.",

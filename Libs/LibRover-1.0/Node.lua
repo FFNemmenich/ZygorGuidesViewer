@@ -48,7 +48,7 @@ end
 
 function Node:AddNeigh(node,meta)
 	self.n[#self.n+1]={node,meta}
-	assert(node.type,"Node "..node.num.." has no type? wtf?")
+	assert(node.type,"Node "..(node.num or "<no num>").." has no type? wtf?")
 	self.n_iftype[node.type]=1
 end
 

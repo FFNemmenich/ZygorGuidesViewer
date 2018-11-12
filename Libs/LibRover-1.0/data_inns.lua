@@ -238,7 +238,7 @@ data.basenodes.inns = {
 	},
 	['The Cape of Stranglethorn']={
 		{name="Booty Bay",faction="B",npc="Innkeeper Skindle",npcid=6807,x=40.8,y=73.8},
-		{name="Hardwrench Hideaway",faction="H",npc="Innkeeper Draxle",npcid=44190,x=35.0,y=27.2},
+		{name="Hardwrench Hideaway",faction="H",npc="Innkeeper Draxle",npcid=44190,x=35.08,y=27.20},
 	},
 	['Swamp of Sorrows']={
 		{name="Bogpaddle",faction="B",npc="Cap'n Geech",npcid=47334,x=71.7,y=13.9},

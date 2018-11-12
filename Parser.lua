@@ -349,11 +349,13 @@ local ConditionEnv = {
 		 for i=1,GetNumClasses() do  local _,cl=GetClassInfo(i)  cl=cl:lower()  self[cl] = (pcl==cl)  end
 		-- Store race constants
 		 local pra = select(2,UnitRace("player")):lower()
-		 for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren", "lightforgeddraenei","voidelf", "highmountaintauren","nightborne"} do  self[ra] = (pra==ra)  end
+		 for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren", "lightforgeddraenei","voidelf","darkirondwarf", "highmountaintauren","nightborne","magharorc"} do  self[ra] = (pra==ra)  end
 		 self['undead']=self['scourge']
 		 self['lfdraenei']=self['lightforgeddraenei']
 		 self['hmtauren']=self['highmountaintauren']
 		 self['ztroll']=self['zandalaritroll']
+		 self['didwarf']=self['darkirondwarf']
+		 self['mhorc']=self['magharorc']
 		-- Store faction constants
 		 local pfa = UnitFactionGroup("player"):lower()
 		 for i,fa in ipairs{"alliance","horde","neutral"} do  self[fa] = (pfa==fa)  end
@@ -418,17 +420,9 @@ local ConditionEnv = {
 	hasprof = function(hasprof,minlevel,maxlevel)
 		return ZGV:MatchProfs(hasprof,minlevel,maxlevel)
 	end,
-	hasbuff = function(id,count)
-		for i=1,30 do
-			local name,fileid,buffcount = UnitBuff("player",i)
-			if name and (id==fileid or name:find(id)) and (not count or buffcount>=count) then return true end
-			local name,fileid,buffcount = UnitDebuff("player",i)
-			if name and (id==fileid or name:find(id)) and (not count or buffcount>=count) then return true end
-		end
-	end,
-	hasbuff2 = function(query,count)
+	hasbuff = function(query,count)
 		local qspellid = type(query)=="string" and tonumber(query:match("spell:(%d+)"))
-		for i=1,30 do
+		for i=1,50 do
 			local name,fileid,buffcount,bufftype,duration, expirationTime, unitCaster, _, _, spellId = UnitBuff("player",i)
 			if name	and ((fileid==query) or (name:find(query)) or (spellId==qspellid)) and (not count or buffcount>=count) then return true end
 			local name,fileid,buffcount,bufftype,duration, expirationTime, unitCaster, _, _, spellId = UnitDebuff("player",i)

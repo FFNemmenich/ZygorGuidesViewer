@@ -64,7 +64,9 @@ data.basenodes.transit = {
 	-- Tiragarde Sound to Zuldazar (Boat)
 		"Tiragarde Sound/0 87.85,51.18 -to- Zuldazar/0 58.40,62.50 {fac:H} {mode:SHIP} {cost:30} {title:Talk to Erul Dawnbrook, tell him \"Take us back to Zuldazar.\"} {cond:PlayerCompletedQuest(51421)}",
 
-
+	-- Patch 8.1
+	-- (HORDE) Zuldazar to Darkshore Warfront Scenario
+		"Zuldazar/0 58.46,62.98 -to- Darkshore Warfront/0 54.48,19.00 {fac:H} {mode:PORTAL} {title:Talk to Dread-Admiral Tattersail, tell her \"Send me to Darkshore.\"} {cond:PlayerCompletedQuest(54042)}",
 
 
 
@@ -272,7 +274,7 @@ data.basenodes.transit = {
 	"Orgrimmar/1 50.74,55.57 <subtype:cityportal> -to- Undercity/0 84.58,16.33 {fac:H} {mode:PORTAL}",
 
 	-- Rut'theran Village - Darnassus, Kalimdor -to- Stormwind - Elwynn Forest, Eastern Kingdoms --
-	"Teldrassil/0 55.03,93.71 <subtype:cityportal> -to- Stormwind City/0 49.59,86.53 {fac:A} {mode:PORTAL}",
+	"Teldrassil/0 55.03,93.71 <subtype:cityportal> -to- Stormwind City/0 49.59,86.53 {fac:A} {mode:PORTAL} {cond:ZGV.InPhase('Old Darnassus')}",
 
 	-- Rut'theran Village - Darnassus, Kalimdor -to- The Exodar - Azuremyst Isle, Kalimdor --
 	"Teldrassil/0 52.28,89.47 <subtype:cityportal> -to- The Exodar/0 47.62,59.82 {fac:A} {mode:PORTAL}",
@@ -669,6 +671,16 @@ data.basenodes.transit = {
 
 
 
+	-------------------
+	-- BFA WARFRONTS --
+	-------------------
+
+		-- (HORDE) Darkshore Warfront Scenario to Port of Zandalar (Dazar'alor)
+		"Darkshore Warfront/0 52.70,21.28 -to- Dazar'alor/0 51.66,93.82 {fac:H} {mode:PORTAL} {title:Click the Portal to Port of Zandalar} {cond:PlayerCompletedQuest(54042)}",
+
+
+
+
 
 
 
@@ -885,6 +897,10 @@ data.basenodes.transit = {
 			"Suramar/0 57.99,86.60 -to- Suramar/0 36.79,45.21 {mode:PORTAL} {title_atob:Click the Portal to Shal'Aran.} {cond:ZGV:RaceClassMatch('NIGHTBORNE')}",
 			"Suramar/0 36.77,45.04 -to- Suramar/0 59.55,85.29 {mode:PORTAL} {title_atob:Click the Portal to The Nighthold.} {cond:ZGV:RaceClassMatch('NIGHTBORNE')}",
 
+		-- Dark Iron Dwarf
+			"Shadowforge City/0 59.30,26.38 -to- Stormwind City/0 54.49,17.25 {fac:A} {mode:PORTAL} {title:Click the Mole Machine to Stormwind City} {cond:ZGV:RaceClassMatch('DARKIRONDWARF')}",
+			"Stormwind City/0 52.67,15.97 -to- Shadowforge City/0 61.44,24.35 {fac:A} {mode:PORTAL} {title:Click the Mole Machine to Shadowforge City} {cond:ZGV:RaceClassMatch('DARKIRONDWARF')}",
+
 		
     -------------------------		
     ---  DALARAN (WOTLK)  ---
@@ -945,7 +961,7 @@ data.basenodes.transit = {
 		"Eastern Kingdoms/0 41.47,70.19 <title:Skyfire Airship> -to- The Jade Forest 46.23,85.17   {fac:A} {mode:PORTAL}	{cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(29548)}", -- airship for the initial quest
 		"Eastern Kingdoms/0 41.47,70.19 <title:The Skyfire Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest 46.23,85.17   {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
 		"Orgrimmar 68.7,40.7 -x-  The Jade Forest 28.5,14.0  <title:Honeydew Village> {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(31769)}",
-		"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest 28.5,14.0   {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769)}", -- airship		for the initial quest
+		"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest 28.5,14.0   {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769) and not ZGV.IsLegionOn()}", -- airship		for the initial quest
 		"Durotar 66,1 <title:Hellscream's Fist Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest 28.5,14.0   {fac:H} {mode:PORTAL}		{cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
 
 		"Shrine of Seven Stars/2 61.6,39.6 -to- Dalaran 55.86,46.81 {fac:A} {mode:PORTAL}",
@@ -1052,14 +1068,14 @@ data.basenodes.transit = {
 		-- Orc -> Mulgore portal -> Darkmoon portal -> Mulgore
 
 		--You can enter anywhere, but only exit at one place
-		"Elwynn Forest 41.8,69.5 -to- Darkmoon Island/0 51.2,23.1 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
-		"Mulgore 36.9,35.9 -to- Darkmoon Island/0 51.2,23.2 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+		"Elwynn Forest 41.8,69.5 -to- Darkmoon Island/0 51.29,23.86 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+		"Mulgore/0 36.85,35.86 -to- Darkmoon Island/0 51.29,23.86 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
 
-		"Darkmoon Island/0 51.2,23.1 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
-		"Darkmoon Island/0 50.6,90.6 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
+		"Darkmoon Island/0 51.22,23.09 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
+		"Darkmoon Island/0 50.56,90.77 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
 
-		"Darkmoon Island/0 51.2,23.1 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
-		"Darkmoon Island/0 50.6,90.6 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
+		"Darkmoon Island/0 51.22,23.09 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
+		"Darkmoon Island/0 50.56,90.77 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
 
 	-- Iron Horde event portals
 		"Blasted Lands 72.7,49.5 -to- Orgrimmar 48.3,64.5 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90}",

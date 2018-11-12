@@ -8103,44 +8103,33 @@ Feed Ancient Mana to These Nightfallen NPC's:
 |tip Their locations change as you complete quests in the Suramar (110) leveling guide.
 Gain Exalted Reputation with the Nightfallen |goto Suramar/0 36.51,46.80 |region suramar_shalaran |achieve 10778
 step
-accept The Call for Allies##49930 |goto Dalaran L/10 72.46,45.94
+accept The Call for Allies##49930
 |tip You will automatically accept this quest.
-|tip If not, press Shift + J and check your Adventure Journal.
 step
-Enter the building |goto Orgrimmar/1 38.59,80.10 < 7 |walk
+Enter the building |goto Orgrimmar/1 38.59,80.10 < 10 |walk
 talk Lady Sylvanas Windrunner##126065
-turnin The Call for Allies##49930 |goto 37.77,81.16
-accept A Choice of Allies##50242 |goto 37.77,81.16
+|tip Inside the building.
+turnin The Call for Allies##49930 |goto Orgrimmar/1 37.78,81.15
+accept A Choice of Allies##50242 |goto Orgrimmar/1 37.78,81.15
+step
+talk Eitrigg##126066
+|tip Inside the building.
+Ask him _"What do we know about the Mag'har orcs?"_
+Speak with Eitrigg about the Mag'har Orcs |q 50242/3 |goto 37.80,80.56
 step
 talk Lady Liadrin##126062
+|tip Inside the building.
 Ask her _"What do we know about the nightborne?"_
-Speak with Liadrin About the Nightborne |q 50242/2 |goto Orgrimmar/1 37.98,80.56
+Speak with Liadrin about the Nightborne |q 50242/2 |goto Orgrimmar/1 37.98,80.56
 step
 talk Baine Bloodhoof##125285
+|tip Inside the building.
 Ask him _"What do we know about the Hightmountain tauren?"_
-Speak with Baine About the Highmountain tauren |q 50242/1 |goto 38.18,81.10
+Speak with Baine about the Highmountain Tauren |q 50242/1 |goto 38.18,81.10
 step
 talk Lady Sylvanas Windrunner##126065
-Tell her _"I am ready to pursue our next ally."_
-|tip Select Nightborne Elves.
-Choose an Ally to Pursue |q 50242/3 |goto 37.77,81.16
-step
-talk Lady Sylvanas Windrunner##126065
+|tip Inside the building.
 turnin A Choice of Allies##50242 |goto 37.77,81.16
-step
-talk Lady Sylvanas Windrunner##126065
-accept A Second Ally For the Cause##50254 |goto Orgrimmar/1 37.77,81.15
-|only if completedq(48433)
-step
-talk Lady Sylvanas Windrunner##126065
-Tell her _"I am ready to pursue our next ally."_
-|tip Select Nightborne Elves.
-Choose an Ally to Pursue |q 50254/1 |goto 37.77,81.15
-|only if completedq(48433)
-step
-talk Lady Sylvanas Windrunner##126065
-turnin A Second Ally For the Cause##50254 |goto 37.77,81.15
-|only if completedq(48433)
 step
 talk Lady Liadrin##126062
 accept Thalyssra's Estate##49973 |goto 37.98,80.56
@@ -8184,8 +8173,8 @@ Enter the building |goto Orgrimmar/1 38.59,80.10 < 7 |walk
 talk Lady Sylvanas Windrunner##126065
 turnin The Nightborne##49614 |goto 37.77,81.16
 step
-Congratulations!
-You Unlocked the "Nightborne" Allied Race.
+_Congratulations!_
+You unlocked the Nightborne Allied Race.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Allied Races\\Highmountain Tauren Race Unlock",{
 author="support@zygorguides.com",
@@ -8228,44 +8217,33 @@ Use Your Greater Highmountain Tribe Insignia |use Greater Highmountain Tribe Ins
 Use Your Greater Highmountain Tribe Insignia |use Greater Highmountain Tribe Insignia##150928 |only if itemcount(150928) >= 1
 Gain Exalted Reputation with the Highmountain Tribe |achieve 12292
 step
-accept The Call for Allies##49930 |goto Dalaran L/10 72.46,45.94
+accept The Call for Allies##49930
 |tip You will automatically accept this quest.
-|tip If not, press Shift + J and check your Adventure Journal.
 step
-Enter the building |goto Orgrimmar/1 38.59,80.10 < 7 |walk
+Enter the building |goto Orgrimmar/1 38.59,80.10 < 10 |walk
 talk Lady Sylvanas Windrunner##126065
-turnin The Call for Allies##49930 |goto 37.77,81.16
-accept A Choice of Allies##50242 |goto 37.77,81.16
+|tip Inside the building.
+turnin The Call for Allies##49930 |goto Orgrimmar/1 37.78,81.15
+accept A Choice of Allies##50242 |goto Orgrimmar/1 37.78,81.15
+step
+talk Eitrigg##126066
+|tip Inside the building.
+Ask him _"What do we know about the Mag'har orcs?"_
+Speak with Eitrigg about the Mag'har Orcs |q 50242/3 |goto 37.80,80.56
 step
 talk Lady Liadrin##126062
+|tip Inside the building.
 Ask her _"What do we know about the nightborne?"_
-Speak with Liadrin About the Nightborne |q 50242/2 |goto Orgrimmar/1 37.98,80.56
+Speak with Liadrin about the Nightborne |q 50242/2 |goto Orgrimmar/1 37.98,80.56
 step
 talk Baine Bloodhoof##125285
+|tip Inside the building.
 Ask him _"What do we know about the Hightmountain tauren?"_
-Speak with Baine About the Highmountain Tauren |q 50242/1 |goto 38.18,81.10
+Speak with Baine about the Highmountain Tauren |q 50242/1 |goto 38.18,81.10
 step
 talk Lady Sylvanas Windrunner##126065
-Tell her _"I am ready to pursue our next ally."_
-|tip Select Highmountain Tauren.
-Choose an Ally to Pursue |q 50242/3 |goto 37.77,81.16
-step
-talk Lady Sylvanas Windrunner##126065
+|tip Inside the building.
 turnin A Choice of Allies##50242 |goto 37.77,81.16
-step
-talk Lady Sylvanas Windrunner##126065
-accept A Second Ally For the Cause##50254 |goto Orgrimmar/1 37.77,81.15
-|only if completedq(49614)
-step
-talk Lady Sylvanas Windrunner##126065
-Tell her _"I am ready to pursue our next ally."_
-|tip Select Highmountain Tauren.
-Choose an Ally to Pursue |q 50254/1 |goto 37.77,81.15
-|only if completedq(49614)
-step
-talk Lady Sylvanas Windrunner##126065
-turnin A Second Ally For the Cause##50254 |goto 37.77,81.15
-|only if completedq(49614)
 step
 talk Baine Bloodhoof##125285
 accept A Feast for Our Kin##48066 |goto 38.17,81.10
@@ -8472,7 +8450,7 @@ talk Lady Sylvanas Windrunner##126065
 turnin Together We Are the Horde!##48433 |goto 37.77,81.16
 step
 _Congratulations!_
-You Unlocked the "Highmountain Tauren" Allied Race.
+You unlocked the Highmountain Tauren Allied Race.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Allied Races\\Mag'har Orc Race Unlock",{
 author="support@zygorguides.com",
@@ -8482,112 +8460,215 @@ condition_end=function() return achieved(12518) end,
 image=ZGV.DIR.."\\Guides\\Images\\MagHarOrcUnlock",
 },[[
 step
-Load the "BFA World Quest Unlock" Dailies Guide |confirm |next "Zygor's Dailies Guides\\Battle for Azeroth\\BFA World Quest Unlock"
-|tip Click the line above to load the guide.
-|tip You must complete the "Uniting Zandalar" quest in this guide.
-Complete the "Uniting Zandalar" Quest |condition completedq(51918) |goto Zuldazar/0 58.44,62.67
+Unlock World Quests |condition completedq(52450)
+|tip Use the "War Campaign" guide to accomplish this.
 step
-Load the "War Campaign" Leveling Guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\War Campaign"
-|tip Click the line above to load the guide.
-|tip You must complete all of the quests in this guide.
-Complete the Quest "A Cycle of Hatred" |condition completedq(53003)
+Complete the "A Cycle of Hatred" Quest |condition completedq(53003)
+|tip Use the "War Campaign" guide to accomplish this.
 step
-Load the "Zuldazar World Quests" Daily Guide |confirm |next "Zygor's Dailies Guides\\Battle for Azeroth\\Zuldazar World Quests"
-|tip Click the line above to load the guide.
-|tip Completing world quests in Drustvar, Stormsong Valley, and Tiragarde Sound that indicate the 7th Legion award reputation with them.
-|tip Completing the emissary quest "Horde War Effort" will award bonus reputation.
-_Island Expeditions and Warfronts:_
-|tip Each successful Warfront awards 500 reputation with the The Honorbound.
-|tip Completing the island expedition quest "Azerite for the Horde" will award 1,500 reputation.
-Gain Exalted Reputation with The Honorbound |achieve 12957
+Reach Exalted Reputation with The Honorbound |condition rep('The Honorbound')>=Exalted
+|tip Use the "World Quests" guides to complete "The Honorbound" world quests.
+|tip Complete the weekly Island Expeditions quest "Azerite for the Horde".
+step
+accept The Call for Allies##49930
+|tip You will automatically accept this quest.
+step
+Enter the building |goto Orgrimmar/1 38.59,80.10 < 10 |walk
+talk Lady Sylvanas Windrunner##126065
+|tip Inside the building.
+turnin The Call for Allies##49930 |goto Orgrimmar/1 37.78,81.15
+accept A Choice of Allies##50242 |goto Orgrimmar/1 37.78,81.15
 step
 talk Eitrigg##126066
-accept Vision of Time##53466 |goto Orgrimmar/1 37.79,80.53
+|tip Inside the building.
+Ask him _"What do we know about the Mag'har orcs?"_
+Speak with Eitrigg about the Mag'har Orcs |q 50242/3 |goto 37.80,80.56
+step
+talk Lady Liadrin##126062
+|tip Inside the building.
+Ask her _"What do we know about the nightborne?"_
+Speak with Liadrin about the Nightborne |q 50242/2 |goto Orgrimmar/1 37.98,80.56
+step
+talk Baine Bloodhoof##125285
+|tip Inside the building.
+Ask him _"What do we know about the Hightmountain tauren?"_
+Speak with Baine about the Highmountain Tauren |q 50242/1 |goto 38.18,81.10
+step
+talk Lady Sylvanas Windrunner##126065
+|tip Inside the building.
+turnin A Choice of Allies##50242 |goto 37.77,81.16
+step
+talk Eitrigg##126066
+|tip Inside the building.
+accept Vision of Time##53466 |goto 37.79,80.53
 step
 talk Chief Telemancer Oculeth##131443
+|tip Inside the building.
 turnin Vision of Time##53466 |goto Dazar'alor/1 67.15,73.79
-accept Caverns of Time##53467 |goto 67.15,73.79
+accept Caverns of Time##53467 |goto Dazar'alor/1 67.15,73.79
 step
+Follow the path down |goto Tanaris/17 63.83,30.21 < 20 |walk
 talk Anachronos##15192
-turnin Caverns of Time##53467 |goto Tanaris/18 41.83,49.75
-accept Echo of Gul'dan##53354 |goto 41.83,49.75
+|tip Downstairs inside the Caverns of Time cave.
+turnin Caverns of Time##53467 |goto Tanaris/18 41.78,49.91
+accept Echo of Gul'dan##53354 |goto Tanaris/18 41.78,49.91
 step
 click Time Rift
-kill Echo of Gul'dan##143505 |q 53354/1 |goto Blasted Lands/0 54.4,50.4
+Watch the dialogue
+kill Echo of Gul'dan##143505 |q 53354/1 |goto Blasted Lands/0 54.43,50.45
 step
 talk Anachronos##143692
-turnin Echo of Gul'dan##53354 |goto Blasted Lands/0 54.4,50.4
-accept Echo of Warlord Zaela##53353 |goto 54.4,50.4
+turnin Echo of Gul'dan##53354 |goto 54.39,50.09
+accept Echo of Warlord Zaela##53353 |goto 54.39,50.09
 step
-Enter the building |goto Kun-Lai Summit/0 68.63,45.98 < 10 |walk
+Enter the building |goto Kun-Lai Summit/0 68.63,45.98 < 15 |walk
 click Time Rift
-kill Echo of Warlord Zaela##143504 |q 53353/1 |goto 68.81,43.69
+|tip Inside the building.
+Watch the dialogue
+kill Echo of Warlord Zaela##143504 |q 53353/1 |goto Kun-Lai Summit/0 68.81,43.69
 step
-turnin Echo of Warlord Zaela##53353 |goto 68.89,43.95
-accept Echo of Garrosh Hellscream##53355 |goto 68.89,43.95
+talk Anachronos##143692
+|tip Inside the building.
+turnin Echo of Warlord Zaela##53353 |goto 68.90,43.97
+accept Echo of Garrosh Hellscream##53355 |goto 68.90,43.97
 step
 talk Anachronos##144225
 Tell him _"I am ready to seek the Echo of Garrosh."_
-|tip You will be teleported to The Inner Sanctum.
-Meet Anachronos outside Orgrimmar |q 53355/1 |goto Durotar/0 40.75,16.36
+|tip You will be teleported to the Inner Sanctum Pandaria raid.
+Meet Anachronos Outside Orgrimmar |q 53355/1 |goto Durotar/0 40.80,16.36
 step
-Jump down into the room
 click Time Rift
+|tip Inside the Inner Sanctum Pandaria raid.
+|tip Jump down next to the yellow dragon, into the big room below.
+|tip It will appear on your minimap as a yellow dot.
+Watch the dialogue
 kill Echo of Garrosh Hellscream##143425 |q 53355/2
 step
 talk Chief Telemancer Oculeth##131443
+|tip Inside the building.
+|tip The travel system will not work until you leave the Inner Sanctum Pandaria raid.
+|tip You may have to wait for one of your hearthstones, or other travel items, to cooldown to be able to leave.
+|tip He is located in Dazar'alor, Zuldazar.
 turnin Echo of Garrosh Hellscream##53355 |goto Dazar'alor/1 67.15,73.79
 step
 talk Eitrigg##126066
+|tip Inside the building.
 accept Restoring Old Bonds##52942 |goto 70.60,69.21
 step
 talk Chief Telemancer Oculeth##131443
-Tell him _"(Quest) I am ready to go to Draenor."_
+|tip Inside the building.
+Tell him _"I am ready to go to Draenor."_
 Speak with Oculeth to go to Draenor |q 52942/1 |goto 67.15,73.79
 step
-Follow Eitrigg
-|tip A group of mounted Mag'har orcs will approach you.
-Meet the Overlord |q 52942/2 |goto Gorgrond/0 41.4,16.6
+Travel to Gorgrond |goto Gorgrond Maghar Scenario/0 41.13,53.19 < 20 |noway |c |q 52942
 step
-talk Eitrigg##126066
-turnin Restoring Old Bonds##52942 |goto 41.4,16.6
-accept Calling Out the Clans##52943 |goto 41.4,16.6
-step
-Follow Eitrigg and Overlord Geya'rah
-click Blackrock Banner
-Pay homage to the Blackrock Clan Symbol |q 52943/1
-step
-Follow Eitrigg and Overlord Geya'rah
-click Warsong Banner
-Pay homage to the Warsong Clan Symbol |q 52943/2
-step
-Follow Eitrigg and Overlord Geya'rah
-click Frostwolf Banner
-Pay homage to the Frostwolf Clan Symbol |q 52943/3
-step
-talk Overlord Geya'rah##142109
-|tip Next to you.
-turnin Calling Out the Clans##52943
-step
-talk Grommash Hellscream
-|tip Next to the bonfire.
-accept Bonds Forged Through Battle##52945
-step
-Enter the cave |goto 38.51,67.40 < 10 |walk |goto 37.14,68.95
-Kill Kor'gall enemies around this area
-kill 10 Kor'gall Defectors |q 52945/1 |goto Gorgrond/0 43.72,58.93
+Follow Eitrigg |goto 41.60,53.32 < 15 |c |q 52942
 step
 Watch the dialogue
-kill Kor'gall, Greatson of Kor'gal##140949 |q 52945/1
+|tip You will be taken here automatically.
+Meet the Overlord |q 52942/2 |goto 44.90,53.04
 step
+talk Eitrigg##126066
+turnin Restoring Old Bonds##52942 |goto 44.94,53.12
+accept Calling Out the Clans##52943 |goto 44.94,53.12
+step
+Watch the dialogue
+click Blackrock Banner
+Salute the Blackrock Clan |q 52943/1 |goto 45.16,52.66
+step
+Watch the dialogue
+click Warsong Banner
+Salute the Warsong Clan |q 52943/2 |goto 45.48,51.95
+step
+Watch the dialogue
+click Frostwolf Banner
+Salute the Frostwolf Clan |q 52943/3 |goto 44.82,52.00
+step
+Watch the dialogue
 talk Overlord Geya'rah##142109
-|tip Next to you.
+turnin Calling Out the Clans##52943 |goto 45.14,52.13
+step
+Watch the dialogue
+talk Grommash Hellscream
+accept Bonds Forged Through Battle##52945 |goto 45.26,52.09
+step
+Follow the path |goto 45.03,53.87 < 20 |only if walking
+Cross the bridge |goto 44.46,54.68 < 15 |only if walking
+Follow the path |goto 43.28,56.42 < 20 |only if walking
+Follow the path |goto 42.24,57.21 < 15 |only if walking
+Continue following the path |goto 41.99,62.16 < 30 |only if walking
+Continue following the path |goto 41.73,64.73 < 15 |only if walking
+Follow the path up |goto 40.26,65.09 < 15 |only if walking
+Follow the path |goto 38.91,66.33 < 15 |only if walking
+Enter the cave |goto 38.58,67.38 < 15 |walk
+Kill Kor'gall enemies around this area
+|tip You can find more outside the cave.
+Slay #10# Kor'gall Defectors |q 52945/1 |goto 37.69,68.39
+step
+Cross the bridge |goto 36.79,68.07 < 10 |walk
+Follow the path |goto 36.29,68.67 < 10 |walk
+Watch the dialogue
+kill Kor'gall, Greatson of Kor'gal##140949 |q 52945/2 |goto 36.48,70.05
+|tip Inside the cave.
+step
+_Next to you:_
+talk Overlord Geya'rah##142109
 turnin Bonds Forged Through Battle##52945
 accept Tyranny of the Light##52955
 step
+Begin the "Tryanny of the Light" Scenario |scenariostart |q 52955
+step
+Jump down here |goto 36.97,69.18 < 10 |walk
+Follow the path |goto 37.92,68.18 < 10 |walk
+Leave the cave |goto 38.55,67.39 < 15 |walk
+Follow the path |goto 41.66,64.80 < 20 |only if walking
+Continue following the path |goto 43.22,66.34 < 30 |only if walking
+Accompany Geya'rah to Beastwatch |scenariostage 1 |goto 43.85,69.35 |q 52955
+step
+Follow the path |goto 44.58,71.72 < 20 |only if walking
+Kill enemies around this area
+click Lightbound Battery+
+|tip They look like white and gold artillery machines on the ground around this area.
+|tip They will appear on your minimap as yellow dots.
+Defend Beastwatch Against the Lightbound Assault |scenariostage 2 |goto 45.11,74.33 |q 52955
+step
+Look for Exarch Orelis in Evermorn Hold |scenariostage 3 |goto 45.50,78.57 |q 52955
+step
+kill Exarch Orelis##142511 |scenariostage 4 |goto 45.27,80.34 |q 52955
+step
+Follow the path |goto 45.53,78.52 < 20 |only if walking
+Meet with Grommash |scenariostage 5 |goto 44.55,71.38 |q 52955
+step
+Watch the dialogue
+Await Orders from the Warchief |scenariostage 6 |goto 44.55,71.38 |q 52955
+step
+Enter the building |goto 43.70,71.08 < 10 |walk
+click Mag'har Turret
+|tip At the top of the tower.
+Kill enemies around this area
+|tip Use the abilities on your action bar.
+|tip They are on the ground nearby.
+Defeat the Lightbound Soldiers |scenariostage 7 |goto 43.63,71.43 |q 52955
+step
+Watch the dialogue
+Return to the Warchief and Await Further Orders |scenariostage 8 |goto 44.55,71.37 |q 52955
+step
+Watch the dialogue
+Escape from Draenor |scenarioend |goto 44.55,71.37 |q 52955
+step
+Travel to Durotar |goto Durotar/0 40.75,17.24 < 20 |noway |c |q 52955
+step
+talk Overlord Geya'rah##143845
+turnin Tyranny of the Light##52955 |goto Durotar/0 41.25,16.77
+accept The Uncorrupted##51479 |goto Durotar/0 41.25,16.77
+step
+Enter the building |goto Orgrimmar/1 38.58,80.12 < 15 |walk
+talk Lady Sylvanas Windrunner##126065
+|tip Inside the building.
+turnin The Uncorrupted##51479 |goto Orgrimmar/1 37.78,81.15
 step
 _Congratulations!_
-You Unlocked the "Mag'har Orc" Allied Race.
+You unlocked the Mag'har Orc Allied Race.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Zandalar\\Zuldazar Loremaster (Story Quest Only)",{
 author="support@zygorguides.com",

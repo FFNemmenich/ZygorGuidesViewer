@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 213,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 215,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -65,8 +65,13 @@ data.MapIDsByName = {
 --Patch 8.1
 ["Tol Dagor Scenario"] = {[0]=1349,[1]=1351,[2]=1350},
 ["Zandalari Treasury"] = {[0]=1348},
+["Darkshore Warfront"] = {[0]=1333},
 
+--Shadowforge City
+["Shadowforge City"] = {[0]=1186},
 
+--Mag'har Allied Race Gorgrond Scenario
+["Gorgrond Maghar Scenario"] = {[0]=1170},
 
 
 -------------------------------------
@@ -976,6 +981,7 @@ data.point_context_templates = {
 
 	{'teleport_ask',"Use a Mage Portal to {map}"},
 	{'useitem',"Use {item}"},
+	{'*_temp__mole_*',"{next_title}"}, -- not used; .title overrides this
 
 	{'hearth',"Hearth to {name}"},
 	{'ghearth',"Hearth to Your Garrison"},

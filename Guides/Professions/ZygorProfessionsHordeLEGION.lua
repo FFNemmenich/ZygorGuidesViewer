@@ -5643,179 +5643,150 @@ step
 _Congratulations!_
 You completed the Inscription questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Legion Jewelcrafting 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Jewelcrafting profession from 700-800.",
-startlevel=100.0,
+description="This guide will walk you through leveling your Legion Jewelcrafting skill from 1-100.",
 condition_end=function() return skill('Legion Jewelcrafting') >= 100 end,
-condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and skill('Legion Jewelcrafting') < 100 and level >= 100 end,
+condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and skill('Legion Jewelcrafting') < 100 end,
 },[[
 step
-_Before Starting This Guide:_
-Complete the "Jewelcrafting Quest Line" Guide
-Click Here to Continue |confirm
+Load the "Legion Jewelcrafting Quest Line" Guide |confirm |next "Zygor's Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line"
+|tip Click the line above to load the guide.
+Complete the Legion Jewelcrafting Quest Line |q 40561 |future
 step
-talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Quick Azsunite##138452 |n
-Use the Design: Quick Azsunite |use Design: Quick Azsunite##138452
-Learn the Design for Quick Azsunite |learn Quick Azsunite##195849 |goto Dalaran L/10 39.70,34.26
+collect 45 Azsunite##130174
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 35
 step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+collect 50 Skystone##130176
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
 |tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 25 Azsunite##130174
+|only if skill("Legion Jewelcrafting") < 60
+step
+collect 25 Chaotic Spinel##130175
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
 |tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 715
+|only if skill("Legion Jewelcrafting") < 60
+step
+collect 225 Deep Amber##130173
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 95
+step
+collect 45 Sangrite##130172
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 95
+step
+collect 15 Pandemonite##130181
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 100
+step
+collect 5 Furystone##130178
+|tip These are gathered with the Mining professions.
+|tip Prospect 5 Leystone or Felslate Ore to obtain a random gem.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 100
+step
+collect 10 Infernal Brimstone##124444
+|tip These are gathered with the Mining profession from World Quests.
+|tip Refer to the World Quest Guide to accomplish this.
+|tip Note that the World Quest to kill a Brimstone Destroyer needs to be active to recieve this reward.
+|tip You can also purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 100
+step
+collect 25 Blood of Sargeras##124124
+|tip These come from gathering professions.
+|tip You can also get these from World Quests and Dungeon Bosses.
+|only if skill("Legion Jewelcrafting") < 100
+step
+collect 250 Sightless Eyes |condition curcount(1149) >= 250
+|tip These are gained by killing enemies in the Dalaran Sewers.
+|tip You can Hire a Guard if you want to prevent other players from attacking you while you farm these.
+|tip Speak with Raethan to hire a guard.
+|only if skill("Legion Jewelcrafting") < 100
 step
 Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-_<Create 25 Quick Azsunite>_
-Reach Level 715 Jewelcrafting |skill Jewelcrafting,715
+_<Create 45 Quick Azsunite>_
+|tip This recipe will be yellow at 20, so you might need to create more.
+Reach Level 35 Draenor Jewelcrafting |skill Draenor Jewelcrafting,35
 step
 talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Skystone Loop##137793 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137793
-Learn the Rank 1 Design for Skystone Loop |learn Skystone Loop##195857 |goto 39.70,34.26
+buy Design: Skystone Loop##137793 |n
+use the Design: Skystone Loop##137793
+learn Skystone Loop Rank 1##195857 |goto Dalaran L/10 39.82,34.09
 step
 talk Tiffany Cartier##93526
-|tip Inside the building.
-buy 1 Design: Skystone Loop##137818 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137818
-Learn the Rank 2 Design for Skystone Loop |learn Skystone Loop##195903 |goto 40.26,34.68
+buy Design: Skystone Loop##137818 |n
+use the Design: Skystone Loop##137818
+learn Azsunite Loop Rank 2##195903 |goto Dalaran L/10 40.29,34.70
 step
-Reach Honored Reputation with the Highmountain Tribe Faction |condition rep("Highmountain Tribe")>=Honored
-|tip Use the "Highmountain" Leveling guide to accomplish this.
-|tip Use the "World Quests" guide and complete Highmountain world quests to accomplish this.
+Load the "Highmountain" Leveling Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+|tip Click the line above to load the guide.
+Become Honored with the Highmountain Tribe |condition rep("Highmountain Tribe")>=Honored
 step
 talk Ransa Greyfeather##106902
-buy 1 Design: Skystone Loop##137839 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137839
-Learn the Rank 3 Design for Skystone Loop |learn Skystone Loop##195924 |goto Thunder Totem/0 38.07,46.05
-step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 50 Skystone##130176 |c
-collect 25 Chaotic Spinel##130175 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 740
+buy Design: Skystone Loop##137839 |n
+use the Design: Skystone Loop##137839
+learn Skystone Loop Rank 3##195924 |goto Thunder Totem/0 38.07,46.01
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 25 Skystone Loop>_
-Reach Level 740 Jewelcrafting |skill Jewelcrafting,740
+Reach Level 60 Draenor Jewelcrafting |skill Draenor Jewelcrafting,60
 step
 talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Azsunite Pendant##137797 |n
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137797
-Learn the Rank 1 Design for Azsunite Pendant |learn Azsunite Pendant##195861 |goto Dalaran L/10 39.70,34.26
+buy Design: Deep Amber Pendant##137795 |n
+use the Design: Deep Amber Pendant##137795
+learn Deep Amber Pendant Rank 1##195859 |goto Dalaran L/10 39.82,34.09
 step
 talk Tiffany Cartier##93526
-|tip Inside the building.
-buy 1 Design: Azsunite Pendant##137822 |n
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137822
-Learn the Rank 2 Design for Azsunite Pendant |learn Azsunite Pendant##195907 |goto 40.26,34.68
+buy Design: Deep Amber Pendant##137820 |n
+use the Design: Deep Amber Pendant##137820
+learn Deep Amber Pendant Rank 2##195905 |goto Dalaran L/10 40.29,34.70
 step
-Complete the _"Work Order: Azsunite Pendant"_ World Quest
-|tip This world quest appears in Azsuna when it is available.
-|tip Use the "World Quests" dailies guide to accomplish this.
-collect Design: Azsunite Pendant##137843 |n
-|tip This design can only be obtained from this world quest.
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
-Learn the Rank 3 Design for Azsunite Pendant |learn Azsunite Pendant##195928
-step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 125 Azsunite##130174 |c
-collect 25 Sangrite##130172 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 764
+Kill enemies around this area
+collect Design: Deep Amber Pendant##137841 |n
+use the Design: Deep Amber Pendant##137841
+learn Deep Amber Pendant Rank 3##195926 |goto Azsuna/0 66.50,48.95
 step
 Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-_<Create 25 Azsunite Pendant>_
-|tip Make sure to stop crafting when you reach level 764 Jewelcrafting.
-Reach Level 764 Jewelcrafting |skill Jewelcrafting,764
+_<Create 45 Deep Amber Pendant>_
+|tip This recipe will be green by 90, so you might need to create more.
+Reach Level 95 Draenor Jewelcrafting |skill Draenor Jewelcrafting,95
 step
 talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Raging Furystone Gorget##137811 |n
-Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137811
-Learn the Rank 1 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195875 |goto 39.70,34.26
+buy Design: Vindictive Pandemonite Choker##137806 |n
+use the Design: Vindictive Pandemonite Choker##137806
+learn Vindictive Pandemonite Choker Rank 1##195870 |goto Dalaran L/10 39.82,34.09
 step
-talk Tiffany Cartier##93526
-|tip Inside the building.
-buy 1 Design: Raging Furystone Gorget##137836 |n
-Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137836
-Learn the Rank 2 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195921 |goto 40.26,34.68
+talk Oxana Demonslay##97361
+buy Design: Vindictive Pandemonite Choker##137831 |n
+use the Design: Vindictive Pandemonite Choker##137831
+learn Vindictive Pandemonite Choker Rank 2##195916 |goto Dalaran L/11 66.87,17.62
 step
-_Enter the Halls of Valor (Heroic) Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
-kill Odyn##95676
-|tip Use the Halls of Valor dungeon guide to accomplish this.
-click Spoils of the Worthy##245847
-|tip It appears after you defeat Odyn.
-collect Design: Raging Furystone Gorget##137857 |n
-|tip You may have to run the dungeon multiple times before this drops.
-Use the Design: Raging Furystone Gorget |use Design: Raging Furystone Gorget##137857
-Learn the Rank 3 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195942
-step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 90 Furystone##130178 |c
-collect 30 Pandemonite##130181 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 800
-step
-_Complete "Brimstone Destroyer" World Quests:_
-|tip These world quests require you to have the Mining profession.
-|tip Look on your world map in all of the Legion zones.
-|tip The world quest will have a Mining icon.
-|tip Use the "World Quests" dailies guide to accomplish this.
-collect 60 Infernal Brimstone##124444
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 800
-step
-collect 150 Blood of Sargeras##124124 |c
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides for to accomplish this.
-|only if skill("Jewelcrafting") < 800
+_Enter the (Heroic) Vault of the Wardens Dungeon:_
+kill Cordana Felsong##95888
+collect Design: Vindictive Pandemonite Choker##137852 |n
+use the Design: Vindictive Pandemonite Choker##137852
+learn Vindictive Pandemonite Choker Rank 3##195937
 step
 Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 30 Raging Furystone Gorget>_
-Reach Level 800 Jewelcrafting |skill Jewelcrafting,800
+_<Create 5 Vindictive Pandemonite Chokers>_
+Reach Level 100 Draenor Jewelcrafting |skill Draenor Jewelcrafting,100
 step
 _Congratulations!_
-You reached level 800 with the Jewelcrafting profession.
+You Reached Level 100 Legion Jewelcrafting Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Jewelcrafting quest line.",
@@ -5824,13 +5795,9 @@ condition_end=function() return completedq(40561) end,
 condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and level >= 100 and not completedq(40561) end,
 },[[
 step
-talk Timothy Jones##93527
-|tip Inside the building.
-Learn the Jewelcrafting Profession |condition skill("Legion Jewelcrafting")>=1 |goto Dalaran L/10 40.06,35.30
-step
 talk Tiffany Cartier##93526
 |tip Inside the building.
-accept Facet-nating Friends##40523 |goto 40.27,34.68
+accept Facet-nating Friends##40523 |goto Dalaran L/10 40.27,34.68
 step
 talk Timothy Jones##93527
 |tip Inside the building.
@@ -5851,14 +5818,13 @@ talk Timothy Jones##93527
 |tip Inside the building.
 accept A Familiar Ring to It##40524 |goto 40.05,35.28
 step
-collect 15 Leystone Ore##123918 |c |q 40524
+collect 25 Leystone Ore##123918 |c |q 40524
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
 |tip You can also purchase them from the Auction House.
 step
 Use Your Prospecting Ability:
-_<Prospect 15 Leystone Ore>_
+_<Prospect 25 Leystone Ore>_
 |tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore, depending on your luck.
 collect 5 Gem Chip##129100 |q 40529/1
 step
 talk Tiffany Cartier##93526
@@ -5868,7 +5834,8 @@ accept An Eye for Detail##40530 |goto 40.27,34.70
 step
 talk Catriona Macrae##96198
 |tip Upstairs inside the building.
-Talk to Catriona Macrae |q 40530/1 |goto 49.49,39.37
+Tell her _"I'm here to inspect the jewel Tiffany Cartier crafted for you."_
+Talk to Catriona Macrae |q 40530/1 |goto 49.10,39.05
 step
 click Catriona's Jewel##246701
 Examine the Gem |q 40530/2 |goto 49.51,38.15
@@ -5955,6 +5922,7 @@ label "Finish"
 Follow the path up |goto Azsuna/0 45.45,42.27 < 20 |only if walking
 talk Lady Irisse##88798
 |tip Inside the building.
+Ask her _"Do you know anything about the Band of Farondis?"_
 Find Someone Who Knows About the Band of Farondis |q 40524/1 |goto Azsuna/0 47.06,41.48
 step
 talk Timothy Jones##100538
@@ -6041,11 +6009,13 @@ Continue following the path |goto Val'sharah/0 51.00,70.64 < 30 |only if walking
 Follow the path down |goto Val'sharah/0 48.32,68.85 < 30 |only if walking
 talk Lasune Starblade##100884
 |tip Inside the building.
+Tell her _"I'm looking for a master jewelcrafter."_
 Watch the dialogue
 Talk to the Locals |q 40535/1 |goto Val'sharah/0 45.65,67.21
 step
 Follow the path |goto 45.07,72.33 < 20 |only if walking
 talk Jabrul##100498
+Ask him _"What happened to you?"_
 Find Jabrul |q 40535/2 |goto 45.37,73.33
 step
 Follow the path |goto 44.56,73.51 < 20 |only if walking
@@ -6054,6 +6024,7 @@ click Jabrul's Bag of Jewels##245843
 collect Jabrul's Jewels##132446 |q 40535/3 |goto 44.72,74.78
 step
 talk Jabrul##100498
+tell him _"Here's your bag, Jabrul."_
 Watch the dialogue
 Bring Jabrul His Jewels |q 40535/4 |goto 45.37,73.33
 step
@@ -6062,6 +6033,7 @@ turnin Raising the Drogbar##40535 |goto 45.37,73.33
 accept Bruls Before Jewels##40536 |goto 45.37,73.33
 step
 talk Jabrul##100776 |goto 45.37,73.33 |n
+Tell him _"Aliright, Jabrul. I'm ready to go."_
 |tip He will start following you.
 Begin Following the Water West |goto 45.37,73.33 > 10 |noway |c |q 40536
 step
@@ -6227,12 +6199,15 @@ click Floating Planks##246228
 collect 6 Wooden Plank##132823 |q 40547/1 |goto 55.34,58.86
 step
 talk Jabrul##100521
+Tell him _"I'm going to crate you up now, Jabrul."_
 Click Here After Talking to Jabrul |confirm |goto 56.37,59.62 |q 40547
 step
 click Inconspicuous Crate##246238
+Choose _"Mail Jabrul."_
 Crate Up and Mail Jabrul |q 40547/2 |goto 56.36,59.57
 step
 click Inconspicuous Crate##246238
+Choose _"Break open the crate."_
 Watch the dialogue
 Make Sure Jabrul Arrived Safely |q 40547/3 |goto Dalaran L/10 40.16,32.28
 step
@@ -6246,11 +6221,6 @@ step
 Unlock World Quests |condition completedq(43341)
 |tip Use the "World Quests" dailies guide to accomplish this.
 step
-_Using the Suramar Questing Guide:_
-|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
-|tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
-Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
-step
 click Broken Toy Box##246154
 |tip Inside the building.
 accept Socket to Me##40558 |goto 40.06,34.90
@@ -6260,27 +6230,6 @@ talk Timothy Jones##93527
 accept Jewel of the Heavens##40561 |goto 40.05,35.30
 accept Spiriting Away##40560 |goto 40.05,35.30
 accept The Raven's Wisdom##40559 |goto 40.05,35.30
-step
-Reach Level 600 Jewelcrafting |skill Jewelcrafting,600
-|tip Use the "Jewelcrafting 1-600" profession guide to accomplish this.
-step
-talk Sminx Glasseye##93543
-accept A Personal Touch##40562 |goto 39.60,35.49
-step
-Cross the bridge |goto Suramar/0 48.37,80.46 < 20 |only if walking
-Run up the stairs |goto Suramar/0 48.51,79.08 < 20 |only if walking
-click Nightborne Jewelry Cases##252692
-|tip They look like display boxes with various colored gems in them on the counters around this area.
-collect 5 Nightborne Jewelry Case##139887 |q 40562/2 |goto Suramar/0 49.70,77.42
-step
-click Custom Jewelry Order##246266
-collect Custom Jewelry Order##139886 |q 40562/1 |goto 50.03,75.99
-step
-Run down the stairs |goto 48.41,78.78 < 20 |only if walking
-Cross the bridge |goto 51.20,82.48 < 20 |only if walking
-kill Duskwatch Shroud##111619+
-|tip You will likely need to kill several to get the item.
-collect Nightborne Loupe##132867 |q 40562/3 |goto 50.81,84.05
 step
 kill Adult Truesilver Crab##101624
 |tip Underwater inside the sunken ship.
@@ -6316,16 +6265,11 @@ Follow the path down |goto Highmountain/0 55.25,80.14 < 30 |walk
 kill Amberstone Earthrender##101630
 collect Crystal Shard##132842 |q 40558/5 |goto Highmountain/0 53.41,81.35
 step
-talk Sminx Glasseye##93543
-|tip Inside the building.
-turnin A Personal Touch##40562 |goto Dalaran L/10 39.61,35.49
-step
 talk Tiffany Cartier##93526
 |tip Inside the building.
-turnin Socket to Me##40558 |goto 40.26,34.68
+turnin Socket to Me##40558 |goto Dalaran L/10 40.26,34.68
 step
 _Enter the Black Rook Hold Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
 click Delayeth's Journal: The Jewels of the Is
 |tip This is located on the bottom floor of The Grand Hall.
 |tip Use the Black Rook Hold dungeon guide to navigate the dungeon.
@@ -6336,10 +6280,9 @@ kill Dantalionax##98970 |q 40559/2
 step
 talk Timothy Jones##93527
 |tip Inside the building.
-turnin The Raven's Wisdom##40559 |goto Dalaran L/10 40.06,35.30
+turnin Black Rook Hold: The Raven's Wisdom##40559 |goto Dalaran L/10 40.06,35.30
 step
 _Enter the Maw of Souls Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
 click Musty Crate##246125
 |tip Under the stairs on the right side.
 |tip Use the Maw of Souls dungeon guide to navigate the dungeon.
@@ -6350,10 +6293,9 @@ kill Helya##96759 |q 40560/2
 step
 talk Timothy Jones##93527
 |tip Inside the building.
-turnin Spiriting Away##40560 |goto Dalaran L/10 40.06,35.30
+turnin Maw of Souls: Spiriting Away##40560 |goto Dalaran L/10 40.06,35.30
 step
 _Enter the Halls of Valor Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
 kill Odyn##95676
 |tip Use the Halls of Valor dungeon guide to accomplish this.
 click Spoils of the Worthy##245847
@@ -6362,7 +6304,33 @@ collect Thrymja, Ring of the Gods##132866 |q 40561/1
 step
 talk Timothy Jones##93527
 |tip Inside the building.
-turnin Jewel of the Heavens##40561 |goto 40.06,35.30
+turnin Halls of Valor: Jewel of the Heavens##40561 |goto 40.06,35.30
+step
+Load the Suramar Questing Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+|tip Click the line above to load the guide.
+Complete the "Masquerade" Quest in Suramar |q 42079 |future
+step
+talk Sminx Glasseye##93543
+accept A Personal Touch##40562 |goto 39.60,35.49
+step
+Cross the bridge |goto Suramar/0 48.37,80.46 < 20 |only if walking
+Run up the stairs |goto Suramar/0 48.51,79.08 < 20 |only if walking
+click Nightborne Jewelry Cases##252692
+|tip They look like display boxes with various colored gems in them on the counters around this area.
+collect 5 Nightborne Jewelry Case##139887 |q 40562/2 |goto Suramar/0 49.70,77.42
+step
+click Custom Jewelry Order##246266
+collect Custom Jewelry Order##139886 |q 40562/1 |goto 50.03,75.99
+step
+Run down the stairs |goto 48.41,78.78 < 20 |only if walking
+Cross the bridge |goto 51.20,82.48 < 20 |only if walking
+kill Duskwatch Shroud##111619+
+|tip You will likely need to kill several to get the item.
+collect Nightborne Loupe##132867 |q 40562/3 |goto 50.81,84.05
+step
+talk Sminx Glasseye##93543
+|tip Inside the building.
+turnin A Personal Touch##40562 |goto Dalaran L/10 39.61,35.49
 step
 _Congratulations!_
 You completed the Jewelcrafting questline.
