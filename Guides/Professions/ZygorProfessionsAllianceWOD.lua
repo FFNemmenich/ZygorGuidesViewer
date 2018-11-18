@@ -995,96 +995,69 @@ step
 _Congratulations!_
 You Reached 100 Draenor Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Draenor Jewelcrafting 1-100",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Jewelcrafting skill from 1-100.",
 condition_end=function() return skill('Draenor Jewelcrafting') >= 100 end,
 condition_suggested=function() return skill('Draenor Jewelcrafting') > 0 and skill('Draenor Jewelcrafting') < 100 and level >= 90 end,
 },[[
 step
-Before you continue, open your Jewelcrafting window to detect your profession |cast Jewelcrafting##25229
-skillmax Jewelcrafting,600
+talk Artificer Harlaan##87052
+buy 1 Draenor Jewelcrafting##115359 |n
+use the Draenor Jewelcrafting##115359
+Train Draenor Jewelcrafting |skillmax Draenor Jewelcrafting,100 |goto Stormshield/0 44.16,37.76
+|tip You must be at least level 90.
 step
-#include "Garrison_ArchitectTable"
-Select the _Small_ tab at the top
-Drag _Gem Boutique_ to a _Small Plot_
-Build your Gem Boutique |havebuilding Jewelcrafting
+collect 15 Blackrock Ore##109118
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 5
 step
-#include "Garrison_Small_Building",action="talk Costan Highwall##77356",building="Jewelcrafting"
-buy Draenor Jewelcrafting##115359 |condition skillmax("Jewelcrafting") >= 700 or itemcount(115359) >= 1
+Open Your Jewelcrafting Crafting Panel:
+_<Create 3 Secrets of Draenor Jewelcrafting>_
+|tip You can only create one per day.
+collect 3 Secrets of Draenor Jewelcrafting##118723
+|only if skill("Draenor Jewelcrafting") < 5
 step
-use Draenor Jewelcrafting##115359
-skillmax Jewelcrafting,700
+talk Artificer Harlaan##87052
+buy 1 Recipe: Prismatic Focusing Lens##116109 |n
+use the Recipe: Prismatic Focusing Lens##116109
+Train Prismatic Focusing Lens |learn Prismatic Focusing Lens##170732 |goto 44.16,37.76
 step
-map Shadowmoon Valley D
-path follow loose; loop; ants curved
-path	42.0,18.7	41.1,22.6	51.4,21.9
-path	52.4,26.4	51.0,33.4	66.2,30.2
-path	66.9,34.5	63.6,36.6	62.8,49.8
-path	66.1,58.2	61.3,57.7	58.1,60.3
-path	62.4,62.4	61.4,69.4	55.5,61.1
-path	53.4,64.5	53.6,69.0	56.8,72.8
-path	54.5,75.1	50.4,68.0	43.0,72.4
-path	38.1,73.9	37.1,66.9	34.4,63.4
-path	38.2,57.2	41.7,52.2	40.1,46.7
-path	39.3,41.2	35.1,35.5	30.9,36.5
-path	26.7,31.2	25.0,28.7	21.5,25.1
-path	24.4,21.9	25.5,19.6	24.0,15.9
-path	24.3,8.3	29.1,13.2	26.9,14.6
-path	31.6,19.3	33.2,22.7	33.9,26.6
-path	37.1,21.3	37.1,21.3	56.7,34.2
-path	55.4,34.3
-Make sure you are tracking minerals, and gather all _Blackrock_ ore you see as you follow this path
-collect 1020 Blackrock Ore##109118 |condition skill("Jewelcrafting")>=700
-|tip You can also buy these materials from the Auction House.
+collect 60 Sorcerous Earth##113263
+|tip Farm them or purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 55
 step
-map Frostfire Ridge
-path follow loose;loop;ants straight;dist 60
-path	31.1,53.3	26.1,53.7	24.2,49.0
-path	23.2,45.2	20.7,39.5	22.2,33.9
-path	21.8,29.7	20.9,25.4	23.1,23.6
-path	25.1,24.6	27.2,22.3	29.7,21.4
-path	31.2,22.0	32.8,21.7	35.1,19.5
-path	36.9,24.3	38.1,26.8	40.8,28.9
-path	41.6,30.6	42.8,29.9	42.9,31.1
-path	44.4,31.1	46.2,31.7	48.9,34.4
-path	51.6,36.9	53.7,35.1	54.5,30.3
-path	56.5,26.1	59.1,28.4	60.0,31.9
-path	61.2,34.9	63.1,40.9	63.4,45.0
-path	60.9,46.9	62.2,52.4	60.3,55.3
-path	57.9,57.5	53.8,55.8	50.6,54.7
-path	47.7,55.6	45.9,58.9	43.1,60.8
-path	40.3,62.1	37.7,58.7	36.5,56.5
-path	35.5,53.3	33.6,49.2	31.1,51.2
-Follow the path and gather Fireweed
-|tip Make sure you have find herbs turned on.
-collect 200 Fireweed##109125 |condition skill("Jewelcrafting")>=700
-You will need to buy these unless you have a character with Herbalism
+Open Your Jewelcrafting Crafting Panel:
+_<Create 60 Prismatic Focusing Lens>_
+Reach Level 55 Draenor Jewelcrafting |skill Draenor Jewelcrafting,55
 step
-#include "Garrison_Small_Building",action="talk Costan Highwall##77356",building="Jewelcrafting"
-accept Your First Jewelcrafting Work Order##36644
+Open Your Jewelcrafting Crafting Panel:
+_<Create 1 Secrets of Draenor Jewelcrafting>_
+collect 1 Secrets of Draenor Jewelcrafting##118723
+|only if skill("Draenor Jewelcrafting") < 75
 step
-#include "Garrison_Small_Building",action="talk Kaya Solasen##77775",building="Jewelcrafting"
-Tell her _"I would like to place a work order."_ |q Your First Jewelcrafting Work Order##36644/1
+talk Artificer Harlaan##87052
+buy 1 Recipe: Critical Strike Taladite##116096 |n
+use the Recipe: Critical Strike Taladite##116096
+Train Critical Strike Taladite |learn Critical Strike Taladite##170719 |goto 44.16,37.76
 step
-#include "Garrison_Small_Building",action="Click Jewelcrafting Work Order",building="Jewelcrafting"
-Jewelcrafting Work Order Collected |q Your First Jewelcrafting Work Order##36644/2
+collect 450 Blackrock Ore##109118
+|tip Farm them with Mining or purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 100
 step
-#include "Garrison_Small_Building",action="talk Kaya Solasen##77775",building="Jewelcrafting"
+collect 90 Fireweed##109125
+|tip Farm them with Herbalism or purchase them from the Auction House.
+|only if skill("Draenor Jewelcrafting") < 100
 step
-create 1 Secrets of Draenor Jewelcrafting##176087,Jewelcrafting,1 total |n
-collect Secrets of Draenor Jewelcrafting##118723 |condition skill("Jewelcrafting")>=700
+Open Your Jewelcrafting Crafting Panel:
+_<Create 45 Critical Strike Taladite>_
+Reach Level 100 Draenor Jewelcrafting |skill Draenor Jewelcrafting,100
 step
-#include "Garrison_Small_Building",action="talk Costan Highwall##77356",building="Jewelcrafting"
-buy 1 Recipe: Critical Strike Taladite##116096 |condition _G.IsSpellKnown(170719) or itemcount(116096) >= 1 or skill("Jewelcrafting")>=700
-step
-use Recipe: Taladite Recrystalizer##116078
-learn Critical Strike Taladite##170719 |condition skill("Jewelcrafting")>=700
-step
-create Critical Strike Taladite##170719,Jewelcrafting,700
-step
-Congratulations! You are now a Draenor Master Jewelcrafter
+_Congratulations!_
+You Reached 100 Draenor Jewelcrafting Skill.
 ]])
+ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Draenor Leatherworking 1-100",{
 author="support@zygorguides.com",

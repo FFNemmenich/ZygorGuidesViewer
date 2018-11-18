@@ -1057,41 +1057,55 @@ Make sure you have find herbs turned on, and gather all _Talador Orchid_ you see
 collect Talador Orchid##109129 |n
 Click here to pick a different herb |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 600-700 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Draenor Herbalism 1-100",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Herbalism skill from 1-100.",
 condition_end=function() return skill('Draenor Herbalism') >= 100 end,
 condition_suggested=function() return skill('Draenor Herbalism') > 0 and skill('Draenor Herbalism') < 100 and level >= 90 end,
 },[[
 step
-Kill any lootable enemies found in Draenor
+map Frostfire Ridge
+path follow loose;loop;ants straight;dist 60
+path	31.1,53.3	26.1,53.7	24.2,49.0	23.2,45.2	20.7,39.5
+path	22.2,33.9	21.8,29.7	20.9,25.4	23.1,23.6	25.1,24.6
+path	27.2,22.3	29.7,21.4	31.2,22.0	32.8,21.7	35.1,19.5
+path	36.9,24.3	38.1,26.8	40.8,28.9	41.6,30.6	42.8,29.9
+path	42.9,31.1	44.4,31.1	46.2,31.7	48.9,34.4	51.6,36.9
+path	53.7,35.1	54.5,30.3	56.5,26.1	59.1,28.4	60.0,31.9
+path	61.2,34.9	63.1,40.9	63.4,45.0	60.9,46.9	62.2,52.4
+path	60.3,55.3	57.9,57.5	53.8,55.8	50.6,54.7	47.7,55.6
+path	45.9,58.9	43.1,60.8	40.3,62.1	37.7,58.7	36.5,56.5
+path	35.5,53.3	33.6,49.2	31.1,51.2
+Collect herbs along the path
+|tip Turn on your Find Herbs ability to see the nodes.
 collect A Compendium of the Herbs of Draenor##111350 |n
+|tip You should get this from looting your first herb.
 use A Compendium of the Herbs of Draenor##111350
-skillmax Herbalism,700
+Train Draenor Herbalism |skillmax Draenor Herbalism,100
 step
 map Frostfire Ridge
 path follow loose;loop;ants straight;dist 60
-path	31.1,53.3	26.1,53.7	24.2,49.0
-path	23.2,45.2	20.7,39.5	22.2,33.9
-path	21.8,29.7	20.9,25.4	23.1,23.6
-path	25.1,24.6	27.2,22.3	29.7,21.4
-path	31.2,22.0	32.8,21.7	35.1,19.5
-path	36.9,24.3	38.1,26.8	40.8,28.9
-path	41.6,30.6	42.8,29.9	42.9,31.1
-path	44.4,31.1	46.2,31.7	48.9,34.4
-path	51.6,36.9	53.7,35.1	54.5,30.3
-path	56.5,26.1	59.1,28.4	60.0,31.9
-path	61.2,34.9	63.1,40.9	63.4,45.0
-path	60.9,46.9	62.2,52.4	60.3,55.3
-path	57.9,57.5	53.8,55.8	50.6,54.7
-path	47.7,55.6	45.9,58.9	43.1,60.8
-path	40.3,62.1	37.7,58.7	36.5,56.5
+path	31.1,53.3	26.1,53.7	24.2,49.0	23.2,45.2	20.7,39.5
+path	22.2,33.9	21.8,29.7	20.9,25.4	23.1,23.6	25.1,24.6
+path	27.2,22.3	29.7,21.4	31.2,22.0	32.8,21.7	35.1,19.5
+path	36.9,24.3	38.1,26.8	40.8,28.9	41.6,30.6	42.8,29.9
+path	42.9,31.1	44.4,31.1	46.2,31.7	48.9,34.4	51.6,36.9
+path	53.7,35.1	54.5,30.3	56.5,26.1	59.1,28.4	60.0,31.9
+path	61.2,34.9	63.1,40.9	63.4,45.0	60.9,46.9	62.2,52.4
+path	60.3,55.3	57.9,57.5	53.8,55.8	50.6,54.7	47.7,55.6
+path	45.9,58.9	43.1,60.8	40.3,62.1	37.7,58.7	36.5,56.5
 path	35.5,53.3	33.6,49.2	31.1,51.2
-Make sure you have find herbs turned on
-collect Frostweed##109124 |n
-collect Fireweed##109125 |n
-skill Herbalism,700
+Collect herbs along the path
+|tip Turn on your Find Herbs ability to see the nodes.
+Reach 100 Draenor Herbalism |skill Draenor Herbalism,100
+step
+confirm
+step
+_Congratulations!_
+You Reached Level 100 Draenor Herbalism Skill.
 ]])
+ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Draenor Inscription 1-100",{
 author="support@zygorguides.com",

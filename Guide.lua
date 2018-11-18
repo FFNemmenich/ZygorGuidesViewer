@@ -293,7 +293,16 @@ function Guide:GetCompletion(mode)
 		local c,m = C_PetJournal.GetNumCollectedInfo(self.headerdata.pet)
 		return c>0 and 1 or 0		
 	elseif mode=="playertitle" then
-		return IsTitleKnown(self.headerdata.playertitle) and 1 or 0		
+		local pt = self.headerdata.playertitle
+		if type(pt)=="number" then return IsTitleKnown(pt) and 1 or 0 end
+		if type(pt)=="table" then
+			for _,titleid in ipairs(pt) do
+				if IsTitleKnown(titleid) then return 1 end
+			end
+			return 0
+		end
+		geterrorhandler()("Bad playertitle in guide "..self.title)
+		return 0
 	end
 	-- other completions might not need a full parse.
 	return "error","we don't know if this guide completes or not"

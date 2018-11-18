@@ -12,7 +12,9 @@ local L=ZGV.L
 local BZL=ZGV.BZL
 local BZR=ZGV.BZR
 
-local Mxlt,Mdist
+local Mxlt = ZGV.MapCoords.Mxlt
+local Mdist = ZGV.MapCoords.Mdist
+local Mangle = ZGV.MapCoords.Mangle
 
 Pointer.nummanual = 0
 
@@ -113,8 +115,6 @@ end
 
 
 function Pointer:Startup()
-	Mxlt = ZGV.MapCoords.Mxlt
-	Mdist = ZGV.MapCoords.Mdist
 
 	self:SetArrowSkin(ZGV.db.profile.arrowskin)
 
@@ -138,7 +138,7 @@ function Pointer:Startup()
 	self.OverlayFrame = ZGV.ChainCall(CreateFrame("FRAME","ZygorGuidesViewerPointerOverlay",worldMap_TargetFrame))
 		:SetAllPoints(true)
 		--:SetSize(1002,668)
-		:SetFrameStrata("HIGH")
+		:SetFrameStrata("DIALOG")
 		--:SetFrameLevel(WorldMapButton:GetFrameLevel()+1)
 		--:SetScript("OnMouseUp",self.Overlay_OnClick)
 		--:EnableMouse(true)
@@ -2200,13 +2200,14 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- normal operation...
 
 
-	local dist,x,y
+	local angle,dist,x,y
 	local errortxt
 	local cm,cc = ZGV.CurrentMapID,ZGV.GetMapContinent(ZGV.CurrentMapID or 0) --,LibRover.ContinentsByID[ZGV.CurrentMapID]
+	local px,py,pm = ZGV.LibRover:GetPlayerPosition()
 
 	--if IsInInstance() and cm~=waypoint.m then ArrowFrame:Hide() return end
 
-	if not LibRover:GetPlayerPosition() then
+	if not px then
 		if GetUnitSpeed("player")>0 then
 		-- we're in an unknown location, and moving - our location is totally unknown now. DON'T display distances.
 			were_in_unknown_location = true
@@ -2218,7 +2219,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	-- Calculate distance, or at least get a fake one
 
-	dist,x,y = HBDPins:GetDistanceToIcon(waypoint.frame_minimap)
+	local angle,dist = Mangle(pm,px,py,waypoint.m,waypoint.x,waypoint.y) -- HBDPins:GetDirectionToIcon(waypoint.frame_minimap)
 
 	local transcontinental
 	if waypoint.c~=cc then
@@ -2289,7 +2290,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	if safe then ArrowFrame:Show() end
 
 	local playerangle = GetPlayerFacing() or 0
-	local angle=0
 
 	local going_up
 	if errortxt then
@@ -2444,7 +2444,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		else
 			-- show direction arrow
 
-			angle = HBDPins:GetDirectionToIcon(waypoint.frame_minimap)
 			local angle_error
 			if not angle or errortxt=="far" then
 				angle=3.1415
@@ -3240,7 +3239,7 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 
 	-- set waypoints by shift-leftclicking the world map
 
-	if frame.ZygorCoordsDEV then
+	if frame.ZygorCoordsDEV and frame.ZygorCoordsDEV:IsVisible() then
 		local mx,my = GetCursorPosition()
 		mx=(mx-(frame:GetLeft()*frame:GetEffectiveScale()))/(frame:GetWidth()*frame:GetEffectiveScale())
 		my=(my-(frame:GetBottom()*frame:GetEffectiveScale()))/(frame:GetHeight()*frame:GetEffectiveScale())
@@ -3260,6 +3259,13 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 				HBD:GetZoneDistance(pm,px,py, mm,mx,my) or 0
 			)
 		)
+
+		local wqtracker_present
+		for i=1,50 do
+			local f = select(i,WorldMapFrame:GetChildren())
+			if f and f.bounties and f:IsShown() then wqtracker_present=true break end
+		end
+		frame.ZygorCoordsDEV:SetPoint("BOTTOMLEFT",0,wqtracker_present and 115 or 35)
 
 	end
 

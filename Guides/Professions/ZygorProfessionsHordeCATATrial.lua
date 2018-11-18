@@ -37,12 +37,6 @@ Click artifacts to open them, then solve them once you have the required amounts
 skill Archaeology,125
 #include end_of_prof_trial_150
 ]])
-ZGV.BETASTART()
-ZGV.BETAEND()
-ZGV.BETASTART()
-ZGV.BETAEND()
-ZGV.BETASTART()
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Fishing skill from 1-300.",
@@ -76,50 +70,6 @@ Use your Fishing skill to fish in the water all around the wooden dock |cast Fis
 Get your Fishing skill to level 150 |skill Fishing,150
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-description="This guide will walk you through leveling your Herbalism skill from 1-300.",
-},[[
-step
-#include "trainer_Herbalism"
-skillmax Herbalism,75
-step
-talk Innkeeper Norman##6741
-home Trade Quarter |goto Undercity 67.7,37.9
-step
-map Tirisfal Glades
-path follow loose;loop;ants straight;dist 60
-path 56.6,49.0	49.4,49.5	47.6,42.4
-path 50.2,32.2	44.4,32.9	42.9,51.0
-path 43.1,53.8	44.3,59.8	55.7,55.5
-#include "follow_path_herbs"
-collect Peacebloom##2447 |n
-collect Silverleaf##765 |n
-collect Earthroot##2449 |n
-skill Herbalism,70
-step
-#include trainer_HerbalismUC
-skillmax Herbalism,150
-step
-map Hillsbrad Foothills
-path follow loose;loop;ants straight;dist 60
-path	31.8,62.6	33.9,54.0	33.9,54.0
-path	29.7,44.1	34.5,28.2	39.5,21.0
-path	39.5,21.0	44.2,8.3 	51.3,14.0
-path	57.5,20.9	56.1,34.3	49.9,46.2
-path	43.1,50.1	38.2,49.1	40.1,55.0
-path	41.3,67.4	41.3,67.4	36.3,69.9
-#include "follow_path_herbs"
-collect Mageroyal##785 |n
-collect Bruiseweed##2453 |n
-collect Briarthorn##2450 |n
-skill Herbalism,125
-#include end_of_prof_trial_150
-]])
-ZGV.BETASTART()
-ZGV.BETAEND()
-ZGV.BETASTART()
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic Mining 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Mining skill from 1-300.",
@@ -221,6 +171,8 @@ path	40.4,84.3	44.8,90.6
 skill Mining,150
 #include end_of_prof_trial_150
 ]])
+ZGV.BETASTART()
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Skinning skill from 1-300.",
@@ -263,7 +215,5 @@ Kill any beasts you see and skin them
 skill Skinning,150
 #include end_of_prof_trial_150
 ]])
-ZGV.BETASTART()
-ZGV.BETAEND()
 ZGV.BETASTART()
 ZGV.BETAEND()

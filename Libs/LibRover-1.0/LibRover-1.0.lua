@@ -1940,7 +1940,7 @@ do
 				end
 
 				tinsert(Lib.debug_portkeys,("%s #%d - cost:|cffffff44%.1f|rs, cd:|cff88ff00%.1f|rs, item cd:|cff00ff88%.1f|rs, old rarity:|cffff88ff%.1f|rs; final cost:|cff88aaff%.1f|rs, %s")
-					:format(port.item and GetItemInfo(port.item) or GetSpellInfo(port.spell),port.item or port.spell,
+					:format(port.item and GetItemInfo(port.item) or GetSpellInfo(port.spell) or "name no ready",port.item or port.spell,
 						port.cost or 0,coolrem,port.cooldown or 0,old_raritycost,link.cost,rejected and "|cffff0000-rejected-|r" or "|cff00ff00USABLE|r")
 					)
 				if rejected then break end

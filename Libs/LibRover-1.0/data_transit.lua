@@ -54,7 +54,8 @@ data.basenodes.transit = {
 
 	-- Stormsong Valley to Zuldazar (Boat)
 		"Stormsong Valley/0 51.95,24.46 -to- Zuldazar/0 58.40,62.50 {fac:H} {mode:SHIP} {cost:30} {title:Talk to Grok Seahandler, tell him \"Take me back to Zuldazar.\"} {cond:PlayerCompletedQuest(51532)}",
-	
+
+-- FIX LATER SINCE FPATH MISSING DURING STORMSONG VALLEY INCURSION 	
 	-- Stormsong Valley to Zuldazar (Flight Master)
 		"Stormsong Valley/0 51.43,33.75 -to- Zuldazar/0 58.40,62.50 {fac:H} {mode:SHIP} {cost:30} {title:Talk to Muka Stormbreaker, tell her \"Take us back to Zuldazar.\"} {cond:PlayerCompletedQuest(51696)}",
 

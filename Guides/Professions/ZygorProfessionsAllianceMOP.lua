@@ -165,7 +165,7 @@ description="This guide will walk you through leveling your Pandaria Cooking ski
 condition_end=function() return skill('Pandaria Cooking') >= 75 end,
 condition_suggested=function() return skill('Cooking') > 0 and skill('Pandaria Cooking') < 75 and level >= 78 end,
 },[[
-leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Way of the Grill 1-75" 1-32
+leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75" 1-32
 step
 _Congratulations!_
 You Reached Level 75 Pandaria Cooking Skill.

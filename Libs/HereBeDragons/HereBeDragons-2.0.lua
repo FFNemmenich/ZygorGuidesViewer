@@ -179,6 +179,8 @@ if not oldversion or oldversion < 3 then
     end
 
     gatherMapData()
+
+    HereBeDragons.processMap = processMap
 end
 
 -- Transform a set of coordinates based on the defined map transformations

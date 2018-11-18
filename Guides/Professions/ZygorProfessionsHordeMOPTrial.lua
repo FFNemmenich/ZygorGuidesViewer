@@ -5,3 +5,5 @@ if ZGV:DoMutex("ProfessionsHMoP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZGV.BETASTART()
 ZGV.BETAEND()
+ZGV.BETASTART()
+ZGV.BETAEND()

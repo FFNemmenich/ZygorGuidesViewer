@@ -169,8 +169,13 @@ local function CloneHBDMap(src,dst,force,changes)
 	for k,v in pairs(srct) do dstt[k]=v end
 	if changes then for k,v in pairs(changes) do dstt[k]=v end end
 end
+local function ForceHBDMapUpdate(id)
+	local data = C_Map.GetMapInfo(id)
+	if data then ZGV.HBD.processMap(id,data) end
+end
 local function FixHBD()
 	CloneHBDMap(543,1170,false)
+	ForceHBDMapUpdate(1333)
 end
 local function GetMAPDATAFromHBD()
 	for i=1,2000 do repeat
@@ -239,6 +244,16 @@ function ZGV.MapCoords.Mdist(map1,x1,y1,map2,x2,y2)
 	return sqrt(dx*dx+dy*dy),dx,dy
 end
 local Mdist = ZGV.MapCoords.Mdist
+
+local PI2=PI*2
+local atan2=math.atan2
+function ZGV.MapCoords.Mangle(...)
+	local dist,dx,dy = Mdist(...)
+	if not dx then return nil,nil end
+	local angle = atan2(-dx,dy)
+	if angle>0 then angle = PI2-angle else angle=-angle end
+	return angle,dist
+end
 
 local cosmicMapData = {}
 COSMICMAPDATA=cosmicMapData

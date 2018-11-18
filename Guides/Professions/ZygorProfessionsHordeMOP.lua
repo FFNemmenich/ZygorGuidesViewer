@@ -157,7 +157,7 @@ description="This guide will walk you through leveling your Pandaria Cooking ski
 condition_end=function() return skill('Pandaria Cooking') >= 75 end,
 condition_suggested=function() return skill('Cooking') > 0 and skill('Pandaria Cooking') < 75 and level >= 78 end,
 },[[
-leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Way of the Grill 1-75" 1-32
+leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75" 1-32
 step
 _Congratulations!_
 You Reached Level 75 Pandaria Cooking Skill.
@@ -1100,54 +1100,39 @@ step
 label "fish_600"
 Congratulations, you are now a Zen Master Fisherman!
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Pandaria Herbalism 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Herbalism skill from 1-75.",
 condition_end=function() return skill('Pandaria Herbalism') >= 75 end,
-condition_suggested=function() return skill('Pandaria Herbalism') > 0 and skill('Pandaria Herbalism') < 75 and level >= 85 end,
+condition_suggested=function() return skill('Pandaria Herbalism') > 0 and skill('Pandaria Herbalism') < 75 and level >= 78 end,
 },[[
 step
-#include "trainer_Herbalism"
-skillmax Herbalism,600
+talk Grower Miao##66980
+Train Pandaria Herbalism |skillmax Pandaria Herbalism,75 |goto The Jade Forest/0 27.79,15.53
 step
-map Valley of the Four Winds
-path follow loose;loop;ants straight;dist 40
-path	81.4,21.5	76.4,29.2	71.1,29.5
-path	69.0,31.0	70.8,34.4	70.6,41.8
-path	65.1,60.1	57.6,65.6	50.8,58.6
-path	47.4,64.9	46.9,61.3	42.5,54.3
-path	33.6,62.1	28.1,72.7	25.7,78.4
-path	24.4,56.0	21.9,53.9	12.8,44.7
-path	14.3,41.2	14.8,35.8	19.6,34.4
-#include "follow_path_herbs"
+map Valley of the Four Winds/0
+path follow smart; loop on; ants straight
+path	84.25,28.72	80.77,35.08	76.82,37.07	72.76,40.45	71.84,47.89
+path	70.41,52.47	66.85,59.48	63.12,65.25	59.51,69.39	55.72,70.75
+path	52.13,67.94	49.42,67.53	42.68,67.97	37.80,63.45	34.03,64.32
+path	31.00,67.56	30.11,71.30	31.37,76.24	25.69,79.32	22.85,70.29
+path	23.31,62.97	25.88,57.19	29.20,52.04	31.27,51.51	34.32,47.66
+path	34.62,44.76	34.33,39.09	35.99,33.89	37.08,30.85	39.81,33.17
+path	43.05,36.81	45.44,39.36	47.69,34.44	47.02,30.50	49.62,27.65
+path	52.04,27.52	53.48,27.58	55.12,31.96	55.15,36.80	55.58,40.56
+path	58.06,44.14	60.21,44.03	60.26,41.05	60.71,38.10	59.88,33.72
+path	62.02,31.97	67.56,26.23	70.66,25.13	73.95,24.19	78.36,22.08
+path	82.35,21.48
+Collect herbs along the path
+|tip Turn on your Find Herbs ability to see the nodes.
 collect Green Tea Leaf##72234 |n
-skill Herbalism,545
+skill Pandaria Herbalism,75
 step
-map Valley of the Four Winds
-path follow loose;loop;ants straight;dist 40
-path	86.4,19.2	88.4,25.7	88.4,31.4
-path	85.3,32.0	85.9,35.5	71.1,54.9
-path	62.4,67.6
-path	59.1,37.3	51.5,32.4	35.3,42.4
-path	30.9,51.4	26.1,45.2	37.9,31.8
-path	41.2,36.0	47.0,28.8	51.9,29.1
-path	57.2,27.3	55.7,33.0
-path	62.9,37.3	64.7,31.4	59.0,28.1
-#include "follow_path_herbs"
-collect Silkweed##72235 |n
-skill Herbalism,590
-step
-map Kun-Lai Summit
-path follow loose;loop;ants straight;dist 40
-path	53.9,58.1	50.9,51.6	49.9,52.4
-path	50.1,57.1	49.6,63.7	48.1,64.3
-path	45.4,65.8	47.6,61.0	47.8,55.6
-#include "follow_path_herbs"
-collect Snow Lily##79010 |n
-skill Herbalism,600
-step
-Congratulations, you are now a Zen Master Herbalist!
+_Congratulations!_
+You Reached Level 75 Pandaria Herbalism Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Pandaria Inscription 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Inscription skill from 1-75.",

@@ -208,7 +208,7 @@ description="To complete this dungeon, you will need to kill the following bosse
 image=ZGV.DIR.."\\Guides\\Images\\TheMotherlode",
 },[[
 step
-Press _I_ and Queue for The MOTHERLODE!! or Enter the Dungeon with your Group |goto King's Rest/0 0.00,0.00 < 1000
+Press _I_ and Queue for The MOTHERLODE!! or Enter the Dungeon with your Group |goto The MOTHERLODE!!/0 0.00,0.00 < 1000
 step
 kill Coin-Operated Crowd Pummeler##139904
 _HEALER:_ |grouprole HEALER

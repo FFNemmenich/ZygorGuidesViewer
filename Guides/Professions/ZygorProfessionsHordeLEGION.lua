@@ -3966,6 +3966,48 @@ You earned the Underlight Angler fishing artifact.
 |tip Continue fishing rare fish, like you did while earning the "Bigger Fish to Fry" achievement.
 |tip Each rare fish will give 50 Artifact Power.
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Leveling Guides\\Legion Herbalism 1-100",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Legion Herbalism profession from 1-100.",
+startlevel=100.0,
+condition_end=function() return skill('Legion Herbalism') >= 100 end,
+condition_suggested=function() return skill('Legion Herbalism') > 0 and skill('Legion Herbalism') < 100 and level >= 100 end,
+},[[
+step
+map Azsuna/0
+path	follow smart; loop on; ants curved; dist 20
+path	46.38,44.51	47.68,43.75	48.87,42.45	48.36,38.75	48.48,36.05
+path	49.34,33.40	50.26,30.59	51.11,28.89	50.27,25.03	50.96,22.14
+path	50.75,19.79	52.13,16.67	54.63,16.44	56.69,17.17	57.59,18.25
+path	59.67,20.32	60.55,20.91	63.39,25.50	64.63,25.89	63.43,28.43
+path	63.39,31.12	64.02,34.78	65.56,36.66	66.22,38.74	66.49,42.33
+path	66.97,44.07	66.48,46.99	64.05,50.95	62.65,51.41	61.07,50.79
+path	58.62,51.41	56.03,52.81	53.66,54.29	51.42,56.22	48.86,54.98
+path	46.41,51.84	46.19,46.77
+Collect herbs along the path
+click Aethril##244774
+Train Legion Herbalism |skillmax Legion Herbalism,100
+|tip You will learn Legion Herbalism once you loot an herb.
+step
+map Azsuna/0
+path	follow smart; loop on; ants curved; dist 20
+path	46.38,44.51	47.68,43.75	48.87,42.45	48.36,38.75	48.48,36.05
+path	49.34,33.40	50.26,30.59	51.11,28.89	50.27,25.03	50.96,22.14
+path	50.75,19.79	52.13,16.67	54.63,16.44	56.69,17.17	57.59,18.25
+path	59.67,20.32	60.55,20.91	63.39,25.50	64.63,25.89	63.43,28.43
+path	63.39,31.12	64.02,34.78	65.56,36.66	66.22,38.74	66.49,42.33
+path	66.97,44.07	66.48,46.99	64.05,50.95	62.65,51.41	61.07,50.79
+path	58.62,51.41	56.03,52.81	53.66,54.29	51.42,56.22	48.86,54.98
+path	46.41,51.84	46.19,46.77
+Collect herbs along the path
+click Aethril##244774
+Reach Level 100 Legion Herbalism |skill Legion Herbalism,100
+step
+_Congratulations!_
+You Reached Level 100 Legion Herbalism Skill.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Aethril",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Aethril for various Alchemy recipes.",
@@ -4139,140 +4181,6 @@ click Starlight Rose##244778
 kill Withered Hungerer##98232+
 |tip They have a chance to spawn when you gather Starlight Rose.
 collect Starlight Rose##124105 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 700-800 Leveling Guide",{
-author="support@zygorguides.com",
-description="This guide will walk you through leveling your Herbalism profession from 700-800.",
-startlevel=100.0,
-condition_end=function() return skill('Legion Herbalism') >= 100 end,
-condition_suggested=function() return skill('Legion Herbalism') > 0 and skill('Legion Herbalism') < 100 and level >= 100 end,
-},[[
-step
-_Which Herb Do You Prefer to Farm While Leveling Herbalism?_
-|tip In terms of leveling Herbalism, it doesn't matter which you choose, just preference.
-Aethril (Azsuna) |confirm |or |next "Aethril_800"
-Dreamleaf (Val'sharah) |confirm |or |next "Dreamleaf_800"
-Foxflower (Highmountain) |confirm |or |next "Foxflower_800"
-Fjarnskaggl (Stormheim) |confirm |or |next "Fjarnskaggl_800"
-Starlight Rose (Suramar) |confirm |or |next "Starlight_Rose_800"
-step
-label "Aethril_800"
-map Azsuna/0
-path	follow smart; loop on; ants curved; dist 20
-path	46.38,44.51	47.68,43.75	48.87,42.45
-path	48.36,38.75	48.48,36.05	49.34,33.40
-path	50.26,30.59	51.11,28.89	50.27,25.03
-path	50.96,22.14	50.75,19.79	52.13,16.67
-path	54.63,16.44	56.69,17.17	57.59,18.25
-path	59.67,20.32	60.55,20.91	63.39,25.50
-path	64.63,25.89	63.43,28.43	63.39,31.12
-path	64.02,34.78	65.56,36.66	66.22,38.74
-path	66.49,42.33	66.97,44.07	66.48,46.99
-path	64.05,50.95	62.65,51.41	61.07,50.79
-path	58.62,51.41	56.03,52.81	53.66,54.29
-path	51.42,56.22	48.86,54.98	46.41,51.84
-path	46.19,46.77
-click Aethril##244774
-|tip Track them on your minimap with "Find Herbs".
-kill Withered Hungerer##98232+
-|tip They have a chance to spawn when you gather Aethril.
-Reach Level 800 Herbalism |skill Herbalism,800
-|next "Congratulations_Herbalism"
-step
-label "Dreamleaf_800"
-map Val'sharah/0
-path	follow smart; loop on; ants curved; dist 20
-path	54.98,53.49	54.22,50.65	51.66,50.69
-path	50.22,52.58	47.26,54.79	44.78,58.33
-path	43.95,61.83	44.75,62.57	44.88,64.04
-path	45.66,68.39	45.06,72.32	45.09,73.77
-path	45.48,75.42	47.57,77.15	50.39,78.38
-path	51.63,79.73	52.84,78.02	56.17,78.02
-path	57.69,76.37	57.34,72.60	56.14,69.08
-path	57.16,65.53	57.13,63.03	55.91,61.27
-path	56.11,58.44
-click Dreamleaf##244775
-|tip Track them on your minimap with "Find Herbs".
-kill Nightmare Creeper##98234+
-|tip They have a chance to spawn when you gather Dreamleaf.
-Reach Level 800 Herbalism |skill Herbalism,800
-|next "Congratulations_Herbalism"
-step
-label "Foxflower_800"
-map Highmountain/0
-path	follow strict; loop off; ants curved; dist 20
-path	57.63,27.24	58.30,25.96	55.60,24.95
-path	56.21,23.48	58.18,21.64	57.72,19.47
-path	56.17,19.67	55.63,16.88	54.89,14.84
-path	52.05,14.24	51.06,11.29	50.19,8.48
-path	49.26,7.56	48.56,10.28	47.34,10.78
-path	46.35,11.99	44.55,12.74	43.93,10.95
-path	43.80,8.25	42.24,10.37	41.25,11.10
-path	40.38,13.11	39.02,14.36	37.46,15.12
-path	37.10,16.77	36.78,18.74	35.72,19.62
-path	36.03,21.65	34.68,23.11	32.27,24.44
-path	31.42,26.25	30.27,28.02	29.28,29.77
-path	27.58,30.22	27.97,33.19	28.64,35.15
-path	25.69,38.69	26.55,40.28	28.36,41.46
-path	29.57,41.07	30.19,40.63	29.94,39.33
-click Foxflower##241641
-|tip Track them on your minimap with "Find Herbs".
-|tip There is a chance to spawn a Frenzied Fox when gathering Foxflower.
-|tip The Frenzied Fox runs away, dropping Foxflowers on the ground.
-|tip Run over the Foxflowers to collect them.
-Reach Level 800 Herbalism |skill Herbalism,800
-|next "Congratulations_Herbalism"
-step
-label "Fjarnskaggl_800"
-map Stormheim/0
-path	follow smart; loop on; ants curved; dist 20
-path	44.93,54.20	41.34,52.95	40.33,50.92
-path	42.22,48.92	43.08,46.16	43.43,43.85
-path	41.29,41.57	40.49,39.91	38.01,41.13
-path	35.47,40.72	35.03,39.51	35.58,37.35
-path	33.48,34.81	33.71,31.40	35.77,31.89
-path	37.05,32.77	38.83,31.85	40.28,30.50
-path	37.48,28.96	37.30,26.42	38.91,25.85
-path	41.56,23.10	42.49,23.41	43.26,23.57
-path	45.75,23.16	43.74,26.24	46.11,27.11
-path	44.71,30.80	46.90,32.23	48.53,33.05
-path	49.31,31.25	50.93,29.17	52.56,29.94
-path	52.50,31.90	50.07,34.59	48.68,38.47
-path	46.92,40.67	44.58,41.57	44.37,48.21
-path	45.48,50.13	48.34,49.86	50.79,52.76
-path	50.63,54.35	49.29,53.94	47.15,54.68
-click Fjarnskaggl##244777
-|tip Track them on your minimap with "Find Herbs".
-Reach Level 800 Herbalism |skill Herbalism,800
-|next "Congratulations_Herbalism"
-step
-label "Starlight_Rose_800"
-map Suramar/0
-path	follow smart; loop on; ants curved; dist 20
-path	25.54,30.05	27.27,29.12	28.67,29.86
-path	29.32,28.85	30.34,28.75	31.01,31.63
-path	32.95,35.75	33.67,38.94	27.80,42.69
-path	27.04,46.43	28.06,49.79	27.40,51.46
-path	27.42,52.84	24.88,52.37	22.97,51.94
-path	23.00,50.04	22.81,46.80	23.38,45.49
-path	22.68,44.71	21.89,45.62	19.88,48.46
-path	18.79,45.88	18.26,44.71	18.14,43.61
-path	16.15,41.98	16.60,39.45	16.16,37.12
-path	19.41,30.97	18.47,28.85	17.56,25.10
-path	16.58,23.72	16.66,22.12	19.53,19.81
-path	20.44,20.19	21.22,22.13	21.61,24.60
-path	23.21,25.75	23.21,28.36	22.84,30.57
-path	24.47,32.06
-click Starlight Rose##244778
-|tip Track them on your minimap with "Find Herbs".
-kill Withered Hungerer##98232+
-|tip They have a chance to spawn when you gather Starlight Rose.
-Reach Level 800 Herbalism |skill Herbalism,800
-|next "Congratulations_Herbalism"
-step
-label "Congratulations_Herbalism"
-_Congratulations!_
-You reached level 800 with the Herbalism profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Quest Guides\\Legion Herbalism Quest Line",{
 author="support@zygorguides.com",

@@ -47,9 +47,6 @@ ZGV.Quest_Cache_Ally = {
 ["PROFESSIONS\\Herbalism\\Farming Guides\\Herbs (Pre-Legion)"] = {
 	includes = {"follow_path_herbs"},
 },
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide"] = {
-	includes = {"Garrison_Small_Building","Garrison_ArchitectTable"},
-},
 ["PROFESSIONS\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide"] = {
 	{ids="36643"},
 	includes = {"Garrison_Small_Building","Garrison_ArchitectTable"},
@@ -459,7 +456,7 @@ ZGV.Quest_Cache_Ally = {
 	{ids="40528",goal_onlyif=function() return havequest(40528) or completedq(40528) end},
 	{ids="40544",goal_onlyif=function() return havequest(40544) or completedq(40544) end},
 	{ids="40542",goal_onlyif=function() return havequest(40542) or completedq(40542) end},
-	{ids="40535,40536,40538,40539,40540,40541,40546,40547,40561,40523,40524,40525,40560,40558,40559,40529,40530,40531,40562,40556,42214"},
+	{ids="40535,40536,40538,40539,40540,40541,40546,40547,40562,40523,40524,40525,40561,40558,40559,40529,40530,40531,40560,40556,42214"},
 },
 ["PROFESSIONS\\Jewelcrafting\\Quest Guides\\Argus Jewelcrafting Quest Line"] = {
 	{ids="48075,48076"},
@@ -2711,7 +2708,7 @@ ZGV.Quest_Cache_Ally = {
 	includes = {"MoP_Cooking_Dailies"},
 },
 ["PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Cooking 1-75"] = {
-	includes = {"PROFESSIONS\\Cooking\\Leveling Guides\\Way of the Grill 1-75"},
+	includes = {"PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75"},
 },
 ["PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Way of the Brew 1-75"] = {
 	{ids="31479,31302,31480,31281"},
@@ -4010,6 +4007,9 @@ ZGV.Quest_Cache_Ally = {
 	{ids="49869,48353,48365,47488,48004,48516,49302,48421,48195,48080,48088,49239,48354,48616,48366,48370,47485,48505,49398,48005,48009,50573,48196,48077,49736,48597,48347,48355,48367,47486,49268,49399,49292,48419,48939,50972,50790,50788,50789,47181,50787,50110,50795,49737,49741,48348,48352,48356,49740,49738,48368,48372,47487,52787,48003,49404,48773,48089,53041,48540,48670,48539,49178,52431,48558,47489,52750,48070,50531,49401,49405,47960,49218,49181,49226,48087,49230"},
 	includes = {"LEVELING\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice"},
 },
+["LEVELING\\Battle for Azeroth (110-120)\\WANTED Quests"] = {
+	{ids="51165"},
+},
 ["LEVELING\\Legion (100-110)\\Death Knight Intro & Artifacts"] = {
 	{ids="43962",goal_onlyif=function() return havequest(43962) end},
 	{ids="44663",goal_onlyif=function() return havequest(44663) or completedq(44663) end},
@@ -4471,11 +4471,11 @@ ZGV.Quest_Cache_Ally = {
 ["PROFESSIONS\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"] = {
 	includes = {"--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Archaeology"},
 },
+["PROFESSIONS\\Cooking\\Leveling Guides\\Cooking 1-300"] = {
+	{ids="8307,8313"},
+},
 ["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"] = {
 	includes = {"vendor_Fishing","--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Fishing"},
-},
-["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"] = {
-	includes = {"follow_path_herbs","--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Herbalism"},
 },
 ["PROFESSIONS\\Mining\\Farming Guides\\Ore"] = {
 	includes = {"follow_path_mine"},
@@ -4491,27 +4491,6 @@ ZGV.Quest_Cache_Ally = {
 },
 ["PROFESSIONS\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide"] = {
 	includes = {"trainer_Tailoring","--@@TRIALONLYLINE end_of_prof_trial_125","trainer_Tailoring |condition skill(Tailoring)>=125","vendor_Tailoring"},
-},
-["PROFESSIONS\\Alchemy\\Leveling Guides\\Alchemy 1-600 Leveling Guide"] = {
-	includes = {"Stormvine_Path","MR_BW_BT_SK_Path","--@@TRIALONLYLINE end_of_prof_trial_125","follow_path_herbs","T_Rose_Path","Tiger_Lily_Path","vendor_Alchemy","GB_Path","LR_SK_Path","GS_SM_Path","Sungrass_Path","GT_WS_Path","trainer_Alchemy","TJ_Path","Kingsblood_Path","SV_CB_Path","HB_Path","Whiptail_Path","IT_LB_Path","NB_DG_Path","FL_GT_KW_BW_Path","GC_DN_TL_Path","Terocone_Path","FW_DG_Path"},
-},
-["PROFESSIONS\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-600 Leveling Guide"] = {
-	includes = {"Iron_Ore_Path","--@@TRIALONLYLINE end_of_prof_trial_125","follow_path_mine","Thorium_Ore_Path","#includeCopper_Path","Saronite_Path","Adamantite_Path","vendor_Tailoring","Tin_Path","Obsidium_Path","trainer_Blacksmithing","trainer_Blacksmithing_Shatt","vendor_Blacksmithing","Cobalt_Path","maincity_anvil","Copper_Path","shatt_anvil","trainer_Mining","Fel_Iron_Path","Mithril_Ore_Path"},
-},
-["PROFESSIONS\\Enchanting\\Leveling Guides\\Enchanting 1-600 Leveling Guide"] = {
-	includes = {"--@@TRIALONLYLINE end_of_prof_trial_125","trainer_Enchanting"},
-},
-["PROFESSIONS\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide"] = {
-	includes = {"Tin_Path","--@@TRIALONLYLINE end_of_prof_trial_125","trainer_Mining","Mithril_Ore_Path","vendor_Blacksmithing","Fel_Iron_Path","follow_path_mine","Copper_Path","maincity_anvil","trainer_Engineering","Adamantite_Path","Iron_Ore_Path"},
-},
-["PROFESSIONS\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide"] = {
-	includes = {"GC_TL_Path","GC_TL_AT_Path","SV_CB_Path","vendor_Inscription","follow_path_herbs","trainer_Inscription","FW_DG_Path"},
-},
-["PROFESSIONS\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"] = {
-	includes = {"Tin_Path","Obsidium_Path","--@@TRIALONLYLINE end_of_prof_trial_150","Saronite_Path","Thorium_Ore_Path","trainer_Jewelcrafting","follow_path_mine","Copper_Path","maincity_anvil","Mithril_Ore_Path","trainer_Mining","Iron_Ore_Path"},
-},
-["PROFESSIONS\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide"] = {
-	includes = {"trainer_Leatherworking","--@@TRIALONLYLINE end_of_prof_trial_150","vendor_Leatherworking"},
 },
 ["PETSMOUNTS\\Battle Pets\\Aquatic Pets\\Slithershock Elver"] = {
 	{ids="38299"},
@@ -8577,11 +8556,11 @@ ZGV.Quest_Cache_Horde = {
 ["PROFESSIONS\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"] = {
 	includes = {"--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Archaeology"},
 },
+["PROFESSIONS\\Cooking\\Leveling Guides\\Cooking 1-300"] = {
+	{ids="8307,8313"},
+},
 ["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"] = {
 	includes = {"--@@TRIALONLYLINE end_of_prof_trial_150","trainer_Fishing"},
-},
-["PROFESSIONS\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"] = {
-	includes = {"--@@TRIALONLYLINE end_of_prof_trial_150","follow_path_herbs","trainer_HerbalismUC","trainer_Herbalism"},
 },
 ["PROFESSIONS\\Mining\\Farming Guides\\Ore"] = {
 	includes = {"follow_path_mine"},
@@ -10486,7 +10465,7 @@ ZGV.Quest_Cache_Horde = {
 	includes = {"MoP_Cooking_Dailies"},
 },
 ["PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Cooking 1-75"] = {
-	includes = {"PROFESSIONS\\Cooking\\Leveling Guides\\Way of the Grill 1-75"},
+	includes = {"PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75"},
 },
 ["PROFESSIONS\\Cooking\\Leveling Guides\\Pandaria Way of the Brew 1-75"] = {
 	{ids="31479,31302,31480,31281"},
@@ -14490,7 +14469,7 @@ ZGV.Quest_Cache = {
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Nazmir World Quests"] = {
-	{ids="52372,51015,52418,52426,51009,52337,52360,52410,52361,51004,51012,51005,52411,51006,52396"},
+	{ids="52410,52372,51015,52418,52426,51009,52337,52360,51005,52361,51004,51012,52385,52411,51006,52396"},
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Stormsong Valley World Quests"] = {
@@ -14506,7 +14485,7 @@ ZGV.Quest_Cache = {
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Zuldazar World Quests"] = {
-	{ids="52373,52383,50999,52387,52395,52336,52342,52409,52348,52350,52358,51037,51039,51041,51043,51045,51047,51049,52374,52382,52384,51000,52388,52398,52394,51010,52335,51014,51013,52341,52425,52408,52359,52349,52421,51051,51046,52420,51036,51038,51040,51042,51044,52369,51048,51050"},
+	{ids="52373,52383,50999,52387,52395,52336,52342,52409,52348,52350,52358,51037,51039,51041,51043,51045,51047,51049,52374,52382,52384,51000,52388,52398,52421,52394,51010,52335,51014,51013,52341,52425,52408,52359,52349,52351,51051,51046,52420,51036,51038,51040,51042,51044,52369,51048,51050"},
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["main_rep_mount"] = {

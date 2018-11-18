@@ -945,7 +945,7 @@ turnin Trapped!##29929 |goto The Jade Forest 46.3,29.4
 accept What's Mined Is Yours##29930 |goto The Jade Forest 46.3,29.4
 step
 clicknpc Jade Cart##56527 |goto The Jade Forest 46.3,29.5
-Defened the Jade Cart from Brittle Greenstone Gorgers until you reach your location |goto The Jade Forest 51.2,26.7 < 5 |c
+Defend the Jade Cart from Brittle Greenstone Gorgers until you reach your location |goto The Jade Forest 51.2,26.7 < 5 |c
 step
 talk Foreman Mann##56346
 turnin Calamity Jade##29926 |goto The Jade Forest 50.9,27.0

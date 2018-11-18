@@ -16,10 +16,30 @@ step
 label "Choose_World_Quest"
 #include "BFA_Choose_World_Quests"
 step
-label quest-52182
-accept The Azerite Stuff##52182 |goto Darkshore/0 32.85,84.09
-|tip You will accept this quest automatically.
+label quest-54821
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54821 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54821 |future
+step
+accept Athrikus Narassin##54821 |goto 58.51,24.35
+|tip You will accept this quest automatically.
+step
+kill Athrikus Narassin##147708 |q 54821/1 |goto 58.51,24.35
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52182
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52182 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52182 |future
+step
+accept The Azerite Stuff##52182 |goto 32.85,84.09
+|tip You will accept this quest automatically.
 step
 click Small Azerite Deposit##297605+
 |tip They look like multicolored mining viens on the ground around this area.
@@ -27,18 +47,44 @@ Kill enemies around this area
 collect 100 Azerite Crystal##164382 |q 52182/1 |goto 32.85,84.09
 |next "Tortollan_Seekers_WQ"
 step
-label quest-52895
-accept Arboria##52895 |goto Darkshore/0 44.03,75.29
-|tip You will accept this quest automatically.
+label quest-54823
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54823 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54823 |future
+step
+accept Aman##54823 |goto 37.62,84.53
+|tip You will accept this quest automatically.
+step
+kill Aman##147966 |q 54823/1 |goto 37.62,84.53
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52895
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52895 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52895 |future
+step
+accept Arboria##52895 |goto 44.03,75.29
+|tip You will accept this quest automatically.
 step
 kill Monstrous Shredder##143562 |q 52895/1 |goto 44.03,75.29
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52207
-accept The Azerite Stuff##52207 |goto Darkshore/0 32.48,84.44
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52207 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52207 |future
+step
+accept The Azerite Stuff##52207 |goto 32.48,84.44
+|tip You will accept this quest automatically.
 step
 click Small Azerite Deposit##297605+
 |tip They look like multicolored mining viens on the ground around this area.
@@ -47,9 +93,15 @@ collect 100 Azerite Crystal##164382 |q 52207/1 |goto 44.03,75.29
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52883
-accept Breakthru##52883 |goto Darkshore/0 40.98,83.99
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52883 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52883 |future
+step
+accept Breakthru##52883 |goto 40.98,83.99
+|tip You will accept this quest automatically.
 stickystart "Kill_Darnassian_Scouts"
 step
 use the Everburning Torch##162602
@@ -62,10 +114,40 @@ Kill enemies around this area
 Slay #10# Night Elf Forces |q 52883/1 |goto 40.98,83.99
 |next "Tortollan_Seekers_WQ"
 step
-label quest-52506
-accept Blunt the Spikes##52506 |goto Darkshore/0 39.11,42.36
-|tip You will accept this quest automatically.
+label quest-54784
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54784 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54784 |future
+step
+accept Blackwood Liberation##54784 |goto 43.83,80.41
+|tip You will accept this quest automatically.
+step
+talk Ancient Protector##149179
+Choose _"Ride with the Ancient Protector."_
+Ride with the Ancient Protector |q 54784/1 |goto 43.83,80.41
+stickystart "Slay_Kor'gar_Forces_54784"
+step
+Free a Furbolg |q 54784/3 |goto 44.90,83.07
+step
+label "Slay_Kor'gar_Forces_54784"
+Kill Kor'gar enemies around this area
+|tip Use the abilities on your action bar.
+Slay #20# Kor'gar Forces |q 54784/2 |goto 44.90,83.07
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52506
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52506 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52506 |future
+step
+accept Blunt the Spikes##52506 |goto 39.11,42.36
+|tip You will accept this quest automatically.
 stickystart "Kill_Darkshore_Invaders"
 step
 Enter the building |goto 38.87,41.91 < 5 |walk
@@ -79,9 +161,15 @@ kill 8 Darkshore Invader##143909 |q 52506/1 |goto 39.11,42.36
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53497
-accept Break Free##53497 |goto Darkshore/0 50.45,19.62
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53497 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53497 |future
+step
+accept Break Free##53497 |goto 50.45,19.62
+|tip You will accept this quest automatically.
 stickystart "Slay_Horde_Occupiers"
 step
 clicknpc Darnassian Archer##143976+
@@ -93,18 +181,72 @@ Kill enemies around this area
 Slay #12# Horde Occupiers |q 53497/2 |goto 50.45,19.62
 |next "Tortollan_Seekers_WQ"
 step
-label quest-52894
-accept Don't Stop Me Now##52894 |goto Darkshore/0 44.24,74.95
-|tip You will accept this quest automatically.
+label quest-54836
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54836 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54836 |future
+step
+accept Commander Drald##54836 |goto 46.47,85.80
+|tip You will accept this quest automatically.
+step
+kill Commander Drald##147845 |q 54836/1 |goto 46.47,85.80
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54838
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54838 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54838 |future
+step
+accept Croz Bloodrage##54838 |goto 50.68,31.50
+|tip You will accept this quest automatically.
+step
+kill Croz Bloodrage##149661 |q 54838/1 |goto 50.68,31.50
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54817
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54817 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54817 |future
+step
+accept Cyclarus##54817 |goto 43.60,53.19
+|tip You will accept this quest automatically.
+step
+kill Cyclarus##147241 |q 54817/1 |goto 43.60,53.19
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52894
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52894 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52894 |future
+step
+accept Don't Stop Me Now##52894 |goto 44.24,74.95
+|tip You will accept this quest automatically.
 step
 kill Burning Ancient##141365 |q 52894/1 |goto 44.24,74.95
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53520
-accept Detonate!##53520 |goto Darkshore/0 39.90,25.71
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53520 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53520 |future
+step
+accept Detonate!##53520 |goto 39.90,25.71
+|tip You will accept this quest automatically.
 stickystart "Slay_Horde_Occupiers"
 step
 clicknpc Keg of Azerite Powder##144023+
@@ -118,9 +260,15 @@ Slay #10# Horde Occupiers |q 53520/2 |goto 39.90,25.71
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52312
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52312 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52312 |future
+step
 accept Extinguish the Lights##52312 |goto 44.21,58.72
 |tip You will accept this quest automatically.
-|polish
 stickystart "Calm_Frenzied_Wisps"
 stickystart "Kill_Possessing_Spirits"
 step
@@ -138,9 +286,15 @@ kill 10 Possessing Spirit##140715 |q 52312/1 |goto 44.21,58.72
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52243
-accept Fuel for the Demolishers##52243 |goto Darkshore/0 40.29,61.39
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52243 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52243 |future
+step
+accept Fuel for the Demolishers##52243 |goto 40.29,61.39
+|tip You will accept this quest automatically.
 stickystart "Kill_Darnassian_Scouts"
 step
 kill Enraged Fire Elemental##140588+
@@ -153,9 +307,15 @@ Slay #7# Darnassian Scouts |q 52243/2 |goto 40.29,61.39
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53009
-accept Hang On In There##53009 |goto Darkshore/0 62.39,9.74
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53009 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53009 |future
+step
+accept Hang On In There##53009 |goto 62.39,9.74
+|tip You will accept this quest automatically.
 step
 clicknpc Horde Combatant##143457+
 |tip They look like wounded soldiers on the ground around this area.
@@ -164,9 +324,15 @@ Defend the War Camp |q 53009/1 |goto 62.39,9.74
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52890
-accept It's a Kind of Magic##52890 |goto Darkshore/0 41.97,78.16
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52890 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52890 |future
+step
+accept It's a Kind of Magic##52890 |goto 41.97,78.16
+|tip You will accept this quest automatically.
 stickystart "Slay_Frenzied_Blackwood_Furbolgs"
 step
 kill 8 Sentry Owl##141359+ |q 52890/1 |goto 41.97,78.16
@@ -176,25 +342,132 @@ kill 10 Frenzied Blackwood Furbolg##140686+ |q 52890/2 |goto 41.97,78.16
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52984
-accept I Want It All##52984 |goto Darkshore/0 32.92,84.05
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52984 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52984 |future
+step
+accept I Want It All##52984 |goto 32.92,84.05
+|tip You will accept this quest automatically.
 step
 kill Azerite Fury##142387 |q 52984/1 |goto 32.92,84.05
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52983
-accept I Want It All##52983 |goto Darkshore/0 32.92,84.05
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52983 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52983 |future
+step
+accept I Want It All##52983 |goto 32.92,84.05
+|tip You will accept this quest automatically.
 step
 kill Azerite Fury##142387 |q 52983/1 |goto 32.92,84.05
 |next "Tortollan_Seekers_WQ"
 step
-label quest-53010
-accept No Turning Back##53010 |goto Darkshore/0 62.36,9.58
-|tip You will accept this quest automatically.
+label quest-54895
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54895 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54895 |future
+step
+accept Ivus the Decayed##54895 |goto 41.19,35.93
+|tip You will accept this quest automatically.
+step
+kill Ivus the Decayed##148295 |q 54895/1 |goto 41.19,35.93
+|tip Move out of the plague zone on the ground after the breath attack. |grouprole TANK
+|tip Summoned Plaguelings fixate on random players and cannot be tanked. |grouprole TANK
+|tip Move out of blooms on the ground or you will take heavy damage. |grouprole EVERYONE
+|tip While Ivus is Petrified, kill the summoned Plaguelings. |grouprole DAMAGE
+|tip Players fixated by Plaguelings will need additional healing. |grouprole HEALER
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54667
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54667 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54667 |future
+step
+accept Legacy in Ruins##54667 |goto 60.75,18.48
+|tip You will accept this quest automatically.
+stickystart "Slay_Highborne_Spirits_54667"
+step
+click Highborne Relic##237017+
+|tip They look like small white statues on the ground around this area.
+collect 8 Highborne Relic##166246 |q 54667/2 |goto 60.75,18.48
+step
+label "Slay_Highborne_Spirits_54667"
+Kill Highborne enemies around this area
+Slay #12# Highborne Spirits |q 54667/1 |goto 60.75,18.48
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54467
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54467 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54467 |future
+step
+accept Legacy in Ruins##54467 |goto 60.75,18.48
+|tip You will accept this quest automatically.
+stickystart "Slay_Highborne_Spirits_54467"
+step
+click Highborne Relic##237017+
+|tip They look like small white statues on the ground around this area.
+collect 8 Highborne Relic##166246 |q 54467/2 |goto 60.75,18.48
+step
+label "Slay_Highborne_Spirits_54467"
+Kill Highborne enemies around this area
+Slay #12# Highborne Spirits |q 54467/1 |goto 60.75,18.48
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54835
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54835 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54835 |future
+step
+accept Moxo the Beheader##54835 |goto 67.21,18.68
+|tip You will accept this quest automatically.
+step
+kill Moxo the Beheader##147701 |q 54835/1 |goto 67.21,18.68
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54830
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54830 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54830 |future
+step
+accept Mrggr'marr##54830 |goto 35.72,81.86
+|tip You will accept this quest automatically.
+step
+kill Mrggr'marr##147970 |q 54830/1 |goto 35.72,81.86
+|next "Tortollan_Seekers_WQ"
+step
+label quest-53010
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53010 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53010 |future
+step
+accept No Turning Back##53010 |goto 62.36,9.58
+|tip You will accept this quest automatically.
 step
 Kill Horde enemies around this area
 click Horde War Supplies
@@ -205,9 +478,15 @@ Assault the War Camp |q 53010/1 |goto 62.36,9.58
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53320
-accept Ours For the Taking##53320 |goto Darkshore/0 61.08,18.07
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53320 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53320 |future
+step
+accept Ours For the Taking##53320 |goto 61.08,18.07
+|tip You will accept this quest automatically.
 step
 clicknpc Damaged Shredder##143452+
 |tip They look like broken mechanical shredders on the ground around this area.
@@ -218,9 +497,15 @@ Control the Ruins of Mathystra |q 53320/1 |goto 61.08,18.07
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52893
-accept One Vision##52893 |goto Darkshore/0 41.97,78.16
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52893 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52893 |future
+step
+accept One Vision##52893 |goto 41.97,78.16
+|tip You will accept this quest automatically.
 stickystart "Slay_Frenzied_Blackwood_Furbolgs"
 step
 talk Druid of the Claw##143938
@@ -232,10 +517,30 @@ label "Slay_Frenzied_Blackwood_Furbolgs"
 kill 10 Frenzied Blackwood Furbolg##140686+ |q 52893/2 |goto 41.97,78.16
 |next "Tortollan_Seekers_WQ"
 step
-label quest-53319
-accept Our Sacred Forest##53319 |goto Darkshore/0 60.82,18.17
-|tip You will accept this quest automatically.
+label quest-54841
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54841 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54841 |future
+step
+accept Orwell Stevenson##54841 |goto 39.13,34.10
+|tip You will accept this quest automatically.
+step
+kill Orwell Stevenson##148295 |q 54841/1 |goto 39.13,34.10
+|next "Tortollan_Seekers_WQ"
+step
+label quest-53319
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53319 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53319 |future
+step
+accept Our Sacred Forest##53319 |goto 60.82,18.17
+|tip You will accept this quest automatically.
 step
 click Wood Pile##297480+
 |tip They look like bundles of wood on the ground around this area.
@@ -243,10 +548,30 @@ kill Horde Combatant##143456+
 Protect the Ruins of Mathystra |q 53319/1 |goto 59.12,16.69
 |next "Tortollan_Seekers_WQ"
 step
-label quest-52505
-accept Pruning the Thorns##52505 |goto Darkshore/0 39.56,39.83
-|tip You will accept this quest automatically.
+label quest-54674
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54674 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 43.52,58.48 |q 54674 |future
+step
+accept Prisoners of the Darkscale##54674 |goto 43.52,58.48
+|tip You will accept this quest automatically.
+step
+Rescue #6# Gilnean Laborers |q 54674/1 |goto 43.52,58.48
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52505
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52505 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52505 |future
+step
+accept Pruning the Thorns##52505 |goto 39.56,39.83
+|tip You will accept this quest automatically.
 stickystart "Kill_Auberdine_Guardians"
 step
 kill Lieutenant Aylissa Silverarrow##141346
@@ -257,10 +582,94 @@ label "Kill_Auberdine_Guardians"
 kill 8 Auberdine Guardian##143902 |q 52505/1 |goto 39.14,42.41
 |next "Tortollan_Seekers_WQ"
 step
-label quest-53498
-accept Staying Power##53498 |goto Darkshore/0 50.31,19.93
-|tip You will accept this quest automatically.
+label quest-54672
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54672 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54672 |future
+step
+accept Rituals of Twilight##54672 |goto 40.89,84.01
+|tip You will accept this quest automatically.
+step
+Kill enemies around this area
+click Twilight Rune+
+|tip They look like multicolored runes drawn on the ground around this area.
+click Twilight Reagent+
+|tip They look like orange bottles and purple boxes around this area.
+|tip You can find them under tents and near slain enemies.
+Stop the Twilight's Hammer |q 54672/1 |goto 40.89,84.01
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54499
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54499 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54499 |future
+step
+accept Rituals of Twilight##54499 |goto 40.89,84.01
+|tip You will accept this quest automatically.
+step
+Kill enemies around this area
+click Twilight Rune+
+|tip They look like multicolored runes drawn on the ground around this area.
+click Twilight Reagent+
+|tip They look like orange bottles and purple boxes around this area.
+|tip You can find them under tents and near slain enemies.
+Stop the Twilight's Hammer |q 54499/1 |goto 40.89,84.01
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54676
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54676 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54676 |future
+step
+accept Shards of Narassin##54676 |goto 57.27,23.97
+|tip You will accept this quest automatically.
+stickystart "Kill_Tortured_Spirits_54676"
+step
+click Soul Gem##237017
+Break #6# Soul Gems |q 54676/2 |goto 57.27,23.97
+step
+label "Kill_Tortured_Spirits_54676"
+kill 8 Tortured Spirit##147723 |q 54676/1 |goto 57.27,23.97
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54698
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54698 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54698 |future
+step
+accept Shattering Spears##54698 |goto 62.17,9.94
+|tip You will accept this quest automatically.
+step
+Kill enemies around this area
+click Shatterspear Totem+
+|tip They look like wooden Tauren totems on the ground around this area.
+click Horde Food Stores+
+|tip They look like white sacks with red Horde symbols on them and crates and barrels on the ground around this area.
+Cripple the Shatterspear Offensive |q 54698/1 |goto 62.17,9.94
+|next "Tortollan_Seekers_WQ"
+step
+label quest-53498
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53498 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53498 |future
+step
+accept Staying Power##53498 |goto 50.31,19.93
+|tip You will accept this quest automatically.
 stickystart "Slay_Darnassian_Reinforcements"
 step
 click Lunar Ward##299019
@@ -273,9 +682,15 @@ Slay #15# Darnassian Reinforcements |q 53498/2 |goto 50.31,19.93
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52307
-accept Spiritual Aid##52307 |goto Darkshore/0 44.01,58.96
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52307 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52307 |future
+step
+accept Spiritual Aid##52307 |goto 44.01,58.96
+|tip You will accept this quest automatically.
 stickystart "Calm_Frenzied_Wisps"
 stickystart "Kill_Possessing_Spirits"
 step
@@ -293,9 +708,15 @@ kill 10 Possessing Spirit##140715 |q 52307/1 |goto 44.01,58.96
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52504
-accept So We Meat Again##52504 |goto Darkshore/0 39.31,51.93
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52504 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52504 |future
+step
+accept So We Meat Again##52504 |goto 39.31,51.93
+|tip You will accept this quest automatically.
 stickystart "Kill_Horde_Poachers"
 step
 Kill enemies around this area
@@ -307,9 +728,15 @@ kill 8 Horde Poacher##142673 |q 52504/2 |goto 39.31,51.93
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52244
-accept Stop the Drilling##52244 |goto Darkshore/0 40.53,62.56
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52244 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52244 |future
+step
+accept Stop the Drilling##52244 |goto 40.53,62.56
+|tip You will accept this quest automatically.
 stickystart "Slay_Bilgewater_Forces"
 step
 click Oil Pump##292903
@@ -323,13 +750,49 @@ Disable the Oil Pump |q 52244/2 |goto 40.75,59.20 |count 3
 step
 label "Slay_Bilgewater_Forces"
 Kill Bilgewater enemies around this area
-Slay #7# Bilgewater Forces |q 52244/1 |goto Darkshore/0 40.53,62.56
+Slay #7# Bilgewater Forces |q 52244/1 |goto 40.53,62.56
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54876
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54876 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54876 |future
+step
+accept Tapping the Breach##54876
+|tip You will accept this quest automatically.
+step
+Kill Twilight enemies around this area
+Slay #20# Twilight Elementalists |q 54876/1
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54844
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54844 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54844 |future
+step
+accept Tapping the Breach##54844
+|tip You will accept this quest automatically.
+step
+Kill Twilight enemies around this area
+Slay #20# Twilight Elementalists |q 54844/1
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52343
-accept They Eat Like Orcs##52343 |goto Darkshore/0 39.22,51.52
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52343 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52343 |future
+step
+accept They Eat Like Orcs##52343 |goto 39.22,51.52
+|tip You will accept this quest automatically.
 stickystart "Kill_Druids_of_the_Claw"
 step
 Kill enemies around this area
@@ -342,10 +805,58 @@ label "Kill_Druids_of_the_Claw"
 kill 8 Druid of the Claw##142677 |q 52343/2 |goto 39.22,51.52
 |next "Tortollan_Seekers_WQ"
 step
-label quest-52896
-accept Under Pressure##52896 |goto Darkshore/0 42.82,68.40
-|tip You will accept this quest automatically.
+label quest-54673
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54673 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54673 |future
+step
+accept Tip of the Trident##54673 |goto 38.59,76.26
+|tip You will accept this quest automatically.
+step
+Kill Darkscale enemies around this area
+click Darkscale Harpoon Launcher+
+|tip They look like large siege weapons on the ground around this area.
+click Darkscale Banner+
+|tip They look like blue and gold flags stuck in the ground around this area.
+click Darkscale Armaments+
+|tip They look like large racks of weapons on the ground around this area.
+Speak with the Tree of Life |q 54673/1 |goto 38.59,76.26
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54509
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 54509 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 54509 |future
+step
+accept Tip of the Trident##54509 |goto 38.59,76.26
+|tip You will accept this quest automatically.
+step
+Kill Darkscale enemies around this area
+click Darkscale Harpoon Launcher+
+|tip They look like large siege weapons on the ground around this area.
+click Darkscale Banner+
+|tip They look like blue and gold flags stuck in the ground around this area.
+click Darkscale Armaments+
+|tip They look like large racks of weapons on the ground around this area.
+Speak with the Tree of Life |q 54509/1 |goto 38.59,76.26
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52896
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52896 |future
+|polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52896 |future
+step
+accept Under Pressure##52896 |goto 42.82,68.40
+|tip You will accept this quest automatically.
 step
 clicknpc Goblin Hellion##143952
 Use the Goblin Hellion |q 52896/1 |goto 42.82,68.40
@@ -364,9 +875,15 @@ Click the "Exit" Button on Your Action Bar |outvehicle |q 52896
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53552
-accept Wicked Kegger##53552 |goto Darkshore/0 39.90,25.71
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 53552 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 53552 |future
+step
+accept Wicked Kegger##53552 |goto 39.90,25.71
+|tip You will accept this quest automatically.
 stickystart "Kill_Darkshore_Invaders"
 step
 clicknpc Keg of Azerite Powder##144023+
@@ -380,9 +897,15 @@ Slay #10# Alliance Defenders |q 53552/2 |goto 39.90,25.71
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52897
-accept We Will "Rock" You##52897 |goto Darkshore/0 42.09,66.86
-|tip You will accept this quest automatically.
+Travel to Darkshore |goto Darkshore/0 48.21,41.89 < 10000 |c |q 52897 |future
 |polish
+step
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Return to Present Time |nobuff 609811 |goto 48.07,25.67 |q 52897 |future
+step
+accept We Will "Rock" You##52897 |goto 42.09,66.86
+|tip You will accept this quest automatically.
 step
 clicknpc Tree of Life##144413
 Speak with the Tree of Life |q 52897/1 |goto 42.09,66.86
@@ -445,6 +968,14 @@ worldquestzone=896,
 step
 label "Choose_World_Quest"
 #include "BFA_Choose_World_Quests"
+step
+label quest-54681
+accept Azerite Caravan##54681 |goto Drustvar/0 32.16,46.75
+|tip You will accept this quest automatically.
+step
+kill Caravan Commander Veronica##148676 |q 54681/1 |goto 32.16,46.75
+|tip She walks around this area on a horse.
+|next "Tortollan_Seekers_WQ"
 step
 label quest-53714
 accept Apothecary Jerrod##53714 |goto Drustvar/0 34.84,41.55
@@ -1043,6 +1574,16 @@ label "Kill_Soulgorged_Gravestalkers_51616"
 kill 3 Soulgorged Gravestalker##126263 |q 51616/2 |goto 61.25,47.22
 |next "Tortollan_Seekers_WQ"
 step
+label quest-53270
+accept Flourishing Riverbud##53270 |goto Drustvar/0 59.88,53.00
+|tip You will accept this quest automatically.
+step
+click Flourishing Riverbud+
+|tip They look like curly green plants along the riverbed around this area.
+|tip They appear on your minimap as yellow dots.
+collect 10 Flourishing Riverbud##163595 |q 53270/1 |goto 59.88,53.00
+|next "Tortollan_Seekers_WQ"
+step
 label quest-51658
 accept Fly the Coop!##51658 |goto Drustvar/0 31.86,24.43
 |tip You will accept this quest automatically.
@@ -1092,11 +1633,15 @@ kill Gorged Boar##138675 |q 51874/1 |goto 28.00,25.96
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51909
-accept Grozgore##51909 |goto Drustvar/0 50.33,20.69
+Follow the path up |goto Drustvar/0 57.94,20.25 < 15 |only if walking
+Follow the path |goto Drustvar/0 56.96,24.43 < 20 |only if walking
+Follow the path |goto Drustvar/0 54.20,26.24 < 20 |only if walking
+Follow the path up |goto Drustvar/0 52.13,23.74 < 20 |only if walking
+Follow the path up |goto Drustvar/0 50.64,21.57 < 15 |only if walking
+accept Grozgore##51909 |goto Drustvar/0 50.34,20.64
 |tip You will accept this quest automatically.
-|polish
 step
-kill Grozgore##127129 |q 51909/1 |goto 50.33,20.69
+kill Grozgore##127129 |q 51909/1 |goto 50.34,20.64
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51764
@@ -2058,6 +2603,13 @@ talk Quartermaster Alcorn##135815
 turnin Work Order: Monelite Ore##50987 |goto 37.91,48.94
 |next "Tortollan_Seekers_WQ"
 step
+label quest-54488
+accept Zul'aki the Headhunter##54488 |goto Drustvar/0 30.90,35.76
+|tip You will accept this quest automatically.
+step
+kill Zul'aki the Headhunter##148146 |q 54488/1 |goto 30.90,35.76
+|next "Tortollan_Seekers_WQ"
+step
 label quest-54711
 accept Zillie Wunderwrench and Grizzwald##54711 |goto Drustvar/0 39.84,41.39
 |tip You will accept this quest automatically.
@@ -2570,34 +3122,6 @@ click Gemcaller Matrix##136001
 Restore the Skycaller Gem |q 51172/2 |goto 27.25,39.41
 |next "Tortollan_Seekers_WQ"
 step
-label quest-54503
-accept This Gang Of Mine##54503 |goto Nazmir/0 76.95,22.70
-|tip You will accept this quest automatically.
-|polish
-step
-clicknpc Crawler Mine "Boomer"##148256
-Repair the Crawler Mine |q 54503/1 |goto 76.95,22.70 |count 1
-step
-clicknpc Crawler Mine "Killzit"##148255
-Repair the Crawler Mine |q 54503/1 |goto 74.97,23.05 |count 2
-step
-clicknpc Crawler Mine "Roscoe"##148213
-Repair the Crawler Mine |q 54503/1 |goto 76.37,21.67 |count 3
-step
-clicknpc Crawler Mine "Winona"##148217
-Repair the Crawler Mine |q 54503/1 |goto 77.39,18.77 |count 4
-step
-clicknpc Crawler Mine "Cranky"##148206
-Repair the Crawler Mine |q 54503/1 |goto 77.65,21.80 |count 5
-step
-click Remote Mine Controls##148201
-Use the Remote Mine Controls |q 54503/2 |goto Nazmir/0 76.34,25.02
-step
-Destroy the Azerite War Machine |goto 82.65,14.29
-|tip Use the "Detonate" ability on your action bar to do this.
-|tip You will nead to stand near it.
-|next "Tortollan_Seekers_WQ"
-step
 label quest-50559
 accept Getting Out of Hand##50559 |goto Nazmir/0 59.11,14.78
 |tip You will accept this quest automatically.
@@ -2609,6 +3133,14 @@ step
 Kill enemies around this area
 |tip Use the abilities on your action bar.
 Destroy #40# Undead |q 50559/1 |goto 62.67,13.99
+|next "Tortollan_Seekers_WQ"
+step
+label quest-53322
+accept Gleaming Storm Silver##53322 |goto Nazmir/0 75.19,47.82
+|tip You will accept this quest automatically.
+step
+click Gleaming Storm Silver Deposit##297619
+collect 1 Gleaming Storm Silver##163623 |q 53322/1 |goto 75.19,47.82
 |next "Tortollan_Seekers_WQ"
 step
 label quest-50496
@@ -3134,6 +3666,19 @@ step
 kill Stormcaller Morka##148759 |q 54694/1 |goto 49.02,16.13
 |next "Tortollan_Seekers_WQ"
 step
+label quest-52385
+collect 20 Slimy Mackerel##152544 |q 52385 |future
+|tip Use the "Slimy Mackerel" farming guide to accomplish this.
+|tip You can also purchase them from the Auction House.
+|polish
+step
+accept Supplies Needed: Slimy Mackerel##52385 |goto Nazmir/0 39.10,79.47
+|tip You will accept this quest automatically.
+step
+talk Provisioner Lija##135459
+turnin Supplies Needed: Slimy Mackerel##52385 |goto 39.10,79.47
+|next "Tortollan_Seekers_WQ"
+step
 label quest-50660
 accept Survival Strategy##50660 |goto Nazmir/0 73.68,61.16
 |tip You will accept this quest automatically.
@@ -3178,6 +3723,23 @@ kill Reanimated Horror##122684+
 |tip A troll spirit will sometimes start following you after you kill them.
 Return #12# Spirits to the Necropolis |q 50529/1 |goto 39.60,29.93
 Lead the sprits to the yellow glowing circle at [39.57,27.89]
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54503
+accept This Gang Of Mine##54503 |goto Nazmir/0 76.95,22.70
+|tip You will accept this quest automatically.
+step
+click Crawler Mines
+|tip They have various names.
+|tip They look like grey spiked metal bombs that walk on the ground around this area.
+|tip They will appear on your minimap as yellow dots.
+Repair #5# Crawler Mines |q 54503/1 |goto 76.95,22.70
+step
+click Remote Mine Controls##148201
+Use the Remote Mine Controls |q 54503/2 |goto Nazmir/0 76.34,25.02
+step
+Destroy the Azerite War Machine |q 54503/3 |goto 82.61,14.45
+|tip Use the "Detonate" ability on your action bar next to the Azerite War Machine.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51856
@@ -3765,7 +4327,6 @@ step
 label quest-54442
 accept Beast Tamer Watkins##54442 |goto Stormsong Valley/0 35.00,60.31
 |tip You will accept this quest automatically.
-|polish
 step
 kill Beast Tamer Watkins##148075 |q 54442/1 |goto 35.00,60.31
 |next "Tortollan_Seekers_WQ"
@@ -3797,6 +4358,18 @@ accept Blooming Siren's Sting##53286 |goto Stormsong Valley/0 68.57,41.38
 step
 click Blooming Siren's Sting##143727
 Gather a Blooming Siren's Sting |q 53286/1 |goto 68.57,41.38
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52063
+accept Boarder Patrol##52063 |goto Stormsong Valley/0 48.21,70.16
+|tip You will accept this quest automatically.
+step
+clicknpc Ornery Battleboar##139707
+Ride the Ornery Battleboar |q 52063/1 |goto 48.21,70.16
+step
+Kill enemies around this area
+|tip Run through them while riding the boar.
+Slay #50# Briaback Quilboars |q 52063/2 |goto 45.43,72.22
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52045
@@ -4118,9 +4691,8 @@ kill 12 Grasping Thorns##132206 |q 52011/3 |goto 49.45,65.07
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53715
-accept Beast Tamer Watkins##53715 |goto Stormsong Valley/0 49.72,49.08
+accept Firewarden Viton Darkflare##53715 |goto Stormsong Valley/0 49.72,49.08
 |tip You will accept this quest automatically.
-|polish
 step
 kill Firewarden Viton Darkflare##144915 |q 53715/1 |goto 49.72,49.08
 |next "Tortollan_Seekers_WQ"
@@ -4128,26 +4700,24 @@ step
 label quest-53878
 accept First Aid Mission##53878 |goto Stormsong Valley/0 40.02,63.06
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Alliance_Soldiers_53878"
 step
 clicknpc Wounded Grunt##144911+
-|tip They look like fallen Horde soldiers on the ground around this area.
+|tip They look like orc soldiers laying on the ground around this area.
 Bandage #6# Wounded Grunts |q 53878/1 |goto 40.02,63.06
 step
 label "Slay_Alliance_Soldiers_53878"
 Kill enemies around this area
-Slay #8# Alliance Soldiers |q 53878/1 |goto 40.02,63.06
+Slay #8# Alliance Soldiers |q 53878/2 |goto 40.02,63.06
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53717
-accept First Aid Mission##53717 |goto Stormsong Valley/0 40.02,63.06
+accept Hold the Highland##53717 |goto Stormsong Valley/0 40.02,63.06
 |tip You will accept this quest automatically.
-|polish
 step
+Kill Honorbound enemies around this area
 clicknpc Wounded Grunt##144911+
-|tip They look like fallen Horde soldiers on the ground around this area.
-Kill enemies around this area
+|tip They look like orc soldiers laying on the ground around this area.
 Slay #12# Horde Soldiers |q 53717/1 |goto 40.02,63.06
 |next "Tortollan_Seekers_WQ"
 step
@@ -4434,6 +5004,17 @@ You can find more around:
 [47.56,57.31]
 [49.92,52.93]
 [46.73,53.23]
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54266
+Follow the path up |goto Stormsong Valley/0 41.19,44.20 < 20 |only if walking
+Continue up the path |goto Stormsong Valley/0 42.07,42.24 < 15 |only if walking
+Continue up the path |goto Stormsong Valley/0 42.85,43.83 < 15 |only if walking
+accept Mortar Master Zapfritz##54266 |goto Stormsong Valley/0 43.04,46.53
+|tip You will accept this quest automatically.
+step
+kill Mortar Master Zapfritz##147562 |q 54266/1 |goto 43.04,46.53
+|tip Up on the cliff.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52982
@@ -4814,16 +5395,30 @@ kill Shadow Hunter Mutumba##144987 |q 53724/1 |goto 36.45,51.99
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51455
-accept Shrine of the Storm: Cleansing Fonts##51455
+accept Shrine of the Storm: Cleansing Fonts##51455 |goto Shrine of the Storm/0 45.42,8.40
 |tip Use the Group Finder to enter the "Shrine of the Storm" dungeon.
 |tip You will accept this quest automatically.
 step
-Enter #4# Cleansing Fonts |q 51455/1
+Enter #4# Cleansing Fonts |q 51455/1 |goto Shrine of the Storm/0 27.55,40.39
 |tip They look like pools of water around second boss in the dungeon.
 |tip Jump in each of the small pools of water.
 |tip Use the "Shrine of the Storm" dungeon guide to accomplish this.
 step
-kill Vol'zith the Whisperer##134069 |q 51455/2
+kill Vol'zith the Whisperer##134069 |q 51455/2 |goto Shrine of the Storm/1 69.30,34.41
+|tip He is the final boss inside the "Shrine of the Storm" dungeon.
+|tip Use the "Shrine of the Storm" dungeon guide to accomplish this.
+|next "Tortollan_Seekers_WQ"
+step
+label quest-51456
+accept Shrine of the Storm: Crawling Corruption##51456 |goto Shrine of the Storm/0 45.42,8.40
+|tip Use the Group Finder to enter the "Shrine of the Storm" dungeon.
+|tip You will accept this quest automatically.
+|polish
+step
+kill Black Blood##137805 |q 51456/1
+|tip Use the "Shrine of the Storm" dungeon guide to accomplish this.
+step
+kill Vol'zith the Whisperer##134069 |q 51456/2 |goto Shrine of the Storm/1 69.30,34.41
 |tip He is the final boss inside the "Shrine of the Storm" dungeon.
 |tip Use the "Shrine of the Storm" dungeon guide to accomplish this.
 |next "Tortollan_Seekers_WQ"
@@ -4943,15 +5538,14 @@ kill Vol'zith the Whisperer##134069 |q 51453/2
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51977
-Cross the water |goto Stormsong Valley/0 36.37,34.19 < 10 |only if walking
-Enter the cave |goto 34.96,32.64 < 7 |only if walking
-accept Sabertron##51977 |goto Stormsong Valley/0 34.55,32.34
+accept Sabertron##51977 |goto Stormsong Valley/0 34.93,32.60
 |tip You will accept this quest automatically.
-|polish
 step
+Enter the cave |goto 34.93,32.60 < 10 |walk
 kill Sabertron Technician##139334
-|tip Killing this mob will spawn Sabertron.
-kill Sabertron##139335 |q 51977/1 |goto 34.11,32.10
+|tip He walks around this area inside the cave.
+kill Sabertron##139328 |q 51977/1 |goto 33.88,31.89
+|tip One of the nearby metal cats will attack after you kill the Sabertron Technician.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52309
@@ -5144,10 +5738,10 @@ step
 label quest-53707
 accept Supply Mission##53707 |goto Stormsong Valley/0 36.46,64.09
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Caravan_Guards_53707"
 step
-clicknpc Alliance Supplies##144801
+clicknpc Alliance Supplies##144801+
+|tip They look like tan grain sacks on the ground around this area.
 Burn #8# Alliance Supplies |q 53707/1 |goto 36.46,64.09
 step
 label "Kill_Caravan_Guards_53707"
@@ -5157,14 +5751,26 @@ step
 label quest-53706
 accept Supply Mission##53706 |goto Stormsong Valley/0 36.46,64.09
 |tip You will accept this quest automatically.
-|polish
-stickystart "Kill_Caravan_Guards_53706"
+stickystart "Slay_Eyegouge_Guerillas_53706"
 step
-clicknpc Alliance Supplies##144801
+clicknpc Alliance Supplies##144801+
+|tip They look like tan grain sacks on the ground around this area.
 Recover #8# Alliance Supplies |q 53706/1 |goto 36.46,64.09
 step
-label "Kill_Caravan_Guards_53706"
-kill 6 Orc Pillager##144897 |q 53706/2 |goto 36.46,64.09
+label "Slay_Eyegouge_Guerillas_53706"
+Kill enemies around this area
+Slay #6# Eyegouge Guerillas |q 53706/2 |goto 36.46,64.09
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54403
+accept Tidesage Clarissa##54403 |goto Stormsong Valley/0 41.46,52.04
+|tip You will accept this quest automatically.
+stickystart "Kill_Alkalinius_54403"
+step
+kill Tidesage Clarissa##147941 |q 54403/1 |goto 41.46,52.04
+step
+label "Kill_Alkalinius_54403"
+kill Alkalinius##147951 |q 54403/2 |goto 41.48,52.14
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51827
@@ -5355,24 +5961,24 @@ step
 label quest-53712
 accept Unfriendly Skies##53712 |goto Stormsong Valley/0 44.99,60.11
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Alliance Gyrocopter##145557
-Board the Gyrocopter |invehicle |goto 44.99,60.11 |q 53712
+Ride the 7th Legion Gyrocopter to the Horde Airship |q 53712/1 |goto 44.99,60.11
 step
-Land on the Ship |outvehicle |goto 46.61,55.89 |q 53712
+Fly up to the Airship |goto 46.61,55.89 < 10 |c |q 53712
 step
 click Horde Cage+
-|tip They look like large wooden cages with NPCs inside on the deck of the ship around this area.
-Free #6# Prisoners |q 53712/1 |goto 44.99,60.11
+|tip They look like metal and wooden cages on the ground around this area on airship.
+|tip They will appear on your minimap as yellow dots.
+Free #6# Alliance Prisoners |q 53712/2 |goto 44.99,60.11
 step
 click Engine Gearing+
-|tip They look like giant spinning gears below deck in the ship around this area.
-Free #4# Engines |q 53712/2 |goto 47.15,55.27
+|tip They look like giant spinning gears around this area downstairs inside the airship.
+Destroy #4# Engines |q 53712/3 |goto 47.15,55.27
 step
 clicknpc Alliance Gyrocopter##145572
-|tip On the deck of the ship.
-Escape the Ship |invehicle |goto 46.53,55.51
+|tip On the deck of the airship, where you landed.
+Escape the Airship |q 53712/4 |goto 46.53,55.51
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52301
@@ -5398,18 +6004,28 @@ step
 label quest-53983
 accept Wet Work: Fort Knight##53983 |goto Stormsong Valley/0 37.77,48.01
 |tip You will accept this quest automatically.
-|polish
 step
 talk Shadow Hunter Scout##147381
 Tell him _"I am ready."_
 Speak with a Shadow Hunter Scout |q 53983/1 |goto 37.77,48.01
 step
-Follow the path up |goto 37.17,48.10 < 15 |only if walking
-Continue following the path |goto 36.06,46.70 < 15 |only if walking
-Continue following the path |goto 34.90,47.75 < 20 |only if walkingd
+talk Shadow Hunter Scout##147381
+Tell him _"I am ready."_
+Become Stealthed |havebuff 132320 |goto 37.77,48.01 |q 53983
+step
+Follow the path up |goto 37.14,48.07 < 15 |only if walking
+Follow the path |goto 36.12,46.86 < 20 |only if walking
+Follow the path up |goto 35.40,46.92 < 15 |only if walking
 kill Knight-Captain Johnny##147001
-|tip While moving, avoid stepping into the circles surrounding NPCs.
-Slay the Target |q 53983/2 |goto 75.77,50.19
+|tip He will appear on your minimap as a yellow dot.
+|tip Pull him away from the nearby enemies, so you can fight him safely.
+|tip Avoid the circled below enemies around this area.
+|tip They will be able to detect you.
+Slay the Target |q 53983/2 |goto 34.76,48.14
+step
+Become Stealthed |havebuff 132320
+|tip Use the "Smoke Bomb" ability.
+|tip It appears as a button on the screen.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-53287
@@ -8110,8 +8726,20 @@ step
 label "Choose_World_Quest"
 #include "BFA_Choose_World_Quests"
 step
+label quest-54644
+accept Azerite Transport##54644 |goto Vol'dun/0 39.53,40.20
+|tip You will accept this quest automatically.
+|tip He walks around this area on a horse.
+step
+kill Caravan Leader##148550 |q 54644/1 |goto 39.53,40.20
+|tip He walks around this area on a horse.
+step
+click Azerite Chest
+Secure the Azerite Shipment |q 54644/2 |goto 39.47,39.99
+|next "Tortollan_Seekers_WQ"
+step
 label quest-51095
-accept Ashmane##51095 |goto Vol'dun/0 54.70,15.14
+accept Ashmane##51095 |goto Vol'dun/0 55.77,16.59
 |tip You will accept this quest automatically.
 step
 Follow the path up |goto 55.77,16.59 < 20 |only if walking
@@ -8286,25 +8914,25 @@ step
 label quest-54273
 accept Battle Bots##54273 |goto Vol'dun/0 40.34,41.60
 |tip You will accept this quest automatically.
-|polish
 step
 Kill Krolusk enemies around this area
-collect Alkalescent Salt##165852 |q 54273/1 |goto 40.34,41.60
+collect 10 Alkalescent Salt##165852 |q 54273/1 |goto 40.34,41.60
 step
 talk Blixthraz Blastcharge##147638
+|tip On the bridge.
 Tell him _"I've got the salts."_
-Give the Salts to Binny |q 54273/2 |goto 41.24,43.22
+Give the Salts to Blixthraz |q 54273/2 |goto 41.24,43.22
 |next "Tortollan_Seekers_WQ"
 step
 label quest-54272
 accept Battle Bots##54272 |goto Vol'dun/0 40.34,41.60
 |tip You will accept this quest automatically.
-|polish
 step
 Kill Krolusk enemies around this area
-collect Alkalescent Salt##165852 |q 54272/1 |goto 40.34,41.60
+collect 10 Alkalescent Salt##165852 |q 54272/1 |goto 40.34,41.60
 step
 talk Binny Sprigspinner##147649
+|tip On the bridge.
 Tell her _"I've got the salts."_
 Give the Salts to Binny |q 54272/2 |goto 42.21,41.65
 |next "Tortollan_Seekers_WQ"
@@ -8442,17 +9070,17 @@ step
 label quest-54189
 accept Desert Crawl##54189 |goto Vol'dun/0 37.57,56.66
 |tip You will accept this quest automatically.
-|polish
 step
-click Crawler Mine Parts##311182
-|tip They look like broken spiked mines laying on the ground around this area.
+click Crawler Mine Parts##311182+
+|tip They look like round spiked metal balls on the ground around this area.
 collect 8 Crawler Mine Parts##164742 |q 54189/1 |goto 37.57,56.66
 step
 click Remote Mine Controls
 Use the Remote Mine Controls |q 54189/2 |goto 36.47,58.91
 step
 Follow the path |goto 38.08,55.98 < 20 |only if walking
-Destroy the Ace Steam Tank |q 54189/3 |goto 39.77,52.41
+Destroy the Ace Steam Tank |q 54189/3 |goto 39.77,52.59
+|tip Use the "Detonate" ability on your action bar.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52878
@@ -8599,6 +9227,13 @@ clicknpc Fertilizer##136770+
 Collect #10# Fertilizer |q 51564/1 |goto 53.22,15.75
 |next "Tortollan_Seekers_WQ"
 step
+label quest-54646
+accept Grand Marshal Fury##54646 |goto 39.44,37.30
+|tip You will accept this quest automatically.
+step
+kill Grand Marshal Fury##146942 |q 54646/1 |goto 39.44,37.30
+|next "Tortollan_Seekers_WQ"
+step
 label quest-51157
 accept Golanar##51157 |goto Vol'dun/0 59.51,8.49
 |tip You will accept this quest automatically.
@@ -8743,6 +9378,15 @@ Kill enemies around this area
 |tip Use the "Stormstrike" ability.
 |tip It appears as a button on the screen.
 Slay #8# Brine Basin Wildlife |q 51931/1 |goto 58.85,41.67
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54574
+accept Jin'tago##54574 |goto Vol'dun/0 32.92,68.30
+|tip You will accept this quest automatically.
+step
+Follow the path up |goto 32.92,68.30 < 20 |only if walking
+kill Jin'tago##148456 |q 54574/1 |goto 33.31,71.63
+|tip Up on the cliff.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51100
@@ -8986,6 +9630,33 @@ Kill enemies around this area
 Protect Arcanist Elleryn |q 51804/1 |goto Vol'dun/1 58.14,16.74
 |next "Tortollan_Seekers_WQ"
 step
+label quest-54636
+accept Sandbinder Sodir##54636 |goto Vol'dun/0 40.76,41.36
+|tip You will accept this quest automatically.
+step
+kill Sandbinder Sodir##148494 |q 54636/1 |goto 40.76,41.36
+|next "Tortollan_Seekers_WQ"
+step
+label quest-54786
+accept Stop the Shipments##54786 |goto goto Vol'dun/0 36.86,37.71
+|tip You will accept this quest automatically.
+step
+talk Sandwalker Vakaara##149306
+Tell him _"Give me the totem. I'll scare away the vulpera!"_
+Talk with Sandwalker Vaakara |q 54786/1 |goto 36.86,37.71
+stickystart "Destroy_Transported_Supplies_54786"
+step
+Scare Off #6# Hired Vulpera |q 54786/2 |goto 37.35,43.10
+|tip Use the "Sandscream Totem" ability next to Hired Caravan Guardians around this area.
+|tip It appears as a button on the screen.
+|tip They look like fox creatures fighting Alliance soldiers around this area.
+step
+label "Destroy_Transported_Supplies_54786"
+click Transported Supplies+
+|tip They look like piles of wooden boxes on the ground around this area.
+Destroy #6# Transported Supplies |q 54786/3 |goto 37.35,43.10
+|next "Tortollan_Seekers_WQ"
+step
 label quest-51831
 accept Swift Strike##51831 |goto Vol'dun/0 61.90,43.74
 |tip You will accept this quest automatically.
@@ -9049,26 +9720,26 @@ kill Scaleclaw Broodmother##127776 |q 51107/1 |goto 44.54,80.20
 |next "Tortollan_Seekers_WQ"
 step
 label quest-54188
-accept Scrambled Bots##54188 |goto Vol'dun/0 39.49,53.67
+accept Scrambled Bots##54188 |goto Vol'dun/0 39.50,53.68
 |tip You will accept this quest automatically.
-|polish
 step
 click Bot Scrambler##311822
-collect Bot Scrambler##165841 |q 54188/1 |goto 44.54,80.20
+Obtain the Bot Scrambler |q 54188/1 |goto 39.50,53.68
+stickystart "Destroy_Siege_Shredders_54188"
+stickystart "Destroy_Crawler_Mines_54188"
 step
-Follow the path |goto 38.22,55.78 < 30 |only if walking
-Continue following the path |goto 36.74,58.46 < 30 |only if walking
 click Power Control
 Disable the Power Control |q 54188/4 |goto 36.45,58.93
 step
-clicknpc Siege Shredder##144705+
-|tip Use the "Bot Scrambler" ability onscreen.
-|tip Shredders have pilots that will attack you.
+label "Destroy_Siege_Shredders_54188"
 Destroy #4# Siege Shredders |q 54188/2 |goto 37.43,56.74
+|tip Use the "Bot Scrambler" ability on Siege Shredders around this area.
+|tip It appears as a button on the screen.
 step
-clicknpc Crawler Mine##144994
-|tip Use the "Bot Scrambler" ability onscreen.
+label "Destroy_Crawler_Mines_54188"
 Destroy #8# Crawler Mines |q 54188/3 |goto 37.43,56.74
+|tip Use the "Bot Scrambler" ability on Crawler Mines around this area.
+|tip It appears as a button on the screen.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-51629
@@ -9293,20 +9964,19 @@ step
 label quest-54415
 accept Vulpera for a Day##54415 |goto Vol'dun/0 39.13,46.98
 |tip You will accept this quest automatically.
-|polish
 step
 talk Nisha##148496
-Tell her _"Give me the supplies. I'll defend the Vulpera!"_
+Tell her _"Give me the supplies. I'll defend the vulpera!"_
 Talk to Nisha |q 54415/1 |goto 39.13,46.98
 step
 Kill Purge Squad enemies around this area
 click Vulpera Banner+
-|tip They look like brown banners on the ground around this area.
+|tip They look like brown and white flags on poles on the ground around this area.
 click Vulpera Caravan+
-|tip They look like burning wagons around this area.
+|tip They look like burning wagons on the ground around this area.
 clicknpc Shackled Vulpera##148457+
-|tip They look like chained Vulpera on the ground around this area.
-Protect the Voldunai |q 54415/2 |goto 39.13,46.98
+|tip They look like small fox creatures chained on the ground around this area.
+Protect the Voldunai |q 54415/2 |goto 37.87,43.64
 |next "Tortollan_Seekers_WQ"
 step
 label quest-54014
@@ -10220,6 +10890,16 @@ accept Kiboku##51084 |goto Zuldazar/0 75.63,35.90
 |tip You will accept this quest automatically.
 step
 kill Kiboku##132244 |q 51084/1 |goto 75.63,35.90
+|next "Tortollan_Seekers_WQ"
+step
+label quest-51501
+accept Kings' Rest: Malfunction Junction##51501 |goto King's Rest/0 51.65,28.12
+|tip You will accept this quest automatically.
+|polish
+step
+kill Malfunctioning Construct##141806 |q 51501/1 |goto King's Rest/0 51.65,28.12
+|tip It patrols around the outside of this room.
+|tip Pull it away from Mchimba the Embalmer.
 |next "Tortollan_Seekers_WQ"
 step
 label quest-50547
@@ -11369,6 +12049,18 @@ accept Work Order: Mistscale##51013 |goto Dazar'alor/2 67.25,71.57
 step
 talk Natal'hakata##131287
 turnin Work Order: Mistscale##51013 |goto 67.25,71.57
+|next "Tortollan_Seekers_WQ"
+step
+label quest-52351
+collect 10 Spiced Snapper##154886 |q 52351 |future
+|tip Create them with Cooking or purchase them from the Auction House.
+|polish
+step
+accept Work Order: Spiced Snapper##52351 |goto Zuldazar/0 71.50,30.12
+|tip You will accept this quest automatically.
+step
+talk Collector Kojo##134345
+turnin Work Order: Spiced Snapper##52351 |goto 71.50,30.34
 |next "Tortollan_Seekers_WQ"
 step
 label quest-52398

@@ -30,7 +30,7 @@ collect 59 Silverleaf##765
 step
 Open Your Alchemy Crafting Panel:
 _<Create 59 Minor Healing Potions>_
-Reach Level 60 Alchemy |skill Alchemy,60
+Reach 60 Alchemy |skill Alchemy,60
 step
 collect 100 Briarthorn##2450
 |tip Keep any Mageroyal you find.
@@ -45,7 +45,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 45 Lesser Healing Potions>_
 |tip You may need to craft more than 45 to reach 105.
-Reach Level 105 Alchemy |skill Alchemy,105
+Reach 105 Alchemy |skill Alchemy,105
 step
 collect 40 Mageroyal##785
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -62,7 +62,7 @@ learn Elixir of Wisdom##3171 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Elixir of Wisdom>_
-Reach Level 110 Alchemy |skill Alchemy,110
+Reach 110 Alchemy |skill Alchemy,110
 step
 Enter the building |goto Orgrimmar/1 55.58,46.70 |walk
 talk Yelmak##3347
@@ -72,7 +72,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 30 Healing Potions>_
 |tip You may need to craft more than 30 to reach 140.
-Reach Level 140 Alchemy |skill Alchemy,140
+Reach 140 Alchemy |skill Alchemy,140
 step
 Enter the building |goto Orgrimmar/1 55.58,46.70 |walk
 talk Yelmak##3347
@@ -86,7 +86,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 15 Lesser Mana Potions>_
 |tip You may need to craft more than 15 to reach 155.
-Reach Level 155 Alchemy |skill Alchemy,155
+Reach 155 Alchemy |skill Alchemy,155
 step
 Enter the building |goto Orgrimmar/1 55.58,46.70 |walk
 talk Yelmak##3347
@@ -103,7 +103,7 @@ collect 30 Kingsblood##3356
 step
 Open Your Alchemy Crafting Panel:
 _<Create 20 Greater Healing Potions>_
-Reach Level 175 Alchemy |skill Alchemy,175
+Reach 175 Alchemy |skill Alchemy,175
 step
 Enter the building |goto Orgrimmar/1 55.58,46.70 |walk
 talk Yelmak##3347
@@ -112,7 +112,7 @@ learn Mana Potion##3452 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Mana Potions>_
-Reach Level 185 Alchemy |skill Alchemy,185
+Reach 185 Alchemy |skill Alchemy,185
 step
 collect 30 Goldthorn##3821
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -125,7 +125,7 @@ learn Elixir of Agility##11449 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 20 Elixir of Agility>_
-Reach Level 205 Alchemy |skill Alchemy,205
+Reach 205 Alchemy |skill Alchemy,205
 step
 collect 10 Wild Steelbloom##3355
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -138,7 +138,7 @@ learn Elixir of Greater Defense##11450 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Greater Defense>_
-Reach Level 215 Alchemy |skill Alchemy,215
+Reach 215 Alchemy |skill Alchemy,215
 step
 collect 25 Sungrass##8838
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -151,7 +151,7 @@ learn Superior Healing Potion##11457 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 25 Superior Healing Potion>_
-Reach Level 240 Alchemy |skill Alchemy,240
+Reach 240 Alchemy |skill Alchemy,240
 step
 collect 35 Khadgar's Whisker##3358
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -168,7 +168,7 @@ learn Elixir of Greater Intellect##11465 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Greater Intellect>_
-Reach Level 250 Alchemy |skill Alchemy,250
+Reach 250 Alchemy |skill Alchemy,250
 step
 collect 40 Gromsblood##8846
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -181,7 +181,7 @@ learn Elixir of Detect Demon##11478 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 20 Elixir of Detect Demon>_
-Reach Level 270 Alchemy |skill Alchemy,270
+Reach 270 Alchemy |skill Alchemy,270
 step
 collect 40 Sorrowmoss##13466
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -198,7 +198,7 @@ learn Elixir of the Sages##17555 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 15 Elixir of the Sages>_
-Reach Level 285 Alchemy |skill Alchemy,285
+Reach 285 Alchemy |skill Alchemy,285
 step
 collect 28 Golden Sansam##13464
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -215,7 +215,7 @@ learn Major Healing Potion##17556 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Major Healing Potion>_
-Reach Level 295 Alchemy |skill Alchemy,295
+Reach 295 Alchemy |skill Alchemy,295
 step
 collect 10 Icecap##13467
 |tip You can farm them with Herbalism or purchase them from the Auction House.
@@ -228,10 +228,10 @@ learn Purification Potion##17572 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Purification Potion>_
-Reach Level 300 Alchemy |skill Alchemy,300
+Reach 300 Alchemy |skill Alchemy,300
 step
 _Congratulations!_
-You Reached Level 300 Alchemy Skill.
+You Reached 300 Alchemy Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Outland Alchemy 1-75",{
 author="support@zygorguides.com",
@@ -258,7 +258,7 @@ collect 44 Felweed##22785
 step
 Open Your Alchemy Crafting Panel:
 _<Create 14 Volatile Healing Potion>_
-Reach Level 15 Outland Alchemy |skill Outland Alchemy,15
+Reach 15 Outland Alchemy |skill Outland Alchemy,15
 step
 collect 80 Dreaming Glory##22786
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -270,7 +270,7 @@ learn Elixir of Healing Power##28545 |goto 45.62,21.46
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Healing Power>_
-Reach Level 25 Outland Alchemy |skill Outland Alchemy,25
+Reach 25 Outland Alchemy |skill Outland Alchemy,25
 step
 collect 10 Terocone##22789
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -282,7 +282,7 @@ learn Elixir of Draenic Wisdom##39638 |goto 45.62,21.46
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Draenic Wisdom>_
-Reach Level 35 Outland Alchemy |skill Outland Alchemy,35
+Reach 35 Outland Alchemy |skill Outland Alchemy,35
 step
 collect 10 Netherbloom##22791
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -294,7 +294,7 @@ learn Super Healing Potion##28551 |goto 45.62,21.46
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Super Healing Potion>_
-Reach Level 40 Outland Alchemy |skill Outland Alchemy,40
+Reach 40 Outland Alchemy |skill Outland Alchemy,40
 step
 talk Daga Ramba##19837
 buy 1 Recipe: Super Mana Potion##22907 |goto Blade's Edge Mountains/0 51.07,57.81
@@ -305,7 +305,7 @@ learn Super Mana Potion##28555
 step
 Open Your Alchemy Crafting Panel:
 _<Create 15 Super Mana Potion>_
-Reach Level 55 Outland Alchemy |skill Outland Alchemy,55
+Reach 55 Outland Alchemy |skill Outland Alchemy,55
 step
 talk Daga Ramba##19837
 |tip Inside the building.
@@ -321,7 +321,7 @@ collect 40 Nightmare Vine##22792
 step
 Open Your Alchemy Crafting Panel:
 _<Create 40 Major Dreamless Sleep Potion>_
-Reach Level 75 Outland Alchemy |skill Outland Alchemy,75
+Reach 75 Outland Alchemy |skill Outland Alchemy,75
 step
 _Congratulations!_
 You Reached 75 Outland Alchemy Skill.
@@ -348,7 +348,7 @@ collect 20 Talandra's Rose##36907
 step
 Open Your Alchemy Crafting Panel:
 _<Create 4 Icy Mana Potion>_
-Reach Level 5 Northrend Alchemy |skill Northrend Alchemy,5
+Reach 5 Northrend Alchemy |skill Northrend Alchemy,5
 step
 collect 20 Goldclover##36901
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -360,7 +360,7 @@ learn Potion of Nightmares##53900 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Potion of Nightmares>_
-Reach Level 10 Northrend Alchemy |skill Northrend Alchemy,10
+Reach 10 Northrend Alchemy |skill Northrend Alchemy,10
 step
 collect 20 Tiger Lily##36904
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -372,7 +372,7 @@ learn Elixir of Mighty Strength##54218 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Mighty Strength>_
-Reach Level 20 Northrend Alchemy |skill Northrend Alchemy,20
+Reach 20 Northrend Alchemy |skill Northrend Alchemy,20
 step
 collect 24 Goldclover##36901
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -388,7 +388,7 @@ learn Elixir of Mighty Agility##53840 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of Mighty Agility>_
-Reach Level 30 Northrend Alchemy |skill Northrend Alchemy,30
+Reach 30 Northrend Alchemy |skill Northrend Alchemy,30
 step
 collect 20 Icethorn##36906
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -400,7 +400,7 @@ learn Indestructible Potion##53905 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Indestructible Potion>_
-Reach Level 40 Northrend Alchemy |skill Northrend Alchemy,40
+Reach 40 Northrend Alchemy |skill Northrend Alchemy,40
 step
 collect 30 Lichbloom##36905
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -413,7 +413,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 30 Runic Mana Potion>_
 |tip You may need to make more of these to reach 55.
-Reach Level 55 Northrend Alchemy |skill Northrend Alchemy,55
+Reach 55 Northrend Alchemy |skill Northrend Alchemy,55
 step
 collect 5 Dark Jade##36932
 |tip Prospect them with Jewelcrafting from Northrend Ore or purchase them from the Auction House.
@@ -427,7 +427,7 @@ learn Transmute: Earthsiege Diamond##57427 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Transmute: Earthsiege Diamond>_
-Reach Level 60 Northrend Alchemy |skill Northrend Alchemy,60
+Reach 60 Northrend Alchemy |skill Northrend Alchemy,60
 step
 collect 105 Lichbloom##36905
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -449,7 +449,7 @@ learn Flask of Stoneblood##53902 |goto 42.63,32.05
 step
 Open Your Alchemy Crafting Panel:
 _<Create 15 Flask of Stoneblood>_
-Reach Level 75 Northrend Alchemy |skill Northrend Alchemy,75
+Reach 75 Northrend Alchemy |skill Northrend Alchemy,75
 step
 _Congratulations!_
 You Reached 75 Northrend Alchemy Skill.
@@ -477,7 +477,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 4 Draught of War>_
 |tip You may need to make a few more.
-Reach Level 5 Cataclysm Alchemy |skill Cataclysm Alchemy,5
+Reach 5 Cataclysm Alchemy |skill Cataclysm Alchemy,5
 step
 talk Yelmak##3347
 |tip Inside the building.
@@ -486,7 +486,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Ghost Elixir>_
 |tip You may need to make a few more.
-Reach Level 10 Cataclysm Alchemy |skill Cataclysm Alchemy,10
+Reach 10 Cataclysm Alchemy |skill Cataclysm Alchemy,10
 step
 collect 15 Azshara's Veil##52985
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -498,7 +498,7 @@ learn Volcanic Potion##80481 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Volcanic Potion>_
-Reach Level 15 Cataclysm Alchemy |skill Cataclysm Alchemy,15
+Reach 15 Cataclysm Alchemy |skill Cataclysm Alchemy,15
 step
 talk Yelmak##3347
 |tip Inside the building.
@@ -507,7 +507,7 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 10 Elixir of the Cobra>_
 |tip You may need to make a few more.
-Reach Level 25 Cataclysm Alchemy |skill Cataclysm Alchemy,25
+Reach 25 Cataclysm Alchemy |skill Cataclysm Alchemy,25
 step
 collect 25 Heartblossom##52986
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -519,7 +519,7 @@ learn Elixir of Deep Earth##80488 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Elixir of Deep Earth>_
-Reach Level 30 Cataclysm Alchemy |skill Cataclysm Alchemy,30
+Reach 30 Cataclysm Alchemy |skill Cataclysm Alchemy,30
 step
 talk Yelmak##3347
 |tip Inside the building.
@@ -527,7 +527,7 @@ learn Elixir of Impossible Accuracy##80491 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Elixir of Impossible Accuracy>_
-Reach Level 35 Cataclysm Alchemy |skill Cataclysm Alchemy,35
+Reach 35 Cataclysm Alchemy |skill Cataclysm Alchemy,35
 step
 collect 60 Whiptail##52988
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -539,7 +539,7 @@ learn Mythical Mana Potion##80494 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Mythical Mana Potion>_
-Reach Level 40 Cataclysm Alchemy |skill Cataclysm Alchemy,40
+Reach 40 Cataclysm Alchemy |skill Cataclysm Alchemy,40
 step
 collect 45 Volatile Life##52329
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -551,7 +551,7 @@ learn Golemblood Potion##80496 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Golemblood Potion>_
-Reach Level 45 Cataclysm Alchemy |skill Cataclysm Alchemy,45
+Reach 45 Cataclysm Alchemy |skill Cataclysm Alchemy,45
 step
 collect 45 Twilight Jasmine##52987
 |tip Farm them with Herbalism or purchase them from the Auction House.
@@ -563,7 +563,7 @@ learn Mythical Healing Potion##80498 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 27 Mythical Healing Potion>_
-Reach Level 60 Cataclysm Alchemy |skill Cataclysm Alchemy,60
+Reach 60 Cataclysm Alchemy |skill Cataclysm Alchemy,60
 step
 talk Yelmak##3347
 |tip Inside the building.
@@ -571,7 +571,7 @@ learn Flask of Titanic Strength##80723 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Flask of Titanic Strength>_
-Reach Level 65 Cataclysm Alchemy |skill Cataclysm Alchemy,65
+Reach 65 Cataclysm Alchemy |skill Cataclysm Alchemy,65
 step
 collect 15 Nightstone##52180
 |tip Prospect them with Jewelcrafting from Cataclysm Ore, mine them from Cataclysm Mining nodes, or purchase them from the Auction House.
@@ -583,7 +583,7 @@ learn Transmute: Demonseye##80248 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Transmute: Demonseye>_
-Reach Level 70 Cataclysm Alchemy |skill Cataclysm Alchemy,70
+Reach 70 Cataclysm Alchemy |skill Cataclysm Alchemy,70
 step
 collect 15 Alicite##52179
 |tip Prospect them with Jewelcrafting from Cataclysm Ore, mine them from Cataclysm Mining nodes, or purchase them from the Auction House.
@@ -595,7 +595,7 @@ learn Transmute: Amberjewel##80247 |goto 55.68,45.74
 step
 Open Your Alchemy Crafting Panel:
 _<Create 5 Transmute: Amberjewel>_
-Reach Level 75 Cataclysm Alchemy |skill Cataclysm Alchemy,75
+Reach 75 Cataclysm Alchemy |skill Cataclysm Alchemy,75
 step
 _Congratulations!_
 You Reached 75 Cataclysm Alchemy Skill.
@@ -700,10 +700,9 @@ skill Archaeology,525
 step
 Click here to proceed |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 525-600 Leveling Guide"
 ]])
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing \\Leveling Guides\\Blacksmithing 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-300",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Classic Blacksmithing skill from 1-300.",
+description="This guide will walk you through leveling your Blacksmithing skill from 1-300.",
 condition_end=function() return skill('Blacksmithing') >= 300 end,
 condition_suggested=function() return skill('Blacksmithing') > 0 and skill('Blacksmithing') < 300 end,
 },[[
@@ -711,32 +710,35 @@ step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 Train Blacksmithing |skillmax Blacksmithing,300 |goto Orgrimmar/1 75.35,33.99
+|tip You must be at least level 5.
+step
+talk Sumi##3356
+buy 1 Blacksmith Hammer##5956 |goto 75.98,35.43
+|only if itemcount() == 0
 step
 collect 130 Rough Stone##2835
-|tip These are gathered with the Mining profession, from Copper Veins.
-|tip Refer to the Copper Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip You can mine Rough Stone from Copper Veins.
 |only if skill("Blacksmithing") < 25
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 25 Rough Sharpening Stones>_
-|tip This recipe will be yellow at 20, so you may need to craft more.
-Reach Level 25 Blacksmithing |skill Blacksmithing,25 |goto 76.01,34.59
+_<Create 25 Rough Sharpening Stone>_
+|tip You may need to craft a few more.
+Reach 25 Blacksmithing |skill Blacksmithing,25 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 learn Rough Grinding Stone##3320 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 50 Rough Grinding Stones>_
-|tip This recipe will be yellow at 45, so you may need to craft more.
-|tip Save 20 for later.
-Reach Level 65 Blacksmithing |skill Blacksmithing,65 |goto 76.01,34.59
+_<Create 50 Rough Grinding Stone>_
+|tip You may need to craft a few more.
+|tip Save at least 20 for later.
+Reach 65 Blacksmithing |skill Blacksmithing,65 |goto 75.92,34.42
 step
-collect 60 Coarse Stone##2836
-|tip These are gathered with the Mining profession, from Tin Veins, Mithril and Truesilver Deposits.
-|tip Refer to a corresponding farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 100 Coarse Stone##2836
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Coarse Stone can be mined from Tin Veins and Mithril and Truesilver Deposits.
 |only if skill("Blacksmithing") < 90
 step
 talk Okothos Ironrager##11177
@@ -744,44 +746,34 @@ talk Okothos Ironrager##11177
 learn Coarse Sharpening Stone##2665 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 15 Coarse Sharpening Stones>_
-|tip This recipe will be green at 72, so you may need to craft more.
-Reach Level 75 Blacksmithing |skill Blacksmithing,75 |goto 76.01,34.59
+_<Create 15 Coarse Sharpening Stone>_
+|tip You may need to craft a few more.
+Reach 75 Blacksmithing |skill Blacksmithing,75 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 learn Coarse Grinding Stone##3326 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 25 Coarse Grinding Stones>_
-|tip This recipe will be green at 87, so you may need to craft more.
-|tip Save 25 for later.
-Reach Level 90 Blacksmithing |skill Blacksmithing,90 |goto 76.01,34.59
+_<Create 20 Coarse Grinding Stone>_
+|tip You may need to craft a few more.
+|tip Save at least 20 for later.
+Reach 90 Blacksmithing |skill Blacksmithing,90 |goto 75.92,34.42
 step
-collect 210 Copper Bar##2840
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Copper Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 100 Copper Bar##2840
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 100
 step
 collect 10 Silver Bar##2842
-|tip You can smelt these with the Mining skill.
-|tip You will need Copper and Tin Bar to make 1 Bronze Bar.
-|tip Refer to the Copper Ore and Tin Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 105
 step
 collect 115 Heavy Stone##2838
-|tip These are gathered with the Mining skill, from Iron Deposits.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 140
 step
-collect 150 Bronze Bar##2841
-|tip You can smelt these with the Mining skill.
-|tip You will need Copper and Tin Bar to make 1 Bronze Bar.
-|tip Refer to the Copper Ore and Tin Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 180 Bronze Bar##2841
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 155
 step
 talk Okothos Ironrager##11177
@@ -790,7 +782,7 @@ learn Runed Copper Belt##2666 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Runed Copper Belt>_
-Reach Level 100 Blacksmithing |skill Blacksmithing,100 |goto 76.01,34.59
+Reach 100 Blacksmithing |skill Blacksmithing,100 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -799,7 +791,7 @@ step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Silver Skeleton Key>_
 |tip You may need to make less, collected extra materials just in case.
-Reach Level 105 Blacksmithing |skill Blacksmithing,105 |goto 76.01,34.59
+Reach 105 Blacksmithing |skill Blacksmithing,105 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -807,7 +799,7 @@ learn Rough Bronze Leggings##2668 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Rough Bronze Leggings>_
-Reach Level 110 Blacksmithing |skill Blacksmithing,110 |goto 76.01,34.59
+Reach 110 Blacksmithing |skill Blacksmithing,110 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -815,7 +807,7 @@ learn Rough Bronze Shoulders##3328 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 15 Rough Bronze Shoulders>_
-Reach Level 125 Blacksmithing |skill Blacksmithing,125 |goto 76.01,34.59
+Reach 125 Blacksmithing |skill Blacksmithing,125 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -823,9 +815,9 @@ learn Heavy Grinding Stone##3337 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 35 Heavy Grinding Stone>_
-|tip This will be green by 137, so you may need to create more.
-|tip Save 20 for later.
-Reach Level 140 Blacksmithing |skill Blacksmithing,140 |goto 76.01,34.59
+|tip You may need to craft a few more.
+|tip Save at least 20 for later.
+Reach 140 Blacksmithing |skill Blacksmithing,140 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -833,7 +825,7 @@ learn Rough Bronze Shoulders##3328 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Rough Bronze Shoulders>_
-Reach Level 145 Blacksmithing |skill Blacksmithing,145 |goto 76.01,34.59
+Reach 145 Blacksmithing |skill Blacksmithing,145 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -841,16 +833,15 @@ learn Patterned Bronze Bracers##2672 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Patterned Bronze Bracers>_
-Reach Level 155 Blacksmithing |skill Blacksmithing,155 |goto 76.01,34.59
+Reach 155 Blacksmithing |skill Blacksmithing,155 |goto 75.92,34.42
 step
-talk Borya##3364
-buy 35 Green Dye##2605 |goto 60.89,58.26
+talk Tamar##3366
+|tip Inside the building.
+buy 35 Green Dye##2605 |goto 60.35,54.31
 |only if skill("Blacksmithing") < 190
 step
-collect 280 Iron Bar##3575
-|tip These are gathered with the Mining skill, from Iron Deposits.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 230 Iron Bar##3575
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 200
 step
 talk Okothos Ironrager##11177
@@ -859,7 +850,7 @@ learn Green Iron Leggings##3506 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Green Iron Leggings>_
-Reach Level 165 Blacksmithing |skill Blacksmithing,165 |goto 76.01,34.59
+Reach 165 Blacksmithing |skill Blacksmithing,165 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -867,14 +858,10 @@ learn Green Iron Bracers##3501 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 25 Green Iron Bracers>_
-Reach Level 190 Blacksmithing |skill Blacksmithing,190 |goto 76.01,34.59
+Reach 190 Blacksmithing |skill Blacksmithing,190 |goto 75.92,34.42
 step
 collect 50 Steel Bar##3859
-|tip These are created with the Mining profession.
-|tip It takes 1 Iron bar and one coal to craft.
-|tip Coal can be boat from various Mining Supply NPCs.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 200
 step
 talk Okothos Ironrager##11177
@@ -883,28 +870,24 @@ learn Golden Scale Bracers##7223 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Golden Scale Bracers>_
-Reach Level 200 Blacksmithing |skill Blacksmithing,200 |goto 76.01,34.59
+Reach 200 Blacksmithing |skill Blacksmithing,200 |goto 75.92,34.42
 step
 collect 20 Solid Stone##7912
-|tip These are gathered by the Mining profession, from Mithril Deposits.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Solid Stone can be Mined from Mithril Deposits.
 |only if skill("Blacksmithing") < 200
 step
-collect 150 Mageweave Cloth##4338
-|tip Refer to the Mageweave Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 144 Mageweave Cloth##4338
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 210
 step
-collect 320 Mithril Bar##3860
-|tip These are created by the Mining profession, gathered from Mithril Deposits.
-|tip Refer to the Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 318 Mithril Bar##3860
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 250
 step
 collect 35 Dense Stone##12365
-|tip These are gathered by the Mining profession, from Thorium Veins.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Solid Stone can be Mined from Small and Rich Thorium Veins.
 |only if skill("Blacksmithing") < 260
 step
 talk Okothos Ironrager##11177
@@ -913,7 +896,7 @@ learn Solid Sharpening Stone##9918 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 20 Solid Sharpening Stone>_
-Reach Level 210 Blacksmithing |skill Blacksmithing,210 |goto 76.01,34.59
+Reach 210 Blacksmithing |skill Blacksmithing,210 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -921,47 +904,43 @@ learn Heavy Mithril Gauntlet##9928 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 15 Heavy Mithril Gauntlet>_
-Reach Level 225 Blacksmithing |skill Blacksmithing,225 |goto 76.01,34.59
+Reach 225 Blacksmithing |skill Blacksmithing,225 |goto 75.92,34.42
 step
 talk Gharash##8176
-buy Plans: Mithril Scale Bracers##7995 |n
-|tip This is a limited time recipe.
-|tip You may have to wait up to an hour for it to restock if it isn't available.
+buy 1 Plans: Mithril Scale Bracers##7995 |goto Swamp of Sorrows/0 47.22,52.10
+|tip If it is not available, it will respawn in 30-40 minutes.
+step
 use the Plans: Mithril Scale Bracers##7995
-learn Mithril Scale Bracers##9937 |goto Swamp of Sorrows/0 47.22,52.10
+learn Mithril Scale Bracers##9937
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 11 Mithril Scale Bracers>_
-Reach Level 236 Blacksmithing |skill Blacksmithing,236 |goto Orgrimmar/1 76.01,34.59
+Reach 236 Blacksmithing |skill Blacksmithing,236 |goto Orgrimmar/1 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 learn Mithril Coif##9961 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 14 Mithril Coils>_
-Reach Level 250 Blacksmithing |skill Blacksmithing,250 |goto 76.01,34.59
+_<Create 14 Mithril Coif>_
+Reach 250 Blacksmithing |skill Blacksmithing,250 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 learn Dense Sharpening Stone##16641 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 20 Dense Sharpening Stones>_
-|tip This recipe will be green at 257, so you may need to create more.
-Reach Level 260 Blacksmithing |skill Blacksmithing,260 |goto 76.01,34.59
+_<Create 20 Dense Sharpening Stone>_
+|tip You may need to create a few more.
+Reach 260 Blacksmithing |skill Blacksmithing,260 |goto 75.92,34.42
 step
-collect 430 Thorium Bar##12359
-|tip These are created by the Mining profession, from Thorium Ore.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 428 Thorium Bar##12359
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Blacksmithing") < 300
 step
 collect 10 Star Ruby##7910
-|tip These are created by the Mining profession, from Thorium Ore.
-|tip You can also use Prospecting on Thorium Ore with the Inscription profession.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Star Rubies can by mined from Mithril and Truesilver deposits and Small and Rich Thorium Veins.
 |only if skill("Blacksmithing") < 300
 step
 talk Okothos Ironrager##11177
@@ -970,7 +949,7 @@ learn Thorium Bracers##16644 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 16 Thorium Bracers>_
-Reach Level 276 Blacksmithing |skill Blacksmithing,276 |goto 76.01,34.59
+Reach 276 Blacksmithing |skill Blacksmithing,276 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -978,7 +957,7 @@ learn Imperial Plate Bracers##16649 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 15 Imperial Plate Bracers>_
-Reach Level 291 Blacksmithing |skill Blacksmithing,291 |goto 76.01,34.59
+Reach 291 Blacksmithing |skill Blacksmithing,291 |goto 75.92,34.42
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -986,299 +965,283 @@ learn Thorium Helm##16653 |goto 75.35,33.99
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Thorium Helm>_
-Reach Level 300 Blacksmithing |skill Blacksmithing,300 |goto 76.01,34.59
+Reach 300 Blacksmithing |skill Blacksmithing,300 |goto 75.92,34.42
 step
 _Congratulations!_
-You Reached Level 300 Blacksmithing Skill.
+You Reached 300 Blacksmithing Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Outland Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Outland Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Outland Blacksmithing') >= 75 end,
-condition_suggested=function() return skill('Outland Blacksmithing') > 0 and skill('Outland Blacksmithing') < 75 end,
+condition_suggested=function() return skill('Outland Blacksmithing') > 0 and skill('Outland Blacksmithing') < 75 and level >= 58 end,
 },[[
 step
 talk Zula Slagfury##20125
 Train Outland Blacksmithing |skillmax Outland Blacksmithing,75 |goto Shattrath City/0 69.81,41.98
+|tip You must be at least level 58.
+step
+talk Viggz Shinesparked##19661
+buy 1 Blacksmith Hammer##5956 |goto 64.96,69.65
+|only if itemcount(5956) == 0
+step
+collect 55 Netherweave Cloth##21877
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
+|only if skill("Outland Blacksmithing") < 60
+step
+collect 95 Fel Iron Bar##23445
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Outland Blacksmithing") < 25
+step
+collect 115 Adamantite Bar##23446
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Outland Blacksmithing") < 60
 step
 talk Zula Slagfury##20125
 learn Fel Weightstone##34607 |goto 69.81,41.98
 step
-collect 55 Netherweave Cloth##21877
-|tip Refer to the Netherweave Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Blacksmithing") < 60
-step
-collect 95 Fel Iron Bar##23445
-|tip These are created by the Mining profession, from Fel Iron Ore.
-|tip It takes 190 ore to make the amount you need.
-|tip Refer to the Fel Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Blacksmithing") < 25
-step
-collect 115 Adamantite Bar##23446
-|tip These are created by the Mining profession, from Adamantite Ore.
-|tip It takes 230 ore to make the amount you need.
-|tip Refer to the Adamantite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Blacksmithing") < 60
-step
-collect 120 Felsteel Bar##23448
-|tip These are created by the Mining profession.
-|tip You will need to combine 720 Fel Iron Ore and 480 Eternium Ore, then craft them into 360 Fel Iron Bars and 240 Eternium Bars.
-|tip Refer to the Fel Iron Ore and Eternium Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Blacksmithing") < 75
-step
 Open Your Blacksmithing Crafting Panel:
-_<Create 5 Fel Weightstones>_
-|tip This recipe will be yellow, so you may need to create more.
-Reach Level 5 Outland Blacksmithing |skill Outland Blacksmithing,5 |goto 69.39,42.45
+_<Create 5 Fel Weightstone>_
+|tip You may need to craft a few more.
+Reach 5 Outland Blacksmithing |skill Outland Blacksmithing,5 |goto 69.46,42.53
 step
 talk Zula Slagfury##20125
 learn Fel Iron Plate Belt##29547 |goto 69.81,41.98
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 10 Fel Iron Plate Belts>_
-Reach Level 15 Outland Blacksmithing |skill Outland Blacksmithing,15 |goto 69.39,42.45
+_<Create 10 Fel Iron Plate Belt>_
+Reach 15 Outland Blacksmithing |skill Outland Blacksmithing,15 |goto 69.46,42.53
 step
 talk Zula Slagfury##20125
 learn Fel Iron Chain Gloves##29552 |goto 69.81,41.98
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Fel Iron Chain Gloves>_
-Reach Level 20 Outland Blacksmithing |skill Outland Blacksmithing,20 |goto 69.39,42.45
+Reach 20 Outland Blacksmithing |skill Outland Blacksmithing,20 |goto 69.46,42.53
 step
 talk Zula Slagfury##20125
 learn Fel Iron Plate Boots##29548 |goto 69.81,41.98
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Fel Iron Plate Boots>_
-Reach Level 25 Outland Blacksmithing |skill Outland Blacksmithing,25 |goto 69.39,42.45
+Reach 25 Outland Blacksmithing |skill Outland Blacksmithing,25 |goto 69.46,42.53
 step
 talk Zula Slagfury##20125
 learn Lesser Rune of Warding##32284 |goto 69.81,41.98
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 25 Lesser Rune of Warding>_
-|tip This recipe will be green by 30, so you may need to create more.
-Reach Level 35 Outland Blacksmithing |skill Outland Blacksmithing,35 |goto 69.39,42.45
+|tip You may need to craft a few more.
+Reach 35 Outland Blacksmithing |skill Outland Blacksmithing,35 |goto 69.46,42.53
 step
 talk Aaron Hollman##19662
-buy Plans: Adamantite Cleaver##23591 |n
-|tip This is a limited time recipe.
-|tip You may have to wait up to 10 minutes for it to restock if it isn't available.
+|tip He walks around this area.
+buy 1 Plans: Adamantite Cleaver##23591 |goto 64.07,72.10
+|tip If the recipe is sold out it will respawn in 5-10 minutes.
+|only if skill("Outland Blacksmithing") < 40
+step
 use the Plans: Adamantite Cleaver##23591
-learn Adamantite Cleaver##29568 |goto 64.07,72.10
+learn Adamantite Cleaver##29568
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Adamantite Cleaver>_
-Reach Level 40 Outland Blacksmithing |skill Outland Blacksmithing,40 |goto 69.39,42.45
+Reach 40 Outland Blacksmithing |skill Outland Blacksmithing,40 |goto 69.46,42.53
 step
 talk Rohok##16583
 |tip He walks around this area.
-buy Plans: Lesser Ward of Shielding##23638 |n
+buy 1 Plans: Lesser Ward of Shielding##23638 |goto Hellfire Peninsula/0 53.13,38.15
 |tip You may have to wait up to one hour for it to restock if it isn't available.
+step
 use the Plans: Lesser Ward of Shielding##23638
-learn Lesser Ward of Shielding##29728 |goto Hellfire Peninsula/0 53.13,38.15
+learn Lesser Ward of Shielding##29728
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 25 Lesser Ward of Shielding>_
-|tip This recipe will be green by 45, so you may need to create more.
-Reach Level 50 Outland Blacksmithing |skill Outland Blacksmithing,50 |goto 53.12,38.20
+|tip You may need to create a few more.
+Reach 50 Outland Blacksmithing |skill Outland Blacksmithing,50 |goto 53.12,38.20
 step
-Load the "Cenarion Expedition" Reputation Guide |confirm |next "Zygor's Reputations Guides\\Burning Crusade Reputations\\Cenarion Expedition"
-|tip Click the line above to load the guide.
-Reach Honored with the Cenarion Expedition |condition rep("Cenarion Expedition")==Honored
+Reach Honored with the Cenarion Expedition |condition rep ('Cenarion Expedition') >= Honored
+|tip Use the "Cenarion Expedition" reputation guide to accomplish this.
 step
 talk Fedryen Swiftspear##17904
-buy Plans: Adamantite Weightstone##28632 |n
+buy 1 Plans: Adamantite Weightstone##28632 |goto Zangarmarsh/0 79.26,63.67
+|only if skill("Outland Blacksmithing") < 60
+step
 use the Plans: Adamantite Weightstone##28632
-learn Adamantite Weightstone##34608 |goto Zangarmarsh/0 79.26,63.67
+learn Adamantite Weightstone##34608
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 25 Adamantite Weightstone>_
-|tip This recipe will be green by 55, so you may need to create more.
-Reach Level 60 Outland Blacksmithing |skill Outland Blacksmithing,60 |goto Shattrath City/0 69.43,42.50
+|tip You may need to create a few more.
+Reach 60 Outland Blacksmithing |skill Outland Blacksmithing,60 |goto Shattrath City/0 69.46,42.53
 step
-kill Auchenai Monk##18497
-collect Plans: Felsteel Gloves##23605 |n
-|tip You will likely need to kill a few before it drops.
-|tip The Auchenai Monks are found throughout the instance, so clear all trash to reach them.
+collect 120 Felsteel Bar##23448
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Outland Blacksmithing") < 75
+step
+kill Auchenai Monk##18497+
+collect 1 Plans: Felsteel Gloves##23605 |goto Auchenai Crypts/1 46.65,83.65
+|tip You may need to kill a few before it drops.
+|tip Auchenai Monks are found throughout the instance.
+|only if skill("Outland Blacksmithing") < 75
+step
 use the Plans: Felsteel Gloves##23605
-learn Felsteel Gloves##29619 |goto Auchenai Crypts/1 44.1,75.1
+learn Felsteel Gloves##29619
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 20 Felsteel Gloves>_
-|tip This recipe will be green by 72, so you will likely need to make more.
-Reach Level 75 Outland Blacksmithing |skill Outland Blacksmithing,75 |goto Shattrath City/0 69.43,42.50
+_<Create 15 Felsteel Gloves>_
+|tip You may need to craft a few more.
+Reach 75 Outland Blacksmithing |skill Outland Blacksmithing,75 |goto Shattrath City/0 69.46,42.53
 step
 _Congratulations!_
-You Reached Level 75 Outland Blacksmithing Skill.
+You Reached 75 Outland Blacksmithing Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Northrend Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Northrend Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Northrend Blacksmithing') >= 75 end,
-condition_suggested=function() return skill('Northrend Blacksmithing') > 0 and skill('Northrend Blacksmithing') < 75 end,
+condition_suggested=function() return skill('Northrend Blacksmithing') > 0 and skill('Northrend Blacksmithing') < 75 and level >= 58 end,
 },[[
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-Train Northrend Blacksmithing |skillmax Northrend Blacksmithing,75 |goto Dalaran/1 45.31,27.67
+Train Northrend Blacksmithing |skillmax Northrend Blacksmithing,75 |goto Dalaran/1 45.33,27.69
+|tip You must be at least level 58.
+step
+collect 180 Cobalt Bar##36916
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Northrend Blacksmithing") < 30
+step
+collect 750 Saronite Bar##36913
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Northrend Blacksmithing") < 75
+step
+collect 40 Eternal Earth##35624
+|tip Farm them from elementals or purchase them from the Auction House.
+|tip Combine ten Crystallized Earth into one Eternal Earth.
+|only if skill("Northrend Blacksmithing") < 75
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Cobalt Gauntlets##55835 |goto 45.31,27.67
-step
-collect 205 Cobalt Bar##41975
-|tip These are created by the Mining profession, from Cobalt Deposits.
-|tip It takes 205 Cobalt Ore to make the amount you need.
-|tip Refer to the Cobalt Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Northrend Blacksmithing") < 30
-step
-collect 730 Sarnoite Bar##36913
-|tip These are created by the Mining profession, from Saronite Deposits.
-|tip It takes 1460 Saronite Ore to make the amount you need.
-|tip Refer to the Saronite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Northrend Blacksmithing") < 75
-step
-collect 35 Eternal Earth##35624
-|tip These are created by combining 10 Crystallized Earth.
-|tip It takes 350 Crystallized Earth to make the amount you need.
-|tip Refer to the Crystallized Earth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Northrend Blacksmithing") < 75
+learn Cobalt Gauntlets##55835 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 4 Cobalt Gauntlets>_
-Reach Level 5 Northrend Blacksmithing |skill Northrend Blacksmithing,5 |goto 45.12,28.69
+Reach 5 Northrend Blacksmithing |skill Northrend Blacksmithing,5 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Spiked Cobalt Boots##54918 |goto 45.31,27.67
+learn Spiked Cobalt Boots##54918 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Spiked Cobalt Boots>_
-Reach Level 10 Northrend Blacksmithing |skill Northrend Blacksmithing,10 |goto 45.12,28.69
+Reach 10 Northrend Blacksmithing |skill Northrend Blacksmithing,10 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Spiked Cobalt Shoulders##54941 |goto 45.31,27.67
+learn Spiked Cobalt Shoulders##54941 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Spiked Cobalt Shoulders>_
-Reach Level 15 Northrend Blacksmithing |skill Northrend Blacksmithing,15 |goto 45.12,28.69
+Reach 15 Northrend Blacksmithing |skill Northrend Blacksmithing,15 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Notched Cobalt War Axe##55204 |goto 45.31,27.67
+learn Notched Cobalt War Axe##55204 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Notched Cobalt War Axe>_
-Reach Level 20 Northrend Blacksmithing |skill Northrend Blacksmithing,20 |goto 45.12,28.69
+Reach 20 Northrend Blacksmithing |skill Northrend Blacksmithing,20 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Spiked Cobalt Belt##54946 |goto 45.31,27.67
+learn Spiked Cobalt Belt##54946 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Spiked Cobalt Belt>_
-Reach Level 25 Northrend Blacksmithing |skill Northrend Blacksmithing,25 |goto 45.12,28.69
+Reach 25 Northrend Blacksmithing |skill Northrend Blacksmithing,25 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Horned Cobalt Helm##54949 |goto 45.31,27.67
+learn Horned Cobalt Helm##54949 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Horned Cobalt Helm>_
-Reach Level 30 Northrend Blacksmithing |skill Northrend Blacksmithing,30 |goto 45.12,28.69
+Reach 30 Northrend Blacksmithing |skill Northrend Blacksmithing,30 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Brilliant Saronite Boots##55057 |goto 45.31,27.67
+learn Brilliant Saronite Boots##55057 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Brilliant Saronite Boots>_
-Reach Level 40 Northrend Blacksmithing |skill Northrend Blacksmithing,40 |goto 45.12,28.69
+Reach 40 Northrend Blacksmithing |skill Northrend Blacksmithing,40 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Tempered Saronite Gauntlets##55015 |goto 45.31,27.67
+learn Tempered Saronite Gauntlets##55015 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 5 Brilliant Saronite Boots>_
-Reach Level 45 Northrend Blacksmithing |skill Northrend Blacksmithing,45 |goto 45.12,28.69
+_<Create 5 Tempered Saronite Gauntlets>_
+Reach 45 Northrend Blacksmithing |skill Northrend Blacksmithing,45 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Daunting Handguards##55301 |goto 45.31,27.67
+learn Daunting Handguards##55301 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 55 Daunting Handguards>_
-Reach Level 55 Northrend Blacksmithing |skill Northrend Blacksmithing,55 |goto 45.12,28.69
+_<Create 10 Daunting Handguards>_
+Reach 55 Northrend Blacksmithing |skill Northrend Blacksmithing,55 |goto 45.10,28.67
 step
 talk Alard Schmied##28694
 |tip Inside the building.
-learn Daunting Legplates##55303|goto 45.31,27.67
+learn Daunting Legplates##55303 |goto 45.33,27.69
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 30 Daunting Legplates>_
-Reach Level 75 Northrend Blacksmithing |skill Northrend Blacksmithing,75 |goto 45.12,28.69
+|tip You will likely need to craft several more of these to reach max level.
+Reach 75 Northrend Blacksmithing |skill Northrend Blacksmithing,75 |goto 45.10,28.67
 step
 _Congratulations!_
-You Reached Level 75 Northrend Blacksmithing Skill.
+You Reached 75 Northrend Blacksmithing Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Cataclysm Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cataclysm Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Cataclysm Blacksmithing') >= 75 end,
-condition_suggested=function() return skill('Cataclysm Blacksmithing') > 0 and skill('Cataclysm Blacksmithing') < 75 end,
+condition_suggested=function() return skill('Cataclysm Blacksmithing') > 0 and skill('Cataclysm Blacksmithing') < 75 and level >= 78 end,
 },[[
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 Train Cataclysm Blacksmithing |skillmax Cataclysm Blacksmithing,75 |goto Orgrimmar/1 75.35,34.01
+|tip You must be at least level 78.
 step
 collect 390 Obsidium Bar##54849
-|tip These are gathered with the Mining profession, from Obsidium Ore.
-|tip It takes 780 ore to make the amount of bars you need.
-|tip Refer to the Obsidium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Cataclysm Blacksmithing") < 5
 step
-collect 360 Elementium Bar##52186
-|tip These are gathered with the Mining profession, from Elementium Veins.
-|tip It takes 680 ore to make the amount of bars you need.
-|tip Refer to the Elementium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 320 Elementium Bar##52186
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Cataclysm Blacksmithing") < 75
 step
-collect 18 Volatile Earth##52327
-|tip These are gathered with the Mining profession, from Elementium or Obsidium Deposits.
-|tip Refer to the Volatile Earth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 10 Volatile Earth##52327
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Blacksmithing") < 20
 step
 collect 150 Volatile Fire##52325
-|tip These are gathered with the Mining profession, from Elementium or Obsidium Deposits.
-|tip Refer to the Volatile Fire farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Blacksmithing") < 75
 step
 collect 2 Hardened Elementium Bar##53039
-|tip These are created with the Mining profession, from Elementium Bars and Volatile Earth.
-|tip You will need 20 Elementium Bars and 8 Volatile Earth.
-|tip Refer to the Elementium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Cataclysm Blacksmithing") < 75
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 195 Folded Obsidium>_
-Reach Level 5 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,5 |goto 75.85,34.22
-collect 195 Folded Obsidium##65365 |only if skill("Cataclysm Blacksmithing") < 60
+|tip Make all of these, you will need them later.
+Reach 5 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,5 |goto 75.85,34.22
+|only if skill("Cataclysm Blacksmithing") < 60
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1286,15 +1249,15 @@ learn Redsteel Bracers##76262 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Redsteel Bracers>_
-Reach Level 10 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,10 |goto 75.85,34.22
+Reach 10 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,10 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
 learn Redsteel Belt##76264 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
-_<Create 10 Redsteel Bracers>_
-Reach Level 20 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,20 |goto 75.85,34.22
+_<Create 10 Redsteel Belt>_
+Reach 20 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,20 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1302,7 +1265,7 @@ learn Redsteel Boots##76265 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Redsteel Boots>_
-Reach Level 25 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,25 |goto 75.85,34.22
+Reach 25 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,25 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1310,8 +1273,8 @@ learn Obsidium Skeleton Key##76438 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Obsidium Skeleton Key>_
-|tip This recipe will be yellow at 30, so you may need to create more.
-Reach Level 35 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,35 |goto 75.85,34.22
+|tip You may need to create a few more.
+Reach 35 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,35 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1319,7 +1282,7 @@ learn Redsteel Shoulders##76266 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Redsteel Shoulders>_
-Reach Level 40 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,40 |goto 75.85,34.22
+Reach 40 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,40 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1327,7 +1290,7 @@ learn Redsteel Legguards##76267 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Redsteel Legguards>_
-Reach Level 50 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,50 |goto 75.85,34.22
+Reach 50 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,50 |goto 75.85,34.22
 step
 talk Okothos Ironrager##11177
 |tip Inside the building.
@@ -1335,38 +1298,211 @@ learn Hardened Obsidium Breastplate##76261 |goto 75.35,34.01
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Hardened Obsidium Breastplate>_
-Reach Level 60 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,60 |goto 75.85,34.22
+Reach 60 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,60 |goto 75.85,34.22
 step
 talk Sumi##3356
-buy Plans: Vicious Pyrium Belt##66119 |n
+buy 1 Plans: Vicious Pyrium Belt##66119 |goto 75.99,35.43
 |tip This costs 20 Elementium Bars.
+step
 use the Plans: Vicious Pyrium Belt##66119
-learn Vicious Pyrium Belt##76458 |goto 75.99,35.43
+learn Vicious Pyrium Belt##76458
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 10 Vicious Pyrium Belt>_
-Reach Level 70 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,70 |goto 75.85,34.22
+Reach 70 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,70 |goto 75.85,34.22
 step
 talk Sumi##3356
-buy Plans: Vicious Pyrium Boots##66120 |n
+buy 1 Plans: Vicious Pyrium Boots##66120 |goto 75.99,35.43
 |tip This costs 2 Hardened Elementium Bars.
+step
 use the Plans: Vicious Pyrium Boots##66120
-learn Vicious Pyrium Boots##76459 |goto 75.99,35.43
+learn Vicious Pyrium Boots##76459
 step
 Open Your Blacksmithing Crafting Panel:
 _<Create 5 Vicious Pyrium Boots>_
-Reach Level 75 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,75 |goto 75.85,34.22
+Reach 75 Cataclysm Blacksmithing |skill Cataclysm Blacksmithing,75 |goto 75.85,34.22
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Blacksmithing Skill.
+You Reached 75 Cataclysm Blacksmithing Skill.
 ]])
-ZGV.BETAEND()
-ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Flank",{
+author="support@zygorguides.com",
+description="Bear Flanks can be gathered from the western end of Western Plaguelands.",
+},[[
+step
+Kill Black Bear enemies around this area
+collect Bear Flank##35562 |n |goto Western Plaguelands/0 35.87,64.80
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Meat",{
+author="support@zygorguides.com",
+description="Bear Meat can be gathered from the Twilight Vale in southern Darkshore.",
+},[[
+step
+talk Zidormi##141489
+Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
+Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Darkshore/0 48.07,25.67
+step
+kill Grizzled Thistle Bear##2165+
+|tip Around this area within the Twilight Vale.
+collect Bear Meat##3173 |n |goto 40.47,78.99
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Clam Meat",{
+author="support@zygorguides.com",
+description="Clam Meat can be gathered from the Echo Isles in southern Durotar.",
+},[[
+step
+kill Spitescale Wavethrasher##38300+
+|tip Along the waterline around this island.
+use the Small Barnacled Clam##5523
+|tip Clam Meat can be found inside.
+collect Clam Meat##5503 |n |goto Echo Isles/0 61.52,17.08
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Meat",{
+author="support@zygorguides.com",
+description="Crawler Meat can be gathered from Darkshore.",
+},[[
+step
+talk Zidormi##141489
+Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
+Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Darkshore/0 48.07,25.67
+step
+map Darkshore/0
+path loop off; follow strict; dist 40
+path	36.96,64.39	37.28,67.03	37.91,69.20	36.88,71.44	37.76,73.92
+path	39.04,74.72	38.59,77.78	38.25,80.50	35.95,82.80	36.40,86.66
+kill Encrusted Tide Crawler##2233+
+|tip They are generally in the water.
+collect Crawler Meat##2674 |n
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crocolisk Tail",{
+author="support@zygorguides.com",
+description="Crocolisk Tail can be gathered from the western Tol Barad.",
+},[[
+step
+kill Baradin Crocolisk##47591
+collect Crocolisk Tail##62784 |n |goto Tol Barad/0 39.01,47.63
+You can find more around [53.83,51.04]
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Egg",{
+author="support@zygorguides.com",
+description="Giant Eggs can be gathered from eastern Swamp of Sorrows.",
+},[[
+step
+kill Swampstrider##45825+
+|tip All over this area.
+collect Giant Egg##12207 |n |goto Swamp of Sorrows/0 79.47,28.25
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Turtle Tongue",{
+author="support@zygorguides.com",
+description="Giant Turtle Tongue can be gathered from the northeastern Vashj'ir.",
+},[[
+step
+kill Speckled Sea Turtle##40223
+collect Giant Turtle Tongue##62781 |n |goto Kelp'thar Forest/0 49.63,40.81
+You can find more around [53.83,51.04]
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Egg",{
+author="support@zygorguides.com",
+description="Raptor Eggs can be gathered from southern Arathi Highlands.",
+},[[
+step
+talk Zidormi##141649
+Ask her _"Can you show me what Arathi Highlands was like before the war broke out?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Arathi Highlands/0 38.24,90.09
+step
+kill Highland Fleshstalker##2561+
+|tip All over this area.
+collect Raptor Egg |n |goto 42.69,77.33
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh",{
+author="support@zygorguides.com",
+description="Raptor Flesh can be gathered from southern Arathi Highlands.",
+},[[
+step
+talk Zidormi##141649
+Ask her _"Can you show me what Arathi Highlands was like before the war broke out?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Arathi Highlands/0 38.24,90.09
+step
+kill Highland Fleshstalker##2561+
+|tip All over this area.
+collect Raptor Flesh##12184 |n |goto 42.69,77.33
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Ribs",{
+author="support@zygorguides.com",
+description="Raptor Ribs can be gathered from the eastern Blade's Edge Mountains.",
+},[[
+step
+map Blade's Edge Mountains/0
+path loop on; follow strict; dist 40
+path	62.00,55.54	65.96,57.01	66.51,59.83	66.37,63.86	67.39,66.46
+path	67.69,71.59	69.27,71.36	68.95,65.95	68.53,63.09	68.54,60.21
+path	68.26,57.12	67.14,53.92	68.20,49.52
+kill Daggermaw Lashtail##20751+
+collect Raptor Ribs##31670 |n
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Ravager Flesh",{
+author="support@zygorguides.com",
+description="Ravager Flesh can be gathered from the western Hellfire Peninsula.",
+},[[
+step
+Kill Thornfang enemies around this area
+|tip They spawn on both sides of the road.
+collect Ravager Flesh##27674 |n |goto Hellfire Peninsula/0 10.26,51.72
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Sandworm Meat",{
+author="support@zygorguides.com",
+description="Sandworm Meat can be gathered from the northern half of Silithus.",
+},[[
+step
+talk Zidormi##128607
+|tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
+Ask her _"Can you show me what Silithus was like before the Wound in the World?"_
+Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Silithus/0 78.93,21.97
+step
+Kill Dredge enemies around this area
+|tip All over the top half of the zone.
+collect Sandworm Meat##20424 |n |goto 42.72,34.13
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shoveltusk Flank",{
+author="support@zygorguides.com",
+description="Shoveltusk Flanks can be gathered from Howling Fjord.",
+},[[
+step
+map Howling Fjord/0
+path loop on; follow strict; dist 40
+path	76.46,63.42	75.33,60.39	74.58,56.11	74.85,52.58	75.59,50.19
+path	75.46,46.56	74.30,44.99	73.01,47.07	73.61,48.52	72.89,52.59
+path	72.70,56.77	73.53,58.71	73.21,60.59	72.12,63.28
+Kill Shoveltusk enemies around this area
+collect Shoveltusk Flank##43009 |n
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Snake Eye",{
+author="support@zygorguides.com",
+description="Snake Eyes can be gathered from northeastern Vashj'ir.",
+},[[
+step
+kill Brinescale Serpent##39948
+|tip They swim around the sunken boat here.
+collect Snake Eye##62780 |goto Kelp'thar Forest/0 57.85,37.51 |n
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Talbuk Venison",{
+author="support@zygorguides.com",
+description="Talbuk Venison can be gathered from central Nagrand.",
+},[[
+step
+map Nagrand/0
+path loop on; follow strict; dist 40
+path	53.83,31.31	52.92,29.15	51.38,26.84	48.38,27.04	47.30,30.27
+path	48.26,33.27	49.13,37.97	50.13,39.28	51.37,38.48	50.58,36.74
+path	52.29,33.21
+kill Talbuk Thorngrazer##17131+
+collect Talbuk Venison##27682 |n
+]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cooking skill from 1-300.",
 condition_end=function() return skill('Cooking') >= 300 end,
-condition_suggested=function() return skill('Cooking') > 0 and skill('Cooking') < 300 end,
+condition_suggested=function() return skill('Cooking') > 0 and skill('Cooking') < 300 and level >= 5 end,
 },[[
 step
 talk Arugi##46709
@@ -1385,161 +1521,164 @@ step
 talk Arugi##46709
 |tip She walks around inside the building.
 learn Spice Bread##37836 |goto 56.16,61.69
-|only if skill("Cooking") < 40
 step
 Open Your Cooking Crafting Panel:
 _<Create 60 Spice Bread>_
 |tip The recipe will be green by level 35 cooking.
 |tip You may not need to craft 60.
-Reach Level 40 Cooking |skill Cooking,40 |goto 56.10,61.33
+Reach 40 Cooking |skill Cooking,40 |goto 56.10,61.33
 step
-talk Zidormi##141489
-Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
-Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Darkshore/0 48.07,25.67
-|only if skill("Cooking") < 80
-step
-Kill Bear enemies around this area
-collect 40 Bear Meat##3173  |goto 41.05,77.01
-|tip You can also purchase them from the Auction House.
-You can find more around [40.72,81.58]
-You can find more around [44.41,79.17]
+collect 40 Bear Meat##3173
+|tip Farm them or purchase them from the Auction House.
 |only if skill("Cooking") < 80
 step
 talk Andrew Hilbert##3556
 |tip Inside the building.
-buy Recipe: Smoked Bear Meat##6892 |n
-use the Recipe: Smoked Bear Meat##6892
-learn Smoked Bear Meat##8607 |goto Silverpine Forest/0 43.22,40.67
+buy 1 Recipe: Smoked Bear Meat##6892 |goto Silverpine Forest/0 43.22,40.67
 |only if skill("Cooking") < 80
 step
+use the Recipe: Smoked Bear Meat##6892
+learn Smoked Bear Meat##8607
+step
 Open Your Cooking Crafting Panel:
-_<Create 40 Smoked Bear Meats>_
-Reach Level 80 Cooking |skill Cooking,80 |goto 77.58,52.85
+_<Create 40 Smoked Bear Meat>_
+Reach 80 Cooking |skill Cooking,80 |goto 77.58,52.85
 step
-talk Zidormi##141489
-Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
-Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Darkshore/0 48.07,25.67
-|only if skill("Cooking") < 135
+collect 30 Clam Meat##5503
+|tip Farm them with the "Clam Meat" farming guide or purchase them from the Auction House.
+|only if skill("Cooking") < 130
 step
-map Darkshore/0
-path loop off; follow strict; dist 40
-path	36.96,64.39	37.28,67.03	37.91,69.20	36.88,71.44	37.76,73.92
-path	39.04,74.72	38.59,77.78	38.25,80.50	35.95,82.80	36.40,86.66
-kill Encrusted Tide Crawler##2233+
-|tip They are generally in the water.
-collect 60 Crawler Meat##2674 |goto Darkshore/0 36.8,64.0
-|tip You can also purchase them from the Auction House.
+talk Suja##46708
+buy 30 Refreshing Spring Water##159 |goto 56.42,61.01
+|only if skill("Cooking") < 130
+step
+talk Arugi##46709
+|tip She walks around inside the building.
+learn Boiled Clams##6499 |goto Orgrimmar/1 56.16,61.69
+step
+Open Your Cooking Crafting Panel:
+_<Create 30 Boiled Clams>_
+|tip You may have to make a few more.
+collect 30 Boiled Clams##6499 |goto 56.10,61.33
+step
+collect 60 Crawler Meat##2674
+|tip Farm them with the "Crawler Meat" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 135
 step
 talk Arugi##46709
 |tip She walks around inside the building.
 learn Crab Cake##2544 |goto Orgrimmar/1 56.16,61.69
-|only if skill("Cooking") < 135
 step
 Open Your Cooking Crafting Panel:
-_<Create 55 Crab Cakes>_
-Reach Level 135 Cooking |skill Cooking,135 |goto 56.10,61.33
+_<Create 60 Crab Cake>_
+|tip You may have to make a few more.
+Reach 135 Cooking |skill Cooking,135 |goto 56.10,61.33
 step
-talk Keena##2821
-buy Recipe: Curiously Tasty Omelet##3682 |n
-use the Recipe: Curiously Tasty Omelet##3682
-learn Curiously Tasty Omelet##3376 |goto Arathi Highlands/0 69.2,33.6
+talk Zidormi##141649
+Ask her _"Can you show me what Arathi Highlands was like before the war broke out?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Arathi Highlands/0 38.24,90.09
 |only if skill("Cooking") < 175
 step
 talk Keena##2821
-buy Recipe: Roast Raptor##12228 |goto Arathi Highlands/0 69.2,33.6
+|tip Inside the building.
+buy 1 Recipe: Curiously Tasty Omelet##3682 |goto 69.22,33.52
+|only if skill("Cooking") < 175
+step
+use the Recipe: Curiously Tasty Omelet##3682
+learn Curiously Tasty Omelet##3376
+step
+talk Keena##2821
+|tip Inside the building.
+buy 1 Recipe: Roast Raptor##12228 |goto 69.22,33.52
 |tip Save this for later.
 |only if skill("Cooking") < 225
 stickystart "Collect_Raptor_Flesh"
 step
-Kill Highland enemies around this area
-collect 50 Raptor Egg##3685 |goto Arathi Highlands/0 46,68
-|tip You can also purchase them from the Auction House.
-You can find more around [47.20,45.75]
+collect 50 Raptor Egg##3685
+|tip Farm them with the "Raptor Egg" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 175
 step
 label "Collect_Raptor_Flesh"
-Kill Highland enemies around this area
 collect 50 Raptor Flesh##12184 |goto Arathi Highlands/0 46,68
-|tip You can also purchase them from the Auction House.
-You can find more around [47.20,45.75]
+|tip Farm them with the "Raptor Flesh" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 225
 step
 Open Your Cooking Crafting Panel:
-_<Create 40 Curiously Tasty Omelets>_
-Reach Level 175 Cooking |skill Cooking,175 |goto Orgrimmar/1 56.10,61.33
+_<Create 50 Curiously Tasty Omelet>_
+Reach 175 Cooking |skill Cooking,175 |goto Orgrimmar/1 56.10,61.33
 step
 use the Recipe: Roast Raptor##12228
 learn Roast Raptor##15855
-|only if skill("Cooking") < 225
 step
 Open Your Cooking Crafting Panel:
-_<Create 50 Roast Raptors>_
-Reach Level 225 Cooking |skill Cooking,225 |goto 56.10,61.33
+_<Create 50 Roast Raptor>_
+Reach 225 Cooking |skill Cooking,225 |goto 56.10,61.33
 step
 talk Himmik##11187
 |tip Inside the building.
-buy Recipe: Monster Omelet##16110 |n
-use the Recipe: Monster Omelet##16110
-learn Monster Omelet##15933 |goto Winterspring/0 59.82,51.57
+buy 1 Recipe: Monster Omelet##16110 |goto Winterspring/0 59.82,51.57
 |only if skill("Cooking") < 250
-stickystart "Collect_Bear_Flanks"
 step
-map Winterspring
-path loop on; follow strict; dist 40
-path	55.4,36.6	52.4,30.8	58.8,31.2
-path	60.0,34.2	65.0,39.6	67.2,43.6
-path	65.0,75.8	64.6,80.8	54.8,40.1
-Kill enemies around this area
+use the Recipe: Monster Omelet##16110
+learn Monster Omelet##15933
+step
 collect 25 Giant Egg##12207
-|tip They come from owls.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with the "Giant Egg" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 250
-stickystop "Collect_Bear_Flanks"
 step
 Open Your Cooking Crafting Panel:
-_<Create 25 Monster Omelets>_
-Reach Level 250 Cooking |skill Cooking,250 |goto Orgrimmar/1 56.10,61.33
+_<Create 25 Monster Omelet>_
+Reach 250 Cooking |skill Cooking,250 |goto Orgrimmar/1 56.10,61.33
 step
-label "Collect_Bear_Flanks"
-map Winterspring
-path loop on; follow strict; dist 40
-path	55.4,36.6	52.4,30.8	58.8,31.2
-path	60.0,34.2	65.0,39.6	67.2,43.6
-path	65.0,75.8	64.6,80.8	54.8,40.1
-Kill Shardtooth enemies around this area
 collect 60 Bear Flank##35562
-|tip You can also purchase them from the Auction House.
+|tip Farm them with the "Bear Flank" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 285
 step
 talk Arugi##46709
 |tip She walks around inside the building.
-learn Charred Bear Kabobs##46684 |goto Orgrimmar/1 56.16,61.69
-|only if skill("Cooking") < 285
+learn Juicy Bear Burger##46688 |goto Orgrimmar/1 56.16,61.69
 step
 Open Your Cooking Crafting Panel:
-_<Create 25 Charred Bear Kabobs>_
-|tip You will likely need to create more than 25.
-Reach Level 285 Cooking |skill Cooking,285 |goto Orgrimmar/1 56.10,61.33
+_<Create 35 Juicy Bear Burger>_
+|tip You may need to make a few more.
+Reach 285 Cooking |skill Cooking,285 |goto Orgrimmar/1 56.10,61.33
 step
 talk Sheendra Tallgrass##8145
-buy Recipe: Baked Salmon##13949 |n
-use the Recipe: Baked Salmon##13949
-learn Baked Salmon##18247 |goto Feralas/0 74.49,42.72
+buy Recipe: Baked Salmon##13949 |goto Feralas/0 74.49,42.72
 |only if skill("Cooking") < 300
 step
-Fish from the Lake here
-|tip You can fish from any water in the Tainted Forest.
-collect 15 Raw Whitescale Salmon##13889 |goto Blasted Lands/0 43.0,72.3
-|tip You can also purchase them from the Auction House.
+use the Recipe: Baked Salmon##13949
+learn Baked Salmon##18247
+step
+talk Zidormi##128607
+|tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
+Ask her _"Can you show me what Silithus was like before the Wound in the World?"_
+Gain the Time Travelling buff |havebuff Time Travelling##609811 |goto Silithus/0 78.93,21.97
+|only if skill("Cooking") < 300
+step
+talk Calandrath##15174
+|tip Inside the building.
+accept Desert Recipe##8307 |goto 55.52,36.77
+step
+click Sandy Cookbook##180503
+turnin Desert Recipe##8307 |goto 43.56,42.04
+accept Sharing the Knowledge##8313 |goto 43.56,42.04
+step
+talk Calandrath##15174
+turnin Sharing the Knowledge##8313 |goto 55.52,36.77
+step
+learn Smoked Desert Dumplings##24801 |goto 55.52,36.77
+step
+collect 15 Sandworm Meat##20424
+|tip Farm them with the "Sandworm Meat" farming guide or purchase them from the Auction House.
 |only if skill("Cooking") < 300
 step
 Open Your Cooking Crafting Panel:
-_<Create 15 Baked Salmon>_
-Reach Level 300 Cooking |skill Cooking,300 |goto Orgrimmar/1 56.10,61.33
+_<Create 15 Smoked Desert Dumplings>_
+Reach 300 Cooking |skill Cooking,300 |goto Orgrimmar/1 56.10,61.33
 step
 _Congratulations!_
-You Reached Level 300 Cooking Skill.
+You Reached 300 Cooking Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Outland Cooking 1-75",{
 author="support@zygorguides.com",
@@ -1553,71 +1692,60 @@ talk Allison##49789
 Train Outland Cooking |skillmax Outland Cooking,75 |goto Hellfire Peninsula/0 56.81,37.38
 step
 talk Cookie One-Eye##16585
-buy Recipe: Ravager Dog##27688 |n
+buy 1 Recipe: Ravager Dog##27688 |goto 54.62,41.21
+step
 use the Recipe: Ravager Dog##27688
-learn Ravager Dog##33284 |goto 54.62,41.21
+learn Ravager Dog##33284
 |only if skill("Outland Cooking") < 25
 step
-map Terokkar Forest/0
-path loop off; follow strict; dist 40
-path	61.23,10.00	58.99,11.76	57.51,13.30	56.11,12.94	53.73,12.74
-path	51.87,11.58	50.31,10.13	49.00,8.68	46.96,6.08	45.42,4.69
-kill Razorthorn Ravager##24922
-collect 30 Ravager Flesh##27674 |goto Terokkar Forest/0 52,12
+collect 30 Ravager Flesh##27674
+|tip Farm them with the "Ravager Flesh" farming guide or purchase them from the Auction House.
 |only if skill("Outland Cooking") < 25
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
-_<Create 24 Ravager Flesh>_
-Reach Level 25 Cooking |skill Outland Cooking,25
+_<Create 24 Ravager Dog>_
+Reach 25 Cooking |skill Outland Cooking,25
 step
-Load "The Mag'har" Reputation Guide |confirm |next "Zygor's Reputations Guides\\Burning Crusade Reputations\\Mag'har"
-|tip Click the line above to load the guide.
-Earn Neutral Status with The Mag'har |condition rep("The Mag'har")==Neutral
+Earn Neutral Reputation with The Mag'har Faction |condition rep("The Mag'har") >= Neutral
+|tip Use the "Mag'har" reputation guide.
 step
 talk Nula the Butcher##20097
 |tip Inside the building.
-buy Recipe: Talbuk Steak##27693 |n
-use the Recipe: Talbuk Steak##27693
-learn Talbuk Steak##33289 |goto Nagrand/0 58.0,35.6
+buy 1 Recipe: Talbuk Steak##27693 |goto Nagrand/0 58.13,35.67
 |only if skill("Outland Cooking") < 55
 step
-map Nagrand/0
-path loop on; follow strict; dist 40
-path	53.83,31.31	52.92,29.15	51.38,26.84	48.38,27.04	47.30,30.27
-path	48.26,33.27	49.13,37.97	50.13,39.28	51.37,38.48	50.58,36.74
-path	52.29,33.21
-kill Talbuk Thorngrazer##17131+
+use the Recipe: Talbuk Steak##27693
+learn Talbuk Steak##33289
+step
 collect 40 Talbuk Venison##27682
+|tip Farm them with the "Talbuk Venison" farming guide or purchase them from the Auction House.
 |only if skill("Outland Cooking") < 55
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
-_<Create 40 Ravager Flesh>_
-Reach Level 55 Cooking |skill Outland Cooking,55
+_<Create 30 Talbuk Steak>_
+|tip You may need to make a few more.
+Reach 55 Cooking |skill Outland Cooking,55
 step
 talk Xerintha Ravenoak##20916
-buy Recipe: Mok'Nathal Shortribs##31675 |n
-use the Recipe: Mok'Nathal Shortribs##31675
-learn Mok'Nathal Shortribs##38867 |goto Blade's Edge Mountains/0 62.48,40.34
+buy 1 Recipe: Mok'Nathal Shortribs##31675 |goto Blade's Edge Mountains/0 62.48,40.34
 |only if skill("Outland Cooking") < 75
 step
-map Blade's Edge Mountains/0
-path loop on; follow strict; dist 40
-path	62.00,55.54	65.96,57.01	66.51,59.83	66.37,63.86	67.39,66.46
-path	67.69,71.59	69.27,71.36	68.95,65.95	68.53,63.09	68.54,60.21
-path	68.26,57.12	67.14,53.92	68.20,49.52
-kill Daggermaw Lashtail##20751+
+use the Recipe: Mok'Nathal Shortribs##31675
+learn Mok'Nathal Shortribs##38867
+step
 collect 60 Raptor Ribs##31670
+|tip Farm them with the "Raptor Ribs" farming guide or purchase them from the Auction House.
 |only if skill("Outland Cooking") < 75
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
-_<Create 60 Ravager Flesh>_
-Reach Level 75 Cooking |skill Outland Cooking,75
+_<Create 60 Mok'Nathal Shortribs>_
+Reach 75 Cooking |skill Outland Cooking,75
 step
 _Congratulations!_
-You Reached Level 75 Outland Cooking Skill.
+You Reached 75 Outland Cooking Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Northrend Cooking 1-75",{
 author="support@zygorguides.com",
@@ -1631,16 +1759,11 @@ talk Awilo Lon'gomba##29631
 |tip Inside the building.
 Train Northrend Cooking |skillmax Northrend Cooking,75 |goto 69.96,39.00
 step
-map Howling Fjord/0
-path loop on; follow strict; dist 40
-path	76.46,63.42	75.33,60.39	74.58,56.11	74.85,52.58	75.59,50.19
-path	75.46,46.56	74.30,44.99	73.01,47.07	73.61,48.52	72.89,52.59
-path	72.70,56.77	73.53,58.71	73.21,60.59	72.12,63.28
-Kill Shoveltusk enemies around this area
-collect 50 Shoveltusk Flank##43009
+collect 150 Shoveltusk Flank##43009
+|tip Farm them with the "Shoveltusk Flank" farming guide or purchase them from the Auction House.
 |only if skill("Northrend Cooking") < 25
 step
-Enter the building |goto Dalaran/1 63.75,32.77 < 5 |walk
+Enter the building |goto 63.75,32.77 < 5 |walk
 talk Awilo Lon'gomba##29631
 |tip Inside the building.
 learn Shoveltusk Steak##45550 |goto 69.96,39.00
@@ -1649,29 +1772,18 @@ step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
 _<Create 24 Shoveltusk Flank>_
-Reach Level 25 Northrend Cooking |skill Northrend Cooking,25
+Reach 25 Northrend Cooking |skill Northrend Cooking,25
 step
-Load the "Dalaran Cooking Daily Guide" |confirm |next "Zygor's Dailies Guides\\Cooking\\Dalaran Cooking Daily Guide"
-|tip Click the line above to load the guide.
-Load the "Main City Cooking Daily Guide" |confirm |next "Zygor's Dailies Guides\\Classic Dailies\\Main Cities\\Main City Cooking Dailies"
-|tip Click the line above to load the guide.
-earn 6 Epicurean's Award##81 |n
-|tip These will be used to purchase 60 Northern Spices.
-|tip You will generally obtain 3 to 6 a day.
-collect 60 Northern Spices##43007 |goto Dalaran/1 69.90,38.35
+earn 6 Epicurean's Award##81
+|tip Use the "Dalaran Cooking Daily Guide" and "Main City Cooking Daily Guide" guides to accomplish this.
+|tip You will generally earn three to five per day.
+step
+Enter the building |goto 63.17,33.05 < 10 |walk
+talk Misensi##31031
+|tip Inside the building.
+buy 60 Northern Spices##43007 |goto 69.89,38.39
 |only if skill("Northrend Cooking") < 75
 step
-map Howling Fjord/0
-path loop on; follow strict; dist 40
-path	76.46,63.42	75.33,60.39	74.58,56.11	74.85,52.58	75.59,50.19
-path	75.46,46.56	74.30,44.99	73.01,47.07	73.61,48.52	72.89,52.59
-path	72.70,56.77	73.53,58.71	73.21,60.59	72.12,63.28
-Kill Shoveltusk enemies around this area
-collect 100 Shoveltusk Flank##43009
-|tip The extra will be for the last few levels, as the recipe turns green around 62.
-|only if skill("Northrend Cooking") < 75
-step
-Enter the building |goto Dalaran/1 63.75,32.77 < 5 |walk
 talk Awilo Lon'gomba##29631
 |tip Inside the building.
 learn Tracker Snacks##57443 |goto 69.96,39.00
@@ -1680,10 +1792,10 @@ step
 Open Your Cooking Crafting Panel:
 _<Create 100 Tracker Snacks>_
 |tip You may not need to create this many.
-Reach Level 75 Northrend Cooking |skill Northrend Cooking,75 |goto 70.41,39.52
+Reach 75 Northrend Cooking |skill Northrend Cooking,75 |goto 70.41,39.52
 step
 _Congratulations!_
-You Reached Level 75 Northrend Cooking Skill.
+You Reached 75 Northrend Cooking Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cataclysm Cooking 1-75",{
 author="support@zygorguides.com",
@@ -1699,7 +1811,6 @@ step
 talk Arugi##46709
 |tip She walks around inside the building.
 learn Darkbrew Lager##88015 |goto 56.16,61.69
-|only if skill("Cataclysm Cooking") < 10
 step
 Enter the building |goto The Cape of Stranglethorn/0 40.93,74.26
 talk Nixxrax Fillamug##2832
@@ -1715,70 +1826,66 @@ step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
 _<Create 9 Darkbrew Lager>_
-Reach Level 10 Cataclysm Cooking |skill Cataclysm Cooking,10
+Reach 10 Cataclysm Cooking |skill Cataclysm Cooking,10
 step
-zLoad the "Dalaran Cooking Daily Guide" |confirm |next "Zygor's Dailies Guides\\Cooking\\Dalaran Cooking Daily Guide"
-|tip Click the line above to load the guide.
-Load the "Main City Cooking Daily Guide" |confirm |next "Zygor's Dailies Guides\\Classic Dailies\\Main Cities\\Main City Cooking Dailies"
-|tip Click the line above to load the guide.
 earn 9 Epicurean's Award##81
-|tip You need 9 Epicurean's Award before continuing.
-|tip You will generally obtain 3 to 6 a day.
+|tip Use the "Dalaran Cooking Daily Guide" and "Main City Cooking Dailies" guides to accomplish this.
+|tip You will generally earn three to five per day.
 step
-kill Brinescale Serpent##39948
-|tip The swarm around the sunken boat here.
-collect 25 Snake Eye##62780 |goto Kelp'thar Forest/0 57.85,37.51
+collect 25 Snake Eye##62780
+|tip Farm them with the "Snake Eye" farming guide or purchase them from the Auction House.
 |only if skill("Cataclysm Cooking") < 25
 step
 talk Shazdar##49737
-buy Recipe: Salted Eye##65410 |n
-use the Recipe: Salted Eye##65410
-learn Salted Eye##88035 |goto Orgrimmar/1 56.80,62.35
+buy 1 Recipe: Salted Eye##65410 |goto Orgrimmar/1 56.80,62.35
 |only if skill("Cataclysm Cooking") < 25
+step
+use the Recipe: Salted Eye##65410
+learn Salted Eye##88035
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
-_<Create 15 Salted Eyes>_
-|tip You may need to create more, as this recipe becomes yellow at 15.
-Reach Level 25 Cataclysm Cooking |skill Cataclysm Cooking,25
+_<Create 15 Salted Eye>_
+|tip You may need to make a few more.
+Reach 25 Cataclysm Cooking |skill Cataclysm Cooking,25
 step
-kill Speckled Sea Turtle##40223
-collect 40 Giant Turtle Tongue##62781 |goto Kelp'thar Forest/0 49.6,40.8
-You can find more around here [53.8,51.0]
+collect 40 Giant Turtle Tongue##62781
+|tip Farm them with the "Giant Turtle Tongue" farming guide or purchase them from the Auction House.
 |only if skill("Cataclysm Cooking") < 50
 step
 talk Shazdar##49737
-buy Recipe: Tender Baked Turtle##65419 |n
-use the Recipe: Tender Baked Turtle##65419
-learn Tender Baked Turtle##88046 |goto Orgrimmar/1 56.80,62.35
+buy 1 Recipe: Tender Baked Turtle##65419 |goto 56.80,62.35
 |only if skill("Cataclysm Cooking") < 50
+step
+use the Recipe: Tender Baked Turtle##65419
+learn Tender Baked Turtle##88046
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
 _<Create 25 Tender Baked Turtle>_
-|tip You may need to create more, as this recipe becomes green at 47.
-Reach Level 50 Cataclysm Cooking |skill Cataclysm Cooking,50
+|tip You may need to make a few more.
+Reach 50 Cataclysm Cooking |skill Cataclysm Cooking,50
 step
-kill Baradin Crocolisk##47591
-collect 35 Crocolisk Tail##62784 |goto Tol Barad/0 39.0,47.6
+collect 35 Crocolisk Tail##62784
+|tip Farm them with the "Crocolisk Tail" farming guide or purchase them from the Auction House.
 |only if skill("Cataclysm Cooking") < 75
 step
 talk Shazdar##49737
-buy Recipe: Beer-Basted Crocolisk##65429 |n
-use the Recipe: Beer-Basted Crocolisk##65429
-learn Beer-Basted Crocolisk##88005 |goto Orgrimmar/1 56.80,62.35
+buy 1 Recipe: Beer-Basted Crocolisk##65429 |goto 56.80,62.35
 |only if skill("Cataclysm Cooking") < 50
+step
+use the Recipe: Beer-Basted Crocolisk##65429
+learn Beer-Basted Crocolisk##88005
 step
 _<Create a Cooking Fire>_
 Open Your Cooking Crafting Panel:
 _<Create 25 Beer-Basted Crocolisk>_
-|tip You may need to create more to reach 75.
-Reach Level 75 Cataclysm Cooking |skill Cataclysm Cooking,75
+|tip You may need to make a few more.
+Reach 75 Cataclysm Cooking |skill Cataclysm Cooking,75
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Cooking Skill.
+You Reached 75 Cataclysm Cooking Skill.
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Enchanting skill from 1-300.",
@@ -1812,7 +1919,7 @@ buy 1 Lesser Magic Essence##10938 |goto 53.35,48.93
 step
 Open Your Enchanting Crafting Panel:
 _<Create 1 Runed Copper Rod>_
-Reach Level 2 Enchanting |skill Enchanting,2
+Reach 2 Enchanting |skill Enchanting,2
 step
 talk Kithas##3346
 |tip Inside the building.
@@ -1828,7 +1935,7 @@ Open Your Enchanting Crafting Panel:
 _<Create 105 Enchant Bracer: Minor Health>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip The recipe turns yellow at 70, so additional materials may be required.
-Reach Level 90 Enchanting |skill Enchanting,90
+Reach 90 Enchanting |skill Enchanting,90
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1842,7 +1949,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Bracers: Minor Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 100 Enchanting |skill Enchanting,100
+Reach 100 Enchanting |skill Enchanting,100
 step
 talk Kithas##3346
 |tip Inside the building.
@@ -1862,7 +1969,7 @@ learn Greater Magic Wand##14807 |goto 53.49,49.55
 step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Greater Magic Wands>_
-Reach Level 110 Enchanting |skill Enchanting,110
+Reach 110 Enchanting |skill Enchanting,110
 step
 talk Kulwia##12043
 buy Formula: Enchant Cloak - Minor Agility##11039 |goto Stonetalon Mountains/0 48.69,61.52
@@ -1884,7 +1991,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 25 Enchant Cloak: Minor Agility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 135 Enchanting |skill Enchanting,135
+Reach 135 Enchanting |skill Enchanting,135
 step
 collect 180 Light Illusion Dust##16204
 |tip You can get these by Disenchanting item level 56 to 65 Uncommon (green) armor and weapons.
@@ -1894,7 +2001,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 20 Enchant Bracers: Lesser Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 155 Enchanting |skill Enchanting,155
+Reach 155 Enchanting |skill Enchanting,155
 step
 use the Formula: Enchant Bracer - Lesser Strength##11101
 learn Enchant Bracer: Lesser Strength##13536
@@ -1902,7 +2009,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 20 Enchant Bracers: Lesser Strength>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 180 Enchanting |skill Enchanting,180
+Reach 180 Enchanting |skill Enchanting,180
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1911,7 +2018,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 50 Enchant Bracers: Strength>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 220 Enchanting |skill Enchanting,220
+Reach 220 Enchanting |skill Enchanting,220
 step
 collect 220 Rich Illusion Dust##156930
 |tip You can get these by Disenchanting item level 50-60 Uncommon (green) armor and weapons.
@@ -1925,7 +2032,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Cloak: Greater Defense>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 225 Enchanting |skill Enchanting,225
+Reach 225 Enchanting |skill Enchanting,225
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1934,7 +2041,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Boots: Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 235 Enchanting |skill Enchanting,235
+Reach 235 Enchanting |skill Enchanting,235
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1943,7 +2050,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Chest: Superior Health>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 245 Enchanting |skill Enchanting,245
+Reach 245 Enchanting |skill Enchanting,245
 step
 collect 45 Greater Eternal Essence##16203
 |tip You can get these by Disenchanting item level 56-65 Uncommon (green) armor and weapons.
@@ -1958,7 +2065,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Boots: Agility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 255 Enchanting |skill Enchanting,255
+Reach 255 Enchanting |skill Enchanting,255
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1967,7 +2074,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Bracer: Greater Strength>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 260 Enchanting |skill Enchanting,260
+Reach 260 Enchanting |skill Enchanting,260
 step
 talk Godan##3345
 |tip Inside the building.
@@ -1976,7 +2083,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Bracer: Greater Intellect>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 265 Enchanting |skill Enchanting,265
+Reach 265 Enchanting |skill Enchanting,265
 step
 talk Daniel Bartlett##4561
 buy Formula: Enchant Shield - Greater Stamina##16217 |goto Undercity/0 64.04,37.41
@@ -1988,10 +2095,10 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 40 Enchant Shield: Greater Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 300 Enchanting |skill Enchanting,300
+Reach 300 Enchanting |skill Enchanting,300
 step
 _Congratulations!_
-You Reached Level 300 Enchanting Skill.
+You Reached 300 Enchanting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Outland Enchanting 1-75",{
 author="support@zygorguides.com",
@@ -2022,7 +2129,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 9 Enchant Bracer: Lesser Assault>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 10 Outland Enchanting |skill Outland Enchanting,10
+Reach 10 Outland Enchanting |skill Outland Enchanting,10
 step
 talk Felannia##18753
 |tip Upstairs inside the building.
@@ -2031,7 +2138,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 6 Enchant Bracer: Brawn>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 16 Outland Enchanting |skill Outland Enchanting,16
+Reach 16 Outland Enchanting |skill Outland Enchanting,16
 step
 talk Felannia##18753
 |tip Upstairs inside the building.
@@ -2040,7 +2147,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 16 Enchant Cloak: Major Armor>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 30 Outland Enchanting |skill Outland Enchanting,30
+Reach 30 Outland Enchanting |skill Outland Enchanting,30
 step
 talk Felannia##18753
 |tip Upstairs inside the building.
@@ -2049,7 +2156,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Shield: Major Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 35 Outland Enchanting |skill Outland Enchanting,35
+Reach 35 Outland Enchanting |skill Outland Enchanting,35
 step
 talk Felannia##18753
 |tip Upstairs inside the building.
@@ -2084,7 +2191,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Shield: Resilience>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 40 Outland Enchanting |skill Outland Enchanting,40
+Reach 40 Outland Enchanting |skill Outland Enchanting,40
 step
 use the Formula: Superior Wizard Oil##22563
 learn Superior Wizard Oil##28019
@@ -2096,7 +2203,7 @@ collect 15 Nightmare Vine##22792
 step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Superior Wizard Oil>_
-Reach Level 50 Outland Enchanting |skill Outland Enchanting,50
+Reach 50 Outland Enchanting |skill Outland Enchanting,50
 step
 collect 25 Greater Planar Essence##22446
 |tip You can get these by Disenchanting Uncommon (green) items from any Outland zone.
@@ -2111,7 +2218,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 29 Enchant Gloves: Major Strength>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 69 Outland Enchanting |skill Outland Enchanting,69
+Reach 69 Outland Enchanting |skill Outland Enchanting,69
 step
 collect 2 Void Crystal##22450
 |tip You can get these by Disenchanting Epic (purple) items from any Outland raids.
@@ -2124,7 +2231,7 @@ learn Void Sphere##28028 |goto 52.34,35.97
 step
 Open Your Enchanting Crafting Panel:
 _<Create 1 Void Sphere>_
-Reach Level 70 Outland Enchanting |skill Outland Enchanting,70
+Reach 70 Outland Enchanting |skill Outland Enchanting,70
 step
 kill Eredar Deathbringer##20880+
 collect Formula: Enchant 2H Weapon - Major Agility##22556 |goto The Arcatraz/1 0.00,0.00
@@ -2149,10 +2256,10 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Weapon: Major Agility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 75 Outland Enchanting |skill Outland Enchanting,75
+Reach 75 Outland Enchanting |skill Outland Enchanting,75
 step
 _Congratulations!_
-You Reached Level 75 Outland Enchanting Skill.
+You Reached 75 Outland Enchanting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Northrend Enchanting 1-75",{
 author="support@zygorguides.com",
@@ -2183,7 +2290,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 14 Enchant Gloves: Gatherer>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 15 Northrend Enchanting |skill Northrend Enchanting,15
+Reach 15 Northrend Enchanting |skill Northrend Enchanting,15
 step
 collect 30 Abyss Crystal##34057
 |tip You can get these by Disenchanting Epic (purple) items from any Northrend Raids.
@@ -2199,7 +2306,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 20 Abyssal Shatter>_
 |tip Save any material you collect.
-Reach Level 30 Northrend Enchanting |skill Northrend Enchanting,30
+Reach 30 Northrend Enchanting |skill Northrend Enchanting,30
 step
 collect 430 Infinite Dust##34054
 |tip You can get these by Disenchanting Uncommon (green) items from any Northrend zone.
@@ -2215,7 +2322,7 @@ Open Your Enchanting Crafting Panel:
 _<Cast 10 Enchant Gloves: Haste>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip Save any material you collect.
-Reach Level 40 Northrend Enchanting |skill Northrend Enchanting,40
+Reach 40 Northrend Enchanting |skill Northrend Enchanting,40
 step
 talk Enchanter Nalthanis##28693
 |tip Inside the building.
@@ -2226,7 +2333,7 @@ Open Your Enchanting Crafting Panel:
 _<Cast 5 Enchant Gloves: Precision>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip Save any material you collect.
-Reach Level 45 Northrend Enchanting |skill Northrend Enchanting,45
+Reach 45 Northrend Enchanting |skill Northrend Enchanting,45
 step
 collect 40 Lesser Cosmic Essence##34056
 |tip You can get these by Disenchanting Uncommon (green) items from any Northrend zone.
@@ -2241,7 +2348,7 @@ Open Your Enchanting Crafting Panel:
 _<Cast 10 Enchant Chest: Versatility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip Save any material you collect.
-Reach Level 55 Northrend Enchanting |skill Northrend Enchanting,55
+Reach 55 Northrend Enchanting |skill Northrend Enchanting,55
 step
 talk Enchanter Nalthanis##28693
 |tip Inside the building.
@@ -2251,7 +2358,7 @@ Open Your Enchanting Crafting Panel:
 _<Cast 5 Enchant Gloves: Crusher>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip Save any material you collect.
-Reach Level 60 Northrend Enchanting |skill Northrend Enchanting,60
+Reach 60 Northrend Enchanting |skill Northrend Enchanting,60
 step
 collect 8 Dream Shard##34052
 |tip You can get these by Disenchanting Rare (blue) items from any Northrend zones or dungeons.
@@ -2268,7 +2375,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Cast 5 Enchant Cloak: Mighty Stamina>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 65 Northrend Enchanting |skill Northrend Enchanting,65
+Reach 65 Northrend Enchanting |skill Northrend Enchanting,65
 step
 talk Vanessa Sellers##32514
 |tip Inside the building.
@@ -2280,10 +2387,10 @@ step
 Open Your Enchanting Crafting Panel:
 _<Cast 5 Enchant Cloak: Shadow Armor>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 75 Northrend Enchanting |skill Northrend Enchanting,75
+Reach 75 Northrend Enchanting |skill Northrend Enchanting,75
 step
 _Congratulations!_
-You Reached Level 75 Northrend Enchanting Skill.
+You Reached 75 Northrend Enchanting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Cataclysm Enchanting 1-75",{
 author="support@zygorguides.com",
@@ -2311,7 +2418,7 @@ Open Your Enchanting Crafting Panel:
 _<Create 4 Enchant Boots: Earthen Vitality>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip You may neeed to make more than 4 as this recipe is yellow.
-Reach Level 5 Cataclysm Enchanting |skill Cataclysm Enchanting,5
+Reach 5 Cataclysm Enchanting |skill Cataclysm Enchanting,5
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2321,7 +2428,7 @@ Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Cloak: Lesser Power>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip You may neeed to make more than 5 as this recipe is yellow.
-Reach Level 10 Cataclysm Enchanting |skill Cataclysm Enchanting,10
+Reach 10 Cataclysm Enchanting |skill Cataclysm Enchanting,10
 step
 collect 5 Lesser Celestial Essence##52718
 |tip You can get these by Disenchanting Uncommon (green) items from any Cataclysm zone.
@@ -2335,7 +2442,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Gloves: Haste>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 15 Cataclysm Enchanting |skill Cataclysm Enchanting,15
+Reach 15 Cataclysm Enchanting |skill Cataclysm Enchanting,15
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2344,7 +2451,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Cloak: Intellect>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 25 Cataclysm Enchanting |skill Cataclysm Enchanting,25
+Reach 25 Cataclysm Enchanting |skill Cataclysm Enchanting,25
 step
 collect 135 Greater Celestial Essence##52719
 |tip You can get these by Disenchanting Uncommon (green) items from any Cataclysm zone.
@@ -2359,7 +2466,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Gloves: Exceptional Strength>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 30 Cataclysm Enchanting |skill Cataclysm Enchanting,30
+Reach 30 Cataclysm Enchanting |skill Cataclysm Enchanting,30
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2368,7 +2475,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Boots: Major Agility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 35 Cataclysm Enchanting |skill Cataclysm Enchanting,35
+Reach 35 Cataclysm Enchanting |skill Cataclysm Enchanting,35
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2377,7 +2484,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Gloves: Greater Haste>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 40 Cataclysm Enchanting |skill Cataclysm Enchanting,40
+Reach 40 Cataclysm Enchanting |skill Cataclysm Enchanting,40
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2386,7 +2493,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Shield: Mastery>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 45 Cataclysm Enchanting |skill Cataclysm Enchanting,45
+Reach 45 Cataclysm Enchanting |skill Cataclysm Enchanting,45
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2395,7 +2502,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 10 Enchant Bracers: Precision>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 55 Cataclysm Enchanting |skill Cataclysm Enchanting,55
+Reach 55 Cataclysm Enchanting |skill Cataclysm Enchanting,55
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2404,7 +2511,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Shield: Superior Intellect>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 60 Cataclysm Enchanting |skill Cataclysm Enchanting,60
+Reach 60 Cataclysm Enchanting |skill Cataclysm Enchanting,60
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2413,7 +2520,7 @@ step
 Open Your Enchanting Crafting Panel:
 _<Create 5 Enchant Bracers: Exceptional Versatility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 65 Cataclysm Enchanting |skill Cataclysm Enchanting,65
+Reach 65 Cataclysm Enchanting |skill Cataclysm Enchanting,65
 step
 talk Godan##3345
 |tip Inside the building.
@@ -2423,12 +2530,11 @@ Open Your Enchanting Crafting Panel:
 _<Create 17 Enchant Boots: Mastery>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 |tip This recipe will be green around the 70s, so you may need to create more.
-Reach Level 75 Cataclysm Enchanting |skill Cataclysm Enchanting,75
+Reach 75 Cataclysm Enchanting |skill Cataclysm Enchanting,75
 step
 _Congratulations!_
 You Reached 75 Cataclysm Enchanting Skill.
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Engineering skill from 1-300.",
@@ -2439,49 +2545,43 @@ step
 talk Roxxik##11017
 |tip Inside the building.
 Train Engineering |skillmax Engineering,300 |goto Orgrimmar/1 56.84,56.56
+|tip You must be at least level 5.
+step
+talk Punra##46359
+buy 1 Blacksmith Hammer##5956 |goto 44.96,76.79
+|only if itemcount(5956) == 0 and skill("Engineering") < 300
 step
 collect 60 Rough Stone##2835
-|tip These are gathered with the Mining profession, from Copper Veins.
-|tip Refer to the Copper Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Rough Stone can be mined from Copper Veins.
 |only if skill("Engineering") < 30
 step
 collect 36 Copper Bar##2840
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Copper Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Engineering") < 50
 step
 collect 20 Coarse Stone##2836
-|tip These are gathered with the Mining profession, from Tin Veins, Mithril and Truesilver Deposits.
-|tip Refer to a corresponding farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Coarse Stone can be mined from Tin Veins and Mithril and Truesilver Deposits.
 |only if skill("Engineering") < 90
 step
 collect 20 Linen Cloth##2589
-|tip Refer to the Linen Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
 |only if skill("Engineering") < 100
 step
 Open Your Engineering Crafting Panel:
 _<Create 60 Rough Blasting Powder>_
-Reach Level 30 Engineering |skill Engineering,30
-collect 60 Rough Blasting Powder##4357 |only if skill("Engineering") < 75
-|tip Save these for later.
+|tip Craft all 60 of them, you will need them later.
+Reach 30 Engineering |skill Engineering,30
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Handful of Copper Bolts##3922 |goto 56.84,56.56
 step
-talk Punra##46359
-buy Blacksmith Hammer##5956 |goto 44.96,76.79
-|only if skill("Engineering") < 75
-step
 Open Your Engineering Crafting Panel:
 _<Create 30 Handful of Copper Bolts>_
-Reach Level 50 Engineering |skill Engineering,50 |goto 44.94,77.70
-collect 30 Handful of Copper Bolts##4359 |only if skill("Engineering") < 75
-|tip Save these for later.
+|tip Make all of them, you will need them later.
+Reach 50 Engineering |skill Engineering,50 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2493,15 +2593,16 @@ learn Rough Copper Bomb##3923 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 10 Handful of Copper Bolts>_
-Reach Level 60 Engineering |skill Engineering,60 |goto 44.94,77.70
+Reach 60 Engineering |skill Engineering,60 |goto 44.94,77.70
 step
 Open Your Engineering Crafting Panel:
 _<Create 1 Arclight Spanner>_
-Reach Level 61 Engineering |skill Engineering,61 |goto 44.94,77.70
+Reach 61 Engineering |skill Engineering,61 |goto 44.94,77.70
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Handful of Copper Bolts>_
-Reach Level 75 Engineering |skill Engineering,75 |goto 44.94,77.70
+|tip You may need to craft a few more.
+Reach 75 Engineering |skill Engineering,75 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2509,9 +2610,8 @@ learn Coarse Blasting Powder##3929 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Coarse Blasting Powder>_
-Reach Level 90 Engineering |skill Engineering,90 |goto 44.94,77.70
-collect 20 Coarse Blasting Powder##4364 |only if skill("Engineering") < 90
-|tip Save these for later.
+|tip Craft them all, you will need them later.
+Reach 90 Engineering |skill Engineering,90 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2519,35 +2619,28 @@ learn Coarse Dynamite##3931 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Coarse Dynamite>_
-Reach Level 100 Engineering |skill Engineering,100
+Reach 100 Engineering |skill Engineering,100 |goto 44.94,77.70
 step
 collect 107 Bronze Bar##2841
-|tip You can smelt these with the Mining skill.
-|tip You will need Copper and Tin Bar to make 1 Bronze Bar.
-|tip Refer to the Copper Ore and Tin Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Engineering") < 160
 step
 collect 2 Tigerseye##818
-|tip These are mined from Copper Veins.
-|tip With Jewelcrafting, you can prospect Copper Ore.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Tigerseye can be mined from Copper Veins.
 |only if skill("Engineering") < 130
 step
 collect 30 Heavy Stone##2838
-|tip These are gathered with the Mining skill, from Iron Deposits.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Heavy Stone can be mined from Iron Deposits.
 |only if skill("Engineering") < 150
 step
 collect 60 Wool Cloth##2592
-|tip Refer to the Wool Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
 |only if skill("Engineering") < 160
 step
 collect 15 Medium Leather##2319
-|tip Refer to the Medium Leather farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Skinning or purchase them from the Auction House.
 |only if skill("Engineering") < 160
 step
 talk Roxxik##11017
@@ -2557,10 +2650,10 @@ step
 Open Your Engineering Crafting Panel:
 _<Create 13 Clockwork Box>_
 |tip Save these for the next step.
-Reach Level 113 Engineering |skill Engineering,113  |goto 44.94,77.70
+Reach 113 Engineering |skill Engineering,113 |goto 44.94,77.70
 step
 use the Clockwork Box##6712
-Reach Level 125 Engineering |skill Engineering,125
+Reach 125 Engineering |skill Engineering,125
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2568,19 +2661,26 @@ learn Flying Tiger Goggles##3934 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 1 Flying Tiger Goggles>_
-Reach Level 130 Engineering |skill Engineering,130
+Reach 130 Engineering |skill Engineering,130 |goto 44.94,77.70
+step
+talk Roxxik##11017
+|tip Inside the building.
+learn Heavy Blasting Powder##3945 |goto 56.84,56.56
+step
+talk Roxxik##11017
+|tip Inside the building.
+learn Whirring Bronze Gizmo##3942 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 30 Heavy Blasting Powder>_
-collect 30 Heavy Blasting Powder##4377
-|tip Save these for laters.
+|tip Save these for later.
+collect 30 Heavy Blasting Powder##4377 |goto 44.94,77.70
 |only if skill("Engineering") < 150
 step
 Open Your Engineering Crafting Panel:
-_<Create 30 Heavy Blasting Powder>_
-Reach Level 150 Engineering |skill Engineering,150
-collect 15 Whirring Bronze Gizmo##4375 |only if skill("Engineering") < 150
-|tip Save these for laters.
+_<Create 15 Whirring Bronze Gizmo>_
+|tip Save these for later.
+Reach 150 Engineering |skill Engineering,150 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2588,36 +2688,24 @@ learn Bronze Framework##3953 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 15 Bronze Framework>_
-Reach Level 160 Engineering |skill Engineering,160 |goto 44.94,77.70
+Reach 160 Engineering |skill Engineering,160 |goto 44.94,77.70
 step
 collect 4 Steel Bar##3859
-|tip These are made by combining Iron Bars and Coal with the Mining profession.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Engineering") < 300
 step
 collect 120 Solid Stone##7912
-|tip These are gathered with the Mining profession.
-|tip Refer to the Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Solid Stone can be mined from Mithril Deposits.
 |only if skill("Engineering") < 195
 step
 collect 161 Mithril Bar##3860
-|tip These are gathered with the Mining profession.
-|tip Refer to the Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Engineering") < 240
 step
 collect 20 Mageweave Cloth##4338
-|tip Refer to the Mageweave Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
 |only if skill("Engineering") < 216
-step
-collect 40 Dense Stone##12365
-|tip These are gathered with the Mining profession.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 260
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2625,7 +2713,7 @@ learn Explosive Sheep##3955 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 15 Explosive Sheep>_
-Reach Level 175 Engineering |skill Engineering,175 |goto 44.94,77.70
+Reach 175 Engineering |skill Engineering,175 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2633,7 +2721,7 @@ learn Gyromatic Micro-Adjustor##12590 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 1 Gyromatic Micro-Adjustor>_
-Reach Level 176 Engineering |skill Engineering,176 |goto 44.94,77.70
+Reach 176 Engineering |skill Engineering,176 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2641,17 +2729,18 @@ learn Solid Blasting Powder##12585 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 60 Solid Blasting Powder>_
-|tip Save these for later.
-Reach Level 195 Engineering |skill Engineering,195
+|tip Make all 60 of these, you will need them later.
+Reach 195 Engineering |skill Engineering,195 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Mithril Tube##12589 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 5 Mithril Tube>_
-|tip This recipe will be yellow, so you may need to create more.
-Reach Level 200 Engineering |skill Engineering,200 |goto 44.94,77.70
+_<Create 7 Mithril Tube>_
+|tip Stop making these at 200.
+|tip Make a few Iron Grenades if you did not reach 200.
+Reach 200 Engineering |skill Engineering,200 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2659,8 +2748,8 @@ learn Unstable Trigger##12591 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Unstable Trigger>_
-|tip Save these for later.
-Reach Level 216 Engineering |skill Engineering,216 |goto 44.94,77.70
+|tip Make all of these, you will need them later.
+Reach 216 Engineering |skill Engineering,216 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2668,9 +2757,21 @@ learn Mithril Casing##12599 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 40 Mithril Casing>_
-|tip Save these for later.
-Reach Level 238 Engineering |skill Engineering,238 |goto 44.94,77.70
-collect 40 Mithril Casing##10561 |only if skill("Engineering") < 250
+|tip Make all of these, you will need them later.
+Reach 238 Engineering |skill Engineering,238 |goto 44.94,77.70
+step
+collect 60 Dense Stone##12365
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Dense Stone can be mined from Thorium Veins.
+|only if skill("Engineering") < 260
+step
+collect 195 Thorium Bar##12359
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Engineering") < 300
+step
+collect 25 Runecloth##14047
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
+|only if skill("Engineering") < 285
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2678,7 +2779,7 @@ learn Hi-Explosive Bomb##12619 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Hi-Explosive Bomb>_
-Reach Level 250 Engineering |skill Engineering,250 |goto 44.94,77.70
+Reach 250 Engineering |skill Engineering,250 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -2686,181 +2787,180 @@ learn Dense Blasting Powder##19788 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Dense Blasting Powder>_
-Reach Level 260 Engineering |skill Engineering,260
-step
-collect 25 Runecloth##14047
-|tip Refer tot he Runecloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 285
-step
-collect 216 Thorium Bar##12359
-|tip These are created by the Mining profession, from Thorium Ore.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 300
+|tip You may need to craft a few more.
+Reach 260 Engineering |skill Engineering,260 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Thorium Widget##19791 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 20 Thorium Widget>_
-Reach Level 280 Engineering |skill Engineering,280 |goto 44.94,77.70
+_<Create 25 Thorium Widget>_
+|tip You may need to craft a few more.
+Reach 285 Engineering |skill Engineering,285 |goto 44.94,77.70
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Thorium Tube##19795 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 20 Thorium Tube>_
-|tip This recipe will be yellow by 295, so you may need to create more.
-Reach Level 300 Engineering |skill Engineering,300 |goto 44.94,77.70
+_<Create 15 Thorium Tube>_
+|tip You may need to craft a few more.
+Reach 300 Engineering |skill Engineering,300 |goto 44.94,77.70
 step
 _Congratulations!_
-You Reached Level 300 Engineering Skill.
+You Reached 300 Engineering Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Outland Engineering 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Outland Engineering skill from 1-75.",
 condition_end=function() return skill('Outland Engineering') >= 75 end,
-condition_suggested=function() return skill('Outland Engineering') > 0 and skill('Outland Engineering') < 75 end,
+condition_suggested=function() return skill('Outland Engineering') > 0 and skill('Outland Engineering') < 75 and level >= 58 end,
 },[[
 step
-talk Engineer Sinbei##33634
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-Train Outland Engineering |skillmax Outland Engineering,75 |goto Shattrath City/0 43.84,65.19
+Train Outland Engineering |skillmax Outland Engineering,75 |goto Shattrath City/0 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+Train Outland Engineering |skillmax Outland Engineering,75 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
+|tip You must be at least level 58.
 step
-collect 294 Fel Iron Bar##23445
-|tip These are created by the Mining profession, from Fel Iron Ore.
-|tip It takes 588 ore to make the amount you need.
-|tip Refer to the Fel Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 25
-step
-collect 20 Mote of Earth##22573
-|tip Refer to the Primal Earth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 300 Fel Iron Bar##23445
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Outland Engineering") < 20
 step
-collect 10  Mote of Fire##22574
-|tip Refer to the Primal Fire farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 184 Adamantite Bar##23446
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Outland Engineering") < 20
+step
+collect 6 Khorium Bar##23449
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
+|only if skill("Outland Engineering") < 20
+step
+collect 20 Mote of Earth##22573
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Outland Engineering") < 20
 step
 collect 34 Primal Earth##22452
-|tip Refer to the Primal Earth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 35
+|tip Farm them from elementals or purchase them from the Auction House.
+|tip Combine ten Motes of Earth into one Primal Earth.
+|only if skill("Outland Engineering") < 20
 step
-collect 10 Primal Fire##21884
-|tip Refer to the Primal Fire farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 60
+collect 10 Mote of Fire##22574
+|tip Farm them from elementals or purchase them from the Auction House.
+|only if skill("Outland Engineering") < 20
 step
-collect	35 Netherweave Cloth##21877
-|tip Refer to the Netherweave Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 60
+collect 6 Primal Fire##21884
+|tip Farm them from elementals or purchase them from the Auction House.
+|tip Combine ten Motes of Fire into one Primal Fire.
+|only if skill("Outland Engineering") < 20
 step
-collect 184 Adamantite Bar##23446
-|tip These are created by the Mining profession, from Adamantite Ore.
-|tip It takes 368 ore to make the amount you need.
-|tip Refer to the Adamantite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 60
-step
-collect 10 Khorium Bar##23449
-|tip These are gathered with the Mining profession.
-|tip Refer to the Khorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Engineering") < 75
+collect 35 Netherweave Cloth##21877
+|tip Farm them or purchase them from the Auction House.
+|only if skill("Outland Engineering") < 20
 step
 Open Your Engineering Crafting Panel:
-_<Create 126 Handfus of Fel Iron Bolts>_
-|tip Save these for later.
-Reach Level 20 Outland Engineering |skill Outland Engineering,20 |goto 69.53,42.40
-collect 126 Handfuls of Fel Iron Bolt##23783 |only if skill("Outland Engineering") < 75
+_<Create 10 Elemental Blasting Powder>_
+collect 40 Elemental Blasting Powder##23781 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+collect 40 Elemental Blasting Powder##23781 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
+|only if skill("Outland Engineering") < 20
 step
-Open Your Engineering Crafting Panel:
-_<Create 10 Elemental Blasting Powders>_
-collect 10 Elemental Blasting Powder##23781 |goto 69.53,42.40
-|only if skill("Outland Engineering") < 55
-step
-talk Engineer Sinbei##33634
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Fel Iron Casing##30304 |goto 43.84,65.19
+learn Fel Iron Casing##30304 |goto 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+learn Fel Iron Casing##30304 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Engineering Crafting Panel:
 _<Create 56 Fel Iron Casing>_
-collect 56 Fel Iron Casing##23782 |goto 69.53,42.40
-|only if skill("Outland Engineering") < 70
-step
-talk Engineer Sinbei##33634
-|tip Inside the building.
-learn Fel Iron Bomb##30310 |goto 43.84,65.19
+collect 56 Fel Iron Casing##23782 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+collect 56 Fel Iron Casing##23782 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
+|only if skill("Outland Engineering") < 20
 step
 Open Your Engineering Crafting Panel:
-_<Create 5 Fel Iron Bombs>_
-Reach Level 25 Outland Engineering |skill Outland Engineering,25 |goto 69.53,42.40
+_<Create 126 Handful of Fel Iron Bolts>_
+collect 126 Handful of Fel Iron Bolts##23783 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+collect 126 Handful of Fel Iron Bolts##23783 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
+|only if skill("Outland Engineering") < 20
 step
-talk Engineer Sinbei##33634
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Adamantite Frame##30306 |goto 43.84,65.19
+learn Fel Iron Bomb##30310 |goto 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+learn Fel Iron Bomb##30310 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
+step
+Open Your Engineering Crafting Panel:
+_<Create 5 Fel Iron Bomb>_
+Reach 25 Outland Engineering |skill Outland Engineering,25 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 25 Outland Engineering |skill Outland Engineering,25 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
+step
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
+|tip Inside the building.
+learn Adamantite Frame##30306 |goto 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+learn Adamantite Frame##30306 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Engineering Crafting Panel:
 _<Create 34 Adamantite Frame>_
-|tip Save these for later.
-Reach Level 35 Outland Engineering |skill Outland Engineering,35 |goto 69.53,42.40
-collect 34 Adamantite Frame##23784 |only if skill("Outland Engineering") < 70
+|tip Make all 34 of these, you'll need them later.
+Reach 35 Outland Engineering |skill Outland Engineering,35 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 35 Outland Engineering |skill Outland Engineering,35 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
 step
-talk Wind Trader Lathrai##18484
-buy Schematic: White Smoke Flare##23811 |n
-|tip This is a limited supply recipe.
-|tip If it's not available, you will need to wait for it to respawn.
-use the Schematic: White Smoke Flare##23811
-learn Wind Trader Lathrai##18484 |goto 72.21,30.72
-step
-Open Your Engineering Crafting Panel:
-_<Create 35 Fel Iron Casing>_
-|tip This recipe will be green at 45, so you may need to create more.
-Reach Level 55 Outland Engineering |skill Outland Engineering,55 |goto 69.53,42.40
-step
-talk Engineer Sinbei##33634
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Khorium Power Core##30308 |goto 43.84,65.19
+learn White Smoke Flare##30341 |goto 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+learn White Smoke Flare##30341 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Engineering Crafting Panel:
-_<Create 10 Khorium Power Core>_
-Reach Level 60 Outland Engineering |skill Outland Engineering,60 |goto 69.53,42.40
+_<Create 20 White Smoke Flare>_
+|tip You may need to craft more.
+Reach 55 Outland Engineering |skill Outland Engineering,55 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 55 Outland Engineering |skill Outland Engineering,55 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
+step
+talk Engineer Sinbei##33634 |only if rep ('The Scryers') >= Neutral
+talk Technician Mihila##33677 |only if rep ('The Aldor') >= Neutral
+|tip Inside the building.
+learn Khorium Power Core##30308 |goto 43.84,65.19 |only if rep ('The Scryers') >= Neutral
+learn Khorium Power Core##30308 |goto 37.76,31.80 |only if rep ('The Aldor') >= Neutral
+step
+Open Your Engineering Crafting Panel:
+_<Create 5 Khorium Power Core>_
+|tip You may need to craft a few more.
+Reach 60 Outland Engineering |skill Outland Engineering,60 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 60 Outland Engineering |skill Outland Engineering,60 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
 step
 talk Viggz Shinesparked##19661
-buy Schematic: Adamantite Rifle##23799 |n
+buy 1 Schematic: Adamantite Rifle##23799 |goto 64.95,69.65
+|only if skill("Outland Engineering") < 70
+step
 use the Schematic: Adamantite Rifle##23799
-learn Adamantite Rifle##30313 |goto 64.95,69.65
+learn Adamantite Rifle##30313
 step
 Open Your Engineering Crafting Panel:
-_<Create 17 Adamantite Rifle>_
-|tip This recipe will be green by 65, so you may need to create more.
-Reach Level 60 Outland Engineering |skill Outland Engineering,60 |goto 69.53,42.40
+_<Create 10 Adamantite Rifle>_
+|tip You may need to craft a few more.
+Reach 70 Outland Engineering |skill Outland Engineering,70 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 70 Outland Engineering |skill Outland Engineering,70 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
 step
 kill Gan'arg Analyzer##23385
-|tip Kill these to force Simon Unit to spawn.
-|tip Move between the provided coordinates until Simon Unit spawns.
-|tip It may take a few minutes for him to spawn.
-kill Simon Unit##23385
-buy Schematic: Field Repair Bot 110G##34114 |n
+collect 1 Schematic: Field Repair Bot 110G##34114 |goto Blade's Edge Mountains/0 27.42,68.57
+More can be found here [31.73,63.77]
+And here [33.41,51.87]
+And here [29.01,47.22]
+|only if skill("Outland Engineering") < 75
+step
 use the Schematic: Field Repair Bot 110G##34114
-learn Field Repair Bot 110G##44391 |goto Blade's Edge Mountains/0 27.42,68.57
-He Can Also Be Found Here [31.73,63.77]
-As Well As Here [33.41,51.87]
-And Here [29.0,47.2]
+learn Field Repair Bot 110G##44391
 step
 Open Your Engineering Crafting Panel:
-_<Create 6 Field Repair Bot 110G>_
-Reach Level 75 Outland Engineering |skill Outland Engineering,75 |goto Shattrath City/0 69.53,42.40
+_<Create 5 Field Repair Bot 110G>_
+|tip You may need to craft a few more.
+Reach 75 Outland Engineering |skill Outland Engineering,75 |goto 43.40,65.20 |only if rep ('The Scryers') >= Neutral
+Reach 75 Outland Engineering |skill Outland Engineering,75 |goto 37.50,31.25 |only if rep ('The Aldor') >= Neutral
 step
 _Congratulations!_
-You Reached Level 75 Outland Engineering Skill.
+You Reached 75 Outland Engineering Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Northrend Engineering 1-75",{
 author="support@zygorguides.com",
@@ -2871,217 +2971,215 @@ condition_suggested=function() return skill('Northrend Engineering') > 0 and ski
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-Train Northrend Engineering |skillmax Northrend Engineering,75 |goto Dalaran/1 38.48,25.83
+Train Northrend Engineering |skillmax Northrend Engineering,75 |goto Dalaran/1 38.50,25.83
+|tip You must be at least level 58.
 step
 collect 260 Cobalt Bar##36916
-|tip These are gathered with the Mining profession.
-|tip Refer to the Cobalt Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 60
 step
 collect 10 Crystallized Earth##37701
-|tip Refer to the Eternal Earth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 60
 step
 collect 35 Crystallized Water##37705
-|tip Refer to the Eternal Water farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 50
 step
 collect 10 Borean Leather##33568
-|tip These are gathered with the Skinning profession.
-|tip Refer to the Borean Leather farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Skinning or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 55
 step
 collect 350 Saronite Bar##36913
-|tip These are gathered with the Mining profession.
-|tip Refer to the Saronite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 75
 step
 collect 5 Eternal Shadow##35627
-|tip Refer to the Eternal Shadow farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
+|tip Combine ten Crystallized Shadow into one Eternal Shadow.
 |only if skill("Northrend Engineering") < 55
 step
-collect 6 Frostweave Cloth##33470
-|tip Refer to the Frostweave Cloth farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 8 Frostweave Cloth##33470
+|tip Farm them from humanoid mobs or purchase them from the Auction House.
 |only if skill("Northrend Engineering") < 15
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Overcharged Capacitor##56464 |goto 38.48,25.83
+learn Overcharged Capacitor##56464 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
-_<Create 35 Handfuls of Cobalt Bolts>_
-|tip Each craft will grant 1 to 3 Cobalt Bolt, so you may need to craft more or less.
-|tip Save them for later.
-collect 50 Handful of Cobalt Bolts##39681 |goto 44.68,28.06
+_<Create 35 Handful of Cobalt Bolts>_
+|tip You may need to make a few more.
+|tip Save them all for later.
+collect 50 Handful of Cobalt Bolts##39681 |goto 39.66,26.16
 |only if skill("Northrend Engineering") < 60
 step
 Open Your Engineering Crafting Panel:
-_<Create 10 Volatile Blasting Triggers>_
-|tip Each craft will yield 2 each.
-|tip Save them for later.
-collect 20 Volatile Blasting Trigger##39690 |goto 44.68,28.06
+_<Create 10 Volatile Blasting Trigger>_
+|tip Save them all for later.
+collect 20 Volatile Blasting Trigger##39690 |goto 39.66,26.16
 |only if skill("Northrend Engineering") < 15
 step
 Open Your Engineering Crafting Panel:
-_<Create 10 Volatile Blasting Triggers>_
-|tip Save them for later.
-Reach Level 10 Northrend Engineering |skill Northrend Engineering,10 |goto 44.68,28.06
-collect 10 Overcharged Capacitor##39682 |only if skill("Northrend Engineering") < 60
+_<Create 10 Overcharged Capacitor>_
+|tip Save them all for later.
+collect 10 Overcharged Capacitor##39682 |goto 39.66,26.16
+|only if skill("Northrend Engineering") < 15
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Explosive Decoy##56463 |goto 38.48,25.83
+learn Explosive Decoy##56463 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
-_<Create 6 Volatile Blasting Triggers>_
-|tip Save them for later.
-Reach Level 15 Northrend Engineering |skill Northrend Engineering,15
+_<Create 6 Explosive Decoy>_
+Reach 15 Northrend Engineering |skill Northrend Engineering,15 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Froststreel Tube##56471 |goto 38.48,25.83
+learn Froststeel Tube##56471 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
-_<Create 15 Froststreel Tubes>_
-|tip Save them for later.
-Reach Level 26 Northrend Engineering |skill Northrend Engineering,26
+_<Create 15 Froststeel Tube>_
+|tip Make all 15 of these, you will need them later.
+Reach 26 Northrend Engineering |skill Northrend Engineering,26 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Diamond-cut Refractor Scope##61471 |goto 38.48,25.83
+learn Diamond-cut Refractor Scope##61471 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
-_<Create 5 Diamond-cut Refractor Scopes>_
-Reach Level 30 Northrend Engineering |skill Northrend Engineering,30
+_<Create 5 Diamond-cut Refractor Scope>_
+|tip Only make these until skill 30.
+Reach 30 Northrend Engineering |skill Northrend Engineering,30 |goto 39.66,26.16
 step
 talk Bryan Landers##28722
+|tip Inside the building.
 buy 45 Tinker's Kit##90146 |goto 38.92,24.54
 |only if skill("Northrend Engineering") < 45
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Nitro Boosts##55016 |goto 38.48,25.83
+learn Nitro Boosts##55016 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
 _<Create 15 Nitro Boosts>_
 |tip Select "Nitro Boost" in the Engineering Panel, then use it on your belt.
-Reach Level 35 Northrend Engineering |skill Northrend Engineering,35
+Reach 35 Northrend Engineering |skill Northrend Engineering,35 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Mind Amplification Dish##67839 |goto 38.48,25.83
+learn Mind Amplification Dish##67839 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
 _<Create 30 Mind Amplification Dish>_
 |tip Select "Mind Amplification Dish" in the Engineering Panel, then use it on your belt.
-Reach Level 45 Northrend Engineering |skill Northrend Engineering,45
+Reach 45 Northrend Engineering |skill Northrend Engineering,45 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Mana Injector Kit##56477 |goto 38.48,25.83
+learn Mana Injector Kit##56477 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
 _<Create 5 Mana Injector Kit>_
-Reach Level 50 Northrend Engineering |skill Northrend Engineering,50
+Reach 50 Northrend Engineering |skill Northrend Engineering,50 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Mechanized Snow Goggles##61482 |goto 38.48,25.83
+learn Mechanized Snow Goggles##61482 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
 _<Create 5 Mechanized Snow Goggles>_
-Reach Level 55 Northrend Engineering |skill Northrend Engineering,55
+Reach 55 Northrend Engineering |skill Northrend Engineering,55 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Noise Machine##56467 |goto 38.48,25.83
+learn Noise Machine##56467 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
-_<Create 5 Noise Machines>_
-Reach Level 60 Northrend Engineering |skill Northrend Engineering,60
+_<Create 5 Noise Machine>_
+Reach 60 Northrend Engineering |skill Northrend Engineering,60 |goto 39.66,26.16
 step
 talk Timofey Oshenko##28697
 |tip Inside the building.
-learn Gnomish Army Knife##56462 |goto 38.48,25.83
-Gnomish Army Knife
+buy 25 Mining Pick##2901 |goto 38.93,24.56
+step
+talk Timofey Oshenko##28697
+|tip Inside the building.
+buy 25 Blacksmith Hammer##5956 |goto 38.93,24.56
+step
+talk Ranid Glowergold##28718
+|tip Inside the building.
+buy 25 Skinning Knife##7005 |goto 36.62,27.85
+step
+talk Timofey Oshenko##28697
+|tip Inside the building.
+learn Gnomish Army Knife##56462 |goto 38.50,25.83
 step
 Open Your Engineering Crafting Panel:
 _<Create 25 Gnomish Army Knife>_
-|tip This will be green at level 70, so you may need to create more.
-Reach Level 75 Northrend Engineering |skill Northrend Engineering,75
+|tip You may need to create a few more.
+Reach 75 Northrend Engineering |skill Northrend Engineering,75 |goto 39.66,26.16
 step
 _Congratulations!_
-You Reached Level 75 Northrend Engineering Skill.
+You Reached 75 Northrend Engineering Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Cataclysm Engineering 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cataclysm Engineering skill from 1-75.",
 condition_end=function() return skill('Cataclysm Engineering') >= 75 end,
-condition_suggested=function() return skill('Cataclysm Engineering') > 0 and skill('Cataclysm Engineering') < 75 end,
+condition_suggested=function() return skill('Cataclysm Engineering') > 0 and skill('Cataclysm Engineering') < 75 and level >= 78 end,
 },[[
 step
 talk Roxxik##11017
 |tip Inside the building.
 Train Cataclysm Engineering |skillmax Cataclysm Engineering,75 |goto Orgrimmar/1 56.84,56.56
+|tip You must be at least level 78.
 step
 collect 70 Obsidium Bar##54849
-|tip These are gathered with the Mining profession
-|tip Refer to the Obsidium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Cataclysm Engineering") < 45
 step
 collect 30 Volatile Air##52328
-|tip Refer to the Volatile Air farming guide to accomplish this.
-|tip You can also buy these materials from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Engineering") < 30
 step
 collect 360 Elementium Bar##52186
-|tip These are gathered with the Mining profession.
-|tip Refer to the Elementium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Cataclysm Engineering") < 75
 step
 collect 15 Volatile Fire##52325
-|tip Refer to the Volatile Fire farming guide to accomplish this.
-|tip You can also buy these materials from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Engineering") < 75
 step
 Open Your Engineering Crafting Panel:
 _<Create 20 Handful of Obsidium Bolts>_
 |tip Save them for later.
-Reach Level 15 Cataclysm Engineering |skill Cataclysm Engineering,15 |goto 44.92,77.71
+Reach 15 Cataclysm Engineering |skill Cataclysm Engineering,15 |goto 44.92,77.71
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Electrified Ether##94748 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 15 Electrified Ethers>_
+_<Create 15 Electrified Ether>_
 |tip Save them for later.
-Reach Level 30 Cataclysm Engineering |skill Cataclysm Engineering,30 |goto 44.92,77.71
+Reach 30 Cataclysm Engineering |skill Cataclysm Engineering,30 |goto 44.92,77.71
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Volatile Seaforium Blastpack##84409 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 13 Volatile Seaforium Blastpacks>_
-Reach Level 42 Cataclysm Engineering |skill Cataclysm Engineering,42 |goto 44.92,77.71
+_<Create 13 Volatile Seaforium Blastpack>_
+Reach 42 Cataclysm Engineering |skill Cataclysm Engineering,42 |goto 44.92,77.71
 step
 talk Roxxik##11017
 |tip Inside the building.
 learn Safety Catch Removal Kit##84410 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
-_<Create 3 Safety Catch Removal Kits>_
-Reach Level 45 Cataclysm Engineering |skill Cataclysm Engineering,45 |goto 44.92,77.71
+_<Create 3 Safety Catch Removal Kit>_
+Reach 45 Cataclysm Engineering |skill Cataclysm Engineering,45 |goto 44.92,77.71
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -3089,7 +3187,7 @@ learn Lure Master Tackle Box##84415 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 15 Lure Master Tackle Box>_
-Reach Level 60 Cataclysm Engineering |skill Cataclysm Engineering,60 |goto 44.92,77.71
+Reach 60 Cataclysm Engineering |skill Cataclysm Engineering,60 |goto 44.92,77.71
 step
 talk Roxxik##11017
 |tip Inside the building.
@@ -3097,12 +3195,11 @@ learn Heat-Treated Spinning Lure##84430 |goto 56.84,56.56
 step
 Open Your Engineering Crafting Panel:
 _<Create 15 Heat-Treated Spinning Lure>_
-Reach Level 75 Cataclysm Engineering |skill Cataclysm Engineering,75 |goto 44.92,77.71
+Reach 75 Cataclysm Engineering |skill Cataclysm Engineering,75 |goto 44.92,77.71
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Engineering Skill.
+You Reached 75 Cataclysm Engineering Skill.
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Fishing skill from 1-300.",
@@ -3199,221 +3296,140 @@ step
 Click here to proceed |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide"
 |tip This will take you to the Fishing 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Herbalism skill from 1-300.",
+condition_end=function() return skill('Herbalism') >= 300 end,
+condition_suggested=function() return skill('Herbalism') > 0 and skill('Herbalism') < 300 end,
 },[[
 step
-#include "trainer_Herbalism"
-skillmax Herbalism,75
+talk Muraga##46741
+|tip She walks around inside the building.
+Train Herbalism |skillmax Herbalism,300 |goto Orgrimmar/1 55.00,49.98
 step
-talk Innkeeper Norman##6741
-home Trade Quarter |goto Undercity 67.7,37.9
+map Felwood/0
+path follow smart; loop on; ants straight
+path	48.25,74.18	45.57,71.52	45.19,67.93	44.99,64.81	43.75,63.75
+path	42.60,61.94	42.10,60.44	42.52,58.39	42.19,55.80	42.12,53.77
+path	42.52,51.99	42.46,49.04	43.22,46.66	42.28,45.26	43.25,43.10
+path	44.86,43.11	46.09,41.05	45.72,36.88	46.03,33.95	47.65,33.39
+path	51.14,32.99	51.89,29.81	53.84,27.92	55.31,24.24	55.39,22.27
+path	56.09,21.01	57.54,18.62	56.84,16.17	55.09,15.09	53.16,14.49
+path	50.54,15.11	49.43,15.94	47.64,18.21	46.30,21.16	45.98,22.93
+path	43.76,23.67	42.49,24.58	40.74,26.31	41.42,27.63	41.25,30.12
+path	40.28,31.55	39.63,32.74	40.28,34.49	39.88,36.76	39.02,41.56
+path	38.95,44.99	40.65,46.99	39.91,49.88	39.07,53.19	38.83,55.66
+path	39.72,58.29	41.23,59.18	41.60,60.63	42.10,62.62	41.71,64.52
+path	40.58,65.26	40.40,68.00	39.31,70.23	39.26,71.58	41.53,72.75
+path	41.89,74.07	40.92,76.49	41.72,78.38	43.01,80.29	44.69,81.19
+path	45.84,83.32	47.74,82.92	49.87,80.73
+Collect herbs along the path
+|tip Turn on your "Find Herbs" ability to see the nodes.
+|tip They appear on your minimap as yellow dots.
+|tip You will collect leaves from gathering until you reach around 250 skill level.
+Reach 300 Herbalism Skill |skill Herbalism,300
 step
-map Tirisfal Glades
-path follow loose;loop;ants straight;dist 60
-path 56.6,49.0	49.4,49.5	47.6,42.4
-path 50.2,32.2	44.4,32.9	42.9,51.0
-path 43.1,53.8	44.3,59.8	55.7,55.5
-#include "follow_path_herbs"
-collect Peacebloom##2447 |n
-collect Silverleaf##765 |n
-collect Earthroot##2449 |n
-skill Herbalism,70
+_Congratulations!_
+You Reached 300 Herbalism Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Outland Herbalism 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Outland Herbalism skill from 1-75.",
+condition_end=function() return skill('Outland Herbalism') >= 75 end,
+condition_suggested=function() return skill('Outland Herbalism') > 0 and skill('Outland Herbalism') < 75 end,
+},[[
 step
-#include trainer_HerbalismUC
-skillmax Herbalism,150
+Enter the building |goto Hellfire Peninsula/0 52.58,36.78 < 15 |walk
+talk Ruak Stronghorn##18748
+|tip Inside the building.
+Train Outland Herbalism |skillmax Outland Herbalism,75 |goto 52.23,36.25
 step
-map Hillsbrad Foothills
-path follow loose;loop;ants straight;dist 60
-path	31.8,62.6	33.9,54.0	33.9,54.0
-path	29.7,44.1	34.5,28.2	39.5,21.0
-path	39.5,21.0	44.2,8.3 	51.3,14.0
-path	57.5,20.9	56.1,34.3	49.9,46.2
-path	43.1,50.1	38.2,49.1	40.1,55.0
-path	41.3,67.4	41.3,67.4	36.3,69.9
-#include "follow_path_herbs"
-collect Mageroyal##785 |n
-collect Bruiseweed##2453 |n
-collect Briarthorn##2450 |n
-skill Herbalism,125
+map Terokkar Forest/0
+path follow smart; loop on; ants straight
+path	31.60,45.71	32.29,42.68	32.86,38.44	32.61,35.72	34.85,34.70
+path	36.60,32.54	36.98,30.09	38.61,28.59	39.20,26.76	40.64,25.10
+path	41.40,22.16	43.06,19.91	43.81,17.68	43.32,15.01	43.95,12.48
+path	45.94,12.75	48.58,14.35	50.45,17.02	49.36,20.09	49.79,22.32
+path	50.98,24.83	53.08,25.59	55.63,25.32	58.26,25.33	59.93,23.87
+path	61.12,26.59	62.13,28.15	63.46,29.60	65.02,31.32	67.13,31.63
+path	69.82,31.74	69.61,35.63	68.73,39.39	69.79,42.02	70.46,45.89
+path	70.51,48.71	68.94,53.17	68.11,54.89	65.38,54.27	63.87,51.31
+path	61.59,50.51	59.04,49.28	56.48,46.30	53.96,42.43	54.33,38.20
+path	53.25,35.66	50.24,35.67	48.92,34.53	46.58,34.04	43.68,34.49
+path	40.40,35.76	38.35,36.51	36.62,38.18	36.01,39.93	36.50,42.94
+path	35.72,43.53	33.66,44.98
+Collect herbs along the path
+|tip Turn on your "Find Herbs" ability to see the nodes.
+|tip They appear on your minimap as yellow dots.
+Reach 75 Outland Herbalism |skill Outland Herbalism,75
 step
-#include "trainer_HerbalismUC"
-skillmax Herbalism,225
+_Congratulations!_
+You Reached 75 Outland Herbalism Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Northrend Herbalism 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Northrend Herbalism skill from 1-75.",
+condition_end=function() return skill('Northrend Herbalism') >= 75 end,
+condition_suggested=function() return skill('Northrend Herbalism') > 0 and skill('Northrend Herbalism') < 75 end,
+},[[
 step
-map Western Plaguelands
-path follow loose;loop;ants straight;dist 60
-path	31.8,59.3	36.9,57.1	43.5,53.2
-path	45.9,44.7	45.2,35.2	49.5,35.1
-path	51.0,47.4	55.2,51.3	61.8,52.0
-path	67.2,44.5	63.6,56.0	56.6,60.1
-path	52.6,67.5	46.4,59.2	37.9,62.2
-path	33.7,62.7
-#include "follow_path_herbs"
-collect Fadeleaf##3818 |n
-collect Kingsblood##3356 |n
-collect Khadgar's Whisker##3358 |n
-skill Herbalism,200
+talk Dorothy Egan##28704
+|tip Inside the building.
+Train Northrend Herbalism |skillmax Northrend Herbalism,75 |goto Dalaran/1 42.92,34.09
 step
-#include "trainer_Herbalism"
-skillmax Herbalism,300
+map The Storm Peaks/0
+path follow smart; loop on; ants straight
+path	44.47,82.60	42.57,84.25	41.42,86.29	39.97,87.22	37.79,88.21
+path	36.00,88.41	32.16,86.98	31.95,82.81	33.72,82.37	35.34,81.54
+path	36.45,79.66	36.48,77.21	36.52,73.41	36.37,68.99	35.66,66.66
+path	34.74,66.05	32.67,66.39	30.39,66.66	29.26,68.03	27.94,67.97
+path	27.37,65.05	26.09,63.37	24.55,60.75	22.02,59.05	22.06,56.96
+path	23.93,56.94	25.56,57.80	27.04,57.17	27.24,55.07	28.06,52.54
+path	30.00,50.73	32.13,49.94	33.76,48.08	35.39,47.25	37.39,47.40
+path	38.25,51.03	37.79,56.15	37.98,59.55	39.46,61.63	40.85,62.47
+path	42.59,61.16	43.97,61.83	45.84,63.90	46.81,66.37	47.88,68.29
+path	48.03,71.18	47.95,74.23	48.01,77.09	47.27,81.01	45.03,82.54
+Collect herbs along the path
+|tip Turn on your "Find Herbs" ability to see the nodes.
+|tip They appear on your minimap as yellow dots.
+Reach 75 Northrend Herbalism |skill Northrend Herbalism,75
 step
-map Western Plaguelands
-path follow loose;loop;ants straight;dist 60
-path	32.29,67.51	34.15,69.05	37.72,68.67
-path	39.01,73.99	43.24,75.29	47.27,73.61
-path	50.96,70.89	56.20,69.13	62.13,63.79
-path	67.86,62.48	62.26,82.75	57.56,80.20
-path	54.19,74.69	50.00,72.33	46.39,78.06
-path	40.17,77.54	35.38,73.50	30.74,70.77
-#include "follow_path_herbs"
-collect Blindweed##195114 |n
-collect liferoot##3357 |n
-skill Herbalism,215
+_Congratulations!_
+You Reached 75 Northrend Herbalism Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Cataclysm Herbalism 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Cataclysm Herbalism skill from 1-75.",
+condition_end=function() return skill('Cataclysm Herbalism') >= 75 end,
+condition_suggested=function() return skill('Cataclysm Herbalism') > 0 and skill('Cataclysm Herbalism') < 75 end,
+},[[
 step
-map Searing Gorge
-path follow loose;loop;ants straight;dist 60
-path	66.9,43.2	58.9,53.0	55.6,68.1
-path	49.8,70.1	45.9,61.5	38.1,74.9
-path	31.0,67.8	32.1,56.9	29.4,44.8
-path	37.5,47.8	40.5,39.1	47.2,42.1
-path	53.5,35.4	77.0,19.0
-#include "follow_path_herbs"
-collect Firebloom##4625 |n
-collect Sungrass##8838 |n
-|tip Firebloom goes grey at 280, so Sungrass will be the only herb available here to get the last 5 points.
-skill Herbalism,285
+Enter the building |goto Orgrimmar/1 54.14,51.24 < 5 |walk
+talk Muraga##46741
+|tip She walks around inside the building.
+Train Cataclysm Herbalism |skillmax Cataclysm Herbalism,75 |goto 55.00,49.98
 step
-#include trainer_Herbalism
-skillmax Herbalism,375
+map Uldum/0
+path follow smart; loop on; ants straight
+path	58.22,32.10	57.88,29.28	56.76,27.53	56.15,25.21	56.13,23.04
+path	55.97,19.91	56.87,16.89	57.19,15.89	58.64,17.00	57.41,20.47
+path	57.08,23.23	57.34,26.22	58.74,28.50	59.32,30.17	59.65,32.67
+path	59.97,34.40	59.36,37.45	59.27,40.08	58.60,41.11	58.70,43.43
+path	57.31,45.03	58.03,48.68	58.18,49.37	59.61,53.40	60.32,56.92
+path	60.59,61.93	62.19,64.31	63.83,65.81	64.67,68.95	66.90,71.36
+path	68.42,73.02	69.88,76.73	68.37,77.06	67.16,78.08	65.68,77.55
+path	63.76,78.82	61.65,80.22	60.70,82.13	59.85,81.31	59.45,78.80
+path	59.03,76.13	58.98,72.97	58.51,70.86	59.14,67.93	58.95,64.77
+path	58.01,63.37	58.07,61.55	58.18,58.80	58.14,55.07	56.61,51.76
+path	54.58,46.48	52.35,46.41	50.69,42.73	50.22,35.84	51.93,34.13
+path	53.82,35.94	56.31,36.01
+Collect herbs along the path
+|tip Turn on your "Find Herbs" ability to see the nodes.
+|tip They appear on your minimap as yellow dots.
+Reach 75 Cataclysm Herbalism |skill Cataclysm Herbalism,75
 step
-map Swamp of Sorrows
-path follow loose;loop;ants straight;dist 60
-path 17.6,52.9		21.6,54.6		30.9,60.7
-path 39.4,56.9		51.7,59.6		64.5,67.3
-path 73.3,81.9		82.0,76.0		85.3,62.6
-path 87.6,39.9		84.9,31.2		80.1,20.6
-path 66.5,22.7		56.8,31.9		47.0,36.0
-path 36.1,39.8		26.9,42.9
-#include "follow_path_herbs"
-collect Golden Sansam##13464 |n
-collect Sorrowmoss##13466 |n
-skill Herbalism,300
-step
-map Felwood
-path follow loose;loop;ants straight;dist 60
-path 50.5,80.9		47.6,75.8		45.4,71.4
-path 44.9,66.4		42.9,58.3		43.6,52.1
-path 45.2,42.1		49.6,33.6		55.3,24.8
-path 57.5,15.5		54.3,14.1		42.7,21.7
-path 40.0,37.5		40.0,46.5		39.6,56.9
-path 39.1,66.2		38.9,71.3		42.7,84.7
-#include "follow_path_herbs"
-collect Gromsblood##8846 |n
-collect Dreamfoil##13463 |n
-collect Golden Sansam##13464 |n
-collect Sorrowmoss##13466 |n
-skill Herbalism,325
-step
-map Terokkar Forest
-path follow loose;loop;ants straight;dist 60
-path	34.4,8.0	37.5,16.1	41.6,19.9
-path	44.5,11.5	48.0,18.4	51.0,21.0
-path	47.5,22.9	48.4,26.9	60.2,22.5
-path	65.3,32.3	68.3,41.8	73.1,45.3
-path	61.5,48.6	54.0,37.1	48.0,33.5
-path	39.0,34.8	39.2,44.4	47.3,50.0
-path	47.0,79.8	33.5,76.9	19.6,77.8
-path	20.3,71.0	21.5,60.7	31.4,39.9
-path	37.4,30.1
-#include "follow_path_herbs"
-collect Felweed##22785 |n
-collect Dreaming Glory##22786 |n
-collect Terocone##22789 |n
-skill Herbalism,375
-step
-#include trainer_Herbalism
-skillmax Herbalism,450
-step
-map Borean Tundra
-path follow loose;loop;ants straight;dist 60
-path 51.9,47.7		53.7,43.4	53.2,38.8
-path 54.8,29.9		51.3,20.8	49.4,26.2
-path 42.9,41.3		36.5,54.9	44.1,64.2
-path 52.2,60.7		57.7,52.1
-#include "follow_path_herbs"
-collect Goldclover##36901 |n
-collect Tiger Lily##36904 |n
-skill Herbalism,400
-step
-map Sholazar Basin
-path follow loose;loop;ants straight;dist 60
-path 32.0,58.2		36.1,65.3		43.9,57.7
-path 44.5,63.9		39.5,66.3		40.4,71.7
-path 32.8,82.3		36.1,84.4		42.6,76.0
-path 46.8,62.5		51.0,62.0		60.0,73.9
-path 55.7,85.9		66.4,82.3		69.3,65.8
-path 55.2,57.1		48.9,55.0		55.4,48.1
-path 58.1,38.3		34.8,31.4		30.1,43.4
-path 32.1,48.5		26.6,55.4		23.7,60.3
-#include "follow_path_herbs"
-collect Goldclover##36901 |n
-collect Tiger Lily##36904 |n
-collect Adder's Tongue Stem##108353 |n
-skill Herbalism,425
-step
-#include "trainer_Herbalism"
-skillmax Herbalism,525
-step
-map Mount Hyjal
-path follow loose;loop;ants straight;dist 60
-path 68.2,23.9		59.2,31.6		57.0,38.9
-path 57.9,17.5		51.5,16.9		52.6,35.5
-path 48.7,36.5		44.0,24.5		39.8,32.5
-path 36.5,21.7		32.3,25.2		34.6,36.9
-path 43.5,42.6		36.2,44.9		25.3,37.8
-path 24.1,31.9		11.8,31.6		14.3,47.0
-path 19.0,58.5		25.6,62.0		31.9,46.7
-path 33.1,65.2		36.9,53.5		42.3,55.9
-path 33.8,65.0		31.3,76.5		33.8,98.2
-path 57.1,80.9		59.2,84.5		59.8,77.8
-path 55.8,74.7		59.8,71.6		49.1,51.6
-path 61.9,60.5		67.1,53.5		74.3,58.8
-path 71.9,68.5		77.3,63.2		83.0,64.2
-path 89.9,49.8		80.9,51.8		77.5,59.5
-#include "follow_path_herbs"
-collect Cinderbloom##52983 |n
-skill Herbalism,475
-step
-map Deepholm
-path follow loose;loop;ants straight;dist 60
-path 69.4,56.0		74.7,61.1		75.8,67.5
-path 70.5,61.9		71.1,70.6		66.0,68.5
-path 58.0,73.2		47.4,67.3		37.0,53.3
-path 37.6,44.7		26.8,41.5		23.1,35.3
-path 28.9,35.6		27.8,27.0		31.2,32.0
-path 36.6,28.9		33.0,19.1		47.8,12.9
-path 45.9,21.1		43.6,25.1		44.5,28.6
-path 49.1,33.6		56.7,38.3		73.8,32.7
-path 75.2,41.9		69.6,46.4
-#include "follow_path_herbs"
-collect Heartblossom##52986 |n
-skill Herbalism,500
-step
-label "farm3"
-map Uldum
-path follow loose;loop;ants straight;dist 60
-path 58.4,31.3		56.2,22.6		57.8,14.5
-path 61.5,14.0		57.1,44.7		60.5,58.3
-path 69.8,76.5		65.9,75.9		60.0,83.2
-path 59.0,58.8		55.3,45.8		52.0,45.6
-path 50.8,42.5		50.8,36.0
-#include "follow_path_herbs"
-collect Whiptail##52988 |n
-skill Herbalism,525
-step
-Click here to proceed |confirm |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide"
-|tip This will take you to the Herbalism 525 - 600 guides.
+_Congratulations!_
+You Reached 75 Cataclysm Herbalism Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-300",{
 author="support@zygorguides.com",
@@ -3444,7 +3460,7 @@ collect 88 Alabaster Pigment##39151
 step
 Open Your Inscription Crafting Panel:
 _<Create 44 Moonglow Ink>_
-Reach Level 45 Inscription |skill Inscription,45
+Reach 45 Inscription |skill Inscription,45
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3452,7 +3468,7 @@ learn Scroll of Recall##48248 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 30 Scroll of Recall>_
-Reach Level 75 Inscription |skill Inscription,75
+Reach 75 Inscription |skill Inscription,75
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3466,7 +3482,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 37 Midnight Ink>_
 |tip Make all of these, but stop making them at skill 80 until you hit skill 85.
-Reach Level 80 Inscription |skill Inscription,80
+Reach 80 Inscription |skill Inscription,80
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3474,7 +3490,7 @@ learn Vanishing Powder##92026 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 25 Vanishing Powder>_
-Reach Level 100 Inscription |skill Inscription,100
+Reach 100 Inscription |skill Inscription,100
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3489,7 +3505,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 63 Lion's Ink>_
 |tip Make all of these, you'll need them later.
-Reach Level 105 Inscription |skill Inscription,105
+Reach 105 Inscription |skill Inscription,105
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3497,7 +3513,7 @@ Train Research: Moonglow Ink |learn Research: Moonglow Ink##165564 |goto 55.06,5
 step
 Open Your Inscription Crafting Panel:
 _<Create 4 Research: Moonglow Ink>_
-Reach Level 109 Inscription |skill Inscription,109
+Reach 109 Inscription |skill Inscription,109
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3505,7 +3521,7 @@ learn Research: Midnight Ink##165304 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 3 Research: Midnight Ink>_
-Reach Level 112 Inscription |skill Inscription,112
+Reach 112 Inscription |skill Inscription,112
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3513,13 +3529,13 @@ learn Research: Lion's Ink##165456 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 4 Research: Lion's Ink>_
-Reach Level 116 Inscription |skill Inscription,116
+Reach 116 Inscription |skill Inscription,116
 step
 Open Your Inscription Crafting Panel:
 _<Create 34 Newly Discovered Lion's Ink Glyphs>_
 |tip Create 34 of whatever glyph was discovered during Research: Lion's Ink from the previous step.
 |tip You can also turn any Burnt Pigment you have into Dawnstar Ink and make Strange Tarot cards.
-Reach Level 150 Inscription |skill Inscription,150
+Reach 150 Inscription |skill Inscription,150
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3533,7 +3549,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 40 Jadefire Ink>_
 |tip Make all of these, you'll need them later.
-Reach Level 155 Inscription |skill Inscription,155
+Reach 155 Inscription |skill Inscription,155
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3541,7 +3557,7 @@ learn Scroll of Stamina III##50614 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Stamina III>_
-Reach Level 160 Inscription |skill Inscription,160
+Reach 160 Inscription |skill Inscription,160
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3549,7 +3565,7 @@ learn Scroll of Versatility III##50606 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Versatility III>_
-Reach Level 165 Inscription |skill Inscription,165
+Reach 165 Inscription |skill Inscription,165
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3557,7 +3573,7 @@ learn Scroll of Intellect III##50599 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Intellect III>_
-Reach Level 170 Inscription |skill Inscription,170
+Reach 170 Inscription |skill Inscription,170
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3565,7 +3581,7 @@ learn Scroll of Strength III##58486 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Strength III>_
-Reach Level 175 Inscription |skill Inscription,175
+Reach 175 Inscription |skill Inscription,175
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3573,7 +3589,7 @@ learn Scroll of Agility III##58476 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Agility III>_
-Reach Level 180 Inscription |skill Inscription,180
+Reach 180 Inscription |skill Inscription,180
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3581,7 +3597,7 @@ learn Research: Jadefire Ink##165460 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Research: Jadefire Ink>_
-Reach Level 185 Inscription |skill Inscription,185
+Reach 185 Inscription |skill Inscription,185
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3595,7 +3611,7 @@ Open Your Inscription Crafting Panel:
 _<Create 15 Newly Discovered Jadefire Ink Glyphs>_
 |tip Create 15 of whatever glyph was discovered during Research: Jadefire Ink from the previous step.
 |tip You can also turn any Indigo Pigment you have into Royal Ink and make Arcane Tarot cards.
-Reach Level 200 Inscription |skill Inscription,200
+Reach 200 Inscription |skill Inscription,200
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3609,7 +3625,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 85 Celestial Ink>_
 |tip Make all of these, you'll need them later.
-Reach Level 205 Inscription |skill Inscription,205
+Reach 205 Inscription |skill Inscription,205
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3617,7 +3633,7 @@ learn Scroll of Recall II##60336 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 10 Scroll of Recall II>_
-Reach Level 215 Inscription |skill Inscription,215
+Reach 215 Inscription |skill Inscription,215
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3625,7 +3641,7 @@ learn Scroll of Intellect IV##50600 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Intellect IV>_
-Reach Level 220 Inscription |skill Inscription,220
+Reach 220 Inscription |skill Inscription,220
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3633,7 +3649,7 @@ learn Scroll of Strength IV##58487 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Strength IV>_
-Reach Level 225 Inscription |skill Inscription,225
+Reach 225 Inscription |skill Inscription,225
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3641,7 +3657,7 @@ learn Scroll of Agility IV##58478 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Agility IV>_
-Reach Level 230 Inscription |skill Inscription,230
+Reach 230 Inscription |skill Inscription,230
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3649,7 +3665,7 @@ learn Research: Celestial Ink##165461 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 3 Research: Celestial Ink>_
-Reach Level 233 Inscription |skill Inscription,233
+Reach 233 Inscription |skill Inscription,233
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3663,7 +3679,7 @@ Open Your Inscription Crafting Panel:
 _<Create 17 Newly Discovered Celestial Ink Glyphs>_
 |tip Create 17 of whatever glyph was discovered during Research: Celestial Ink from the previous step.
 |tip You can also turn any Ruby Pigment you have into Fiery Ink and make Shadowy Tarot cards.
-Reach Level 250 Inscription |skill Inscription,250
+Reach 250 Inscription |skill Inscription,250
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3677,7 +3693,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 70 Shimmering Ink>_
 |tip Make all of these, you'll need them later.
-Reach Level 255 Inscription |skill Inscription,255
+Reach 255 Inscription |skill Inscription,255
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3685,7 +3701,7 @@ learn Scroll of Versatility V##50608 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Versatility V>_
-Reach Level 260 Inscription |skill Inscription,260
+Reach 260 Inscription |skill Inscription,260
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3693,7 +3709,7 @@ learn Scroll of Intellect V##50601 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Intellect V>_
-Reach Level 265 Inscription |skill Inscription,265
+Reach 265 Inscription |skill Inscription,265
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3701,7 +3717,7 @@ learn Scroll of Strength V##58488 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Strength V>_
-Reach Level 270 Inscription |skill Inscription,270
+Reach 270 Inscription |skill Inscription,270
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3709,7 +3725,7 @@ learn Scroll of Agility V##58480 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Agility V>_
-Reach Level 275 Inscription |skill Inscription,275
+Reach 275 Inscription |skill Inscription,275
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3721,13 +3737,13 @@ learn Ink of the Sky##57712 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 4 Research: Shimmering Ink>_
-Reach Level 279 Inscription |skill Inscription,279
+Reach 279 Inscription |skill Inscription,279
 step
 Open Your Inscription Crafting Panel:
 _<Create 11 Newly Discovered Lion's Ink Glyphs>_
 |tip Create 11 of whatever glyph was discovered during Research: Shimmering Ink from the previous step.
 |tip You can also turn any Sapphire Pigment you have into Ink of the Sky.
-Reach Level 290 Inscription |skill Inscription,290
+Reach 290 Inscription |skill Inscription,290
 step
 talk Nerog##46716
 |tip Inside the building.
@@ -3735,7 +3751,7 @@ learn Scroll of Stamina VI##50618 |goto 55.06,55.89
 step
 Open Your Inscription Crafting Panel:
 _<Create 10 Scroll of Stamina VI>_
-Reach Level 300 Inscription |skill Inscription,300
+Reach 300 Inscription |skill Inscription,300
 step
 _Congratulations!_
 You Reached 300 Inscription Skill.
@@ -3776,7 +3792,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 173 Ethereal Ink>_
 |tip Make all of these, you'll need them later.
-Reach Level 5 Outland Inscription |skill Outland Inscription,5
+Reach 5 Outland Inscription |skill Outland Inscription,5
 step
 Enter the building |goto 45.21,84.06 < 5 |walk
 clicknpc Inscription##33615
@@ -3792,7 +3808,7 @@ only if rep ('The Aldor') >= Neutral
 step
 Open Your Inscription Crafting Panel:
 _<Create 10 Scroll of Strength VI>_
-Reach Level 15 Outland Inscription |skill Outland Inscription,15
+Reach 15 Outland Inscription |skill Outland Inscription,15
 step
 Enter the building |goto 45.21,84.06 < 5 |walk
 clicknpc Inscription##33615
@@ -3809,7 +3825,7 @@ step
 Open Your Inscription Crafting Panel:
 _<Create 10 Scroll of Agility VI>_
 |tip You may need to create more to reach 25.
-Reach Level 25 Outland Inscription |skill Outland Inscription,25
+Reach 25 Outland Inscription |skill Outland Inscription,25
 step
 Enter the building |goto 45.21,84.06 < 5 |walk
 clicknpc Inscription##33615
@@ -3825,12 +3841,11 @@ only if rep ('The Aldor') >= Neutral
 step
 Open Your Inscription Crafting Panel:
 _<Create 50 Research: Ethereal Ink>_
-Reach Level 75 Outland Inscription |skill Outland Inscription,75
+Reach 75 Outland Inscription |skill Outland Inscription,75
 step
 _Congratulations!_
 You Reached 75 Outland Inscription Skill.
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Northrend Inscription 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Northrend Inscription skill from 1-75.",
@@ -3840,7 +3855,8 @@ condition_suggested=function() return skill('Northrend Inscription') > 0 and ski
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-Train Northrend Inscription |skillmax Northrend Inscription,75 ||goto Dalaran/1 41.57,37.16
+Train Northrend Inscription |skillmax Northrend Inscription,75 |goto Dalaran/1 41.57,37.16
+|tip You must be at least level 58.
 step
 collect 214 Azure Pigment##39343
 |tip These are Milled from Adder's Tongue, Deadnettle, Fire Leaf, Goldclover, Icethorn, Lichbloom, Fire Seed, Talandra's Rose and Tiger Lily.
@@ -3848,24 +3864,26 @@ collect 214 Azure Pigment##39343
 |only if skill("Northrend Inscription") < 75
 step
 Open Your Inscription Crafting Panel:
-_<Create 107 Inks of the Sea>_
-Reach Level 20 Northrend Inscription |skill Northrend Inscription,20
-collect 107 Ink of the Sea##43126 |only if skill("Northrend Inscription") < 75
+_<Create 107 Ink of the Sea>_
+collect 107 Ink of the Sea##43126
+|only if skill("Northrend Inscription") < 75
 step
 talk Larana Drome##28723
-buy 25 Light Parchment##39354 |goto 41.37,36.68 |only if skill("Northrend Inscription") < 75
+|tip Inside the building.
+buy 150 Light Parchment##39354 |goto 41.37,36.68
+|only if skill("Northrend Inscription") < 75
 step
 Open Your Inscription Crafting Panel:
 _<Research 5 Ink of the Sea>_
-Reach Level 25 Northrend Inscription |skill Northrend Inscription,25
+Reach 25 Northrend Inscription |skill Northrend Inscription,25
 step
 talk Professor Pallin##92195
 |tip Inside the building.
 learn Scroll of Stamina VIII##50620||goto 41.57,37.16
 step
 Open Your Inscription Crafting Panel:
-_<Create 5 Scrolls of Stamina VIII>_
-Reach Level 30 Northrend Inscription |skill Northrend Inscription,30
+_<Create 5 Scroll of Stamina VIII>_
+Reach 30 Northrend Inscription |skill Northrend Inscription,30
 step
 talk Professor Pallin##92195
 |tip Inside the building.
@@ -3873,7 +3891,7 @@ learn Scroll of Versatility VIII##50611||goto 41.57,37.16
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Versatility VIII>_
-Reach Level 35 Northrend Inscription |skill Northrend Inscription,35
+Reach 35 Northrend Inscription |skill Northrend Inscription,35
 step
 talk Professor Pallin##92195
 |tip Inside the building.
@@ -3881,7 +3899,7 @@ learn Scroll of Intellect VIII##50604||goto 41.57,37.16
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Intellect VIII>_
-Reach Level 40 Northrend Inscription |skill Northrend Inscription,40
+Reach 40 Northrend Inscription |skill Northrend Inscription,40
 step
 talk Professor Pallin##92195
 |tip Inside the building.
@@ -3889,7 +3907,7 @@ learn Scroll of Strength VIII##58491||goto 41.57,37.16
 step
 Open Your Inscription Crafting Panel:
 _<Create 5 Scroll of Strength VIII>_
-Reach Level 45 Northrend Inscription |skill Northrend Inscription,45
+Reach 45 Northrend Inscription |skill Northrend Inscription,45
 step
 talk Professor Pallin##92195
 |tip Inside the building.
@@ -3897,64 +3915,66 @@ learn Scroll of Agility VIII##58483||goto 41.57,37.16
 step
 Open Your Inscription Crafting Panel:
 _<Create 10 Scroll of Agility VIII>_
-|tip this Recipe will be yellow at 50, so you may need to create more.
-Reach Level 55 Northrend Inscription |skill Northrend Inscription,55
+|tip You may need to create a few more.
+Reach 55 Northrend Inscription |skill Northrend Inscription,55
 step
 Open Your Inscription Crafting Panel:
 _<Research 20 Ink of the Sea>_
-Reach Level 75 Northrend Inscription |skill Northrend Inscription,75
+Reach 75 Northrend Inscription |skill Northrend Inscription,75
 step
 _Congratulations!_
-You Reached Level 75 Northrend Inscription Skill.
+You Reached 75 Northrend Inscription Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Cataclysm Inscription 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cataclysm Inscription skill from 1-75.",
 condition_end=function() return skill('Cataclysm Inscription') >= 75 end,
-condition_suggested=function() return skill('Cataclysm Inscription') > 0 and skill('Cataclysm Inscription') < 75 end,
+condition_suggested=function() return skill('Cataclysm Inscription') > 0 and skill('Cataclysm Inscription') < 75 and level >= 78 end,
 },[[
 step
 talk Nerog##46716
 |tip Inside the building.
 Train Cataclysm Inscription |skillmax Cataclysm Inscription,75 |goto Orgrimmar/1 55.06,55.88
+|tip You must be at least level 78.
 step
 kill Schnottz Infantryman##48629+
 |tip They spawn in large groups all around this area.
-collect Technique: Origami Beetle##65651 |n
+collect Technique: Origami Beetle##65651 |goto Uldum/0 39.82,11.67
+step
 use the Technique: Origami Beetle##65651
-learn Origami Beetle##86646 |goto Uldum/0 39.82,11.67
+learn Origami Beetle##86646
 step
 talk Moraka##46718
 |tip Inside the building.
-buy 300 Light Parchment##39354 |goto Orgrimmar/1 55.36,55.44 |only if skill("Cataclysm Inscription") < 60
+buy 345 Light Parchment##39354 |goto Orgrimmar/1 55.36,55.44
+|only if skill("Cataclysm Inscription") < 60
 step
 Open Your Inscription Crafting Panel:
-_<Create 100 Origami Beetles>_
-Reach Level 60 Cataclysm Inscription |skill Cataclysm Inscription,60
+_<Create 80 Origami Beetle>_
+|tip Keep making them until you reach skill 60.
+Reach 60 Cataclysm Inscription |skill Cataclysm Inscription,60
 step
 talk Nerog##46716
 |tip Inside the building.
 learn Blackfallow Ink##86004 |goto 55.06,55.88
 step
-collect 84 Ashen Pigment##61979
-|tip These are Milled from Azshara's Veil, Cinderbloom, Heartblossom, Stormvine, Twilight Jasmine and Whiptail.
-|tip You can also buy these materials from the Auction House.
+talk Nerog##46716
+|tip Inside the building.
+learn Forged Documents##89244 |goto 55.06,55.88
+step
+collect 43 Blackfallow Ink##61978
+|tip Create them with Inscription or purchase them from the Auction House.
+|tip Ashen Pigment can be Milled from Azshara's Veil, Cinderbloom, Heartblossom, Stormvine, Twilight Jasmine, and Whiptail.
 |only if skill("Cataclysm Inscription") < 75
 step
 Open Your Inscription Crafting Panel:
-_<Create 42 Blackfallow Ink>_
-collect 42 Blackfallow Ink##61978
-|only if skill("Cataclysm Inscription") < 75
-step
-Open Your Inscription Crafting Panel:
-_<Research 14 Blackfallow Ink>_
-Reach Level 75 Cataclysm Inscription |skill Cataclysm Inscription,75
+_<Create 15 Research: Blackfallow Ink>_
+|tip If you are not Pandaren, you can get the first point from creating Forged Documents.
+Reach 75 Cataclysm Inscription |skill Cataclysm Inscription,75
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Inscription Skill.
+You Reached 75 Cataclysm Inscription Skill.
 ]])
-ZGV.BETAEND()
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Jewelcrafting skill from 1-300.",
@@ -3965,67 +3985,62 @@ step
 talk Lugrah##46675
 |tip Inside the building.
 Train Jewelcrafting |skillmax Jewelcrafting,300 |goto Orgrimmar/1 72.48,34.31
+|tip You must be at least level 5.
 step
 talk Marith Lazuria##50482
 |tip Inside the building.
-buy Jeweler's Kit##20815 |goto 72.63,34.43
+buy 1 Jeweler's Kit##20815 |goto 72.63,34.43
+|only if itemcount(20815) == 0 and skill("Jewelcrafting") < 300
 step
-collect 100 Copper Bar##2840
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Copper Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 120 Copper Bar##2840
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 100
 step
 collect 20 Tigerseye##818
-|tip These are mined from Copper Veins.
-|tip With Jewelcrafting, you can prospect Copper Ore.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Tigerseye can be mined from Copper Veins.
 |only if skill("Jewelcrafting") < 50
 step
 collect 120 Bronze Bar##2841
-|tip You can smelt these with the Mining skill.
-|tip You will need Copper and Tin Bar to make 1 Bronze Bar.
-|tip Refer to the Copper Ore and Tin Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 110
 step
 collect 60 Shadowgem##1210
-|tip These are mined from Copper, Silver and Tin Veins.
-|tip Refer to the Copper, Silver and Tin Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Shadowgem can be mined from Copper, Silver, and Tin Veins and Mithril Deposits.
 |only if skill("Jewelcrafting") < 110
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 30 Delicate Copper Wire>_
+_<Create 60 Delicate Copper Wire>_
 |tip Save these for later.
-Reach Level 30 Jewelcrafting |skill Jewelcrafting,30
-collect 30 Delicate Copper Wire##20816 |only if skill("Jewelcrafting") < 100
+collect 60 Delicate Copper Wire##25255
+|only if skill("Jewelcrafting") < 100
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Tigerseye Band##32179 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 30 Tigerseye Band>_
-Reach Level 50 Jewelcrafting |skill Jewelcrafting,50
+_<Create 20 Tigerseye Band>_
+Reach 50 Jewelcrafting |skill Jewelcrafting,50
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Bronze Setting##25278 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 50 Bronze Settings>_
-|tip Save these for later.
-Reach Level 80 Jewelcrafting |skill Jewelcrafting,80
-collect 50 Bronze Setting##20817 |only if skill("Jewelcrafting") < 150
+_<Create 50 Bronze Setting>_
+|tip Make all of these, you will need them later.
+collect 50 Bronze Setting##20817
+|only if skill("Jewelcrafting") < 150
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Gloom Band##25287 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 20 Gloom Bands>_
-Reach Level 100 Jewelcrafting |skill Jewelcrafting,100
+_<Create 20 Gloom Band>_
+Reach 100 Jewelcrafting |skill Jewelcrafting,100
 step
 talk Lugrah##46675
 |tip Inside the building.
@@ -4033,81 +4048,71 @@ learn Ring of Twilight Shadows##20828 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 10 Ring of Twilight Shadows>_
-Reach Level 110 Jewelcrafting |skill Jewelcrafting,110
+Reach 110 Jewelcrafting |skill Jewelcrafting,110
 step
 collect 80 Heavy Stone##2838
-|tip These are mined from Iron Deposits.
-|tip Refer to the Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Heavy Stone can be mined from Iron Deposits.
 |only if skill("Jewelcrafting") < 120
 step
-collect 30 Moss Agate##1206
-|tip These are mined from Silver, Tin and Mitrhil Veins.
-|tip You can prospect 5 Silver, Tin or Mithril Ore to get these as well.
-|tip Refer to the Silver, Tin and Mitrhil Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 150
-step
 collect 140 Mithril Bar##3860
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 220
+step
+collect 30 Moss Agate##1206
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Moss Agate can be mined from Silver and Tin Veins and Mithril Deposits.
+|tip You can also Prospect Silver, Tin or Mithril Ore with Jewelcrafting.
+|only if skill("Jewelcrafting") < 150
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Heavy Stone Statue##32807 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 10 Heavy Stone Statues>_
-Reach Level 120 Jewelcrafting |skill Jewelcrafting,120
+_<Create 10 Heavy Stone Statue>_
+Reach 120 Jewelcrafting |skill Jewelcrafting,120
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Pendant of the Agate Shield##25610 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 30 Pendant of the Agate Shields>_
-Reach Level 150 Jewelcrafting |skill Jewelcrafting,150
+_<Create 30 Pendant of the Agate Shield>_
+Reach 150 Jewelcrafting |skill Jewelcrafting,150
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Mithril Filigree##25615 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 45 Pendant of the Agate Shields>_
-Reach Level 180 Jewelcrafting |skill Jewelcrafting,180
-collect 45 Mithril Filigree##20963 |only if skill("Jewelcrafting") < 250
+_<Create 45 Mithril Filigree>_
+collect 45 Mithril Filigree##20963
+|only if skill("Jewelcrafting") < 250
 step
 collect 80 Solid Stone##7912
-|tip These are mined from Mithril Deposits.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Solid Stone can be mined from Mithril Deposits.
 |only if skill("Jewelcrafting") < 185
 step
 collect 15 Truesilver Bar##6037
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Truesilver Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 200
 step
 collect 25 Citrine##3864
-|tip These are mined from Gold Veins, Iron, Mithril and Truesilver Deposits.
-|tip You can prospect 5 Gold, Iron, Mithril and Truesilver Ore to get these as well.
-|tip Refer to the Gold, Iron, Mithril and Truesilve Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Citrine can be mined from Gold Veins and Iron, Mithril and Truesilver Deposits.
+|tip You can also Prospect Gold, Iron, Mithril and Truesilver Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 220
 step
 collect 5 Aquamarine##7909
-|tip These are mined from Truesilver, Mithril and Iron Deposits.
-|tip You can prospect 5 Truesilver, Mithril and Iron Ore to get these as well.
-|tip Refer to the Truesilver, Mithril and Iron Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Aquamarine can be mined from Truesilver, Mithril and Iron Deposits.
+|tip You can also Prospect Truesilver, Mithril and Iron Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 225
 step
 collect 50 Thorium Bar##12359
-|tip You can smelt these with the Mining skill.
-|tip Refer to the Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 250
 step
 talk Lugrah##46675
@@ -4115,82 +4120,76 @@ talk Lugrah##46675
 learn Solid Stone Statue##32808 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 5 Solid Stone Statues>_
-|tip This recipe will be yellow, so you might need to make more.
-Reach Level 185 Jewelcrafting |skill Jewelcrafting,185
+_<Create 5 Solid Stone Statue>_
+|tip You may need to craft a few more.
+Reach 185 Jewelcrafting |skill Jewelcrafting,185
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Engraved Truesilver Ring##25620 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 15 Engraved Truesilver Rings>_
-Reach Level 200 Jewelcrafting |skill Jewelcrafting,200
+_<Create 15 Engraved Truesilver Ring>_
+Reach 200 Jewelcrafting |skill Jewelcrafting,200
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Citrine Ring of Rapid Healing##25621 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 20 Citrine Rings of Rapid Healing>_
-|tip This recipe will be yellow at 210, so you might need to make more.
-Reach Level 220 Jewelcrafting |skill Jewelcrafting,220
+_<Create 20 Citrine Ring of Rapid Healing>_
+|tip You may need to craft a few more.
+Reach 220 Jewelcrafting |skill Jewelcrafting,220
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Aquamarine Pendant of the Warrior##26876 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 5 Aquamarine Pendants of the Warrior>_
-Reach Level 225 Jewelcrafting |skill Jewelcrafting,225
+_<Create 5 Aquamarine Pendant of the Warrior>_
+Reach 225 Jewelcrafting |skill Jewelcrafting,225
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Thorium Setting##26880 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 50 Thorium Settings>_
-Reach Level 250 Jewelcrafting |skill Jewelcrafting,250
-collect 50 Thorium Setting##21752 |only if skill("Jewelcrafting") < 300
+_<Create 50 Thorium Setting>_
+collect 50 Thorium Setting##21752
+|only if skill("Jewelcrafting") < 300
 step
 collect 10 Star Ruby##7910
-|tip These are mined from Thorium Veins, Mithril and Truesilver Deposits.
-|tip You can prospect 5 Truesilver, Mithril and Thorium Ore to get these as well.
-|tip Refer to the Truesilver, Mithril and Thorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Star Rubies can be mined from Thorium Veins and Mithril and Truesilver Deposits.
+|tip You can also Prospect Truesilver, Mithril and Thorium Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 260
 step
 collect 20 Large Opal##12799
-|tip These are mined from Thorium Veins.
-|tip You can prospect 5 Thorium and Mithril Ore to get these as well.
-|tip Refer to the Thorium and Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Star Rubies can be mined from Thorium Veins.
+|tip You can also Prospect Thorium and Mithril Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 280
 step
 collect 7 Azerothian Diamond##12800
-|tip These are mined from Thorium Veins.
-|tip You can prospect 5 Thorium and Mithril Ore to get these as well.
-|tip Refer to the Thorium and Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Azerothian Diamonds can be mined from Thorium Veins.
+|tip You can also Prospect Thorium and Mithril Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 287
 step
 collect 3 Blue Sapphire##12361
-|tip These are mined from Thorium Veins.
-|tip You can prospect 5 Thorium and Mithril Ore to get these as well.
-|tip Refer to the Thorium and Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Blue Sapphires can be mined from Thorium Veins.
+|tip You can also Prospect Thorium and Mithril Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 290
 step
 collect 3 Essence of Undeath##12808
-|tip Refer to the Essence of Undeath farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from undead enemies or purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 290
 step
 collect 20 Huge Emerald##12364
-|tip These are mined from Thorium Veins.
-|tip You can prospect 5 Thorium and Mithril Ore to get these as well.
-|tip Refer to the Thorium and Mithril Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Huge Emeralds can be mined from Thorium Veins.
+|tip You can also Prospect Thorium and Mithril Ore with Jewelcrafting.
 |only if skill("Jewelcrafting") < 300
 step
 talk Lugrah##46675
@@ -4198,189 +4197,186 @@ talk Lugrah##46675
 learn Ruby Pendant of Fire##26883 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 10 Ruby Pendants of Fire>_
-Reach Level 260 Jewelcrafting |skill Jewelcrafting,260
+_<Create 10 Ruby Pendant of Fire>_
+Reach 260 Jewelcrafting |skill Jewelcrafting,260
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Simple Opal Ring##26902 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 20 Simple Opal Rings>_
-Reach Level 280 Jewelcrafting |skill Jewelcrafting,280
+_<Create 20 Simple Opal Ring>_
+Reach 280 Jewelcrafting |skill Jewelcrafting,280
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Diamond Focus Ring##36526 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 7 Diamond Focus Rings>_
-Reach Level 287 Jewelcrafting |skill Jewelcrafting,287
+_<Create 7 Diamond Focus Ring>_
+Reach 287 Jewelcrafting |skill Jewelcrafting,287
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Sapphire Pendant of Winter Night##26908 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 3 Sapphire Pendants of Winter Night>_
-Reach Level 290 Jewelcrafting |skill Jewelcrafting,290
+_<Create 3 Sapphire Pendant of Winter Night>_
+Reach 290 Jewelcrafting |skill Jewelcrafting,290
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Emerald Lion Ring##34961 |goto 72.48,34.31
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 10 Emerald Lion Rings>_
-Reach Level 300 Jewelcrafting |skill Jewelcrafting,300
+_<Create 10 Emerald Lion Ring>_
+Reach 300 Jewelcrafting |skill Jewelcrafting,300
 step
 _Congratulations!_
-You Reached Level 300 Jewelcrafting Skill.
+You Reached 300 Jewelcrafting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Outland Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Outland Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Outland Jewelcrafting') >= 75 end,
-condition_suggested=function() return skill('Outland Jewelcrafting') > 0 and skill('Outland Jewelcrafting') < 75 end,
+condition_suggested=function() return skill('Outland Jewelcrafting') > 0 and skill('Outland Jewelcrafting') < 75 and level >= 58 end,
 },[[
 step
-clicknpc Jewelcrafting##33614
+talk Kirembri Silvermane##33637 |only if rep ('The Scryers') >= Neutral
+talk Nemiha##33680 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-Train Outland Jewelcrafting |skillmax Outland Jewelcrafting,75 |goto Shattrath City/0 43.64,90.65
-step
-clicknpc Jewelcrafting##33614
-|tip Inside the building.
-learn Bold Blood Garnet##28905 |goto 43.64,90.65
+Train Outland Jewelcrafting |skillmax Outland Jewelcrafting,75 |goto Shattrath City/0 58.28,75.12 |only if rep ('The Scryers') >= Neutral
+Train Outland Jewelcrafting |skillmax Outland Jewelcrafting,75 |goto Shattrath City/0 36.00,48.00 |only if rep ('The Aldor') >= Neutral
+|tip You must be at least level 58.
 step
 collect 40 Blood Garnet##23077
-|tip These are mined from Fel Iron and Adamantite Deposits as well as Khorium Veins.
-|tip You can prospect 5 Fel Iron, Adamantite or Khorium Ore to collect these.
-|tip Refer to the Fel Iron, Adamantite or Khorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Prospect them with Jewelcrafting or purchase them from the Auction House.
+|tip Blood Garnet can be mined from Fel Iron, Nethercite, and Adamantite Deposits and Khorium Veins.
+|tip You can also Prospect them from Fel Iron, Adamantite or Khorium Ore with Jewelcrafting.
 |only if skill("Outland Jewelcrafting") < 25
 step
-collect 200 Adamantite Ore##23425
-|tip These are gathered with the Mining profession.
-|tip Refer to the Adamantite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 40 Adamantite Powder##24243
+|tip Prospect them with Jewelcrafting or purchase them from the Auction House.
+|tip It takes 200 Adamantite Ore to make 40 Adamantite Powder.
 |only if skill("Outland Jewelcrafting") < 35
 step
 collect 10 Primal Earth##22452
-|tip These are made by combining 10 Motes of Earth.
-|tip These are gathered with the Mining profession.
-|tip Refer to the Khorium, Adamantite and Fel Iron Ore farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
+|tip Motes of Earth can also be mined from Fel Iron, Nethercite, and Adamantite Deposits and Khorium Veins.
+|tip Combine ten Motes of Earth into one Primal Earth.
 |only if skill("Outland Jewelcrafting") < 35
 step
 collect 25 Shadow Draenite##23107
-|tip These are mined from Fel Iron and Adamantite Deposits as well as Khorium Veins.
-|tip You can prospect 5 Fel Iron, Adamantite or Khorium Ore to collect these.
-|tip Refer to the Fel Iron, Adamantite or Khorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Prospect them with Jewelcrafting or purchase them from the Auction House.
+|tip Shadow Draenite can be mined from Fel Iron, Nethercite, and Adamantite Deposits and Khorium Veins.
+|tip You can also Prospect them from Fel Iron, Adamantite or Khorium Ore with Jewelcrafting.
 |only if skill("Outland Jewelcrafting") < 40
 step
 collect 10 Adamantite Bar##23446
-|tip These can be smelted from Adamantite Ore.
-|tip Refer to the Adamantite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
 |only if skill("Outland Jewelcrafting") < 50
 step
 collect 10 Dawnstone##23440
-|tip These are mined from Khorium Veins.
-|tip You can prospect 5 Khorium Ore to collect these.
-|tip Refer to the Khorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Prospect them with Jewelcrafting or purchase them from the Auction House.
+|tip Dawnstone can be mined from Fel Iron, Nethercite, and Adamantite Deposits and Khorium Veins.
+|tip You can also Prospect them from Fel Iron, Adamantite or Khorium Ore with Jewelcrafting.
 |only if skill("Outland Jewelcrafting") < 60
 step
 collect 15 Living Ruby##23436
-|tip These are mined from Khorium Veins.
-|tip You can prospect 5 Khorium Ore to collect these.
-|tip Refer to the Khorium Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Prospect them with Jewelcrafting or purchase them from the Auction House.
+|tip Living Ruby can be mined from Fel Iron, Nethercite, and Adamantite Deposits and Khorium Veins.
+|tip You can also Prospect them from Fel Iron, Adamantite or Khorium Ore with Jewelcrafting.
 |only if skill("Outland Jewelcrafting") < 70
 step
-collect 5 Earthstorm Diamond##25867
-|tip These are created with the Alchemy profession.
-|tip You will need 15 Deep Peridot, 15 Shadow Draenite, 15 Golden Draenite, 10 Primal Earth and 10 Primal Water.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Jewelcrafting") < 75
+talk Kirembri Silvermane##33637 |only if rep ('The Scryers') >= Neutral
+talk Nemiha##33680 |only if rep ('The Aldor') >= Neutral
+|tip Inside the building.
+learn Bold Blood Garnet##28905 |goto 58.28,75.12 |only if rep ('The Scryers') >= Neutral
+learn Bold Blood Garnet##28905 |goto 36.00,48.00 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 25 Bold Blood Garnet>_
-|tip This recipe will be yellow, so you might have to create more.
-Reach Level 25 Outland Jewelcrafting |skill Outland Jewelcrafting,25
+_<Create 30 Bold Blood Garnet>_
+|tip You may need to craft more of these.
+Reach 25 Outland Jewelcrafting |skill Outland Jewelcrafting,25
 step
-collect 40 Mercurial Adamantite##31079
-|tip This comes from Prospecting Adamantite Ore.
-|tip Refer to the Adamantite Ore farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
-|only if skill("Outland Jewelcrafting") < 50
-step
-clicknpc Jewelcrafting##33614
+talk Kirembri Silvermane##33637 |only if rep ('The Scryers') >= Neutral
+talk Nemiha##33680 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Mercurial Adamantite##38068 |goto 43.64,90.65
+learn Mercurial Adamantite##38068 |goto 58.28,75.12 |only if rep ('The Scryers') >= Neutral
+learn Mercurial Adamantite##38068 |goto 36.00,48.00 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 10 Mercurial Adamantite>_
-|tip Save these for later.
-Reach Level 35 Outland Jewelcrafting |skill Outland Jewelcrafting,35
+|tip Make all of these, you will need them later.
+Reach 35 Outland Jewelcrafting |skill Outland Jewelcrafting,35 |goto 58.51,75.56 |only if rep ('The Scryers') >= Neutral
+Reach 35 Outland Jewelcrafting |skill Outland Jewelcrafting,35 |goto 35.75,48.21 |only if rep ('The Aldor') >= Neutral
 step
-clicknpc Jewelcrafting##33614
+talk Kirembri Silvermane##33637 |only if rep ('The Scryers') >= Neutral
+talk Nemiha##33680 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Sovereign Shadow Draenite##28936 |goto 43.64,90.65
+learn Sovereign Shadow Draenite##28936 |goto 58.28,75.12 |only if rep ('The Scryers') >= Neutral
+learn Sovereign Shadow Draenite##28936 |goto 36.00,48.00 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 5 Mercurial Adamantite>_
-|tip This recipe will be yellow, so you might need to create more.
-Reach Level 40 Outland Jewelcrafting |skill Outland Jewelcrafting,40
+_<Create 5 Sovereign Shadow Draenite>_
+|tip You may need to craft a few more.
+Reach 40 Outland Jewelcrafting |skill Outland Jewelcrafting,40
 step
-clicknpc Jewelcrafting##33614
+talk Kirembri Silvermane##33637 |only if rep ('The Scryers') >= Neutral
+talk Nemiha##33680 |only if rep ('The Aldor') >= Neutral
 |tip Inside the building.
-learn Heavy Adamantite Ring##31052 |goto 43.64,90.65
+learn Heavy Adamantite Ring##31052 |goto 58.28,75.12 |only if rep ('The Scryers') >= Neutral
+learn Heavy Adamantite Ring##31052 |goto 36.00,48.00 |only if rep ('The Aldor') >= Neutral
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 10 Heavy Adamantite Rings>_
-Reach Level 50 Outland Jewelcrafting |skill Outland Jewelcrafting,50 |goto 69.58,42.64
+_<Create 10 Heavy Adamantite Ring>_
+Reach 50 Outland Jewelcrafting |skill Outland Jewelcrafting,50
 step
-talk Coreiel##21474
-|tip She will only be available if the Horde controls Halaa.
-buy Design: Mystic Dawnstone##24208 |n
-|tip This is a limited supply recipe.
-|tip If it isn't available, you will need to wait 15 minutes for it to respawn.
-use the Design: Mystic Dawnstone##24208
-learn Mystic Dawnstone##31101 |goto Nagrand/0 42.79,42.54
+talk Aldraan##21485
+buy 1 Design: Mystic Dawnstone##24208 |goto Nagrand/0 42.87,42.45
+|tip These are in limited supply from this vendor, so it may not be available.
+|tip It will respawn in 20-30 minutes.
 |only if skill("Outland Jewelcrafting") < 60
 step
-Open Your Jewelcrafting Crafting Panel:
-_<Create 10 Mystic Dawnstones>_
-Reach Level 60 Outland Jewelcrafting |skill Outland Jewelcrafting,60
+use the Design: Mystic Dawnstone##24208
+learn Mystic Dawnstone##31101
 step
-Load "The Sha'tar" Reputation Guide |confirm |next "Zygor's Reputations Guides\\Burning Crusade Reputations\\The Sha'tar"
-|tip Click the line above to load the guide.
-Reach Honored Reputation with The Sha'tar |condition rep("The Sha'tar")==Honored
+Open Your Jewelcrafting Crafting Panel:
+_<Create 10 Mystic Dawnstone>_
+|tip You may need to craft a few more.
+Reach 60 Outland Jewelcrafting |skill Outland Jewelcrafting,60
+step
+Reach Honored Reputation with The Sha'tar |condition rep ("The Sha'tar") >= Honored
 step
 talk Almaador##21432
-buy Design: Kailee's Rose##33155 |n
-use the Design: Kailee's Rose##33155
-learn Kailee's Rose##42588 |goto Shattrath City/0 50.98,41.71
+buy 1 Design: Kailee's Rose##33155 |goto Shattrath City/0 50.98,41.71
 |only if skill("Outland Jewelcrafting") < 70
+step
+use the Design: Kailee's Rose##33155
+learn Kailee's Rose##42588
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 10 Kailee's Rose>_
-|tip This recipe will be yellow at 65, so you might need to make more.
-Reach Level 70 Outland Jewelcrafting |skill Outland Jewelcrafting,70
+Reach 70 Outland Jewelcrafting |skill Outland Jewelcrafting,70
+step
+collect 5 Earthstorm Diamond##25867
+|tip Transmute them with Alchemy or purchase them from the Auction House.
+|tip Each transmute requires 3 Deep Peridot, 3 Shadow Draenite, 3 Golden Draenite, 2 Primal Earth and 2 Primal Water.
+|only if skill("Outland Jewelcrafting") < 75
 step
 talk Almaador##21432
-buy Design: Insightful Earthstorm Diamond##25904 |n
-use the Design: Insightful Earthstorm Diamond##25904
-learn Insightful Earthstorm Diamond##32870 |goto Shattrath City/0 50.98,41.71
+buy 1 Design: Insightful Earthstorm Diamond##25904 |goto 50.98,41.71
 |only if skill("Outland Jewelcrafting") < 75
+step
+use the Design: Insightful Earthstorm Diamond##25904
+learn Insightful Earthstorm Diamond##32870
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 5 Insightful Earthstorm Diamond>_
-Reach Level 75 Outland Jewelcrafting |skill Outland Jewelcrafting,75
+Reach 75 Outland Jewelcrafting |skill Outland Jewelcrafting,75
 step
 _Congratulations!_
-You Reached Level 75 Outland Jewelcrafting Skill.
+You Reached 75 Outland Jewelcrafting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Northrend Jewelcrafting 1-75",{
 author="support@zygorguides.com",
@@ -4431,10 +4427,11 @@ collect 46 Eternal Earth##35624
 |tip You can also purchase them from the Auction House.
 |only if skill("Northrend Jewelcrafting") < 45
 step
-collect 40 Earthsiege Diamond##41334
-|tip These are made by Alchemist.
-|tip It will take 1 Frozen Orb, 1Chalcedony, 1 Shadow Crystal and 1 Dark Jade each to make.
-|tip You can also purchase them from the Auction House.
+collect 30 Earthsiege Diamond##41334
+|tip Transmute them with Alchemy or purchase them from the Auction House.
+|tip Each Earthsiege Diamond takes 1 Dark Jade, 1 Huge Citrine, and 1 Eternal Fire to make.
+|tip You can also use Skyflare Diamonds if they are cheaper.
+|tip Each Skyflare Diamond takes 1 Bloodstone, 1 Chalcedony, and 1 Eternal Air to make.
 |only if skill("Northrend Jewelcrafting") < 70
 step
 talk Magistrix Lambriesse##31582
@@ -4447,7 +4444,7 @@ learn Bold Bloodstone##53831 |goto Dalaran/1 40.66,35.32
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 20 Bold Bloodstone>_
-Reach Level 20 Northrend Jewelcrafting |skill Northrend Jewelcrafting,20
+Reach 20 Northrend Jewelcrafting |skill Northrend Jewelcrafting,20
 step
 talk Timothy Jones##28701
 |tip Inside the building.
@@ -4455,7 +4452,7 @@ learn Bloodstone Band##56193 |goto Dalaran/1 40.66,35.32
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 5 Bloodstone Bands>_
-Reach Level 25 Northrend Jewelcrafting |skill Northrend Jewelcrafting,25
+Reach 25 Northrend Jewelcrafting |skill Northrend Jewelcrafting,25
 step
 talk Timothy Jones##28701
 |tip Inside the building.
@@ -4463,7 +4460,7 @@ learn Stoneguard Band##58145 |goto Dalaran/1 40.66,35.32
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 20 Stoneguard Bands>_
-Reach Level 45 Northrend Jewelcrafting |skill Northrend Jewelcrafting,45
+Reach 45 Northrend Jewelcrafting |skill Northrend Jewelcrafting,45
 step
 talk Timothy Jones##28701
 |tip Inside the building.
@@ -4471,29 +4468,31 @@ learn Powerful Earthsiege Diamond##55399 |goto Dalaran/1 40.66,35.32
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 30 Powerful Earthsiege Diamonds>_
-Reach Level 70 Northrend Jewelcrafting |skill Northrend Jewelcrafting,70
+|tip You can also make Swift Skyflare Diamonds if you have any.
+Reach 70 Northrend Jewelcrafting |skill Northrend Jewelcrafting,70
 step
 talk Timothy Jones##28701
 |tip Inside the building.
 learn Icy Prism##62242 |goto Dalaran/1 40.66,35.32
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 5 Icy Prisms>_
-Reach Level 75 Northrend Jewelcrafting |skill Northrend Jewelcrafting,75
+_<Create 5 Icy Prism>_
+Reach 75 Northrend Jewelcrafting |skill Northrend Jewelcrafting,75
 step
 _Congratulations!_
-You Reached Level 75 Northrend Jewelcrafting Skill.
+You Reached 75 Northrend Jewelcrafting Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Cataclysm Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cataclysm Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Cataclysm Jewelcrafting') >= 75 end,
-condition_suggested=function() return skill('Cataclysm Jewelcrafting') > 0 and skill('Cataclysm Jewelcrafting') < 75 end,
+condition_suggested=function() return skill('Cataclysm Jewelcrafting') > 0 and skill('Cataclysm Jewelcrafting') < 75 and level >= 78 end,
 },[[
 step
 talk Lugrah##46675
 |tip Inside the building.
 Train Cataclysm Jewelcrafting |skillmax Cataclysm Jewelcrafting,75 |goto Orgrimmar/1 72.49,34.32
+|tip You must be at least level 78.
 step
 talk Lugrah##46675
 |tip Inside the building.
@@ -4505,97 +4504,92 @@ buy 70 Jeweler's Setting##52188 |goto 72.62,34.41
 |only if skill("Cataclysm Jewelcrafting") < 75
 step
 collect 30 Jasper##52182
-|tip These are gathered with the Mining profession.
-|tip They come from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
-|tip You can also prospect 5 Pyrite, Elementium or Obsidium Ore to collect them.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Jasper can be mined from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
+|tip It can also be Prospected from Pyrite, Elementium or Obsidium Ore with Jewelcrafting.
 |only if skill("Cataclysm Jewelcrafting") < 18
 step
-collect 40 Nightstone##52180
-|tip These are gathered with the Mining profession.
-|tip They come from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
-|tip You can also prospect 5 Pyrite, Elementium or Obsidium Ore to collect them.
-|tip You can also purchase them from the Auction House.
-|only if skill("Cataclysm Jewelcrafting") < 50
-step
 collect 34 Hessonite##52181
-|tip These are gathered with the Mining profession.
-|tip They come from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
-|tip You can also prospect 5 Pyrite, Elementium or Obsidium Ore to collect them.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Hessonite can be mined from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
+|tip It can also be Prospected from Pyrite, Elementium or Obsidium Ore with Jewelcrafting.
 |only if skill("Cataclysm Jewelcrafting") < 35
 step
-collect 20 Shadowspirit Diamond##52303
-|tip These are created with the Alchemy profession.
-|tip You will need 60 each of Alicite, Nightstone, Zephyrite, Carnelian, Hessonite and Jasper if you want to find an alchemy to make them for you.
-|tip You can also purchase them from the Auction House.
-|only if skill("Cataclysm Jewelcrafting") < 70
+collect 40 Nightstone##52180
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Nightstone can be mined from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
+|tip It can also be Prospected from Pyrite, Elementium or Obsidium Ore with Jewelcrafting.
+|only if skill("Cataclysm Jewelcrafting") < 50
 step
 collect 25 Ocean Sapphire##52191
-|tip These are gathered with the Mining profession.
-|tip They come from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
-|tip You can also prospect 5 Pyrite, Elementium or Obsidium Ore to collect them.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Mining or purchase them from the Auction House.
+|tip Ocean Sapphires can be mined from Rich Pyrite and Obsidium Deposits, as well as Elementium Veins.
+|tip It can also be Prospected from Pyrite, Elementium or Obsidium Ore with Jewelcrafting.
 |only if skill("Cataclysm Jewelcrafting") < 75
 step
 collect 40 Volatile Air##52328
-|tip Refer to the Volatile Air farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Jewelcrafting") < 75
 step
 collect 20 Volatile Fire##52325
-|tip Refer to the Volatile Fire farming guide to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them from elementals or purchase them from the Auction House.
 |only if skill("Cataclysm Jewelcrafting") < 75
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 17 Jasper Rings>_
-Reach Level 18 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,18
+_<Create 17 Jasper Ring>_
+|tip You may need to craft a few more.
+Reach 18 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,18
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Hessonite Band##73495 |goto 72.49,34.32
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 17 Hessonite Bands>_
-Reach Level 35 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,35
+_<Create 17 Hessonite Band>_
+Reach 35 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,35
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Nightstone Choker##73497 |goto 72.49,34.32
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 15 Nightstone Chokers>_
-|tip This recipe will be yellow near 45, so you might need to create more.
-Reach Level 50 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,50
+_<Create 15 Nightstone Choker>_
+|tip You may need to craft a few more.
+Reach 50 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,50
 step
-Load the "Jewelcrafting Daily Guide" |confirm |next "Profession Guides\\Jewelcrafting\\Daily Guides\\Jewelcrafting Daily Guide"
-|tip Click the line above to load the guide.
-Collect #4# Illustrious Jewelcrafter's Token |condition curcount(361) >= 10
+Collect #4# Illustrious Jewelcrafter's Token |condition curcount(361) >= 4
 |tip It will take 4 days to collect these.
+|tip Use the "Jewelcrafting Daily Guide" to complete dailies.
+|only if skill("Cataclysm Jewelcrafting") < 70
 step
 talk Marith Lazuria##50482
 |tip Inside the building.
-buy Design: Forlorn Shadowspirit Diamond##52445 |n
+buy 1 Design: Forlorn Shadowspirit Diamond##52445 |goto 72.62,34.40
+|only if skill("Cataclysm Jewelcrafting") < 70
+step
 use the Design: Forlorn Shadowspirit Diamond##52445
-learn Forlorn Shadowspirit Diamond##73476  |goto 72.62,34.40
+learn Forlorn Shadowspirit Diamond##73476
+step
+collect 20 Shadowspirit Diamond##52303
+|tip Transmute them with Alchemy or purchase them from the Auction House.
+|tip Each Shadowspirit Diamond requires 3 Alicite, 3 Nightstone, 3 Zephyrite, 3 Carnelian, 3 Hessonite and 3 Jasper to make.
+|only if skill("Cataclysm Jewelcrafting") < 70
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 20 Forlorn Shadowspirit Diamonds>_
-Reach Level 70 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,70
+_<Create 20 Forlorn Shadowspirit Diamond>_
+Reach 70 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,70
 step
 talk Lugrah##46675
 |tip Inside the building.
 learn Vicious Sapphire Necklace##99542 |goto 72.49,34.32
 step
 Open Your Jewelcrafting Crafting Panel:
-_<Create 5 Vicious Sapphire Necklaces>_
-Reach Level 75 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,75
+_<Create 5 Vicious Sapphire Necklace>_
+Reach 75 Cataclysm Jewelcrafting |skill Cataclysm Jewelcrafting,75
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Jewelcrafting Skill.
+You Reached 75 Cataclysm Jewelcrafting Skill.
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Leatherworking skill from 1-300.",
@@ -4618,12 +4612,12 @@ collect 280 Light Leather##2318
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 29 Light Armor Kit>_
-Reach Level 30 Leatherworking |skill Leatherworking,30
+Reach 30 Leatherworking |skill Leatherworking,30
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 20 Handstitched Leather Cloak>_
 |tip This will be yellow at 40, so you may need to create more.
-Reach Level 50 Leatherworking |skill Leatherworking,50
+Reach 50 Leatherworking |skill Leatherworking,50
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4631,7 +4625,7 @@ learn Handstitched Leather Belt##3753 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Handstitched Leather Belt>_
-Reach Level 55 Leatherworking |skill Leatherworking,55
+Reach 55 Leatherworking |skill Leatherworking,55
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4639,7 +4633,7 @@ learn Embossed Leather Gloves##3756 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 30 Embossed Leather Glove>_
-Reach Level 85 Leatherworking |skill Leatherworking,85
+Reach 85 Leatherworking |skill Leatherworking,85
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4648,7 +4642,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Fine Leather Belt>_
 |tip Keep these, you will need them later.
-Reach Level 100 Leatherworking |skill Leatherworking,100
+Reach 100 Leatherworking |skill Leatherworking,100
 step
 collect 15 Medium Hide##4232
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4666,7 +4660,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Cured Medium Hide>_
 |tip Keep these, you will need them later.
-Reach Level 115 Leatherworking |skill Leatherworking,115
+Reach 115 Leatherworking |skill Leatherworking,115
 step
 collect 160 Medium Leather##2319
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4688,7 +4682,7 @@ learn Dark Leather Boots##2167 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Dark Leather Boot>_
-Reach Level 130 Leatherworking |skill Leatherworking,130
+Reach 130 Leatherworking |skill Leatherworking,130
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4696,7 +4690,7 @@ learn Dark Leather Belt##3766 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Dark Leather Belt>_
-Reach Level 145 Leatherworking |skill Leatherworking,145
+Reach 145 Leatherworking |skill Leatherworking,145
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4704,7 +4698,7 @@ learn Hillman's Leather Gloves##3764 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Hillman's Leather Glove>_
-Reach Level 150 Leatherworking |skill Leatherworking,150
+Reach 150 Leatherworking |skill Leatherworking,150
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4712,7 +4706,7 @@ learn Heavy Leather##20649 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Heavy Leather>_
-Reach Level 155 Leatherworking |skill Leatherworking,155
+Reach 155 Leatherworking |skill Leatherworking,155
 step
 collect 20 Heavy Hide##4235
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4731,7 +4725,7 @@ Open Your Leatherworking Crafting Panel:
 _<Create 20 Cured Heavy Hide>_
 |tip You may need to craft more.
 |tip Keep these, you will need them later.
-Reach Level 165 Leatherworking |skill Leatherworking,165
+Reach 165 Leatherworking |skill Leatherworking,165
 step
 collect 195 Heavy Leather##4234
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4743,7 +4737,7 @@ learn Heavy Armor Kit##3780 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Heavy Armor Kit>_
-Reach Level 180 Leatherworking |skill Leatherworking,180
+Reach 180 Leatherworking |skill Leatherworking,180
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4751,7 +4745,7 @@ learn Barbaric Shoulders##7151 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Barbaric Shoulder>_
-Reach Level 190 Leatherworking |skill Leatherworking,190
+Reach 190 Leatherworking |skill Leatherworking,190
 step
 talk Tamar##3366
 |tip Inside the building.
@@ -4764,7 +4758,7 @@ learn Guardian Gloves##7156 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Guardian Glove>_
-Reach Level 200 Leatherworking |skill Leatherworking,200
+Reach 200 Leatherworking |skill Leatherworking,200
 step
 collect 410 Thick Leather##4304
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4776,7 +4770,7 @@ learn Thick Armor Kit##10487 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Thick Armor Kit>_
-Reach Level 205 Leatherworking |skill Leatherworking,205
+Reach 205 Leatherworking |skill Leatherworking,205
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4785,7 +4779,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 30 Nightscape Headband>_
 |tip You may need to make more.
-Reach Level 235 Leatherworking |skill Leatherworking,235
+Reach 235 Leatherworking |skill Leatherworking,235
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4793,7 +4787,7 @@ learn Nightscape Pants##10548 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Nightscape Pant>_
-Reach Level 250 Leatherworking |skill Leatherworking,250
+Reach 250 Leatherworking |skill Leatherworking,250
 step
 collect 450 Rugged Leather##8170
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -4806,7 +4800,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 15 Rugged Armor Kit>_
 |tip You may need to make more.
-Reach Level 265 Leatherworking |skill Leatherworking,265
+Reach 265 Leatherworking |skill Leatherworking,265
 step
 talk Tamar##3366
 |tip Inside the building.
@@ -4824,7 +4818,7 @@ learn Wicked Leather Bracers##19052 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 30 Wicked Leather Bracer>_
-Reach Level 290 Leatherworking |skill Leatherworking,290
+Reach 290 Leatherworking |skill Leatherworking,290
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -4832,7 +4826,7 @@ learn Wicked Leather Headband##19071 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Wicked Leather Headband>_
-Reach Level 300 Leatherworking |skill Leatherworking,300
+Reach 300 Leatherworking |skill Leatherworking,300
 step
 _Congratulations!_
 You Reached 300 Leatherworking Skill.
@@ -4854,14 +4848,14 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Comfortable Insoles>_
 |tip You may need to create more.
-Reach Level 5 Outland Leatherworking |skill Outland Leatherworking,5
+Reach 5 Outland Leatherworking |skill Outland Leatherworking,5
 step
 talk Darmari##19187
 learn Knothide Armor Kit##32456 |goto 67.26,67.41
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 25 Knothide Armor Kit>_
-Reach Level 25 Outland Leatherworking |skill Outland Leatherworking,25
+Reach 25 Outland Leatherworking |skill Outland Leatherworking,25
 step
 talk Darmari##19187
 learn Heavy Knothide Leather##32455 |goto 67.26,67.41
@@ -4869,7 +4863,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 246 Heavy Knothide Leather>_
 |tip Craft all 246 of them, you'll need them later.
-Reach Level 35 Outland Leatherworking |skill Outland Leatherworking,35
+Reach 35 Outland Leatherworking |skill Outland Leatherworking,35
 step
 talk Cro Threadstrong##19196
 buy 60 Rune Thread##14341 |goto 67.30,67.85
@@ -4885,7 +4879,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 20 Thick Draenic Vest>_
 |tip You may need to make more.
-Reach Level 50 Outland Leatherworking |skill Outland Leatherworking,50
+Reach 50 Outland Leatherworking |skill Outland Leatherworking,50
 step
 collect 90 Heavy Knothide Leather##23793
 |tip You should have these from previous steps.
@@ -4896,7 +4890,7 @@ learn Heavy Knothide Armor Kit##44970 |goto 67.26,67.41
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 30 Heavy Knothide Armor Kit>_
-Reach Level 65 Outland Leatherworking |skill Outland Leatherworking,65
+Reach 65 Outland Leatherworking |skill Outland Leatherworking,65
 step
 Reach Honored with The Sha'tar |condition rep("The Sha'tar") >= Honored
 |tip Refer to The Sha'tar reputation guide to accomplish this.
@@ -4917,7 +4911,7 @@ learn Drums of Battle##35543
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 8 Drums of Battle>_
-Reach Level 70 Outland Leatherworking |skill Outland Leatherworking,70
+Reach 70 Outland Leatherworking |skill Outland Leatherworking,70
 step
 Reach Honored with the Keepers of Time |condition rep('Keepers of Time') >= Honored
 |tip Refer to the Keepers of Time reputation guide to accomplish this.
@@ -4932,7 +4926,7 @@ learn Drums of Panic##35538
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 8 Drums of Panic>_
-Reach Level 75 Outland Leatherworking |skill Outland Leatherworking,75
+Reach 75 Outland Leatherworking |skill Outland Leatherworking,75
 step
 _Congratulations!_
 You Reached 75 Outland Leatherworking Skill.
@@ -4955,7 +4949,7 @@ collect 1996 Borean Leather##33568
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 4 Borean Armor Kit>_
-Reach Level 5 Northrend Leatherworking |skill Northrend Leatherworking,5
+Reach 5 Northrend Leatherworking |skill Northrend Leatherworking,5
 step
 talk Diane Cannings##28700
 |tip Inside the building.
@@ -4963,7 +4957,7 @@ learn Arctic Boots##50948 |goto 34.71,28.65
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Arctic Boot>_
-Reach Level 10 Northrend Leatherworking |skill Northrend Leatherworking,10
+Reach 10 Northrend Leatherworking |skill Northrend Leatherworking,10
 step
 talk Diane Cannings##28700
 |tip Inside the building.
@@ -4971,7 +4965,7 @@ learn Arctic Gloves##50947 |goto 34.71,28.65
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Arctic Glove>_
-Reach Level 15 Northrend Leatherworking |skill Northrend Leatherworking,15
+Reach 15 Northrend Leatherworking |skill Northrend Leatherworking,15
 step
 talk Diane Cannings##28700
 |tip Inside the building.
@@ -4980,7 +4974,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 300 Heavy Borean Leather>_
 |tip Craft all 300 of them.
-Reach Level 30 Northrend Leatherworking |skill Northrend Leatherworking,30
+Reach 30 Northrend Leatherworking |skill Northrend Leatherworking,30
 step
 talk Diane Cannings##28700
 |tip Inside the building.
@@ -4989,7 +4983,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Nerubian Bracer>_
 |tip You may need to make more.
-Reach Level 35 Northrend Leatherworking |skill Northrend Leatherworking,35
+Reach 35 Northrend Leatherworking |skill Northrend Leatherworking,35
 step
 collect 52 Heavy Borean Leather##38425
 |tip You should have these from previous steps.
@@ -5006,7 +5000,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Dark Frostscale Legging>_
 |tip You may need to make more of these.
-Reach Level 45 Northrend Leatherworking |skill Northrend Leatherworking,45
+Reach 45 Northrend Leatherworking |skill Northrend Leatherworking,45
 step
 collect 18 Eternal Water##35622
 |tip Farm these or purchase them from the Auction House.
@@ -5025,7 +5019,7 @@ learn Overcast Bracers##60720
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Overcast Bracer>_
-Reach Level 50 Northrend Leatherworking |skill Northrend Leatherworking,50
+Reach 50 Northrend Leatherworking |skill Northrend Leatherworking,50
 step
 collect 130 Heavy Borean Leather##38425
 |tip You should have these from previous steps.
@@ -5041,7 +5035,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Overcast Handwrap>_
 |tip You may need to make more.
-Reach Level 60 Northrend Leatherworking |skill Northrend Leatherworking,60
+Reach 60 Northrend Leatherworking |skill Northrend Leatherworking,60
 step
 collect 10 Arctic Fur##44128
 |tip Farm them with Skinning or purchase them from the Auction House.
@@ -5063,7 +5057,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Frosthide Leg Armor>_
 |tip You may need to make more of these.
-Reach Level 65 Northrend Leatherworking |skill Northrend Leatherworking,65
+Reach 65 Northrend Leatherworking |skill Northrend Leatherworking,65
 step
 collect 100 Heavy Borean Leather##38425
 |tip You should have these from previous steps.
@@ -5091,7 +5085,7 @@ learn Trollwoven Girdle##60759
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Trollwoven Girdle>_
-Reach Level 75 Northrend Leatherworking |skill Northrend Leatherworking,75
+Reach 75 Northrend Leatherworking |skill Northrend Leatherworking,75
 step
 _Congratulations!_
 You Reached 75 Northrend Leatherworking Skill.
@@ -5120,7 +5114,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 4 Savage Armor Kit>_
 |tip You may need to make more.
-Reach Level 5 Cataclysm Leatherworking |skill Cataclysm Leatherworking,5
+Reach 5 Cataclysm Leatherworking |skill Cataclysm Leatherworking,5
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5128,7 +5122,7 @@ learn Tsunami Boots##78410 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Tsunami Boots>_
-Reach Level 10 Cataclysm Leatherworking |skill Cataclysm Leatherworking,10
+Reach 10 Cataclysm Leatherworking |skill Cataclysm Leatherworking,10
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5136,7 +5130,7 @@ learn Savage Cloak##78380 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Savage Cloak>_
-Reach Level 20 Cataclysm Leatherworking |skill Cataclysm Leatherworking,20
+Reach 20 Cataclysm Leatherworking |skill Cataclysm Leatherworking,20
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5144,7 +5138,7 @@ learn Darkbrand Boots##78407 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Darkbrand Boots>_
-Reach Level 25 Cataclysm Leatherworking |skill Cataclysm Leatherworking,25
+Reach 25 Cataclysm Leatherworking |skill Cataclysm Leatherworking,25
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5152,7 +5146,7 @@ learn Darkbrand Shoulders##78411 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 10 Darkbrand Shoulders>_
-Reach Level 35 Cataclysm Leatherworking |skill Cataclysm Leatherworking,35
+Reach 35 Cataclysm Leatherworking |skill Cataclysm Leatherworking,35
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5161,7 +5155,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 240 Heavy Savage Leather>_
 |tip Keep these, you'll need them later.
-Reach Level 40 Cataclysm Leatherworking |skill Cataclysm Leatherworking,40
+Reach 40 Cataclysm Leatherworking |skill Cataclysm Leatherworking,40
 step
 talk Karolek##3365
 |tip Inside the building.
@@ -5169,7 +5163,7 @@ learn Darkbrand Chestguard##78428 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Darkbrand Chestguard>_
-Reach Level 45 Cataclysm Leatherworking |skill Cataclysm Leatherworking,45
+Reach 45 Cataclysm Leatherworking |skill Cataclysm Leatherworking,45
 step
 collect 60 Heavy Savage Leather##56516
 |tip You should have these from previous steps.
@@ -5182,7 +5176,7 @@ step
 Open Your Leatherworking Crafting Panel:
 _<Create 12 Darkbrand Helm>_
 |tip You may need to make more.
-Reach Level 57 Cataclysm Leatherworking |skill Cataclysm Leatherworking,57
+Reach 57 Cataclysm Leatherworking |skill Cataclysm Leatherworking,57
 step
 collect 30 Heavy Savage Leather##56516
 |tip You should have these from previous steps.
@@ -5204,7 +5198,7 @@ learn Vicious Hide Cloak##99535 |goto 60.89,54.88
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 3 Vicious Hide Cloak>_
-Reach Level 60 Cataclysm Leatherworking |skill Cataclysm Leatherworking,60
+Reach 60 Cataclysm Leatherworking |skill Cataclysm Leatherworking,60
 step
 collect 150 Heavy Savage Leather##56516
 |tip You should have these from previous steps.
@@ -5220,7 +5214,7 @@ learn Vicious Leather Bracers##78446
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Vicious Leather Bracers>_
-Reach Level 65 Cataclysm Leatherworking |skill Cataclysm Leatherworking,65
+Reach 65 Cataclysm Leatherworking |skill Cataclysm Leatherworking,65
 step
 talk Tamar##3366
 |tip Inside the building.
@@ -5232,7 +5226,7 @@ learn Vicious Leather Boots##78454
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Vicious Leather Boots>_
-Reach Level 70 Cataclysm Leatherworking |skill Cataclysm Leatherworking,70
+Reach 70 Cataclysm Leatherworking |skill Cataclysm Leatherworking,70
 step
 collect 50 Volatile Water##52326
 |tip Farm them or purchase them from the Auction House.
@@ -5248,7 +5242,7 @@ learn Vicious Leather Helm##78469
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Vicious Leather Helm>_
-Reach Level 75 Cataclysm Leatherworking |skill Cataclysm Leatherworking,75
+Reach 75 Cataclysm Leatherworking |skill Cataclysm Leatherworking,75
 step
 _Congratulations!_
 You Reached 75 Cataclysm Leatherworking Skill.
@@ -5891,6 +5885,137 @@ skill Mining,525
 step
 You have reached the end of the guide
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-300",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Skinning skill from 1-300.",
+},[[
+step
+talk Thuwd##7088
+|tip Inside the building.
+Train Skinning |skillmax Skinning,300 |goto Orgrimmar/1 61.14,54.66
+step
+map Un'Goro Crater/0
+path follow smart; loop on; ants straight
+path	60.12,62.42	60.19,57.17	62.20,52.68	64.35,48.85	67.37,49.47
+path	71.15,51.30	70.05,55.96	71.16,59.35	70.14,63.32	67.60,66.96
+path	65.00,70.11	63.13,71.67	60.58,72.88	58.26,68.80	59.11,63.15
+Kill any beasts you see and skin them
+Reach Level 300 Skinning |skill Skinning,300
+step
+_Congratulations!_
+You Reached 300 Skinning Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Outland Skinning 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Outland Skinning skill from 1-75.",
+condition_end=function() return skill('Outland Skinning') >= 75 end,
+condition_suggested=function() return skill('Outland Skinning') > 0 and skill('Outland Skinning') < 75 end,
+},[[
+step
+talk Moorutu##18755
+Train Outland Skinning |skillmax Outland Skinning,75 |goto Hellfire Peninsula/0 56.27,38.61
+step
+map Nagrand/0
+path follow smart; loop on; ants straight
+path	57.33,21.04	55.50,21.42	52.96,22.01	51.01,21.29	51.01,24.49
+path	50.76,26.74	49.67,30.04	47.78,30.11	46.24,32.05	47.47,35.93
+path	47.56,38.15	47.27,40.25	48.07,41.80	48.95,44.30	50.08,46.11
+path	51.96,49.08	53.96,48.26	55.67,48.02	56.56,46.65	59.19,45.09
+path	60.78,44.57	62.79,44.63	63.80,42.36	61.59,40.12	59.84,39.87
+path	59.09,41.49	56.37,43.26	53.70,42.24	52.45,40.38	51.29,38.45
+path	50.62,36.56	51.76,33.94	52.65,32.31	53.67,30.67	53.61,28.33
+path	52.97,26.36	54.39,23.67	55.98,23.30
+Kill any beasts you see and skin them
+skill Outland Skinning,75
+step
+_Congratulations!_
+You Reached 75 Outland Skinning Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Northrend Skinning 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Northrend Skinning skill from 1-75.",
+condition_end=function() return skill('Northrend Skinning') >= 75 end,
+condition_suggested=function() return skill('Northrend Skinning') > 0 and skill('Northrend Skinning') < 75 end,
+},[[
+step
+talk Tiponi Stormwhisper##26986
+|tip Inside the building.
+Train Northrend Skinning |skillmax Northrend Skinning,75 |goto Borean Tundra/0 76.20,37.52
+step
+map The Storm Peaks/0
+path follow smart; loop on; ants straight
+path	38.30,58.49	38.01,54.99	39.86,53.06	40.90,53.14	42.63,54.12
+path	43.30,55.57	44.95,56.01	46.15,56.38	45.83,58.31	46.83,59.82
+path	47.26,62.16	46.46,63.59	45.25,62.62	43.50,60.97	42.12,59.98
+path	40.48,60.62	39.18,60.17
+Kill any beasts you see and skin them
+skill Northrend Skinning,75
+step
+_Congratulations!_
+You Reached 75 Northrend Skinning Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Cataclysm Skinning 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Cataclysm Skinning skill from 1-75.",
+condition_end=function() return skill('Cataclysm Skinning') >= 75 end,
+condition_suggested=function() return skill('Cataclysm Skinning') > 0 and skill('Cataclysm Skinning') < 75 end,
+},[[
+step
+talk Thuwd##7088
+|tip Inside the building.
+Train Cataclysm Skinning |skillmax Cataclysm Skinning,75 |goto Orgrimmar/1 61.14,54.66
+step
+map Tol Barad Peninsula/0
+path follow smart; loop on; ants straight
+path	54.41,59.21	52.12,54.28	52.59,46.96	55.75,47.68	57.63,51.37
+path	60.84,53.05	62.02,56.70	59.02,60.59	58.06,56.47	55.40,57.09
+Kill Darkwood enemies around this area
+skill Cataclysm Skinning,75
+step
+_Congratulations!_
+You Reached 75 Cataclysm Skinning Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Pandaria Skinning 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Pandaria Skinning skill from 1-75.",
+condition_end=function() return skill('Pandaria Skinning') >= 75 end,
+condition_suggested=function() return skill('Pandaria Skinning') > 0 and skill('Pandaria Skinning') < 75 end,
+},[[
+step
+talk Trapper Ri##66981
+Train Pandaria Skinning |skillmax Pandaria Skinning,75 |goto The Jade Forest/0 27.77,15.47
+step
+map Valley of the Four Winds/0
+path follow smart; loop on; ants straight
+path	27.42,32.61	28.08,37.04	29.30,41.85	30.27,45.34	30.63,42.30
+path	30.61,38.76	30.74,36.35	31.06,32.68	29.25,30.44
+Kill enemies around this area
+skill Pandaria Skinning,75
+step
+_Congratulations!_
+You Reached 75 Pandaria Skinning Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Draenor Skinning 1-100",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Draenor Skinning skill from 1-100.",
+condition_end=function() return skill('Draenor Skinning') >= 100 end,
+condition_suggested=function() return skill('Draenor Skinning') > 0 and skill('Draenor Skinning') < 100 and level >= 90 end,
+},[[
+step
+kill Tamed Clefthoof##79034
+|tip Kill all Tamed Clefthoof nearby to force them to respawn.
+collect A Guide to Skinning in Draenor##111351 |n
+|tip This will come from skinning the Tamed Clefthooves.
+use the A Guide to Skinning in Draenor##111351
+Train Draenor Skinning |skillmax Draenor Skinning,100 |goto Nagrand D/0 78.7, 72.2
+step
+confirm
+step
+_Congratulations!_
+You Reached 100 Draenor Skinning Skill.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Leather",{
 author="support@zygorguides.com",
 description="This guide will allow you to farm the various leathers.",
@@ -6148,6 +6273,40 @@ step
 Click here to proceed |confirm |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 525-600 Leveling Guide"
 |tip This will take you to the Skinning 525 - 600 guides.
 ]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth",{
+author="support@zygorguides.com",
+description="Linen Cloth can be gathered from the Silverpine Forest.",
+},[[
+step
+kill Hillsbrad Worgen##45255+
+|tip All over this area.
+collect Linen Cloth##2589 |n |goto Silverpine Forest/0 54.00,34.75
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth",{
+author="support@zygorguides.com",
+description="Mageweave Cloth can be gathered from southwestern Eastern Plaguelands.",
+},[[
+step
+Kill Death's Step enemies around this area
+collect Mageweave Cloth##4338 |n |goto Eastern Plaguelands/0 18.16,78.47
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth",{
+author="support@zygorguides.com",
+description="Silk Cloth can be gathered from the northwestern Thousand Needles.",
+},[[
+step
+Kill enemies around this area
+collect Silk Cloth##4306 |n |goto Thousand Needles/0 12.34,7.04
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth",{
+author="support@zygorguides.com",
+description="Wool Cloth can be gathered from the eastern Wetlands.",
+},[[
+step
+Kill enemies around this area
+|tip Look for Dragonmaw Whelpstealers and Ebon Slavehunters.
+collect Wool Cloth##2592 |n |goto Wetlands/0 66.26,46.87
+]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-300",{
 author="support@zygorguides.com",
@@ -6168,14 +6327,14 @@ collect 120 Linen Cloth##2589 |goto Mulgore 60.6,47.7
 step
 Open Your Tailoring Crafting Panel:
 _<Create 49 Linen Bandages>_
-Reach Level 50 Tailoring |skill Tailoring,50
+Reach 50 Tailoring |skill Tailoring,50
 step
 talk Mender Jessara##133109
 learn Heavy Linen Bandage##3276 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 30 Heavy Linen Bandages>_
-Reach Level 80 Tailoring |skill Tailoring,80
+Reach 80 Tailoring |skill Tailoring,80
 step
 Kill enemies around this area
 collect 100 Wool Cloth##2592 |goto Wetlands/0 67.4,47.4
@@ -6187,14 +6346,14 @@ learn Wool Bandage##3277 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 50 Wool Bandages>_
-Reach Level 130 Tailoring |skill Tailoring,130
+Reach 130 Tailoring |skill Tailoring,130
 step
 talk Mender Jessara##133109
 learn Heavy Wool Bandage##3278 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 20 Heavy Wool Bandages>_
-Reach Level 150 Tailoring |skill Tailoring,150
+Reach 150 Tailoring |skill Tailoring,150
 step
 Kill Death's Step enemies around this area
 collect 90 Silk Cloth##4306 |goto Eastern Plaguelands/0 18.33,78.45
@@ -6206,14 +6365,14 @@ learn Silk Bandage##7928 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 40 Silk Bandages>_
-Reach Level 190 Tailoring |skill Tailoring,190
+Reach 190 Tailoring |skill Tailoring,190
 step
 talk Mender Jessara##133109
 learn Heavy Silk Bandage##7929 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 20 Heavy Silk Bandages>_
-Reach Level 210 Tailoring |skill Tailoring,210
+Reach 210 Tailoring |skill Tailoring,210
 step
 kill Irontree Chopper##48453+
 collect 70 Mageweave Cloth##4338 |goto Felwood/0 63.4,20.7
@@ -6225,14 +6384,14 @@ learn Mageweave Bandage##10840 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 30 Mageweave Bandages>_
-Reach Level 240 Tailoring |skill Tailoring,240
+Reach 240 Tailoring |skill Tailoring,240
 step
 talk Mender Jessara##133109
 learn Heavy Mageweave Bandage##10841 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 20 Mageweave Bandages>_
-Reach Level 260 Tailoring |skill Tailoring,260
+Reach 260 Tailoring |skill Tailoring,260
 step
 label "Time_Travel_On"
 talk Zidormi##128607
@@ -6254,17 +6413,17 @@ learn Runecloth Bandage##18629 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 30 Runecloth Bandages>_
-Reach Level 290 Tailoring |skill Tailoring,290
+Reach 290 Tailoring |skill Tailoring,290
 step
 talk Mender Jessara##133109
 learn Heavy Runecloth Bandage##18630 |goto Orgrimmar/1 38.50,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 10 Heavy Runecloth Bandages>_
-Reach Level 300 Tailoring |skill Tailoring,300
+Reach 300 Tailoring |skill Tailoring,300
 step
 _Congratulations!_
-You Reached Level 300 Tailoring Skill.
+You Reached 300 Tailoring Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Outland Tailoring 1-75",{
 author="support@zygorguides.com",
@@ -6290,17 +6449,17 @@ learn Netherweave Bandage##27032 |goto Shattrath City/0 43.72,91.40
 step
 Open Your Tailoring Crafting Panel:
 _<Create 39 Netherweave Bandage>_
-Reach Level 40 Outland Tailoring |skill Outland Tailoring,40
+Reach 40 Outland Tailoring |skill Outland Tailoring,40
 step
 clicknpc Bandage Recipes##33621
 learn Heavy Netherweave Bandage##27033 |goto Shattrath City/0 43.72,91.40
 step
 Open Your Tailoring Crafting Panel:
 _<Create 35 Heavy Netherweave Bandage>_
-Reach Level 40 Outland Tailoring |skill Outland Tailoring,40
+Reach 40 Outland Tailoring |skill Outland Tailoring,40
 step
 _Congratulations!_
-You Reached Level 75 Outland Tailoring Skill.
+You Reached 75 Outland Tailoring Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Northrend Tailoring 1-75",{
 author="support@zygorguides.com",
@@ -6323,7 +6482,7 @@ learn Frostweave Bandage##45545 |goto Dalaran/1 36.56,37.33
 step
 Open Your Tailoring Crafting Panel:
 _<Create 19 Frostweave Bandages>_
-Reach Level 20 Northrend Tailoring |skill Northrend Tailoring,20
+Reach 20 Northrend Tailoring |skill Northrend Tailoring,20
 step
 talk Olisarra the Kind##28706
 |tip Inside the building.
@@ -6331,10 +6490,10 @@ learn Heavy Frostweave Bandage##45546 |goto Dalaran/1 36.56,37.33
 step
 Open Your Tailoring Crafting Panel:
 _<Create 55 Frostweave Bandages>_
-Reach Level 75 Northrend Tailoring |skill Northrend Tailoring,75
+Reach 75 Northrend Tailoring |skill Northrend Tailoring,75
 step
 _Congratulations!_
-You Reached Level 75 Northrend Tailoring Skill.
+You Reached 75 Northrend Tailoring Skill.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Cataclysm Tailoring 1-75",{
 author="support@zygorguides.com",
@@ -6355,17 +6514,17 @@ learn Embersilk Bandage##74556 |goto Orgrimmar/1 38.49,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 24 Embersilk Bandages>_
-Reach Level 25 Cataclysm Tailoring |skill Cataclysm Tailoring,25
+Reach 25 Cataclysm Tailoring |skill Cataclysm Tailoring,25
 step
 talk Mender Jessara##133109
 learn Heavy Embersilk Bandage##74557 |goto Orgrimmar/1 38.49,86.41
 step
 Open Your Tailoring Crafting Panel:
 _<Create 50 Heavy Embersilk Bandages>_
-Reach Level 75 Cataclysm Tailoring |skill Cataclysm Tailoring,75
+Reach 75 Cataclysm Tailoring |skill Cataclysm Tailoring,75
 step
 _Congratulations!_
-You Reached Level 75 Cataclysm Tailoring Skill.
+You Reached 75 Cataclysm Tailoring Skill.
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Cloth",{
@@ -6619,5 +6778,3 @@ collect Mote of Shadow##22577 |n
 |tip Combine 10 Motes of Shadow into 1 Primal Shadow.
 '|goto 76.12,63.56 < 30 |c |noway |next "Start"
 ]])
-ZGV.BETASTART()
-ZGV.BETAEND()
