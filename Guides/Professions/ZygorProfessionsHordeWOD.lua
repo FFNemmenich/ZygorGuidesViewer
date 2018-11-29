@@ -1243,32 +1243,45 @@ _Congratulations!_
 You Reached Level 100 Draenor Leatherworking Skill.
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 600-700 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Draenor Mining 1-100",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Mining skill from 1-100.",
 condition_end=function() return skill('Draenor Mining') >= 100 end,
-condition_suggested=function() return skill('Draenor Mining') > 0 and skill('Draenor Mining') < 100 and level >= 90 end,
+condition_suggested=function() return skill('Draenor Mining') > 0 and skill('Draenor Mining') < 100 end,
 },[[
-step
-Kill any lootable enemies found in Draenor
-collect A Treatise on Mining in Draenor##111349 |n
-use A Treatise on Mining in Draenor##111349
-skillmax Mining,700
 step
 map Frostfire Ridge
 path follow loose; loop on; ants curved
-path	43.0,58.3	40.8,60.5	38.4,59.3
-path	36.0,57.0	34.3,54.6	31.6,54.8
-path	28.5,49.5	27.9,44.6	24.5,39.7
-path	23.9,34.1	27.9,30.9	31.9,27.0
-path	32.6,25.7	33.5,20.5	36.3,21.0
-path	37.8,26.5	41.0,28.9	42.1,30.6
-path	43.0,31.0	44.7,31.2	49.7,35.4
-path	52.4,38.3	54.3,39.5	48.5,50.1
-path	47.6,54.9	46.2,58.3	43.3,57.9
-Make sure you are tracking minerals, and gather all _Blackrock_ and _True Iron_ ore you see as you follow this path
-skill Mining,700
+path	43.0,58.3	40.8,60.5	38.4,59.3	36.0,57.0	34.3,54.6
+path	31.6,54.8	28.5,49.5	27.9,44.6	24.5,39.7	23.9,34.1
+path	27.9,30.9	31.9,27.0	32.6,25.7	33.5,20.5	36.3,21.0
+path	37.8,26.5	41.0,28.9	42.1,30.6	43.0,31.0	44.7,31.2
+path	49.7,35.4	52.4,38.3	54.3,39.5	48.5,50.1	47.6,54.9
+path	46.2,58.3	43.3,57.9
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+collect A Treatise on Mining in Draenor##111349 |n
+|tip You should get this from the first node you mine from.
+use the A Treatise on Mining in Draenor##111349
+Train Draenor Mining |skillmax Draenor Mining,100
+step
+map Frostfire Ridge
+path follow loose; loop on; ants curved
+path	43.0,58.3	40.8,60.5	38.4,59.3	36.0,57.0	34.3,54.6
+path	31.6,54.8	28.5,49.5	27.9,44.6	24.5,39.7	23.9,34.1
+path	27.9,30.9	31.9,27.0	32.6,25.7	33.5,20.5	36.3,21.0
+path	37.8,26.5	41.0,28.9	42.1,30.6	43.0,31.0	44.7,31.2
+path	49.7,35.4	52.4,38.3	54.3,39.5	48.5,50.1	47.6,54.9
+path	46.2,58.3	43.3,57.9
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 100 Draenor Mining |skill Draenor Mining,100
+step
+_Congratulations!_
+You Reached 100 Draenor Mining Skill.
 ]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 600-700 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Draenor Skinning skill from 1-100.",

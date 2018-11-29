@@ -10,16 +10,12 @@ GuideMenu.Home={
 	{"title", text=[[Featured Content]]},
 
 	{"section", text=[[EVENTS]]},
-	{"item", text=[[Updated |cfffe6100Hallow's End Quests|r.]], guide="EVENTS\\Hallow\'s End\\Hallow\'s End Quests"},
-	{"item", text=[[Updated |cfffe6100Hallow's End Dailies|r.]], guide="EVENTS\\Hallow\'s End\\Hallow\'s End Dailies"},
-	{"item", text=[[Updated |cfffe6100Hallow's End Achievements|r.]], folder="EVENTS\\Hallow\'s End\\Achievements"},
-
-
-	{"section", text=[[PETSMOUNTS]]},
-	{"item", text=[[Updated |cfffe6100Wolpertinger|r.]], guide="PETSMOUNTS\\Battle Pets\\Critter Pets\\Wolpertinger"},
+	{"item", text=[[Updated |cfffe6100Pilgrim's Bounty Quests|r.]], guide="EVENTS\\Pilgrim\'s Bounty\\Pilgrim\'s Bounty Quests"},
+	{"item", text=[[Updated |cfffe6100Pilgrim's Bounty Achievements and Dailies|r.]], guide="EVENTS\\Pilgrim\'s Bounty\\Pilgrim\'s Bounty Daily Quests",faction="A"},
+	{"item", text=[[Updated |cfffe6100Pilgrim's Bounty Achievements and Dailies|r.]], guide="EVENTS\\Pilgrim\'s Bounty\\Pilgrim\'s Bounty Achievements and Dailies",faction="H"},
 
 	{"section", text=[[TITLES]]},
-	{"item", text=[[Updated |cfffe6100Brewfest Achievements|r.]], guide="TITLES\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Achievements"},
+	{"item", text=[[Updated |cfffe6100The Pilgrim Title|r.]], folder="TITLES\\Wrath of the Lich King Titles\\World Events\\The Pilgrim"},
 
 	{"title", text=[[Battle for Azeroth Content]]},
 

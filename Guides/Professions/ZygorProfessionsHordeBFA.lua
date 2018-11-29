@@ -1781,15 +1781,15 @@ collect 20 Tempest Hide##154722
 |tip Use the "Tempest Hide" farming guide to collect them, if you have Skinning.
 |tip You can also purchase them from the Auction House.
 step
-talk Cassandra Brennor##136063
-buy 20 Amber Tanning Oil##160059 |goto 75.48,12.61
+talk Aman de Child##141609
+buy 20 Amber Tanning Oil##160059 |goto 43.96,33.51
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 20 Hardened Tempest Hide>_
 Reach Level 70 Leatherworking |skill Zandalari Leatherworking,70
 step
-talk Cassandra Brennor##136063
-Train Coarse Leather Barding |learn Coarse Leather Barding##256790 |goto 75.48,12.61
+talk Xanjo##122698
+Train Coarse Leather Barding |learn Coarse Leather Barding##256790 |goto 44.07,34.63
 step
 collect 375 Coarse Leather##152541
 |tip Use the "Coarse Leather" farming guides to collect them, if you have Skinning.
@@ -1799,8 +1799,8 @@ Open Your Leatherworking Crafting Panel:
 _<Create 15 Coarse Leather Barding>_
 Reach Level 85 Leatherworking |skill Zandalari Leatherworking,85
 step
-talk Cassandra Brennor##136063
-Train Drums of the Maelstrom |learn Drums of the Maelstrom##256791 |goto 75.48,12.61
+talk Xanjo##122698
+Train Drums of the Maelstrom |learn Drums of the Maelstrom##256791 |goto 44.07,34.63
 step
 collect 1625 Coarse Leather##152541
 |tip Use the "Coarse Leather" farming guide to collect them, if you have Skinning.

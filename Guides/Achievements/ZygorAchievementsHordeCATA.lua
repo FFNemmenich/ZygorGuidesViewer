@@ -7411,7 +7411,7 @@ Discover The Skittering Dark |achieve 769/4 |goto Silverpine Forest 34.8,12.4
 step
 Discover Forsaken Rear Guard |achieve 769/15 |goto Silverpine Forest 44.9,18.8
 step
-Discover North Tide's Run |achieve 769/14 |goto Silverpine Forest 44.66,21.64
+Discover North Tide's Run |achieve 769/14 |goto Silverpine Forest 37.90,44.70
 step
 Discover Valgan's Field |achieve 769/7 |goto Silverpine Forest 53.2,25.6
 step
@@ -11371,7 +11371,7 @@ confirm
 step
 _Capture_ Wharf Rat
 |tip They share spawn points with other critters in the area.
-learnpet Wharf Rat##61323 |achieve 6586/88 |goto The Cape of Stranglethorn 43.0,71.6
+learnpet Wharf Rat##61323 |achieve 6586/86 |goto The Cape of Stranglethorn 43.0,71.6
 step
 _Capture_ Forest Spiderling
 learnpet Forest Spiderling##61320 |achieve 6586/21 |goto The Cape of Stranglethorn 58.2,78.6
@@ -11380,271 +11380,271 @@ _Capture_ Lizard Hatchling
 learnpet Lizard Hatchling##61321 |achieve 6586/40 |goto The Cape of Stranglethorn 58.2,78.6
 step
 _Capture_ Strand Crab
-learnpet Strand Crab##61312 |achieve 6586/61 |goto The Cape of Stranglethorn 56.2,77.2
+learnpet Strand Crab##61312 |achieve 6586/73 |goto The Cape of Stranglethorn 56.2,77.2
 step
 _Capture_ Tree Python
-learnpet Tree Python##61318 |achieve 6586/62 |goto The Cape of Stranglethorn 58.2,78.0
+learnpet Tree Python##61318 |achieve 6586/81 |goto The Cape of Stranglethorn 58.2,78.0
 step
 _Capture_ Beetle
-learnpet Beetle##61319 |achieve 6586/17 |goto The Cape of Stranglethorn 58.2,78.0
+learnpet Beetle##61319 |achieve 6586/8 |goto The Cape of Stranglethorn 58.2,78.0
 step
 _Capture_ Baby Ape
 |tip Can only be found when it's raining.
-learnpet Baby Ape##61324 |achieve 6586/70 |goto The Cape of Stranglethorn 62.6,78.2
+learnpet Baby Ape##61324 |achieve 6586/5 |goto The Cape of Stranglethorn 62.6,78.2
 step
 _Capture_ Roach
-learnpet Roach##61169 |achieve 6586/9 |goto The Cape of Stranglethorn 43.2,71.2
+learnpet Roach##61169 |achieve 6586/59 |goto The Cape of Stranglethorn 43.2,71.2
 step
 _Capture_ Long-tailed Mole
-learnpet Long-tailed Mole##61317 |achieve 6586/5 |goto The Cape of Stranglethorn 43.2,71.2
+learnpet Long-tailed Mole##61317 |achieve 6586/41 |goto The Cape of Stranglethorn 43.2,71.2
 step
 _Capture_ Crimson Moth
-learnpet Crimson Moth##61314 |achieve 6586/87 |goto The Cape of Stranglethorn 52.0,51.0
+learnpet Crimson Moth##61314 |achieve 6586/15 |goto The Cape of Stranglethorn 52.0,51.0
 step
 _Capture_ Polly
-learnpet Polly##61322 |achieve 6586/60 |goto Northern Stranglethorn 39.6,30.8
+learnpet Polly##61322 |achieve 6586/50 |goto Northern Stranglethorn 39.6,30.8
 step
 _Capture_ Rat Snake
-learnpet Rat Snake##61258 |achieve 6586/35 |goto Duskwood 72.6,69.0
+learnpet Rat Snake##61258 |achieve 6586/54 |goto Duskwood 72.6,69.0
 step
 _Capture_ Black Rat
-learnpet Black Rat##61257 |achieve 6586/3 |goto Duskwood 75.6,56.4
+learnpet Black Rat##61257 |achieve 6586/7 |goto Duskwood 75.6,56.4
 step
 _Capture_ Skunk
-learnpet Skunk##61255 |achieve 6586/37 |goto Duskwood 66.4,36.6
+learnpet Skunk##61255 |achieve 6586/64 |goto Duskwood 66.4,36.6
 step
 _Capture_ Dusk Spiderling
-learnpet Dusk Spiderling##61253 |achieve 6586/33 |goto Duskwood 62.2,26.8
+learnpet Dusk Spiderling##61253 |achieve 6586/16 |goto Duskwood 62.2,26.8
 step
 _Capture_ Widow Spiderling
 |tip Only spawns at night.
-learnpet Widow Spiderling##61259 |achieve 6586/82 |goto Duskwood 64.4,26.6
+learnpet Widow Spiderling##61259 |achieve 6586/87 |goto Duskwood 64.4,26.6
 step
 _Capture_ Chicken
-learnpet Chicken##62664 |achieve 6586/34 |goto Duskwood 77.0,55.2
+learnpet Chicken##62664 |achieve 6586/13 |goto Duskwood 77.0,55.2
 step
 _Capture_ Small Frog
-learnpet Small Frog##61071 |achieve 6586/10 |goto Duskwood 71.6,15.6
+learnpet Small Frog##61071 |achieve 6586/65 |goto Duskwood 71.6,15.6
 step
 _Capture_ Mouse
-learnpet Mouse##61143 |achieve 6586/36 |goto Duskwood 23.1,44.6
+learnpet Mouse##61143 |achieve 6586/48 |goto Duskwood 23.1,44.6
 step
 _Capture_ Snake
-learnpet Snake##61142 |achieve 6586/11 |goto Westfall 47.2,16.4
+learnpet Snake##61142 |achieve 6586/66 |goto Westfall 47.2,16.4
 step
 _Capture_ Tiny Harvester
-learnpet Tiny Harvester##61160 |achieve 6586/81 |goto Westfall 52.2,22.6
+learnpet Tiny Harvester##61160 |achieve 6586/78 |goto Westfall 52.2,22.6
 step
 _Capture_ Black Lamb
-learnpet Black Lamb##60649 |achieve 6586/89 |goto Elwynn Forest 32.2,56.2
+learnpet Black Lamb##60649 |achieve 6586/9 |goto Elwynn Forest 32.2,56.2
 step
 _Capture_ Rabbit
-learnpet Rabbit##61080 |achieve 6586/7 |goto Elwynn Forest 34.0,51.6
+learnpet Rabbit##61080 |achieve 6586/52 |goto Elwynn Forest 34.0,51.6
 step
 _Capture_ Squirrel
-learnpet Squirrel##61081 |achieve 6586/14 |goto Elwynn Forest 41.8,57.0
+learnpet Squirrel##61081 |achieve 6586/72 |goto Elwynn Forest 41.8,57.0
 step
 _Capture_ Fawn
-learnpet Fawn##61165 |achieve 6586/43 |goto Elwynn Forest 36.8,56.0
+learnpet Fawn##61165 |achieve 6586/17 |goto Elwynn Forest 36.8,56.0
 step
 _Capture_ Cat
-learnpet Cat##62019 |achieve 6586/15 |goto Elwynn Forest 44.6,53.6
+learnpet Cat##62019 |achieve 6586/12 |goto Elwynn Forest 44.6,53.6
 step
 _Capture_ Stormwind Rat
-learnpet Stormwind Rat##62954 |achieve 6586/45 |goto Elwynn Forest 27.6,86.4
+learnpet Stormwind Rat##62954 |achieve 6586/74 |goto Elwynn Forest 27.6,86.4
 step
 _Capture_ Restless Shadeling
 |tip Only spawns at 0:00 Server Time and despawns in the morning.
-learnpet Restless Shadeling##61375 |achieve 6586/30 |goto Deadwind Pass 54.6,80.6
+learnpet Restless Shadeling##61375 |achieve 6586/58 |goto Deadwind Pass 54.6,80.6
 step
 talk Zidormi##88206 |goto Blasted Lands/0 48.1,7.3 |walk
 _Tell_ her "Show me the Blasted Lands before the invasion."
 |tip You can go back to her to change it back again afterwards.
 _Capture_ Scorpling
 |tip It only shows up in the classic version of the Blasted Lands.
-learnpet Scorpling##61329 |achieve 6586/28 |goto Blasted Lands 60.0,58.6
+learnpet Scorpling##61329 |achieve 6586/62 |goto Blasted Lands 60.0,58.6
 step
 _Capture_ Scorpid
-learnpet Scorpid##61326 |achieve 6586/26 |goto Blasted Lands 55.4,32.6
+learnpet Scorpid##61326 |achieve 6586/61 |goto Blasted Lands 55.4,32.6
 step
 _Capture_ Fire Beetle
-learnpet Fire Beetle##61328 |achieve 6586/24 |goto Blasted Lands 44.6,33.4
+learnpet Fire Beetle##61328 |achieve 6586/20 |goto Blasted Lands 44.6,33.4
 step
 _Capture_ Adder
 learnpet Adder##61325 |achieve 6586/1 |goto Blasted Lands 59.9,26.1
 step
 _Capture_ a Parrot
 |tip They share a spawn point with other critters in the area.
-learnpet Parrot##61313 |achieve 6586/59 |goto Swamp of Sorrows 39.6,50.6
+learnpet Parrot##61313 |achieve 6586/49 |goto Swamp of Sorrows 39.6,50.6
 step
 _Capture_ Water Snake
-learnpet Water Snake##61367 |achieve 6586/63 |goto Swamp of Sorrows 33.6,56.8
+learnpet Water Snake##61367 |achieve 6586/85 |goto Swamp of Sorrows 33.6,56.8
 step
 _Capture_ Huge Toad
-learnpet Huge Toad##61368 |achieve 6586/52 |goto Swamp of Sorrows 46.6,42.8
+learnpet Huge Toad##61368 |achieve 6586/29 |goto Swamp of Sorrows 46.6,42.8
 step
 _Capture_ Swamp Moth
-learnpet Swamp Moth##61370 |achieve 6586/72 |goto Swamp of Sorrows 36.0,44.4
+learnpet Swamp Moth##61370 |achieve 6586/76 |goto Swamp of Sorrows 36.0,44.4
 step
 _Capture_ Moccasin
-learnpet Moccasin##61372 |achieve 6586/71 |goto Swamp of Sorrows 38.0,44.6
+learnpet Moccasin##61372 |achieve 6586/44 |goto Swamp of Sorrows 38.0,44.6
 step
 _Capture_ Redridge Rat
-learnpet Redridge Rat##61168 |achieve 6586/66 |goto Redridge Mountains 30.6,62.6
+learnpet Redridge Rat##61168 |achieve 6586/57 |goto Redridge Mountains 30.6,62.6
 step
 _Capture_ Fledgling Buzzard
-learnpet Fledgling Buzzard##61171 |achieve 6586/64 |goto Redridge Mountains 24.2,32.8
+learnpet Fledgling Buzzard##61171 |achieve 6586/19 |goto Redridge Mountains 24.2,32.8
 step
 _Capture_ Mountain Cottontail
-learnpet Mountain Cottontail##61167 |achieve 6586/47 |goto Redridge Mountains 16.0,46.2
+learnpet Mountain Cottontail##61167 |achieve 6586/46 |goto Redridge Mountains 16.0,46.2
 step
 _Capture_ Lava Crab
-learnpet Lava Crab##61383 |achieve 6586/32 |goto Burning Steppes 54.8,26.6
+learnpet Lava Crab##61383 |achieve 6586/38 |goto Burning Steppes 54.8,26.6
 step
 _Capture_ Lava Beetle
-learnpet Lava Beetle##61386 |achieve 6586/29 |goto Burning Steppes 54.8,26.6
+learnpet Lava Beetle##61386 |achieve 6586/37 |goto Burning Steppes 54.8,26.6
 step
 _Capture_ Cockroach
-learnpet Cockroach##61384 |achieve 6586/31 |goto Burning Steppes 48.4,33.4
+learnpet Cockroach##61384 |achieve 6586/14 |goto Burning Steppes 48.4,33.4
 step
 _Capture_ Ash Viper
-learnpet Ash Viper##61385 |achieve 6586/67 |goto Burning Steppes 48.4,33.4
+learnpet Ash Viper##61385 |achieve 6586/4 |goto Burning Steppes 48.4,33.4
 step
 _Capture_ Rattlesnake
-learnpet Rattlesnake##61439 |achieve 6586/21 |goto Badlands 27.8,33.0
+learnpet Rattlesnake##61439 |achieve 6586/55 |goto Badlands 27.8,33.0
 step
 _Capture_ Stripe-Tailed Scorpid
-learnpet Stripe-Tailed Scorpid##61440 |achieve 6586/25 |goto Badlands 24.0,37.8
+learnpet Stripe-Tailed Scorpid##61440 |achieve 6586/75 |goto Badlands 24.0,37.8
 step
 _Capture_ King Snake
-learnpet King Snake##61443 |achieve 6586/22 |goto Badlands 22.0,37.0
+learnpet King Snake##61443 |achieve 6586/35 |goto Badlands 22.0,37.0
 step
 _Capture_ Gold Beetle
-learnpet Gold Beetle##61438 |achieve 6586/20 |goto Badlands 29.0,30.8
+learnpet Gold Beetle##61438 |achieve 6586/22 |goto Badlands 29.0,30.8
 step
 _Capture_ Spiky Lizard
-learnpet Spiky Lizard##61441 |achieve 6586/23 |goto Badlands 28.8,31.0
+learnpet Spiky Lizard##61441 |achieve 6586/70 |goto Badlands 28.8,31.0
 step
 _Capture_ Molten Hatchling
-learnpet Molten Hatchling##61425 |achieve 6586/68 |goto Searing Gorge 31.6,75.0
+learnpet Molten Hatchling##61425 |achieve 6586/45 |goto Searing Gorge 31.6,75.0
 step
 _Capture_ Ash Spiderling
 learnpet Ash Spiderling##61420 |achieve 6586/3 |goto Searing Gorge 31.6,75.0
 step
 _Capture_ Little Black Ram
-learnpet Little Black Ram##61459 |achieve 6586/56 |goto Loch Modan 26.2,62.6
+learnpet Little Black Ram##61459 |achieve 6586/39 |goto Loch Modan 26.2,62.6
 step
 _Capture_ Snow Cub
-learnpet Snow Cub##61689 |achieve 6586/12 |goto Dun Morogh 57.2,49.6
+learnpet Snow Cub##61689 |achieve 6586/67 |goto Dun Morogh 57.2,49.6
 step
 _Capture_ Irradiated Roach
-learnpet Irradiated Roach##61691 |achieve 6586/4 |goto Dun Morogh 59.0,44.0
+learnpet Irradiated Roach##61691 |achieve 6586/33 |goto Dun Morogh 59.0,44.0
 step
 _Capture_ Alpine Hare
 learnpet Alpine Hare##61690 |achieve 6586/2 |goto Dun Morogh 57.6,40.8
 step
 _Capture_ Toad
-learnpet Toad##61369 |achieve 6586/51 |goto Wetlands 59.2,52.2
+learnpet Toad##61369 |achieve 6586/80 |goto Wetlands 59.2,52.2
 step
 _Capture_ Tiny Bog Beast
-learnpet Tiny Bog Beast##61686 |achieve 6586/85 |goto Wetlands 53.0,39.2
+learnpet Tiny Bog Beast##61686 |achieve 6586/77 |goto Wetlands 53.0,39.2
 step
 _Capture_ Mountain Skunk
-learnpet Mountain Skunk##61677 |achieve 6586/84 |goto Wetlands 67.8,44.0
+learnpet Mountain Skunk##61677 |achieve 6586/47 |goto Wetlands 67.8,44.0
 step
 _Capture_ Highlands Mouse
-learnpet Highlands Mouse##62905 |achieve 6586/78 |goto Wetlands 69.6,33.2
+learnpet Highlands Mouse##62905 |achieve 6586/26 |goto Wetlands 69.6,33.2
 step
 _Capture_ Yellow-Bellied Marmot
-learnpet Yellow-Bellied Marmot##62904 |achieve 6586/86 |goto Twilight Highlands 56.6,14.2
+learnpet Yellow-Bellied Marmot##62904 |achieve 6586/89 |goto Twilight Highlands 56.6,14.2
 step
 _Capture_ Twilight Spider
-learnpet Twilight Spider##62117 |achieve 6586/77 |goto Twilight Highlands 58.6,33.4
+learnpet Twilight Spider##62117 |achieve 6586/83 |goto Twilight Highlands 58.6,33.4
 step
 _Capture_ Twilight Fiendling
-learnpet Twilight Fiendling##62914 |achieve 6586/76 |goto Twilight Highlands 58.6,33.4
+learnpet Twilight Fiendling##62914 |achieve 6586/82 |goto Twilight Highlands 58.6,33.4
 step
 _Capture_ Highlands Skunk
-learnpet Highlands Skunk##62907 |achieve 6586/79 |goto Twilight Highlands 46.6,30.2
+learnpet Highlands Skunk##62907 |achieve 6586/27 |goto Twilight Highlands 46.6,30.2
 step
 _Capture_ Grizzly Squirrel
-learnpet Grizzly Squirrel##62818 |achieve 6586/65 |goto Twilight Highlands 46.6,30.2
+learnpet Grizzly Squirrel##62818 |achieve 6586/24 |goto Twilight Highlands 46.6,30.2
 step
 _Capture_ Highlands Turkey
-learnpet Highlands Turkey##62906 |achieve 6586/80 |goto Twilight Highlands 46.6,30.2
+learnpet Highlands Turkey##62906 |achieve 6586/28 |goto Twilight Highlands 46.6,30.2
 step
 _Capture_ Wildhammer Gryphon Hatchling
-learnpet Wildhammer Gryphon Hatchling##62900 |achieve 6586/83 |goto Twilight Highlands 56.6,15.6
+learnpet Wildhammer Gryphon Hatchling##62900 |achieve 6586/88 |goto Twilight Highlands 56.6,15.6
 step
 _Capture_ Tiny Twister
-learnpet Tiny Twister##61703 |achieve 6586/39 |goto Arathi Highlands 47.6,50.4
+learnpet Tiny Twister##61703 |achieve 6586/79 |goto Arathi Highlands 47.6,50.4
 step
 _Capture_ Prairie Dog
-learnpet Prairie Dog##61141 |achieve 6586/19 |goto Arathi Highlands 37.0,40.2
+learnpet Prairie Dog##61141 |achieve 6586/51 |goto Arathi Highlands 37.0,40.2
 step
 _Capture_ Rat
-learnpet Rat##61366 |achieve 6586/8 |goto Arathi Highlands 48.4,40.4
+learnpet Rat##61366 |achieve 6586/53 |goto Arathi Highlands 48.4,40.4
 step
 _Capture_ Grasslands Cottontail
-learnpet Grasslands Cottontail##61704 |achieve 6586/18 |goto Arathi Highlands 24.6,43.6
+learnpet Grasslands Cottontail##61704 |achieve 6586/23 |goto Arathi Highlands 24.6,43.6
 step
 _Capture_ Jade Oozeling
-learnpet Jade Oozeling##61718 |achieve 6586/74 |goto The Hinterlands 58.0,42.6
+learnpet Jade Oozeling##61718 |achieve 6586/34 |goto The Hinterlands 58.0,42.6
 step
 _Capture_ Maggot
-learnpet Maggot##61753 |achieve 6586/6 |goto The Hinterlands 58.0,42.6
+learnpet Maggot##61753 |achieve 6586/43 |goto The Hinterlands 58.0,42.6
 step
 _Capture_ Hare
-learnpet Hare##61751 |achieve 6586/16 |goto The Hinterlands 58.0,42.6
+learnpet Hare##61751 |achieve 6586/25 |goto The Hinterlands 58.0,42.6
 step
 _Capture_ Brown Marmot
-learnpet Brown Marmot##61752 |achieve 6586/73 |goto The Hinterlands 58.0,42.6
+learnpet Brown Marmot##61752 |achieve 6586/11 |goto The Hinterlands 58.0,42.6
 step
 _Capture_ Infested Bear Cub
-learnpet Infested Bear Cub##61758 |achieve 6586/53 |goto Hillsbrad Foothills 31.6,69.8
+learnpet Infested Bear Cub##61758 |achieve 6586/32 |goto Hillsbrad Foothills 31.6,69.8
 step
 _Capture_ Snowshoe Hare
-learnpet Snowshoe Hare##61755 |achieve 6586/55 |goto Hillsbrad Foothills 51.0,22.4
+learnpet Snowshoe Hare##61755 |achieve 6586/68 |goto Hillsbrad Foothills 51.0,22.4
 step
 _Capture_ Red-Tailed Chipmunk
-learnpet Red-Tailed Chipmunk##61757 |achieve 6586/54 |goto Hillsbrad Foothills 40.8,48.4
+learnpet Red-Tailed Chipmunk##61757 |achieve 6586/56 |goto Hillsbrad Foothills 40.8,48.4
 step
 _Capture_ Blighted Squirrel
-learnpet Blighted Squirrel##61890 |achieve 6586/69 |goto Silverpine Forest 51.6,76.2
+learnpet Blighted Squirrel##61890 |achieve 6586/10 |goto Silverpine Forest 51.6,76.2
 step
 _Capture_ Lost of Lordaeron
-learnpet Lost of Lordaeron##61905 |achieve 6586/75 |goto Tirisfal Glades 61.8,59.2
+learnpet Lost of Lordaeron##61905 |achieve 6586/42 |goto Tirisfal Glades 61.8,59.2
 step
 _Capture_ Festering Maggot
-learnpet Festering Maggot##61830 |achieve 6586/40 |goto Eastern Plaguelands 45.4,59.6
+learnpet Festering Maggot##61830 |achieve 6586/18 |goto Eastern Plaguelands 45.4,59.6
 step
 _Capture_ Infected Fawn
-learnpet Infected Fawn##61827 |achieve 6586/41 |goto Eastern Plaguelands 45.2,56.0
+learnpet Infected Fawn##61827 |achieve 6586/30 |goto Eastern Plaguelands 45.2,56.0
 step
 _Capture_ Infected Squirrel
-learnpet Infected Squirrel##61828 |achieve 6586/42 |goto Eastern Plaguelands 45.2,56.0
+learnpet Infected Squirrel##61828 |achieve 6586/31 |goto Eastern Plaguelands 45.2,56.0
 step
 _Capture_ Bat
-learnpet Bat##61829 |achieve 6586/38 |goto Eastern Plaguelands 45.2,56.0
+learnpet Bat##61829 |achieve 6586/6 |goto Eastern Plaguelands 45.2,56.0
 step
 _Capture_ Spider
-learnpet Spider##61327 |achieve 6586/13 |goto Eastern Plaguelands 45.2,56.0
+learnpet Spider##61327 |achieve 6586/69 |goto Eastern Plaguelands 45.2,56.0
 step
 _Capture_ Larva
-learnpet Larva##62022 |achieve 6586/50 |goto Ghostlands 29.6,47.0
+learnpet Larva##62022 |achieve 6586/36 |goto Ghostlands 29.6,47.0
 step
 _Capture_ Spirit Crab
-learnpet Spirit Crab##62034 |achieve 6586/48 |goto Ghostlands 22.6,33.6
+learnpet Spirit Crab##62034 |achieve 6586/71 |goto Ghostlands 22.6,33.6
 step
 _Capture_ Ruby Sapling
-learnpet Ruby Sapling##62020 |achieve 6586/46 |goto Eversong Woods 43.6,88.6
+learnpet Ruby Sapling##62020 |achieve 6586/60 |goto Eversong Woods 43.6,88.6
 step
 _Capture_ Undercity Rat
-learnpet Undercity Rat##61889 |achieve 6586/49 |goto Undercity 62.8,34.2
+learnpet Undercity Rat##61889 |achieve 6586/84 |goto Undercity 62.8,34.2
 step
 _Capture_ Sea Gull
 |tip Even though this is sending you to Kalimdor you will get credit.
-learnpet Sea Gull##62953 |achieve 6586/44 |goto Tanaris 54.8,39.8
+learnpet Sea Gull##62953 |achieve 6586/63 |goto Tanaris 54.8,39.8
 step
 Congratulations, you have _earned_ the _Eastern Kingdoms Safari_ achievement!
 ]])
@@ -11721,313 +11721,307 @@ description="Catch every battle pet in Kalimdor.",
 },[[
 step
 _Capture_ Emerald Boa
-learnpet Emerald Boa##62127 |achieve 6585/78 |goto Northern Barrens 56.4,78.6
+learnpet Emerald Boa##62127 |achieve 6585/24 |goto Northern Barrens 56.4,78.6
 step
 _Capture_ Small Frog
-learnpet Small Frog##61071 |achieve 6585/16 |goto Northern Barrens 56.4,78.6
+learnpet Small Frog##61071 |achieve 6585/73 |goto Northern Barrens 56.4,78.6
 step
 _Capture_ Prairie Dog
-learnpet Prairie Dog##61141 |achieve 6585/30 |goto Northern Barrens 58.4,48.8
+learnpet Prairie Dog##61141 |achieve 6585/51 |goto Northern Barrens 58.4,48.8
 step
 _Capture_ Adder
-learnpet Adder##61325 |achieve 6585/18 |goto Northern Barrens 58.4,48.8
+learnpet Adder##61325 |achieve 6585/1 |goto Northern Barrens 58.4,48.8
 step
 _Capture_ Cheetah Cub
-learnpet Cheetah Cub##62129 |achieve 6585/77 |goto Northern Barrens 51.8,48.8
+learnpet Cheetah Cub##62129 |achieve 6585/12 |goto Northern Barrens 51.8,48.8
 step
 _Capture_ Giraffe Calf
-learnpet Giraffe Calf##62130 |achieve 6585/82 |goto Southern Barrens 50.4,48.2
+learnpet Giraffe Calf##62130 |achieve 6585/30 |goto Southern Barrens 50.4,48.2
 step
 _Capture_ Mouse
-learnpet Mouse##61143 |achieve 6585/23 |goto Dustwallow Marsh 51.0,76.0
+learnpet Mouse##61143 |achieve 6585/46 |goto Dustwallow Marsh 51.0,76.0
 step
 _Capture_ Black Rat
-learnpet Black Rat##61257 |achieve 6585/21 |goto Dustwallow Marsh 51.0,76.0
+learnpet Black Rat##61257 |achieve 6585/7 |goto Dustwallow Marsh 51.0,76.0
 step
 _Capture_ Spawn of Onyxia
-learnpet Spawn of Onyxia##62201 |achieve 6585/62 |goto Dustwallow Marsh 52.0,74.4
+learnpet Spawn of Onyxia##62201 |achieve 6585/76 |goto Dustwallow Marsh 52.0,74.4
 step
 _Capture_ Chicken
 |tip Chickens share spawns with other critters in the area.
-learnpet Chicken##62664 |achieve 6585/13 |goto Dustwallow Marsh 53.2,55.4
+learnpet Chicken##62664 |achieve 6585/11 |goto Dustwallow Marsh 53.2,55.4
 step
 _Capture_ Twilight Iguana
-learnpet Twilight Iguana##62255 |achieve 6585/89 |goto Thousand Needles 53.8,60.8
+learnpet Twilight Iguana##62255 |achieve 6585/95 |goto Thousand Needles 53.8,60.8
 step
 _Capture_ Roach
-learnpet Roach##61169 |achieve 6585/5 |goto Thousand Needles 53.8,60.8
+learnpet Roach##61169 |achieve 6585/59 |goto Thousand Needles 53.8,60.8
 step
 _Capture_ Scorpid
-learnpet Scorpid##61326 |achieve 6585/37 |goto Thousand Needles 53.8,60.8
+learnpet Scorpid##61326 |achieve 6585/65 |goto Thousand Needles 53.8,60.8
 step
 _Capture_ Silithid Hatchling
-|tip Spawns during sandstorms
-learnpet Silithid Hatchling##62258 |achieve 6585/87 |goto Tanaris 36.0,45.6
+|tip Spawns during sandstorms.
+learnpet Silithid Hatchling##62258 |achieve 6585/70 |goto Tanaris 36.0,45.6
 step
 _Capture_ Desert Spider
-learnpet Desert Spider##62186 |achieve 6585/54 |goto Tanaris 50.6,30.4
+learnpet Desert Spider##62186 |achieve 6585/20 |goto Tanaris 50.6,30.4
 step
 _Capture_ Stripe-Tailed Scorpid
-learnpet Stripe-Tailed Scorpid##61440 |achieve 6585/36 |goto Tanaris 50.6,30.4
+learnpet Stripe-Tailed Scorpid##61440 |achieve 6585/85 |goto Tanaris 50.6,30.4
 step
 _Capture_ Stinkbug
-learnpet Stinkbug##62256 |achieve 6585/88 |goto Tanaris 50.6,30.4
+learnpet Stinkbug##62256 |achieve 6585/82 |goto Tanaris 50.6,30.4
 step
 _Capture_ Gold Beetle
-learnpet Gold Beetle##61438 |achieve 6585/85 |goto Tanaris 50.6,30.4
+learnpet Gold Beetle##61438 |achieve 6585/31 |goto Tanaris 50.6,30.4
 step
 _Capture_ Rattlesnake
-learnpet Rattlesnake##61439 |achieve 6585/34 |goto Tanaris 50.6,30.4
+learnpet Rattlesnake##61439 |achieve 6585/56 |goto Tanaris 50.6,30.4
 step
 _Capture_ Sand Kitten
-learnpet Sand Kitten##62257 |achieve 6585/86 |goto Tanaris 50.6,30.4
+learnpet Sand Kitten##62257 |achieve 6585/63 |goto Tanaris 50.6,30.4
 step
 _Capture_ Sea Gull
-learnpet Sea Gull##62953 |achieve 6585/35 |goto Tanaris 54.8,39.8
+learnpet Sea Gull##62953 |achieve 6585/66 |goto Tanaris 54.8,39.8
 step
 _Capture_ Long-Tailed Mole
 learnpet Long-Tailed Mole##61317 |achieve 6585/40 |goto Un'Goro Crater 55.0,61.0
 step
 _Capture_ Cockroach
-learnpet Cockroach##61384 |achieve 6585/39 |goto Un'Goro Crater 50.8,25.4
+learnpet Cockroach##61384 |achieve 6585/13 |goto Un'Goro Crater 50.8,25.4
 step
 _Capture_ Fire Beetle
-learnpet Fire Beetle##61328 |achieve 6585/26 |goto Un'Goro Crater 51.0,49.8
+learnpet Fire Beetle##61328 |achieve 6585/25 |goto Un'Goro Crater 51.0,49.8
 step
 _Capture_ Ash Lizard
-learnpet Ash Lizard##62364 |achieve 6585/70 |goto Un'Goro Crater 51.0,49.8
+learnpet Ash Lizard##62364 |achieve 6585/5 |goto Un'Goro Crater 51.0,49.8
 step
 _Capture_ Parrot
-learnpet Parrot##61313 |achieve 6585/41 |goto Un'Goro Crater 36.4,66.8
+learnpet Parrot##61313 |achieve 6585/50 |goto Un'Goro Crater 36.4,66.8
 step
 _Capture_ Tree Python
-learnpet Tree Python##61318 |achieve 6585/42 |goto Un'Goro Crater 68.6,76.0
+learnpet Tree Python##61318 |achieve 6585/92 |goto Un'Goro Crater 68.6,76.0
 step
 _Capture_ Beetle
-learnpet Beetle##61319 |achieve 6585/1 |goto Un'Goro Crater 33.6,72.8
+learnpet Beetle##61319 |achieve 6585/8 |goto Un'Goro Crater 33.6,72.8
 step
 _Capture_ Spotted Bell Frog
-learnpet Spotted Bell Frog##62370 |achieve 6585/96 |goto Un'Goro Crater 65.2,69.8
+learnpet Spotted Bell Frog##62370 |achieve 6585/80 |goto Un'Goro Crater 65.2,69.8
 step
 _Capture_ Diemetradon Hatchling
-learnpet Diemetradon Hatchling##62375 |achieve 6585/90 |goto Un'Goro Crater 34.8,65.6
+learnpet Diemetradon Hatchling##62375 |achieve 6585/21 |goto Un'Goro Crater 34.8,65.6
 step
 _Capture_ Rock Viper
-learnpet Rock Viper##62184 |achieve 6585/27 |goto Silithus 31.4,14.4
+learnpet Rock Viper##62184 |achieve 6585/61 |goto Silithus 31.4,14.4
 step
 _Capture_ Spiky Lizard
-learnpet Spiky Lizard##61441 |achieve 6585/32 |goto Silithus 40.8,35.0
+learnpet Spiky Lizard##61441 |achieve 6585/78 |goto Silithus 40.8,35.0
 step
 _Capture_ Scarab Hatchling
-learnpet Scarab Hatchling##62524 |achieve 6585/80 |goto Silithus 37.6,77.8
+learnpet Scarab Hatchling##62524 |achieve 6585/64 |goto Silithus 37.6,77.8
 step
 _Capture_ Qiraji Guardling
-|tip Only spawns during summer
-learnpet Qiraji Guardling##62526 |achieve 6585/79 |goto Silithus 37.6,77.8
+|tip Only spawns during summer.
+learnpet Qiraji Guardling##62526 |achieve 6585/52 |goto Silithus 37.6,77.8
 step
 _Capture_ Sidewinder
-learnpet Sidewinder##62523 |achieve 6585/81 |goto Silithus 37.0,81.4
+learnpet Sidewinder##62523 |achieve 6585/69 |goto Silithus 37.0,81.4
 step
 _Capture_ Squirrel
-learnpet Squirrel##61081 |achieve 6585/6 |goto Feralas 51.2,15.6
+learnpet Squirrel##61081 |achieve 6585/81 |goto Feralas 51.2,15.6
 step
 _Capture_ Nether Faerie Dragon
-learnpet Nether Faerie Dragon##62395 |achieve 6585/65 |goto Feralas 56.6,44.6
+learnpet Nether Faerie Dragon##62395 |achieve 6585/47 |goto Feralas 56.6,44.6
 step
 _Capture_ Snake
-learnpet Snake##61142 |achieve 6585/24 |goto Feralas 56.6,44.6
+learnpet Snake##61142 |achieve 6585/74 |goto Feralas 56.6,44.6
 step
 _Capture_ Gazelle Fawn
-learnpet Gazelle Fawn##62176 |achieve 6585/76 |goto Mulgore 38.6,61.0
+learnpet Gazelle Fawn##62176 |achieve 6585/29 |goto Mulgore 38.6,61.0
 step
 _Capture_ Amethyst Shale Hatchling
-learnpet Amethyst Shale Hatchling##62182 |achieve 6585/55 |goto Desolace 30.4,59.6
+learnpet Amethyst Shale Hatchling##62182 |achieve 6585/4 |goto Desolace 30.4,59.6
 step
 _Capture_ Topaz Shale Hatchling
-learnpet Topaz Shale Hatchling##62181 |achieve 6585/59 |goto Desolace 35.0,64.0
+learnpet Topaz Shale Hatchling##62181 |achieve 6585/91 |goto Desolace 35.0,64.0
 step
 _Capture_ Stone Armadillo
-|tip Spawns at night
-learnpet Stone Armadillo##62187 |achieve 6585/58 |goto Desolace 70.8,46.6
+|tip Spawns at night.
+learnpet Stone Armadillo##62187 |achieve 6585/83 |goto Desolace 70.8,46.6
 step
 _Capture_ Elfin Rabbit
-learnpet Elfin Rabbit##62178 |achieve 6585/56 |goto Desolace 52.6,47.4
+learnpet Elfin Rabbit##62178 |achieve 6585/23 |goto Desolace 52.6,47.4
 step
 _Capture_ Red-Tailed Chipmunk
-learnpet Red-Tailed Chipmunk##61757 |achieve 6585/12 |goto Desolace 52.6,47.4
+learnpet Red-Tailed Chipmunk##61757 |achieve 6585/58 |goto Desolace 52.6,47.4
 step
 _Capture_ Forest Moth
-learnpet Forest Moth##62177 |achieve 6585/45 |goto Desolace 52.6,47.4
+learnpet Forest Moth##62177 |achieve 6585/27 |goto Desolace 52.6,47.4
 step
 _Capture_ Horny Toad
-learnpet Horny Toad##62185 |achieve 6585/57 |goto Desolace 64.4,23.2
+learnpet Horny Toad##62185 |achieve 6585/35 |goto Desolace 64.4,23.2
 step
 _Capture_ Spider
-learnpet Spider##61327 |achieve 6585/11 |goto Stonetalon Mountains 57.0,72.0
+learnpet Spider##61327 |achieve 6585/77 |goto Stonetalon Mountains 57.0,72.0
 step
 _Capture_ Venomspitter Hatchling
-learnpet Venomspitter Hatchling##62191 |achieve 6585/84 |goto Stonetalon Mountains 57.0,72.0
+learnpet Venomspitter Hatchling##62191 |achieve 6585/97 |goto Stonetalon Mountains 57.0,72.0
 step
 _Capture_ Rabbit
-learnpet Rabbit##61080 |achieve 6585/9 |goto Stonetalon Mountains 63.6,61.6
+learnpet Rabbit##61080 |achieve 6585/53 |goto Stonetalon Mountains 63.6,61.6
 step
 _Capture_ Rabid Nut Varmint 5000
-learnpet Rabid Nut Varmint 5000##62120 |achieve 6585/47 |goto Stonetalon Mountains 66.4,59.6
+learnpet Rabid Nut Varmint 5000##62120 |achieve 6585/54 |goto Stonetalon Mountains 66.4,59.6
 step
 _Capture_ Alpine Chipmunk
-learnpet Alpine Chipmunk##62189 |achieve 6585/69 |goto Stonetalon Mountains 52.0,51.2
+learnpet Alpine Chipmunk##62189 |achieve 6585/2 |goto Stonetalon Mountains 52.0,51.2
 step
 _Capture_ Mountain Skunk
-learnpet Mountain Skunk##61677 |achieve 6585/33 |goto Stonetalon Mountains 51.2,52.0
+learnpet Mountain Skunk##61677 |achieve 6585/45 |goto Stonetalon Mountains 51.2,52.0
 step
 _Capture_ Coral Snake
-learnpet Coral Snake##62190 |achieve 6585/83 |goto Stonetalon Mountains 64.4,52.4
+learnpet Coral Snake##62190 |achieve 6585/14 |goto Stonetalon Mountains 64.4,52.4
 step
 _Capture_ Rat
-learnpet Rat##61366 |achieve 6585/4 |goto Ashenvale 12.4,34.2
+learnpet Rat##61366 |achieve 6585/55 |goto Ashenvale 12.4,34.2
 step
 _Capture_ Rusty Snail
-learnpet Rusty Snail##62313 |achieve 6585/46 |goto Ashenvale 14.0,28.4
+learnpet Rusty Snail##62313 |achieve 6585/62 |goto Ashenvale 14.0,28.4
 step
 _Capture_ Toad
-learnpet Toad##61369 |achieve 6585/8 |goto Ashenvale 80.8,63.8
+learnpet Toad##61369 |achieve 6585/89 |goto Ashenvale 80.8,63.8
 step
 _Capture_ Frog
-learnpet Frog##62312 |achieve 6585/2 |goto Ashenvale 80.8,63.8
+learnpet Frog##62312 |achieve 6585/28 |goto Ashenvale 80.8,63.8
 step
 _Capture_ Maggot
-learnpet Maggot##61753 |achieve 6585/3 |goto Ashenvale 83.2,69.0
+learnpet Maggot##61753 |achieve 6585/42 |goto Ashenvale 83.2,69.0
 step
 _Capture_ Water Snake
 learnpet Water Snake##61367 |achieve 6585/98 |goto Durotar 39.0,41.6
 step
 _Capture_ Hare
-learnpet Hare##61751 |achieve 6585/19 |goto Durotar 54.0,18.2
+learnpet Hare##61751 |achieve 6585/33 |goto Durotar 54.0,18.2
 step
 _Capture_ Creepy Crawly
-learnpet Creepy Crawly##62116 |achieve 6585/20 |goto Durotar 48.6,18.8
+learnpet Creepy Crawly##62116 |achieve 6585/15 |goto Durotar 48.6,18.8
 step
 _Capture_ Spiny Lizard
-learnpet Spiny Lizard##62114 |achieve 6585/61 |goto Durotar 57.8,15.4
+learnpet Spiny Lizard##62114 |achieve 6585/79 |goto Durotar 57.8,15.4
 step
 _Capture_ Dung Beetle
-learnpet Dung Beetle##62115 |achieve 6585/60 |goto Durotar 57.8,15.4
+learnpet Dung Beetle##62115 |achieve 6585/22 |goto Durotar 57.8,15.4
 step
 _Capture_ Skunk
-learnpet Skunk##61255 |achieve 6585/10 |goto Azshara 42.2,67.8
+learnpet Skunk##61255 |achieve 6585/72 |goto Azshara 42.2,67.8
 step
 _Capture_ Shore Crab
-learnpet Shore Crab##61158 |achieve 6585/49 |goto Azshara 42.4,39.8
+learnpet Shore Crab##61158 |achieve 6585/68 |goto Azshara 42.4,39.8
 step
 _Capture_ Turquoise Turtle
-learnpet Turquoise Turtle##62121 |achieve 6585/50 |goto Azshara 42.4,39.8
+learnpet Turquoise Turtle##62121 |achieve 6585/93 |goto Azshara 42.4,39.8
 step
 _Capture_ Twilight Spider
-learnpet Twilight Spider##62117 |achieve 6585/22 |goto Azshara 69.2,16.6
+learnpet Twilight Spider##62117 |achieve 6585/96 |goto Azshara 69.2,16.6
 step
 _Capture_ Twilight Beetle
-learnpet Twilight Beetle##62118 |achieve 6585/28 |goto Azshara 69.2,16.6
+learnpet Twilight Beetle##62118 |achieve 6585/94 |goto Azshara 69.2,16.6
 step
 _Capture_ Nordrassil Wisp
-learnpet Nordrassil Wisp##62888 |achieve 6585/74 |goto Mount Hyjal 58.6,27.6
+learnpet Nordrassil Wisp##62888 |achieve 6585/48 |goto Mount Hyjal 58.6,27.6
 step
 _Capture_ Silky Moth
-learnpet Silky Moth##62373 |achieve 6585/68 |goto Mount Hyjal 58.6,27.6
+learnpet Silky Moth##62373 |achieve 6585/71 |goto Mount Hyjal 58.6,27.6
 step
 _Capture_ Death's Head Cockroach
-learnpet Death's Head Cockroach##62887 |achieve 6585/72 |goto Mount Hyjal 45.0,21.2
+learnpet Death's Head Cockroach##62887 |achieve 6585/19 |goto Mount Hyjal 45.0,21.2
 step
 _Capture_ Carrion Rat
-learnpet Carrion Rat##62885 |achieve 6585/71 |goto Mount Hyjal 78.8,49.0
+learnpet Carrion Rat##62885 |achieve 6585/10 |goto Mount Hyjal 78.8,49.0
 step
 _Capture_ Fire-Proof Roach
-learnpet Fire-Proof Roach##62886 |achieve 6585/73 |goto Mount Hyjal 85.2,59.6
+learnpet Fire-Proof Roach##62886 |achieve 6585/26 |goto Mount Hyjal 85.2,59.6
 step
 _Capture_ Bat
 |tip If you are having trouble finding one of these in this area try fighting other pets in the area as the Wharf Rat may be a secondary for many of them.
-learnpet Bat##61829 |achieve 6585/25 |goto Mount Hyjal 41.4,24.6
+learnpet Bat##61829 |achieve 6585/6 |goto Mount Hyjal 41.4,24.6
 step
 _Capture_ Minfernal
 |tip Rare pet spawn. Killing critters around the area helps speed up the process.
-learnpet Minfernal##62317 |achieve 6585/63 |goto Felwood 45.8,42.6
+learnpet Minfernal##62317 |achieve 6585/43 |goto Felwood 45.8,42.6
 step
 _Capture_ Tainted Cockroach
-learnpet Tainted Cockroach##62314 |achieve 6585/66 |goto Felwood 39.0,68.6
+learnpet Tainted Cockroach##62314 |achieve 6585/86 |goto Felwood 39.0,68.6
 step
 _Capture_ Tainted Moth
-learnpet Tainted Moth##62315 |achieve 6585/67 |goto Felwood 47.4,33.2
+learnpet Tainted Moth##62315 |achieve 6585/87 |goto Felwood 47.4,33.2
 step
 _Capture_ Tainted Rat
-learnpet Tainted Rat##62316 |achieve 6585/64 |goto Felwood 47.4,33.2
+learnpet Tainted Rat##62316 |achieve 6585/88 |goto Felwood 47.4,33.2
 step
 _Capture_ Robo-Chick
-learnpet Robo-Chick##62119 |achieve 6585/48 |goto Winterspring 59.8,50.0
+learnpet Robo-Chick##62119 |achieve 6585/60 |goto Winterspring 59.8,50.0
 step
 _Capture_ Crystal Spider
-learnpet Crystal Spider##62435 |achieve 6585/44 |goto Winterspring 49.8,57.0
+learnpet Crystal Spider##62435 |achieve 6585/17 |goto Winterspring 49.8,57.0
 step
-_Capture_ Snowy Owl |tip Only spawns in winter from September to April
-learnpet Snowy Owl##7554 |achieve 6585/97 |goto Winterspring 61.4,70.2
+_Capture_ Snowy Owl
+|tip Only spawns in winter from September to April.
+learnpet Snowy Owl##7554 |achieve 6585/75 |goto Winterspring 61.4,70.2
 step
 _Capture_ Alpine Hare
-learnpet Alpine Hare##61690 |achieve 6585/43 |goto Winterspring 58.4,70.2
+learnpet Alpine Hare##61690 |achieve 6585/3 |goto Winterspring 58.4,70.2
 step
 _Capture_ Darkshore Cub
-learnpet Darkshore Cub##62250 |achieve 6585/17 |goto Darkshore 42.2,76.6
+learnpet Darkshore Cub##62250 |achieve 6585/18 |goto Darkshore 42.2,76.6
 step
 _Capture_ Shimmershell Snail
-learnpet Shimmershell Snail##62246 |achieve 6585/52 |goto Darkshore 37.4,73.4
+learnpet Shimmershell Snail##62246 |achieve 6585/67 |goto Darkshore 37.4,73.4
 step
 _Capture_ Strand Crab
-learnpet Strand Crab##61312 |achieve 6585/7 |goto Darkshore 37.4,73.4
+learnpet Strand Crab##61312 |achieve 6585/84 |goto Darkshore 37.4,73.4
 step
 _Capture_ Grey Moth
-learnpet Grey Moth##62050 |achieve 6585/51 |goto Azuremyst Isle 29.6,62.6
+learnpet Grey Moth##62050 |achieve 6585/32 |goto Azuremyst Isle 29.6,62.6
 step
 _Capture_ Infected Fawn
-learnpet Infected Fawn##61827 |achieve 6585/14 |goto Bloodmyst Isle 58.8,88.2
+learnpet Infected Fawn##61827 |achieve 6585/36 |goto Bloodmyst Isle 58.8,88.2
 step
 _Capture_ Infected Squirrel
-learnpet Infected Squirrel##61828 |achieve 6585/15 |goto Bloodmyst Isle 48.4,83.4
+learnpet Infected Squirrel##61828 |achieve 6585/37 |goto Bloodmyst Isle 48.4,83.4
 step
 _Capture_ Ravager Hatchling
-learnpet Ravager Hatchling##62051 |achieve 6585/53 |goto Bloodmyst Isle 58.8,64.6
+learnpet Ravager Hatchling##62051 |achieve 6585/57 |goto Bloodmyst Isle 58.8,64.6
 step
 _Capture_ Crested Owl
-learnpet Crested Owl##62242 |achieve 6585/98 |goto Teldrassil 42.2,60.6
+learnpet Crested Owl##62242 |achieve 6585/16 |goto Teldrassil 42.2,60.6
 step
 _Capture_ Tol'vir Scarab
-learnpet Tol'vir Scarab##62899 |achieve 6585/95 |goto Uldum 41.4,40.4
+learnpet Tol'vir Scarab##62899 |achieve 6585/90 |goto Uldum 41.4,40.4
 step
 _Capture_ Locust
-learnpet Locust##62893 |achieve 6585/92 |goto Uldum 57.0,49.4
+learnpet Locust##62893 |achieve 6585/39 |goto Uldum 57.0,49.4
 step
 _Capture_ Mac Frog
-learnpet Mac Frog##62892 |achieve 6585/93 |goto Uldum 57.0,49.4
+learnpet Mac Frog##62892 |achieve 6585/41 |goto Uldum 57.0,49.4
 step
 _Capture_ Oasis Moth
-learnpet Oasis Moth##62895 |achieve 6585/94 |goto Uldum 60.8,46.0
+learnpet Oasis Moth##62895 |achieve 6585/49 |goto Uldum 60.8,46.0
 step
 _Capture_ Horned Lizard
-learnpet Horned Lizard##62894 |achieve 6585/38 |goto Uldum 69.2,45.8
+learnpet Horned Lizard##62894 |achieve 6585/34 |goto Uldum 69.2,45.8
 step
 _Capture_ Leopard Scorpid
-learnpet Leopard Scorpid##62896 |achieve 6585/91 |goto Uldum 46.0,51.2
-step
-talk Zidormi##88206 |goto Blasted Lands/0 48.1,7.3 |walk
-_Tell_ her "Show me the Blasted Lands before the invasion."
-|tip You can go back to her to change it back again afterwards.
-_Capture_ Scorpling
-|tip Even though this is sending you to Eastern Kingdoms you will get credit.
-learnpet Scorpling##61329 |achieve 6585/31 |goto Blasted Lands 60.0,58.6
+learnpet Leopard Scorpid##62896 |achieve 6585/38 |goto Uldum 46.0,51.2
 step
 _Capture_ Mountain Cottontail
 |tip Even though this is sending you to Eastern Kingdoms you will get credit.
-learnpet Mountain Cottontail##61167 |achieve 6585/29 |goto Redridge Mountains 16.0,46.2
+learnpet Mountain Cottontail##61167 |achieve 6585/44 |goto Redridge Mountains 16.0,46.2
 step
 _Capture_ Biletoad
 |tip Even though this is sending you to Northrend you will get credit.
-learnpet Biletoad##62815 |achieve 6585/75 |goto Sholazar Basin 47.6,66.4
+learnpet Biletoad##62815 |achieve 6585/9 |goto Sholazar Basin 47.6,66.4
 step
 Congratulations, you have _earned_ the _Kalimdor Safari_ achievement!
 ]])
@@ -12037,63 +12031,63 @@ description="Catch every battle pet in Northrend.",
 },[[
 step
 _Capture_ Shore Crab
-learnpet Shore Crab##61158 |achieve 6588/10 |goto Borean Tundra 41.8,18.4
+learnpet Shore Crab##61158 |achieve 6588/23 |goto Borean Tundra 41.8,18.4
 step
 _Capture_ Borean Marmot
-learnpet Borean Marmot##62695 |achieve 6588/2 |goto Borean Tundra 49.0,26.6
+learnpet Borean Marmot##62695 |achieve 6588/4 |goto Borean Tundra 49.0,26.6
 step
 _Capture_ Oily Slimeling
-learnpet Oily Slimeling##62697 |achieve 6588/16 |goto Borean Tundra 58.2,23.6
+learnpet Oily Slimeling##62697 |achieve 6588/18 |goto Borean Tundra 58.2,23.6
 step
 _Capture_ Arctic Hare
-learnpet Arctic Hare##62693 |achieve 6588/1 |goto Borean Tundra 76.2,18.6
+learnpet Arctic Hare##62693 |achieve 6588/2 |goto Borean Tundra 76.2,18.6
 step
 _Capture_ Tundra Penguin
-learnpet Tundra Penguin##62835 |achieve 6588/24 |goto Dragonblight 10.8,63.2
+learnpet Tundra Penguin##62835 |achieve 6588/31 |goto Dragonblight 10.8,63.2
 step
 _Capture_ Dragonbone Hatchling
-learnpet Dragonbone Hatchling##62852 |achieve 6588/6 |goto Dragonblight 55.0,41.2
+learnpet Dragonbone Hatchling##62852 |achieve 6588/8 |goto Dragonblight 55.0,41.2
 step
 _Capture_ Strand Crab
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Dragonblight.
-learnpet Strand Crab##61312 |achieve 6588/5 |goto Dragonblight 55.0,41.2
+learnpet Strand Crab##61312 |achieve 6588/28 |goto Dragonblight 55.0,41.2
 step
 _Capture_ Stunted Shardhorn
-learnpet Stunted Shardhorn##62816 |achieve 6588/28 |goto Sholazar Basin 39.6,43.4
+learnpet Stunted Shardhorn##62816 |achieve 6588/29 |goto Sholazar Basin 39.6,43.4
 step
 _Capture_ Biletoad
-learnpet Biletoad##62815 |achieve 6588/27 |goto Sholazar Basin 53.4,58.2
+learnpet Biletoad##62815 |achieve 6588/3 |goto Sholazar Basin 53.4,58.2
 step
 _Capture_ Snake
-learnpet Snake##61142 |achieve 6588/21 |goto Sholazar Basin 24.0,50.2
+learnpet Snake##61142 |achieve 6588/25 |goto Sholazar Basin 24.0,50.2
 step
 _Capture_ Cockroach
-learnpet Cockroach##61384 |achieve 6588/23 |goto Icecrown 68.4,67.6
+learnpet Cockroach##61384 |achieve 6588/6 |goto Icecrown 68.4,67.6
 step
 _Capture_ Scourged Whelpling
-learnpet Scourged Whelpling##62854 |achieve 6588/26 |goto Icecrown 72.2,39.4
+learnpet Scourged Whelpling##62854 |achieve 6588/22 |goto Icecrown 72.2,39.4
 step
 _Capture_ Arctic Fox Kit
 |tip It must be snowing on your home realm to see these guys.
-learnpet Arctic Fox Kit##62864 |achieve 6588/29 |goto The Storm Peaks 31.0,48.2
+learnpet Arctic Fox Kit##62864 |achieve 6588/1 |goto The Storm Peaks 31.0,48.2
 step
 _Capture_ Mountain Skunk
-learnpet Mountain Skunk##61677 |achieve 6588/15 |goto The Storm Peaks 65.2,49.2
+learnpet Mountain Skunk##61677 |achieve 6588/16 |goto The Storm Peaks 65.2,49.2
 step
 _Capture_ Mouse
-learnpet Mouse##61143 |achieve 6588/12 |goto Crystalsong Forest 36.6,56.4
+learnpet Mouse##61143 |achieve 6588/17 |goto Crystalsong Forest 36.6,56.4
 step
 _Capture_ Squirrel
-learnpet Squirrel##61081 |achieve 6588/3 |goto Crystalsong Forest 44.0,45.6
+learnpet Squirrel##61081 |achieve 6588/27 |goto Crystalsong Forest 44.0,45.6
 step
 _Capture_ Water Waveling
-learnpet Water Waveling##62820 |achieve 6588/31 |goto Zul'Drak 41.2,78.6
+learnpet Water Waveling##62820 |achieve 6588/33 |goto Zul'Drak 41.2,78.6
 step
 _Capture_ Huge Toad
-learnpet Huge Toad##61368 |achieve 6588/30 |goto Zul'Drak 44.0,60.6
+learnpet Huge Toad##61368 |achieve 6588/13 |goto Zul'Drak 44.0,60.6
 step
 _Capture_ Grizzly Squirrel
-learnpet Grizzly Squirrel##62818 |achieve 6588/11 |goto Grizzly Hills 35.8,56.6
+learnpet Grizzly Squirrel##62818 |achieve 6588/12 |goto Grizzly Hills 35.8,56.6
 step
 _Capture_ Fawn
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Grizzly Hills.
@@ -12103,46 +12097,46 @@ _Capture_ Imperial Eagle Chick
 learnpet Imperial Eagle Chick##62819 |achieve 6588/14 |goto Grizzly Hills 23.0,39.6
 step
 _Capture_ Fjord Worg Pup
-learnpet Fjord Worg Pup##62669 |achieve 6588/13 |goto Howling Fjord 30.4,62.2
+learnpet Fjord Worg Pup##62669 |achieve 6588/11 |goto Howling Fjord 30.4,62.2
 step
 _Capture_ Chicken
-learnpet Chicken##62664 |achieve 6588/4 |goto Howling Fjord 31.8,43.6
+learnpet Chicken##62664 |achieve 6588/5 |goto Howling Fjord 31.8,43.6
 step
 _Capture_ Rat
-learnpet Rat##61366 |achieve 6588/8 |goto Howling Fjord 46.6,31.6
+learnpet Rat##61366 |achieve 6588/20 |goto Howling Fjord 46.6,31.6
 step
 _Capture_ Maggot
-learnpet Maggot##61753 |achieve 6588/17 |goto Howling Fjord 50.8,54.6
+learnpet Maggot##61753 |achieve 6588/15 |goto Howling Fjord 50.8,54.6
 step
 _Enter_ the cave here |goto Howling Fjord 56.7,49.3 < 20 |walk
 _Capture_ Devouring Maggot
-learnpet Devouring Maggot##62640 |achieve 6588/33 |goto Howling Fjord 57.6,56.6
+learnpet Devouring Maggot##62640 |achieve 6588/7 |goto Howling Fjord 57.6,56.6
 step
 _Capture_ Fjord Rat
-learnpet Fjord Rat##62641 |achieve 6588/18 |goto Howling Fjord 58.6,54.8
+learnpet Fjord Rat##62641 |achieve 6588/10 |goto Howling Fjord 58.6,54.8
 step
 _Capture_ Turkey
 |tip Can be found as a secondary pet so look for them in battles with other creatures in Howling Fjord.
 learnpet Turkey##62648 |achieve 6588/32 |goto Howling Fjord 60.0,60.4
 step
 _Capture_ Skunk
-learnpet Skunk##61255 |achieve 6588/20 |goto Howling Fjord 52.6,61.6
+learnpet Skunk##61255 |achieve 6588/24 |goto Howling Fjord 52.6,61.6
 step
 _Capture_ Rabbit
 |tip This shares a spawn critters around the area.
-learnpet Rabbit##61080 |achieve 6588/7 |goto Howling Fjord 52.6,61.6
+learnpet Rabbit##61080 |achieve 6588/19 |goto Howling Fjord 52.6,61.6
 step
 _Capture_ Roach
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Howling Fjord.
-learnpet Roach##61169 |achieve 6588/19 |goto Howling Fjord 52.6,61.6
+learnpet Roach##61169 |achieve 6588/21 |goto Howling Fjord 52.6,61.6
 step
 _Capture_ Spider
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Howling Fjord.
-learnpet Spider##61327 |achieve 6588/22 |goto Howling Fjord 52.6,61.6
+learnpet Spider##61327 |achieve 6588/26 |goto Howling Fjord 52.6,61.6
 step
 _Capture_ Toad
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Howling Fjord.
-learnpet Toad##61369 |achieve 6588/25 |goto Howling Fjord 52.6,61.6
+learnpet Toad##61369 |achieve 6588/30 |goto Howling Fjord 52.6,61.6
 step
 Congratulations, you have _earned_ the _Northrend Safari_ achievement!
 ]])
@@ -12152,86 +12146,86 @@ description="Catch every battle pet in Outland.",
 },[[
 step
 _Capture_ Adder
-learnpet Adder##61325 |achieve 6587/6 |goto Hellfire Peninsula 63.0,52.2
+learnpet Adder##61325 |achieve 6587/1 |goto Hellfire Peninsula 63.0,52.2
 step
 _Capture_ Scorpid
-learnpet Scorpid##61326 |achieve 6587/5 |goto Hellfire Peninsula 63.0,52.2
+learnpet Scorpid##61326 |achieve 6587/16 |goto Hellfire Peninsula 63.0,52.2
 step
 _Capture_ Snake
-learnpet Snake##61142 |achieve 6587/14 |goto Zangarmarsh 80.0,48.6
+learnpet Snake##61142 |achieve 6587/20 |goto Zangarmarsh 80.0,48.6
 step
 _Capture_ Sporeling Sprout
-learnpet Sporeling Sprout##62564 |achieve 6587/25 |goto Zangarmarsh 18.8,51.8
+learnpet Sporeling Sprout##62564 |achieve 6587/21 |goto Zangarmarsh 18.8,51.8
 step
 _Capture_ Small Frog
-learnpet Small Frog##61071 |achieve 6587/23 |goto Zangarmarsh 18.6,54.0
+learnpet Small Frog##61071 |achieve 6587/19 |goto Zangarmarsh 18.6,54.0
 step
 _Enter_ the cave here |goto Blade's Edge Mountains 51.6,75.4 < 20 |walk
 _Capture_ Skittering Cavern Crawler
-learnpet Skittering Cavern Crawler##62638 |achieve 6587/8 |goto Blade's Edge Mountains 52.6,88.8
+learnpet Skittering Cavern Crawler##62638 |achieve 6587/17 |goto Blade's Edge Mountains 52.6,88.8
 step
 _Capture_ Rabbit
-learnpet Rabbit##61080 |achieve 6587/1 |goto Blade's Edge Mountains 53.4,71.5
+learnpet Rabbit##61080 |achieve 6587/12 |goto Blade's Edge Mountains 53.4,71.5
 step
 _Capture_ Rock Viper
-learnpet Rock Viper##62184 |achieve 6587/3 |goto Blade's Edge Mountains 57.8,63.8
+learnpet Rock Viper##62184 |achieve 6587/14 |goto Blade's Edge Mountains 57.8,63.8
 step
 _Capture_ Scalded Basilisk Hatchling
-learnpet Scalded Basilisk Hatchling##62628 |achieve 6587/4 |goto Blade's Edge Mountains 73.0,19.4
+learnpet Scalded Basilisk Hatchling##62628 |achieve 6587/15 |goto Blade's Edge Mountains 73.0,19.4
 step
 _Capture_ Brown Marmot
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Blade's Edge Mountains.
-learnpet Brown Marmot##61752 |achieve 6587/2 |goto Blade's Edge Mountains 73.0,19.4
+learnpet Brown Marmot##61752 |achieve 6587/3 |goto Blade's Edge Mountains 73.0,19.4
 step
 _Capture_ Fledgling Nether Ray
-learnpet Fledgling Nether Ray##62627 |achieve 6587/15 |goto Netherstorm 29.8,36.8
+learnpet Fledgling Nether Ray##62627 |achieve 6587/7 |goto Netherstorm 29.8,36.8
 step
 _Capture_ Mouse
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Netherstorm.
-learnpet Mouse##61143 |achieve 6587/16 |goto Netherstorm 29.8,36.8
+learnpet Mouse##61143 |achieve 6587/9 |goto Netherstorm 29.8,36.8
 step
 _Capture_ Nether Roach
-learnpet Nether Roach##62625 |achieve 6587/17 |goto Netherstorm 29.8,63.4
+learnpet Nether Roach##62625 |achieve 6587/10 |goto Netherstorm 29.8,63.4
 step
 _Capture_ Cat
 |tip Can be found only as a secondary pet so look for them in battles with other creatures in Netherstorm.
-learnpet Cat##62019 |achieve 6587/12 |goto Netherstorm 29.8,63.4
+learnpet Cat##62019 |achieve 6587/4 |goto Netherstorm 29.8,63.4
 step
 _Capture_ Flayer Youngling
-learnpet Flayer Youngling##62555 |achieve 6587/7 |goto Terokkar Forest 50.6,11.0
+learnpet Flayer Youngling##62555 |achieve 6587/6 |goto Terokkar Forest 50.6,11.0
 step
 _Capture_ Rat
-learnpet Rat##61366 |achieve 6587/11 |goto Terokkar Forest 54.2,32.8
+learnpet Rat##61366 |achieve 6587/13 |goto Terokkar Forest 54.2,32.8
 step
 _Capture_ Squirrel
-learnpet Squirrel##61081 |achieve 6587/13 |goto Terokkar Forest 47.6,22.4
+learnpet Squirrel##61081 |achieve 6587/22 |goto Terokkar Forest 47.6,22.4
 step
 _Capture_ Skunk
-learnpet Skunk##61255 |achieve 6587/21 |goto Terokkar Forest 57.4,38.4
+learnpet Skunk##61255 |achieve 6587/18 |goto Terokkar Forest 57.4,38.4
 step
 _Capture_ Warpstalker Hatchling
 learnpet Warpstalker Hatchling##62583 |achieve 6587/26 |goto Terokkar Forest 50.8,28.6
 step
 _Capture_ Stripe-Tailed Scorpid
-learnpet Stripe-Tailed Scorpid##61440 |achieve 6587/22 |goto Terokkar Forest 39.4,54.2
+learnpet Stripe-Tailed Scorpid##61440 |achieve 6587/23 |goto Terokkar Forest 39.4,54.2
 step
 _Capture_ Prairie Dog
-learnpet Prairie Dog##61141 |achieve 6587/10 |goto Nagrand 52.4,31.4
+learnpet Prairie Dog##61141 |achieve 6587/11 |goto Nagrand 52.4,31.4
 step
 _Capture_ Toad
-learnpet Toad##61369 |achieve 6587/24 |goto Nagrand 57.2,32.2
+learnpet Toad##61369 |achieve 6587/25 |goto Nagrand 57.2,32.2
 step
 _Capture_ Clefthoof Runt
-learnpet Clefthoof Runt##62620 |achieve 6587/9 |goto Nagrand 46.0,69.6
+learnpet Clefthoof Runt##62620 |achieve 6587/5 |goto Nagrand 46.0,69.6
 step
 _Capture_ Tainted Cockroach
-learnpet Tainted Cockroach##62314 |achieve 6587/20 |goto Shadowmoon Valley 51.8,31.6
+learnpet Tainted Cockroach##62314 |achieve 6587/24 |goto Shadowmoon Valley 51.8,31.6
 step
 _Capture_ Ash Viper
-learnpet Ash Viper##61385 |achieve 6587/18 |goto Shadowmoon Valley 56.0,35.4
+learnpet Ash Viper##61385 |achieve 6587/2 |goto Shadowmoon Valley 56.0,35.4
 step
 _Capture_ Fel Flame
-learnpet Fel Flame##62621 |achieve 6587/19 |goto Shadowmoon Valley 48.4,48.2
+learnpet Fel Flame##62621 |achieve 6587/8 |goto Shadowmoon Valley 48.4,48.2
 step
 Congratulations, you have _earned_ the _Outland Safari_ achievement!
 ]])

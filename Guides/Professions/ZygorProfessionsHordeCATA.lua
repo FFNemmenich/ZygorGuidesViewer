@@ -5247,644 +5247,151 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Ore",{
-author="support@zygorguides.com",
-description="This guide will allow you to farm the various ores.",
-},[[
-step
-label "start"
-Click here to farm Copper |confirm |next "copper"
-Click here to farm Tin |confirm |next "tin"
-Click here to farm Iron |confirm |next "iron"
-Click here to farm Mithril |confirm |next "mithril"
-Click here to farm Thorium |confirm |next "thorium"
-Click here to farm Fel Iron |confirm |next "fel_iron"
-Click here to farm Adamantite |confirm |next "adamantite"
-Click here to farm Cobalt |confirm |next "cobalt"
-Click here to farm Saronite |confirm |next "saronite"
-Click here to farm Obsidium |confirm |next "obsidium"
-Click here to farm Elementium |confirm |next "elementium"
-Click here to farm Ghost Iron |confirm |next "ghost_iron" |only if ZGV.guidesets['ProfessionsHMoP']
-step
-label "copper"
-map Durotar
-path follow loose;loop;ants straight
-path	38.9,16.0	37.5,21.1	35.9,34.4
-path +	36.8,52.3	44.2,49.5	50.6,46.3
-path +	50.7,63.3	54.9,67.0	56.2,49.8
-path +	55.0,36.9	53.0,29.7	57.9,30.0
-path +	54.8,19.0	50.0,17.2	44.2,23.6
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "tin"
-map Ashenvale
-path	82.0,50.2	78.8,44.9	67.1,45.8
-path +	61.9,42.6	59.5,37.5	54.5,37.1
-path +	53.5,48.2	49.5,54.7	45.5,47.5
-path +	41.8,40.3	40.1,32.4	38.2,30.3
-path +	34.6,33.3	33.6,28.5	33.0,22.5
-path +	25.4,19.3	21.0,19.1	16.6,15.7
-path +	14.1,13.1	17.0,23.7	17.3,28.2
-path +	16.5,36.6	19.5,45.7	18.8,55.4
-path +	23.4,50.2	25.4,54.2	25.7,60.4
-path +	29.9,58.1	31.8,64.7	33.1,70.3
-path +	38.8,62.7	42.0,64.2	55.6,68.4
-path +	62.7,64.6	67.0,69.1	75.6,69.2
-path +	82.4,71.8	86.5,79.1	90.1,76.6
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "iron"
-map Feralas
-path	74.9,48.6	84.0,45.6
-path	84.9,39.9	71.5,34.7
-path	54.3,50.1	48.6,44.0	49.7,34.9
-path	51.6,33.8	50.9,26.2	51.3,19.0
-path	54.9,8.1	49.4,4.0	40.0,7.7
-path	37.1,12.1	38.1,17.6	37.0,25.6
-path	45.1,26.2	46.3,38.6	50.3,52.7
-path	47.9,55.4	46.9,64.1	54.8,53.9
-path	55.2,62.6	52.9,66.2	53.6,73.7
-path	60.8,75.8	62.0,55.0	63.7,61.0
-path	66.4,51.3	68.2,51.3
-path	68.1,61.5	71.6,65.1	77.2,62.1
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "mithril"
-map Felwood
-path	63.5,24.5	62.6,6.9	55.7,18.6
-path	42.5,17.1	42.0,24.1	39.9,22.1
-path	41.0,27.5	38.6,37.4	38.3,55.6
-path	40.7,59.8	35.0,59.1	41.8,62.6
-path	36.3,66.8	40.7,72.9	37.8,73.5
-path	40.3,77.4	39.1,79.3	43.8,81.5
-path	39.0,81.6	42.3,87.1	45.1,84.6
-path	45.1,89.7	48.1,92.8	51.2,86.1
-path	52.5,88.8	57.7,86.5	58.6,84.8
-path	55.9,81.1	49.6,76.6	43.5,60.9
-path	42.9,50.8	52.9,31.6	59.6,27.2
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "thorium"
-map Winterspring
-path	52.8,46.2	58.3,41.2	59.7,45.0
-path	59.9,21.4	58.3,18.4	54.5,21.2
-path	45.9,13.1	44.8,15.3	44.8,29.0
-path	47.8,33.2	49.8,42.8	39.5,51.0
-path	33.5,47.2	30.2,48.6	31.5,53.5
-path	28.4,51.6	27.3,48.0	23.0,45.7
-path	22.3,62.4	25.3,61.3	25.9,58.1
-path	41.2,57.7	42.1,53.2	46.1,60.8
-path	51.0,61.4	53.7,63.6	51.2,69.9
-path	55.2,68.9	56.8,81.1	59.0,80.3
-path	59.0,85.3	62.0,87.6	64.1,81.8
-path	62.2,77.7	62.3,73.3	67.0,68.5
-path	67.1,60.1
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "fel_iron"
-map Hellfire Peninsula
-path	69.3,47.5	74.5,38.7	68.2,37.7
-path	62.0,31.0	58.0,32.8	54.0,26.7
-path	46.0,29.3	34.1,29.1	32.0,34.5
-path	38.5,38.2	35.7,40.7	33.4,49.8
-path	30.3,48.6	32.5,43.3	28.5,39.3
-path	26.5,45.5	22.6,45.1	18.0,38.3
-path	12.5,36.1	17.9,46.3	11.8,41.9
-path	12.0,47.0	06.2,49.5	15.4,62.4
-path	20.3,52.9	24.0,61.1	21.2,62.7
-path	28.1,80.8	27.7,69.5	30.5,72.8
-path	30.3,59.9	34.8,66.6	37.7,53.3
-path	46.9,46.3	49.3,49.5	60.3,48.6
-path	60.8,52.8	52.1,52.7	47.2,57.7
-path	45.9,75.5	33.5,89.6	33.1,92.6
-path	49.1,77.5	44.6,86.2	55.5,82.8
-path	58.7,78.8	56.5,72.3	65.8,63.6
-path	67.1,71.7	63.0,73.3	65.8,77.9
-path	68.7,77.6	71.0,71.7	70.1,68.6
-path	65.0,59.8	65.6,56.0	75.0,63.9
-path	78.4,80.2	80.7,77.5	77.3,63.7
-path	72.7,60.2	71.5,53.1	68.3,52.0
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "adamantite"
-map Nagrand
-path	72.7,64.7	74.3,60.5	69.1,48.6
-path	72.3,43.1	66.1,32.3	57.7,30.8
-path	59.5,27.3	49.3,24.1	47.1,20.2
-path	39.6,20.4	28.2,12.1	25.7,16.5
-path	26.8,23.6	30.9,21.9	27.9,25.3
-path	27.5,32.1	23.2,27.8	7.1,39.9
-path	25.2,61.1	31.9,81.9	41.8,81.8
-path	43.5,73.7	57.4,78.3	43.0,62.2
-path	32.2,60.3	29.2,54.1	34.0,52.6
-path	29.7,45.7	34.1,44.3	35.5,47.3
-path	38.8,36.9	45.5,43.9	42.4,50.9
-path	48.0,57.5	51.5,55.6	60.5,56.9
-path	56.7,64.0	70.1,83.3	69.8,72.5
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "cobalt"
-map Howling Fjord
-path 83.0,44.8	78.1,39.4	72.7,38.3
-path 71.0,31.8	75.3,22.9	70.2,8.3
-path 63.2,13.7
-path 61.4,23.6	57.7,18.3	51.4,14.2
-path 45.5,13.3	38.1,18.9	31.1,10.9
-path 28.9,10.3	21.7,12.8	19.4,23.5
-path 24.2,27.4	27.6,22.6	27.3,30.8
-path 38.1,29.0	47.6,32.7	53.0,31.9
-path 63.5,37.1	65.5,48.7	66.9,62.7
-path 64.4,67.8	64.4,72.4	67.9,76.5
-path 71.3,73.6	72.5,67.9	77.3,67.2
-path 77.2,60.8	74.9,55.3	79.1,50.4
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "saronite"
-map Sholazar Basin
-path	28.7,61.7	35.8,67.6
-path	33.8,73.4	34.2,78.4	43.6,76.6
-path	39.3,75.5	40.9,70.1	46.0,60.9
-path	47.4,66.9	51.5,62.1	55.5,66.5
-path	56.5,57.1	58.9,53.9	60.0,60.2
-path	57.2,68.1	63.0,67.1	62.8,62.3
-path	71.3,63.8
-path	77.9,63.8	78.7,52.4	74.3,48.6
-path	65.1,30.5	58.9,27.8	58.9,21.1
-path	40.8,20.8	32.9,32.8	35.8,40.3
-path	33.8,40.6	33.7,35.4	29.7,38.5
-path	23.3,48.4	20.8,56.1	20.4,76.6
-path	22.6,78.5	22.5,84.0	34.5,88.9
-path	60.3,88.8	59.7,81.3	51.5,82.1
-path	48.5,76.8	62.3,74.5	63.6,84.4
-path	74.2,56.1	69.4,58.3	64.2,53.5
-path	75.1,54.0	74.3,48.6	63.5,44.4
-path	66.7,40.3	63.7,34.6	58.5,33.3
-path	59.4,37.3	48.0,33.2	52.7,39.9
-path	47.8,43.1	46.8,39.7	39.6,32.8
-path	39.9,39.5	33.5,46.6	35.8,49.9
-path	40.0,50.9
-path	38.0,54.9	30.5,55.3
-path	35.1,59.5
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "obsidium"
-map Mount Hyjal
-path	67.2,29.1	61.1,36.7	54.5,17.1
-path	41.2,20.5	42.9,27.5	49.6,25.5
-path	46.6,35.6	40.5,33.6	39.9,29.4
-path	34.9,27.5	35.0,21.7	32.3,28.8
-path	35.0,35.6	31.1,40.4	25.7,40.6
-path	28.7,35.7	24.3,35.8	25.7,29.8
-path	14.7,38.8	13.6,31.6	9.4,36.4
-path	17.6,46.5	12.9,46.5	15.5,52.2
-path	20.7,60.2	21.5,56.8	23.3,61.5
-path	30.3,55.2	27.6,55.0	27.7,51.2
-path	34.1,46.8	34.1,55.2	37.5,54.9
-path	36.0,51.0	40.3,51.6	41.5,63.3
-path	38.9,65.5	36.4,58.6	32.8,61.8
-path	35.2,63.5	32.8,66.6	31.3,90.4
-path	36.6,95.5	50.8,82.1	51.8,75.1
-path	60.6,82.5	59.8,73.0	56.5,69.8
-path	58.9,66.4	53.6,66.8	49.6,51.1
-path	59.7,56.3	55.5,56.8	62.8,60.0
-path	64.5,50.9	67.5,50.6	69.8,56.0
-path	75.9,69.6	75.7,63.6	80.2,67.2
-path	84.3,64.9	88.1,48.5	84.2,47.5
-path	78.5,53.3	84.2,54.5	82.1,60.9
-path	72.9,57.9
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "elementium"
-map Twilight Highlands
-path 71.4,50.3	54.0,37.6	41.3,56.6
-path 37.5,58.2	24.5,56.9	30.0,42.8
-path 26.9,28.7	32.3,27.1	31.5,40.1
-path 38.6,41.2	39.6,30.4	39.0,19.7
-path 46.2,20.1	53.8,24.8	61.5,32.4
-path 68.5,37.9
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-step
-label "ghost_iron"
-map Krasarang Wilds
-path follow strict
-path	70.3,9.7	66.1,18.5	64.5,21.5
-path	61.6,21.9	52.0,30.2	40.2,27.5
-path	38.0,28.1	33.4,32.1	33.0,28.9
-path	28.2,37.9	18.4,33.3	14.8,41.8
-path	15.8,47.6	13.1,52.8	9.8,54.9
-path	13.6,64.2	32.3,80.1	35.6,69.0
-path	39.5,77.9	41.7,89.1	46.3,94.4
-path	48.3,92.3	50.0,90.5	45.6,68.2
-path	44.5,65.3	48.3,45.4	55.9,34.3
-path	58.6,36.7	65.1,35.6	69.2,28.7
-path	74.8,24.3	75.5,35.0	77.7,34.9
-path	79.8,17.9	82.3,17.8	85.3,21.4
-path	86.8,26.6	88.2,23.8	85.0,9.9
-#include "follow_path_mine"
-Click here to pick a different ore |confirm |next "start"
-only if ZGV.guidesets['ProfessionsHMoP']
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic Mining 1-600 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-300",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Mining skill from 1-300.",
+condition_end=function() return skill('Mining') >= 300 end,
+condition_suggested=function() return skill('Mining') > 0 and skill('Mining') < 300 end,
 },[[
 step
-#include "trainer_Mining"
-skillmax Mining,75
-|tip You must be at least level 5.
+talk Gonto##46357
+|tip He walks around Inside the building.
+Train Mining |skillmax Mining,300 |goto Orgrimmar/1 44.56,78.60
 step
-#include "vendor_Mining"
-buy 1 Mining Pick##2901 |condition itemcount(2901) >= 1 or skill("Mining")>=50
+map Un'Goro Crater/0
+path follow smart; loop on; ants straight
+path	65.32,79.10	62.13,80.37	60.77,83.36	58.36,84.11	54.78,86.18
+path	51.90,86.42	50.68,85.45	48.10,86.84	43.26,84.67	40.70,83.46
+path	38.48,83.31	36.98,81.97	35.14,81.88	33.10,80.12	30.98,78.74
+path	29.33,71.78	30.60,70.82	30.23,68.66	26.83,68.56	26.08,63.17
+path	24.94,58.80	24.19,54.78	25.05,49.80	24.07,47.50	25.01,40.92
+path	26.30,36.98	26.53,32.66	28.25,30.26	29.54,30.83	30.54,29.33
+path	29.69,25.07	30.67,20.85	32.45,20.49	34.07,21.27	36.30,20.50
+path	37.77,17.78	40.50,16.53	42.50,16.00	44.79,14.19	46.26,14.00
+path	49.08,13.66	49.91,17.92	51.81,16.44	52.07,13.57	55.70,14.20
+path	58.89,16.09	60.42,16.55	62.87,17.02	63.99,19.91	65.73,21.51
+path	66.47,24.59	67.32,24.41	69.31,21.00	71.53,22.09	71.09,24.18
+path	71.83,28.89	74.23,31.84	74.58,35.68	76.03,41.74	76.45,47.99
+path	76.00,50.19	76.69,53.78	76.33,56.55	74.66,63.96	74.13,68.33
+path	72.36,70.60	70.77,71.19	70.67,74.82	70.50,79.10	68.17,79.33
+path	66.40,78.60
+Mine Thorium along the path
+|tip You will need Rich Thorium Veins to reach 300.
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 300 Mining Skill |skill Mining,300
 step
-#include "Copper_Path"
-#include follow_path_mine
-skill Mining,35
-step
-#include "maincity_anvil"
-create Copper Bar##2657,Mining,50
-|tip Keep all of the Copper Bars for Smelting later.
-step
-#include "trainer_Mining"
-skillmax Mining,150
-step
-#include "trainer_Mining"
-learn Smelt Bronze##2659 |condition skill("Mining")>=125
-step
-#include "trainer_Mining"
-learn Smelt Tin##3304 |condition skill("Mining")>=125
-step
-#include "Silver_Tin_Path"
-#include "follow_path_mine"
-skill Mining,125
-step
-#include "trainer_Mining"
-skillmax Mining,225
-step
-#include "trainer_Mining"
-learn Smelt Iron##3307 |condition skill("Mining")>=200
-step
-map Western Plaguelands
-path	42.6,80.9	39.3,79.9	36.1,77.2
-path	33.2,72.6	30.2,69.6	29.3,64.5
-path	33.5,63.9	32.5,59.9	31.2,55.5
-path	37.1,54.4	38.7,51.6	43.8,49.7
-path	48.0,47.8	45.0,41.3	45.0,36.1
-path	44.2,31.6	49.9,28.9	54.3,26.4
-path	54.8,33.7	51.6,40.2	50.2,45.8
-path	54.7,48.9	60.0,52.2	66.3,43.9
-path	68.8,45.9	67.4,52.5	65.6,59.7
-path	61.4,62.0	63.3,64.8	72.4,59.7
-path	80.7,77.4	73.0,83.5	64.4,84.0
-path	58.0,82.1	53.1,74.7
-#include "follow_path_mine"
-skill Mining,150
-step
-map Burning Steppes
-path	40.0,31.9	72.9,23.9	81.1,56.6
-path	72.9,63.5	56.2,52.8	45.5,65.1
-path	31.3,59.8	7.8,56.4	9.3,45.8
-path	38.5,33.8
-#include "follow_path_mine"
-skill Mining,200
-step
-talk Pikkle##8128
-skillmax Mining,300 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
-step
-talk Pikkle##8128
-learn Smelt Thorium##16153 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
-step
-map Un'Goro Crater
-path 37.5,18.9	43.5,14.1	49.9,18.5
-path 62.7,17.9	70.4,26.8	76.3,51.0
-path 70.7,71.0	62.1,83.7	52.2,85.9
-path 37.7,83.1	27.9,65.8	24.0,52.5
-path 26.7,36.4
-#include "follow_path_mine"
-skill Mining,275
-step
-#include "trainer_Mining"
-skillmax Mining,375
-step
-#include "trainer_Mining"
-learn Smelt Fel Iron##29356 |condition skill("Mining")>=275
-step
-map Hellfire Peninsula
-path	69.3,47.5	74.5,38.7	68.2,37.7
-path	62.0,31.0	58.0,32.8	54.0,26.7
-path	46.0,29.3	34.1,29.1	32.0,34.5
-path	38.5,38.2	35.7,40.7	33.4,49.8
-path	30.3,48.6	32.5,43.3	28.5,39.3
-path	26.5,45.5	22.6,45.1	18.0,38.3
-path	12.5,36.1	17.9,46.3	11.8,41.9
-path	12.0,47.0	06.2,49.5	15.4,62.4
-path	20.3,52.9	24.0,61.1	21.2,62.7
-path	28.1,80.8	27.7,69.5	30.5,72.8
-path	30.3,59.9	34.8,66.6	37.7,53.3
-path	46.9,46.3	49.3,49.5	60.3,48.6
-path	60.8,52.8	52.1,52.7	47.2,57.7
-path	45.9,75.5	33.5,89.6	33.1,92.6
-path	49.1,77.5	44.6,86.2	55.5,82.8
-path	58.7,78.8	56.5,72.3	65.8,63.6
-path	67.1,71.7	63.0,73.3	65.8,77.9
-path	68.7,77.6	71.0,71.7	70.1,68.6
-path	65.0,59.8	65.6,56.0	75.0,63.9
-path	78.4,80.2	80.7,77.5	77.3,63.7
-path	72.7,60.2	71.5,53.1	68.3,52.0
-#include "follow_path_mine"
-skill Mining,325
-step
-map Nagrand
-path 45.7,68.9	43.1,58.9	45.0,54.7
-path 49.6,57.5	56.0,54.8	56.3,59.4
-path 49.7,66.2	41.9,77.0	35.7,79.3
-path 31.1,75.3	27.3,63.0	33.4,57.5
-path 33.7,49.4	24.0,47.4	19.7,46.7
-path 11.4,43.0	11.3,36.6	19.9,32.1
-path 25.0,32.8	28.2,31.8	26.5,20.5
-path 30.0,18.1	36.3,23.0	40.5,35.4
-path 43.1,22.8	50.8,23.5	57.0,29.0
-path 65.0,37.6	70.3,42.6	68.8,51.1
-path 72.3,58.1	73.8,67.9	69.8,78.1
-path 57.9,75.5	49.0,79.0
-#include "follow_path_mine"
-|tip Go into any caves you find as there is lots of ore.
-skill Mining,350
-step
-#include "trainer_Mining"
-skillmax Mining,450
-step
-#include "trainer_Mining"
-learn Smelt Adamantite##29358 |condition skill("Mining")>=425
-step
-#include "trainer_Mining"
-learn Smelt Cobalt##49252 |condition skill("Mining")>=425
-step
-#include "trainer_Mining"
-learn Smelt Eternium##29359 |condition skill("Mining")>=425
-step
-#include "trainer_Mining"
-learn Smelt Felsteel##29360 |condition skill("Mining")>=425
-step
-map Howling Fjord
-path 83.0,44.8	78.1,39.4	72.7,38.3
-path 71.0,31.8	75.3,22.9	70.2,8.3
-path 63.2,13.7
-path 61.4,23.6	57.7,18.3	51.4,14.2
-path 45.5,13.3	38.1,18.9	31.1,10.9
-path 28.9,10.3	21.7,12.8	19.4,23.5
-path 24.2,27.4	27.6,22.6	27.3,30.8
-path 38.1,29.0	47.6,32.7	53.0,31.9
-path 63.5,37.1	65.5,48.7	66.9,62.7
-path 64.4,67.8	64.4,72.4	67.9,76.5
-path 71.3,73.6	72.5,67.9	77.3,67.2
-path 77.2,60.8	74.9,55.3	79.1,50.4
-#include "follow_path_mine"
-skill Mining,400
-step
-map Sholazar Basin
-path follow strict
-path	77.9,63.8	78.7,52.4	74.3,48.6
-path	58.9,53.9	63.5,44.4	66.7,40.3
-path	65.1,30.5	58.9,27.8	58.9,21.1
-path	40.8,20.8	48.0,33.2	52.7,39.9
-path	47.8,43.1	46.8,39.7	39.6,32.8
-path	32.9,32.8	23.3,48.4	33.5,46.6
-path	35.8,49.9	40.0,50.9	38.0,54.9
-path	30.5,55.3	20.8,56.1	20.4,76.6
-path	22.6,78.5	22.5,84.0	34.2,78.4
-path	33.8,73.4	33.0,67.9	40.9,70.1
-path	34.5,88.9	50.9,88.8	51.5,82.1
-path	46.0,60.9	55.5,66.5	58.7,88.2
-path	62.3,74.5	63.6,84.4
-#include "follow_path_mine"
-skill Mining,425
-step
-#include "trainer_Mining"
-skillmax Mining,525
-step
-#include "trainer_Mining"
-learn Smelt Obsidium##84038 |condition skill("Mining")>=425
-step
-map Mount Hyjal
-path	67.2,29.1	61.1,36.7	54.5,17.1
-path	41.2,20.5	42.9,27.5	49.6,25.5
-path	46.6,35.6	40.5,33.6	39.9,29.4
-path	34.9,27.5	35.0,21.7	32.3,28.8
-path	35.0,35.6	31.1,40.4	25.7,40.6
-path	28.7,35.7	24.3,35.8	25.7,29.8
-path	14.7,38.8	13.6,31.6	9.4,36.4
-path	17.6,46.5	12.9,46.5	15.5,52.2
-path	20.7,60.2	21.5,56.8	23.3,61.5
-path	30.3,55.2	27.6,55.0	27.7,51.2
-path	34.1,46.8	34.1,55.2	37.5,54.9
-path	36.0,51.0	40.3,51.6	41.5,63.3
-path	38.9,65.5	36.4,58.6	32.8,61.8
-path	35.2,63.5	32.8,66.6	31.3,90.4
-path	36.6,95.5	50.8,82.1	51.8,75.1
-path	60.6,82.5	59.8,73.0	56.5,69.8
-path	58.9,66.4	53.6,66.8	49.6,51.1
-path	59.7,56.3	55.5,56.8	62.8,60.0
-path	64.5,50.9	67.5,50.6	69.8,56.0
-path	75.9,69.6	75.7,63.6	80.2,67.2
-path	84.3,64.9	88.1,48.5	84.2,47.5
-path	78.5,53.3	84.2,54.5	82.1,60.9
-path	72.9,57.9
-#include "follow_path_mine"
-skill Mining,475
-step
-map Twilight Highlands
-path	71.4,50.3	54.0,37.6	46.2,48.5
-path	56.4,45.1	61.5,50.4	50.1,58.2
-path	61.2,75.4	53.6,86.0	38.8,86.6
-path	34.2,71.9	32.1,57.6	24.5,56.9
-path	30.0,42.8	26.9,28.7	32.3,27.1
-path	31.5,40.1	38.6,41.2	39.6,30.4
-path	39.0,19.7	46.2,20.1	53.8,24.8
-path	61.5,32.4	68.5,37.9
-#include "follow_path_mine"
-skill Mining,525
-step
-confirm |next "Profession Guides\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide"
-|tip This will take you to the 525 - 600 portion of Mining.
+_Congratulations!_
+You Reached 300 Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Outland Mining 1-75",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Mining skill from 1-300.",
+description="This guide will walk you through leveling your Outland Mining skill from 1-75.",
+condition_end=function() return skill('Outland Mining') >= 75 end,
+condition_suggested=function() return skill('Outland Mining') > 0 and skill('Outland Mining') < 75 end,
 },[[
 step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,75
+talk Krugosh##18747
+Train Outland Mining |skillmax Outland Mining,75 |goto Hellfire Peninsula/0 55.44,37.59
 step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,75
+map Nagrand/0
+path follow smart; loop on; ants straight
+path	23.03,54.38	25.66,56.17	27.78,59.66	28.97,63.86	29.39,68.96
+path	28.60,72.26	28.38,76.04	29.37,79.52	31.84,80.64	35.76,81.91
+path	38.66,82.53	41.39,82.08	42.32,78.93	44.21,77.72	46.77,77.25
+path	48.80,77.89	50.60,79.08	52.79,80.43	55.35,80.45	57.66,79.43
+path	59.67,79.87	61.78,80.22	63.10,78.04	61.50,74.24	60.07,71.40
+path	58.21,67.30	56.38,66.12	55.81,62.92	55.80,59.35	55.91,56.41
+path	53.97,55.67	51.60,54.83	49.35,54.70	48.34,56.31	46.31,52.84
+path	44.76,48.93	44.93,44.85	44.17,41.32	42.03,37.80	40.94,34.11
+path	40.52,29.96	38.57,27.00	35.52,23.03	31.65,21.23	28.90,20.10
+path	26.95,20.42	25.43,24.53	24.85,26.68	23.88,30.30	21.46,32.74
+path	18.92,33.25	16.50,34.01	14.02,35.11	11.60,37.40	9.18,39.21
+path	7.43,41.55	7.97,45.14	9.64,44.27	12.78,42.19	13.85,43.23
+Mine along the path
+|tip Be sure to enter caves for nodes that appear.
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 75 Outland Mining Skill |skill Outland Mining,75
 step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,150
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,150
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,225
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,225
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,300
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,300
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,300
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,300
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,375
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,375
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,450
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,450
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,525
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,525
-step
-You have reached the end of the guide
+_Congratulations!_
+You Reached 75 Outland Mining Skill.
 ]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Northrend Mining 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Northrend Mining skill from 1-75.",
+condition_end=function() return skill('Northrend Mining') >= 75 end,
+condition_suggested=function() return skill('Northrend Mining') > 0 and skill('Northrend Mining') < 75 end,
+},[[
+step
+talk Brunna Ironaxe##26976
+|tip Inside the building.
+Train Northrend Mining |skillmax Northrend Mining,75 |goto Borean Tundra/0 42.59,53.19
+step
+map Sholazar Basin/0
+path follow smart; loop on; ants straight
+path	47.55,60.54	45.98,63.10	47.07,66.19	48.50,67.57	48.06,72.89
+path	50.18,79.08	51.11,83.87	50.24,87.27	47.95,87.13	45.88,86.92
+path	43.83,87.15	40.80,87.29	38.41,86.20	37.55,82.52	39.01,79.09
+path	39.97,76.03	39.89,72.63	38.87,69.59	37.13,68.11	34.77,68.38
+path	34.09,71.52	32.47,76.06	30.69,80.02	27.90,83.52	24.95,83.83
+path	22.95,82.59	21.27,78.60	20.64,74.21	20.80,69.62	20.99,66.37
+path	21.63,60.90	21.93,56.40	23.34,52.96	26.15,53.68	29.38,55.20
+path	32.17,55.87	35.01,55.74	37.57,52.39	36.47,49.33	34.26,47.11
+path	31.92,44.99	29.37,43.15	30.16,39.22	32.21,35.48	34.85,33.69
+path	37.60,32.87	39.99,32.13	41.50,33.05	43.22,37.70	45.00,41.85
+path	47.30,42.65	50.33,42.48	52.24,41.57	53.34,38.94	53.09,35.64
+path	51.58,32.70	49.27,30.10	47.00,28.68	45.35,26.84	43.66,24.20
+path	43.30,21.65	45.46,21.34	48.34,21.59	51.18,22.09	55.10,24.48
+path	58.23,26.57	61.53,30.34	63.92,33.33	66.01,36.41	66.75,39.64
+path	64.98,42.63	63.15,45.78	60.70,48.14	58.67,48.97	57.04,50.77
+path	56.86,53.99	58.78,55.73	61.38,56.54	64.12,55.19	67.02,54.31
+path	69.67,56.56	71.72,60.58	75.27,61.51	74.93,65.10	73.11,68.76
+path	71.40,71.86	68.77,76.48	66.01,80.90	63.54,80.54	60.96,79.85
+path	58.85,81.83	56.78,85.19	55.87,83.09	56.40,78.00	56.32,71.21
+path	54.35,65.42	51.00,63.86
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 75 Northrend Mining Skill |skill Northrend Mining,75
+step
+_Congratulations!_
+You Reached 75 Northrend Mining Skill.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Cataclysm Mining 1-75",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Cataclysm Mining skill from 1-75.",
+condition_end=function() return skill('Cataclysm Mining') >= 75 end,
+condition_suggested=function() return skill('Cataclysm Mining') > 0 and skill('Cataclysm Mining') < 75 end,
+},[[
+step
+talk Gonto##46357
+|tip He walks around Inside the building.
+Train Cataclysm Mining |skillmax Cataclysm Mining,75 |goto Orgrimmar/1 44.56,78.60
+step
+map Twilight Highlands/0
+path follow smart; loop on; ants straight
+path	67.12,53.71	66.14,50.02	65.32,47.07	63.19,43.30	61.37,40.30
+path	57.72,38.31	54.89,37.76	52.17,40.03	50.30,42.97	45.84,49.71
+path	43.99,52.61	42.07,54.66	39.00,59.98	38.30,62.37	38.09,66.30
+path	38.80,69.49	40.30,74.96	42.18,76.70	44.22,77.22	45.48,79.26
+path	46.79,81.59	49.33,82.52	51.97,81.92	54.74,81.61	57.05,79.84
+path	59.27,77.24	59.82,73.45	60.56,71.34	62.55,68.61	65.27,68.74
+path	66.76,71.13	68.14,74.02	67.67,77.62	65.97,80.72	63.98,83.07
+path	61.10,85.08	58.48,86.62	55.40,86.44	52.38,87.05	49.45,86.26
+path	46.20,85.56	43.32,86.32	40.64,87.78	37.90,88.35	36.61,86.84
+path	36.05,84.16	34.20,82.17	32.33,79.21	30.43,73.67	29.60,69.58
+path	31.49,67.23	34.04,65.18	35.81,62.68	37.65,59.14	38.56,55.60
+path	38.27,49.23	37.53,43.75	37.42,39.31	39.60,35.31	41.42,31.65
+path	41.88,28.18	40.70,25.49	39.36,22.58	40.81,20.45	43.38,20.38
+path	47.97,20.48	51.88,22.44	55.55,24.46	58.41,26.99	61.48,30.78
+path	64.76,34.88	67.50,38.35	68.75,42.37	69.74,47.06	71.15,50.40
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 75 Cataclysm Mining |skill Cataclysm Mining,75
+step
+_Congratulations!_
+You Reached 75 Cataclysm Mining Skill.
+]])
+ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-300",{
 author="support@zygorguides.com",

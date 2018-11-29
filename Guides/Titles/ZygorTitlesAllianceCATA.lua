@@ -3684,7 +3684,7 @@ author="support@zygorguides.com",
 description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
 playertitle=133,
 },[[
-leechsteps "Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Daily Quests"
+leechsteps "Zygor's Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests" 1-21
 step
 Congratulations! You have earned the Title Pilgrim!
 ]])
@@ -3694,7 +3694,7 @@ author="support@zygorguides.com",
 description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
 playertitle=133,
 },[[
-leechsteps "Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Quests and Cooking 1-300 Guide"
+leechsteps "Zygor's Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Blackwing's Bane",{
 author="support@zygorguides.com",

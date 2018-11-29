@@ -443,24 +443,6 @@ label "dredgecrush"
 kill 20 Dredge Crusher##11741+ |q 8281/1 |goto 44.9,48.7
 You can find more Dredge Crushers around [37.9,32.4]
 step
-talk General Kirika##17079
-turnin Report to General Kirika##9416 |goto 54.5,62.9
-accept Scouring the Desert##9422 |goto 54.5,62.9
-step
-click the Silithyst Geyser##181598
-|tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9422 |goto 50.0,49.9
-They spawn in various locations, you find more at:
-[53.2,41.6]
-[57.1,47.2]
-[60.0,41.1]
-step
-Stand inside the big red-glowing metal machine
-Deliver Silithyst |q 9422/1 |goto 54.9,63.4
-step
-talk General Kirika##17079
-turnin Scouring the Desert##9422 |goto 54.5,62.9
-step
 kill Stonelash Flayer##11737+
 collect 3 Stonelash Flayer Stinger##20375 |q 8278/1 |goto 51.7,64.7
 kill Rock Stalker##11739+

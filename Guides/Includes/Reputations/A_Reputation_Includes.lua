@@ -997,21 +997,6 @@ ZygorGuidesViewer:RegisterInclude("Cenarion_Circle_Rep",[[
 	step
 		talk Marshal Bluewall##17080
 		turnin Report to Marshal Bluewall##9415 |goto 39.6,47.0
-		accept Scouring the Desert##9419 |goto 39.6,47.0
-	step
-		Follow the provided path, searching for Silithyst Geysers
-		click Silithyst Geyser##181598
-		map Silithus
-		path loop off
-		path	50.0,49.9	53.2,41.6	57.1,47.2
-		path	60.0,41.1
-		Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9419 --Spell_Holiday_ToW_SpiceCloud
-	step
-		Stand inside the big blue-glowing metal machine
-		Deliver Silithyst |q 9419/1 |goto 39.1,46.9
-	step
-		talk Marshal Bluewall##17080
-		turnin Scouring the Desert##9419 |goto 39.6,47.0
 	stickystart "dredgecrusher"
 	step
 		kill Twilight Keeper Havunth##11804

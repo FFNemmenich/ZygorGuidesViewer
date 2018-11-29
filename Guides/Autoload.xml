@@ -189,13 +189,13 @@
 
 	<!-- GEAR -->
 		<Script file="Dungeons\ZygorGearHorde.lua"/>
-		<Script file="Dungeons\ZygorGearHordeTrial.lua"/>
 		
 		<Script file="Dungeons\ZygorGearAlliance.lua"/>
-		<Script file="Dungeons\ZygorGearAllianceTrial.lua"/>
 
-		<Script file="Dungeons\ZygorGearCommon.lua"/>
-		<Script file="Dungeons\ZygorGearCommonTrial.lua"/>
+		<Script file="Dungeons\ZygorGearCommonMOP.lua"/>
+		<Script file="Dungeons\ZygorGearCommonWOD.lua"/>
+		<Script file="Dungeons\ZygorGearCommonLEGION.lua"/>
+		<Script file="Dungeons\ZygorGearCommonBFA.lua"/>
 
 	<!-- PROFESSIONS -->
 		<!-- CATA -->
@@ -533,6 +533,10 @@
 	<Script file="LEG_H_Rares.lua" />
 	<Script file="LEG_A_Treasures.lua" />
 	<Script file="LEG_H_Treasures.lua" />
+	<Script file="BFA_A_Rares.lua" />
+	<Script file="BFA_H_Rares.lua" />
+	<Script file="BFA_A_Treasures.lua" />
+	<Script file="BFA_H_Treasures.lua" />
 
 
 	<!-- user guides -->

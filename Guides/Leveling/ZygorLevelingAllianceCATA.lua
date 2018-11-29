@@ -21167,7 +21167,8 @@ talk Lady Jaina Proudmoore##4968 |goto 66.28,49.05
 Tell her _"I'm ready to travel to Stormwind."_
 Travel to Stormwind |goto Stormwind City/0 84.01,33.84 < 20 |noway |c |q 27240
 step
-talk Anduin Wrynn##107574
+talk Anduin Wrynn##107574 |only if completedq(40519)
+talk Grand Admiral Jes-Tereth##1750 |only if not completedq(40519)
 turnin Proof of Treachery##27240 |goto Stormwind City/0 85.78,31.72
 accept Return to Jaina##27241 |goto Stormwind City/0 85.78,31.72
 step

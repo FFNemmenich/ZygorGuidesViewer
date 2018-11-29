@@ -1295,73 +1295,35 @@ step
 _Congratulations!_
 You Reached 75 Pandaria Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Pandaria Mining 1-75",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Mining skill from 1-75.",
 condition_end=function() return skill('Pandaria Mining') >= 75 end,
-condition_suggested=function() return skill('Pandaria Mining') > 0 and skill('Pandaria Mining') < 75 and level >= 85 end,
+condition_suggested=function() return skill('Pandaria Mining') > 0 and skill('Pandaria Mining') < 75 and level >= 78 end,
 },[[
 step
-#include "trainer_Mining"
-skillmax Mining,600
+talk Stonebreaker Ruian##66979
+Train Pandaria Mining |skillmax Pandaria Mining,75 |goto The Jade Forest/0 27.82,14.84
 step
-#include "trainer_Mining"
-learn Smelt Ghost Iron##102165
+map Dread Wastes/0
+path follow smart; loop on; ants straight
+path	57.49,14.06	55.81,17.08	54.38,19.53	52.23,20.51	50.71,21.37
+path	49.81,24.40	49.49,26.69	46.99,26.44	45.03,25.92	43.76,28.11
+path	43.89,30.86	45.60,33.15	48.31,36.52	47.25,38.99	46.27,41.47
+path	47.27,43.08	49.19,44.88	50.85,44.37	52.17,43.10	54.43,45.83
+path	56.22,47.60	58.85,46.44	60.98,48.04	63.10,48.13	65.50,49.59
+path	67.62,48.97	67.26,45.82	67.05,42.57	68.26,39.41	70.14,37.17
+path	71.46,33.55	71.77,30.02	70.53,24.75	69.50,21.19	68.67,17.19
+path	67.71,13.20	64.79,12.60	62.17,13.69
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 75 Pandaria Mining |skill Pandaria Mining,75
 step
-map Krasarang Wilds
-path follow loose;loop;ants straight;dist 40
-path	70.3,9.7	66.1,18.5	64.5,21.5
-path	61.6,21.9	52.0,30.2	40.2,27.5
-path	38.0,28.1	33.4,32.1	33.0,28.9
-path	28.2,37.9	18.4,33.3	14.8,41.8
-path	15.8,47.6	13.1,52.8	9.8,54.9
-path	13.6,64.2	32.3,80.1	35.6,69.0
-path	39.5,77.9	41.7,89.1	46.3,94.4
-path	48.3,92.3	50.0,90.5	45.6,68.2
-path	44.5,65.3	48.3,45.4	55.9,34.3
-path	58.6,36.7	65.1,35.6	69.2,28.7
-path	74.8,24.3	75.5,35.0	77.7,34.9
-path	79.8,17.9	82.3,17.8	85.3,21.4
-path	86.8,26.6	88.2,23.8	85.0,9.9
-#include "follow_path_mine"
-skill Mining,600
-step
-label "min_600"
-Congratulations, you are now a level 600 Miner!
+_Congratulations!_
+You Reached 75 Pandaria Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining with Smelting 500-600 Leveling Guide",{
-author="support@zygorguides.com",
-description="This guide will walk you through leveling your Pandaria Mining skill from 1-75 using Smelting for some points.",
-condition_end=function() return skill('Pandaria Mining') >= 75 end,
-condition_suggested=function() return skill('Pandaria Mining') > 0 and skill('Pandaria Mining') < 75 and level >= 85 end,
-},[[
-step
-#include trainer_Mining
-skillmax Mining,600
-step
-#include trainer_Mining
-learn Smelt Ghost Iron##102165
-step
-map Krasarang Wilds
-path follow loose;loop;ants straight;dist 60
-path	70.3,9.7	66.1,18.5	64.5,21.5
-path	61.6,21.9	52.0,30.2	40.2,27.5
-path	38.0,28.1	33.4,32.1	33.0,28.9
-path	28.2,37.9	18.4,33.3	14.8,41.8
-path	15.8,47.6	13.1,52.8	9.8,54.9
-path	13.6,64.2	32.3,80.1	35.6,69.0
-path	39.5,77.9	41.7,89.1	46.3,94.4
-path	48.3,92.3	50.0,90.5	45.6,68.2
-path	44.5,65.3	48.3,45.4	55.9,34.3
-path	58.6,36.7	65.1,35.6	69.2,28.7
-path	74.8,24.3	75.5,35.0	77.7,34.9
-path	79.8,17.9	82.3,17.8	85.3,21.4
-path	86.8,26.6	88.2,23.8	85.0,9.9
-#include "follow_path_mine"
-skill Mining,600
-step
-Congratulations, you are now a level 600 Miner!
-]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Pandaria Skinning skill from 1-75.",

@@ -673,7 +673,7 @@ accept Troops in the Field##43267 |goto 49.64,51.28
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 49.87,51.41 |q 43267
 step
 talk Archmage Khadgar##90417
@@ -799,7 +799,7 @@ turnin Light's Charge##44153 |goto Broken Shore/1 54.17,74.19
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 43267/1 |goto Broken Shore/2 49.81,51.35
 step
 talk Siouxsie the Banshee##93568
@@ -809,7 +809,7 @@ accept Salanar the Horseman##43539 |goto 49.70,51.32
 step
 clicknpc Scouting Map##120832
 Begin the "Salanar the Horseman" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 49.81,51.35 |q 43539
 step
 talk Archivist Zubashi##97485
@@ -820,7 +820,7 @@ turnin Tech It Up A Notch##43268 |goto 49.70,51.32
 step
 clicknpc Scouting Map##120832
 Begin the "Salanar the Horseman" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Salanar the Horseman" Mission |q 43539/1 |goto 49.81,51.35
 step
 talk Siouxsie the Banshee##93568
@@ -918,7 +918,7 @@ accept Champion: Koltira Deathweaver##44244 |instant |goto 66.19,64.44
 step
 clicknpc Scouting Map##120832
 Begin the "Fallen Steeds: Saddle of the Frozen Crown" Mission
-|tip This mission will take up to 16 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.62,51.44 |q 43899
 stickystart "Steeds_Of_The_Damned_DeathKnight"
 step
@@ -937,7 +937,7 @@ step
 label "Steeds_Of_The_Damned_DeathKnight"
 clicknpc Scouting Map##120832
 Begin the "Fallen Steeds: Saddle of the Frozen Crown" Mission
-|tip Each of these missions will take up to 16 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete #5# "Fallen Steeds: Saddle of the Frozen Crown" Missions |q 43899/1 |goto Broken Shore/2 49.77,50.67
 step
 talk Siouxsie the Banshee##93568
@@ -1044,7 +1044,7 @@ accept A Masterpiece of Flesh##44286 |goto 63.18,69.51
 step
 clicknpc Scouting Map##120832
 Begin the "Unholy Attainment: Essence of Shadow" Mission
-|tip This mission will take up to 24 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.64,51.38 |q 43928
 stickystart "World_Quests_DeathKnight"
 step
@@ -1096,7 +1096,7 @@ step
 label "Aggregates_Of_Anguish_DeathKnight"
 clicknpc Scouting Map##120832
 Begin "Unholy Attainment" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete #5# "Unholy Attainment" Missions |q 43928/1 |goto 49.79,50.67
 step
 talk Siouxsie the Banshee##93568
@@ -2928,7 +2928,7 @@ accept Loramus, Is That You?##42681 |goto 59.25,57.28
 step
 clicknpc Scouting Map##120832
 Begin the "Loramus, Is That You?" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Loramus, Is That You?" Mission |q 42681/1 |goto 58.87,54.94
 step
 talk Kor'vas Bloodthorn##103761
@@ -3245,7 +3245,7 @@ turnin Green Adepts##42808 |goto 57.58,52.19
 step
 clicknpc Scouting Map##120832
 Complete "Working With the Wardens" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Working With the Wardens: Isle of the Watchers" Mission |q 42731/1 |goto 58.48,53.23
 Complete the "Working With the Wardens: Skul'vrax" Mission |q 42731/2 |goto 58.48,53.23
 Complete the "Working With the Wardens: Mellok, Son of Torok" Mission |q 42731/3 |goto 58.48,53.23
@@ -3434,7 +3434,7 @@ step
 Follow the path |goto Mardum, the Shattered Abyss/2 68.62,66.64 < 15 |walk
 clicknpc Scouting Map##120832
 Complete "Preparations for Invasion" Missions
-|tip Each of these missions will take up to 12 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Preparations for Invasion: Scouting their Hold" Mission |q 42669/1 |goto Mardum, the Shattered Abyss/2 58.83,54.94
 Complete the "Preparations for Invasion: Weapon Improvements" Mission |q 42669/2 |goto Mardum, the Shattered Abyss/2 58.83,54.94
 Complete the "Preparations for Invasion: Snatch and Grab" Mission |q 42669/3 |goto Mardum, the Shattered Abyss/2 58.83,54.94
@@ -5173,7 +5173,7 @@ accept A Glade Defense##42586 |goto 52.67,51.49
 step
 clicknpc Scouting Map##120832
 Begin the "A Glade Defense" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "A Glade Defense" Mission |q 42586/1 |goto 52.68,51.13
 step
 talk Skylord Omnuron##98002
@@ -5407,7 +5407,7 @@ accept Gathering the Dreamweavers##42037 |goto 52.65,51.46
 step
 clicknpc Scouting Map##120832
 Begin a "Gathering the Dreamweavers" Mission
-|tip This mission will take up to 16 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.71,51.06 |q 42037
 stickystart "Gathering_The_Dreamers_Druid"
 step
@@ -5471,7 +5471,7 @@ step
 label "Gathering_The_Dreamers_Druid"
 clicknpc Scouting Map##120832
 Begin "Gathering the Dreamweavers" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Gathering the Dreamweavers" Missions |q 42037/1 |goto 52.71,51.06
 step
 talk Keeper Remulos##103832
@@ -5580,7 +5580,7 @@ accept Focusing the Energies##42365 |goto 44.64,50.14
 step
 clicknpc Scouting Map##120832
 Begin the "Powering the Portal: Sylvan Falls" Mission
-|tip This mission will take up to 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.71,51.06 |q 42049
 stickystart "Plant_Dream_Seeds_Druid"
 step
@@ -5647,7 +5647,7 @@ step
 label "Powering_The_Portal_Druid"
 clicknpc Scouting Map##120832
 Complete "Powering the Portal: Sylvan Falls" Missions
-|tip Each of these missions will take up to 4 hours to complete.
+|tip Each of these missions will take up 1 hour to complete.
 |tip They are the missions that reward Shards of Nightmare.
 Collect #10# Shards of Nightmare |q 42049/1 |goto 52.71,51.06
 step
@@ -7249,7 +7249,7 @@ accept Troops in the Field##42525 |goto 42.81,46.93
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42525/1 |goto 42.49,46.59
 step
 talk Tactician Tinderfell##103023
@@ -7266,7 +7266,7 @@ accept Scouting Reports##42384 |goto 42.77,46.91
 step
 clicknpc Scouting Map##120832
 Begin the "Scouting Reports" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Scouting Reports" Mission |q 42384/1 |goto 42.49,46.59
 step
 talk Emmarel Shadewarden##107317
@@ -7549,7 +7549,7 @@ turnin Light's Charge##44153 |goto 47.30,43.50
 step
 clicknpc Scouting Map##120832
 Complete "Unseen Protection" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# Unseen Protection Missions |q 42394/1 |goto 42.54,46.62
 step
 Follow the path up |goto 38.65,49.74 < 20 |only if walking
@@ -7802,7 +7802,7 @@ label "Arcane_Vessel_Fragments_Hunter"
 clicknpc Scouting Map##120832
 |tip Inside the building.
 Complete "The Missing Vessel" Missions
-|tip Each of these missions will take up to 1 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Arcane Vessel Fragments.
 collect 4 Arcane Vessel Fragment##139041 |q 43182/1 |goto Trueshot Lodge/0 42.48,46.63
 step
@@ -9407,7 +9407,7 @@ accept Troops in the Field##42687 |goto 80.68,62.71
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42687/1 |goto 81.36,60.95
 step
 talk Archmage Melis##108515
@@ -9575,7 +9575,7 @@ step
 Follow the path |goto 51.46,41.58 < 15 |walk
 clicknpc Scouting Map##120832
 Complete "Archmage Vargoth's Travels" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Archmage Vargoth's Travels" Missions |q 42424/1 |goto 81.36,61.01
 step
 talk Archmage Melis##108515
@@ -9853,7 +9853,7 @@ Follow the path |goto 70.20,65.41 < 10 |walk
 Run down the stairs |goto 72.04,77.27 > 10000 |walk
 clicknpc Scouting Map##120832
 Begin an "Oculus Preparations" Mission
-|tip This mission will take up to 10 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Begin the Mission |confirm |goto Hall of the Guardian/1 81.37,60.96 |q 42940
 stickystart "Oculus_Preparations_Mage"
 step
@@ -9908,7 +9908,7 @@ step
 label "Oculus_Preparations_Mage"
 clicknpc Scouting Map##120832
 Complete "Oculus Preparations" Missions
-|tip Each of these missions will take up to 10 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Oculus Preparations" Missions |q 42940/1 |goto Hall of the Guardian/1 81.37,60.96
 step
 Run up the stairs |goto 71.30,62.42 < 10 |walk
@@ -11517,7 +11517,7 @@ accept Scrolls of Knowledge##42210 |goto 52.78,59.77
 step
 clicknpc Scouting Map##120832
 Begin the "Scrolls of Knowledge" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Scrolls of Knowledge" Mission |q 42210/1 |goto 52.92,60.16
 step
 talk Master Hsu##99179
@@ -11774,7 +11774,7 @@ accept An Ample Stockpile##43054 |goto 48.89,58.36
 step
 clicknpc Scouting Map##120832
 Begin the "Tracking the Tideskorn: Highlands" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.92,60.16 |q 41909
 stickystart "Tracking_The_Tideskorn_Monk"
 step
@@ -11808,7 +11808,7 @@ step
 label "Tracking_The_Tideskorn_Monk"
 clicknpc Scouting Map##120832
 Begin "Tracking the Tideskorn" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Tracking the Tideskorn" Missions |q 41909/1 |goto 52.93,60.16
 step
 talk High Elder Cloudfall##104744
@@ -13571,7 +13571,7 @@ accept Wrath and Justice##42849 |goto 52.26,78.03
 step
 clicknpc Scouting Map##120832
 Begin the "Wrath and Justice" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Wrath and Justice" Mission |q 42849/1 |goto 53.49,78.43
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -13859,7 +13859,7 @@ accept Blood of Our Enemy##43488 |goto Dalaran L/10 44.60,23.07
 step
 clicknpc Scouting Map##120832
 Complete "Blood of Our Enemy" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Flasks of Demon Blood.
 collect 5 Flask of Demon Blood##139465 |q 43488/1 |goto Eastern Plaguelands/20 53.45,78.60
 step
@@ -14050,7 +14050,7 @@ step
 label "Lumenstones_Paladin"
 clicknpc Scouting Map##120832
 Complete "Lumenstone" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Collect #50# Lumenstone |q 43698/1 |goto 53.44,78.63
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -15640,7 +15640,7 @@ accept Troops in the Field##43276 |goto 51.36,48.02
 step
 clicknpc Command Map##102589
 Begin the "Troops in Training" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in Training" Mission |q 43276/1 |goto 50.54,48.23
 step
 talk Alonsus Faol##110564
@@ -15920,7 +15920,7 @@ step
 clicknpc Command Map##102589
 Complete "Holy Ground" Missions
 |tip They are the missions that reward Pure Holy Light.
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 collect 5 Pure Holy Light##139368 |q 43383/1 |goto 50.59,48.00
 step
 Follow the path |goto 66.74,40.62 < 15 |walk
@@ -15944,7 +15944,7 @@ accept Goddess Watch Over You##44337 |goto 50.91,47.84
 step
 clicknpc Command Map##102589
 Begin the "Infiltrating Our Enemies" Mission
-|tip This mission will take up to 2 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.59,48.03 |q 43385
 step
 talk Meridelle Lightspark##112401
@@ -15967,7 +15967,7 @@ turnin In the House of Light and Shadow##44448 |goto Dalaran L/10 28.50,48.31
 step
 clicknpc Command Map##102589
 Begin the "Infiltrating Our Enemies" Mission
-|tip This mission will take up to 2 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Infiltrating Our Enemies" Mission |q 43385/1 |goto 50.59,48.03
 step
 talk Alonsus Faol##110564
@@ -16136,7 +16136,7 @@ stickystart "World_Quests_Priest"
 step
 clicknpc Command Map##102589
 Begin the "Lumenstone: Suramar City" Mission
-|tip This mission will take up to 12 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.56,48.13 |q 43400
 step
 Enter the cave |goto Azsuna/0 49.37,25.96 < 20 |walk
@@ -16157,7 +16157,7 @@ step
 label "Lumenstones_Priest"
 clicknpc Command Map##102589
 Complete "Lumenstone" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Collect #50# Lumenstone |q 43400/1 |goto 50.56,48.13
 step
 talk Alonsus Faol##110564
@@ -17679,7 +17679,7 @@ accept The Big Bad Wolfe##43014 |goto 37.87,45.00
 step
 clicknpc Scouting Map##120832
 Begin the "The Big Bad Wolfe" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "The Big Bad Wolfe" Mission |q 43014/1 |goto 37.37,44.15
 step
 talk Nikki the Gossip##98092
@@ -17816,7 +17816,7 @@ Follow the path up |goto 42.79,65.29 < 15 |walk
 Click the Torch and run through the doorway |goto 45.34,58.85 < 10 |walk
 clicknpc Scouting Map##120832
 Begin a "Throwing SI:7 Off the Trail" Mission
-|tip This mission will take 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 37.46,44.21 |q 42684
 step
 collect 20 Aethril##124101 |q 42730/1 |goto Orgrimmar/1 53.99,73.26
@@ -17996,7 +17996,7 @@ turnin Light's Charge##44153 |goto Dalaran L/4 40.69,54.57
 step
 clicknpc Scouting Map##120832
 Begin "Throwing SI:7 Off the Trail" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Throwing SI:7 Off the Trail: Dalaran" Mission |q 42684/1 |goto 37.46,44.21
 Complete the "Throwing SI:7 Off the Trail: Stormheim" Mission |q 42684/2 |goto 37.46,44.21
 Complete the "Throwing SI:7 Off the Trail: Azsuna" Mission |q 42684/3 |goto 37.46,44.21
@@ -18117,7 +18117,7 @@ Follow the path up |goto 42.79,65.29 < 15 |walk
 Click the Torch and run through the doorway |goto 45.34,58.85 < 10 |walk
 clicknpc Scouting Map##120832
 Begin the "Where In the World is Mathias? Obvious Start" Mission
-|tip This mission will take up to 12 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 37.41,44.25 |q 43469
 stickystart "Where_Mathias_Rogue"
 step
@@ -18127,7 +18127,7 @@ step
 label "Where_Mathias_Rogue"
 clicknpc Scouting Map##120832
 Begin "Where In the World is Mathias?" Missions
-|tip Each of these missions will take up to 12 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Where In the World is Mathias?" Missions |q 43469/1 |goto 37.41,44.25
 step
 Click the Torch and run through the doorway |goto 45.02,54.87 < 10 |walk
@@ -19737,7 +19737,7 @@ accept Troops in the Field##41741 |goto 33.00,60.47
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 41741/1 |goto 33.49,59.35
 step
 talk Advisor Sevel##96746
@@ -19947,7 +19947,7 @@ accept Champion: Celestos##41742 |instant |goto 28.21,45.00
 step
 clicknpc Scouting Map##120832
 Begin a "Thunderaan's Enemies" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 33.51,59.34 |q 42986
 stickystart "Enemies_Of_Air_Shaman"
 step
@@ -19993,7 +19993,7 @@ step
 label "Enemies_Of_Air_Shaman"
 clicknpc Scouting Map##120832
 Begin "Thunderaan's Enemies" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #4# "Thunderaan's Enemies" Missions |q 42986/1 |goto 33.51,59.34
 step
 talk Advisor Sevel##96746
@@ -20005,7 +20005,7 @@ accept Champion: Nobundo##41743 |instant |goto 30.25,51.54
 step
 clicknpc Scouting Map##120832
 Begin the "Investigating Deepholm" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Investigating Deepholm" Mission |q 42200/1 |goto 33.51,59.34
 step
 talk Advisor Sevel##96746
@@ -21786,7 +21786,7 @@ accept Troops in the Field##42602 |goto 67.01,46.44
 step
 clicknpc Dreadscar Battle Plans##101979
 Begin the "Troops in Training" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After Starting the Mission |confirm |goto 66.26,46.95 |q 42602
 step
 talk Archmage Khadgar##90417
@@ -22028,7 +22028,7 @@ turnin Recruiting More Troops##41798 |goto 61.49,51.81
 step
 clicknpc Dreadscar Battle Plans##101979
 Complete "Empowered Soul Shard" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Empowered Soul Shards.
 collect 50 Empowered Soul Shard##136834	|q 42100/1 |goto 66.27,46.95
 step
@@ -22163,7 +22163,7 @@ accept Unparalleled Power##44682 |goto 67.01,46.41
 step
 clicknpc Dreadscar Battle Plans##101979
 Begin the "One Who's Worthy" Mission
-|tip This mission will take up to over 19 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 66.22,46.97 |q 42102
 stickystart "Felsworn_Heart_Warlock"
 stickystart "One_Who's_Worthy_Warlock"
@@ -22187,7 +22187,7 @@ step
 label "One_Who's_Worthy_Warlock"
 clicknpc Dreadscar Battle Plans##101979
 Begin "One Who's Worthy" Missions
-|tip Each of these missions will take up to over 19 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "One Who's Worthy" Missions |q 42102/1 |goto Dreadscar Rift/0 66.22,46.97
 step
 talk Gakin the Darkbinder##106199
@@ -23701,7 +23701,7 @@ accept Troops in the Field##42610 |goto 59.77,13.40
 step
 clicknpc Eye of Odyn##97389
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42610/1 |goto 59.21,13.44
 step
 talk Skyseer Ghrent##100635

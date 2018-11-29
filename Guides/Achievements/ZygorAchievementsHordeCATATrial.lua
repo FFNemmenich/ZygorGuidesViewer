@@ -546,7 +546,7 @@ Discover The Skittering Dark |achieve 769/4 |goto Silverpine Forest 34.8,12.4
 step
 Discover Forsaken Rear Guard |achieve 769/15 |goto Silverpine Forest 44.9,18.8
 step
-Discover North Tide's Run |achieve 769/14 |goto Silverpine Forest 44.66,21.64
+Discover North Tide's Run |achieve 769/14 |goto Silverpine Forest 37.90,44.70
 step
 Discover Valgan's Field |achieve 769/7 |goto Silverpine Forest 53.2,25.6
 step

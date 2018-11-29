@@ -6799,385 +6799,727 @@ step
 _Congratulations!_
 You Earned "the Noble" Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests",{
 author="support@zygorguides.com",
 condition_suggested=function() return isevent("Pilgrim's Bounty") end,
-description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
+description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event.",
 },[[
 step
-You will need to have 300 cooking in order to complete this guide
-Open your cooking window before you continue, to detect your ability |cast cooking##2550
-confirm
-step
 talk Human Commoner##18927
-accept Pilgrim's Bounty##14022 |goto Stormwind City 61.7,74.1
+accept Pilgrim's Bounty##14022 |goto Stormwind City/0 61.68,74.18
 step
 talk Gregory Tabor##34675
-turnin Pilgrim's Bounty##14022 |goto Elwynn Forest 34.1,51.5
+turnin Pilgrim's Bounty##14022 |goto Elwynn Forest/0 34.10,51.45
 step
 talk Bountiful Table Hostess##34653
-accept Sharing a Bountiful Feast##14064 |goto Elwynn Forest 34.2,51.1
+accept Sharing a Bountiful Feast##14064 |goto 34.18,51.07
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |condition hasbuff(250623,5) |goto 34.24,51.23 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
 step
 clicknpc The Turkey Chair##34812
-|tip They look like wooden chairs around a round white and green table with food on it.
-Use the first ability on your hotbar to Pass the food to other players who are sitting at the table
-|tip You must target the other players and use the Pass the Food ability. Do this repeatedly until you get an achievement.
-Start a Food Fight! |achieve 3579 |goto 34.3,51.1
-Use the other abilities on your hotbar to eat the food
-|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-Eat each type of food 5 times in a row
-|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-Gain the Spirit of Sharing |q 14064/1 |goto 34.3,51.1
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |condition hasbuff(250626,5) |goto 34.29,51.07 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |condition hasbuff(250622,5) |goto 34.40,51.06 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |condition hasbuff(250625,5) |goto 34.43,51.23 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |condition hasbuff(250624,5) |goto 34.33,51.33 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Gain the Spirit of Sharing |q 14064/1 |goto 34.29,51.07
+step
+label "Leave_The_Table"
+Leave the Table |outvehicle |q 14064
+|tip Click the "Exit" button on your action bar.
 step
 talk Bountiful Table Hostess##34653
-turnin Sharing a Bountiful Feast##14064 |goto 34.2,51.1
+turnin Sharing a Bountiful Feast##14064 |goto 34.18,51.07
 step
 talk Ellen Moore##34710
-skillmax Cooking,75
-learn Spice Bread##37836 |goto 33.7,50.6
+Train Cooking |skillmax Cooking,300 |goto 33.71,50.63
+step
+talk Ellen Moore##34710
+learn Spice Bread##37836 |goto 33.71,50.63
 step
 talk Wilmina Holbeck##34682
-buy 1 Bountiful Cookbook##46809 |condition itemcount(46809) >= 1 |goto 34.1,51.5
+buy 1 Bountiful Cookbook##46809 |goto 34.14,51.53 |q 14023 |future
 step
-Use your Bountiful Cookbook |use Bountiful Cookbook##46809
-collect Recipe: Spice Bread Stuffing##44860 |future |q 14023
-collect Recipe: Pumpkin Pie##44862 |future |q 14024
-collect Recipe: Cranberry Chutney##44858 |future |q 14028
-collect Recipe: Candied Sweet Potato##44859 |future |q 14030
-collect Recipe: Slow-Roasted Turkey##44859 |future |q 14035
+use the Bountiful Cookbook##46809
+collect Recipe: Spice Bread Stuffing##44860 |q 14023 |future
 step
-Use your Recipe: Spice Bread Stuffing to learn the recipe |use Recipe: Spice Bread Stuffing##44860
+use the Bountiful Cookbook##46809
+collect Recipe: Pumpkin Pie##44862 |q 14024 |future
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Cranberry Chutney##44858 |q 14028 |future
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Candied Sweet Potato##44859 |q 14030 |future
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Slow-Roasted Turkey##44861 |q 14035 |future
+step
+use the Recipe: Spice Bread Stuffing##44860
 learn Spice Bread Stuffing##62050
 step
 talk Gregory Tabor##34675
-accept Spice Bread Stuffing##14023 |goto 34.1,51.5
+accept Spice Bread Stuffing##14023 |goto 34.10,51.45
 step
 talk Wilmina Holbeck##34682
-buy 5 Simple Flour##30817 |condition itemcount(30817) >= 5 |goto 34.1,51.5 < 5
-buy 5 Mild Spices##2678 |condition itemcount(2678) >= 5 |goto 34.1,51.5 < 5
-buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 34.1,51.5 < 5
+buy 5 Simple Flour##30817 |goto 34.14,51.53 |q 14023
+buy 5 Mild Spices##2678 |goto 34.14,51.53 |q 14023
+buy 5 Autumnal Herbs##44835 |goto 34.14,51.53 |q 14023
 step
-Cook next to the Pilgrim's Bounty Cooking Fire Click Here |goto 33.8,50.8
-create 5 Spice Bread##37836,Cooking,5 total |q 14023
+Open Your Cooking Crafting Panel:
+_<Create 5 Spice Bread>_
+collect 5 Spice Bread##30816 |goto 33.82,50.84 |q 14023
 step
-create 5 Spice Bread Stuffing##62050,Cooking,5 total |q 14023/1 |goto 33.8,50.8
-collect 5 Spice Bread Stuffing##44837 |q 14023/2 |goto 33.8,50.8
-skill Cooking,100
-|tip Keep creating the Spice Bread Stuffing until you reach level 100.
-If you need to train your Cooking skill to allow a higher max level, click here to talk to Ellen Moore |goto 33.7,50.6
+Open Your Cooking Crafting Panel:
+_<Create 5 Spice Bread Stuffing>_
+Prepare #5# Spice Bread Stuffing |q 14023/1 |goto 33.82,50.84
+|tip Save these for later.
 step
-Use your Recipe: Pumpkin Pie to learn the recipe |use Recipe: Pumpkin Pie##44862
+collect 5 Spice Bread Stuffing##44837 |q 14023/2
+step
+Reach Cooking Level 100 |skill Cooking,100 |goto 33.82,50.84
+|tip Continue making Spice Bread Stuffing to reach 100 Cooking.
+|tip Each one requires 1 Spice Bread and 1 Autumnal Herbs.
+|tip Each Spice Bread requires 1 Simple Flour and 1 Mild Spices.
+step
+talk Jasper Moore##34744
+turnin Spice Bread Stuffing##14023 |goto 33.89,50.81
+accept Pumpkin Pie##14024 |goto 33.89,50.81
+step
+use the Recipe: Pumpkin Pie##44862
 learn Pumpkin Pie##62044
 step
-talk Jasper Moore##34744
-turnin Spice Bread Stuffing##14023
-accept Pumpkin Pie##14024 |goto 33.9,50.8
-step
 talk Wilmina Holbeck##34682
-buy 5 Ripe Elwynn Pumpkin##46784 |condition itemcount(46784) >= 5 |goto 34.1,51.5
-buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 34.1,51.5
+buy 5 Ripe Elwynn Pumpkin##46784 |goto 34.14,51.53 |q 14024
+buy 5 Honey##44853 |goto 34.14,51.53 |q 14024
 step
-Cook next to the Pilgrim's Bounty Cooking Fire
-create Pumpkin Pie##62044,Cooking,5 total |q 14024/1 |goto 33.8,50.8
-collect 5 Pumpkin Pie##44836 |q 14024/2 |goto 33.8,50.8
-create Pumpkin Pie##62044,Cooking,160 |goto 33.8,50.8
-|tip Keep creating the Pumpkin Pie Recipe until you reach level 160.
-If you need to train your Cooking skill to allow a higher max level, click here to talk to Ellen Moore |goto 33.7,50.6
+Open Your Cooking Crafting Panel:
+_<Create 5 Pumpkin Pie>_
+Prepare #5# Pumpkin Pie |q 14024/1 |goto 33.83,50.73
+|tip Save these for later.
 step
-Use your Recipe: Cranberry Chutney to learn the recipe |use Recipe: Cranberry Chutney##44858
-learn Cranberry Chuntney##62049
+collect 5 Pumpkin Pie##44836 |q 14024/2 |goto 33.83,50.73
+step
+Reach Cooking Level 160 |skill Cooking,160
+|tip Continue making Pumpkin Pie to reach 160 Cooking.
+|tip Each one requires 1 Ripe Elwynn Pumpkin and 1 Honey.
 step
 talk Edward Winslow##34644
-turnin Pumpkin Pie##14024
-accept Cranberry Chutney##14028 |goto Dun Morogh,59.8,34.3
+turnin Pumpkin Pie##14024 |goto Dun Morogh/0 59.81,34.34
+accept Cranberry Chutney##14028 |goto 59.81,34.34
+step
+use the Recipe: Cranberry Chutney##44858
+learn Cranberry Chutney##62049
 step
 talk Elizabeth Barker Winslow##34645
-buy 5 Tangy Southfury Cranberries##44854 |condition itemcount(44854) >= 5 |goto 59.77,34.34
-buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 59.77,34.34
+buy 5 Tangy Southfury Cranberries##44854 |goto 59.77,34.34 |q 14028
+buy 5 Honey##44853 |goto 59.77,34.34 |q 14028
 step
-Cook next to the Pilgrim's Bounty Cooking Fire
-create 5 Cranberry Chutney##62049,Cooking,5 total |q 14028/1 |goto 59.61,34.94
-collect 5 Cranberry Chutney##44840 |q 14028/2 |goto 59.61,34.94
-create 5 Cranberry Chutney##62049,Cooking,220
-If you need to train your Cooking skill to allow a higher max level, click here to talk to Caitrin Ironkettle |goto 52.9,36.1
+Open Your Cooking Crafting Panel:
+_<Create 5 Cranberry Chutney>_
+Prepare #5# Cranberry Chutney |q 14028/1 |goto 60.01,34.39
+step
+collect 5 Cranberry Chutney##44840 |q 14028/2
+step
+Reach Cooking Level 220 |skill Cooking,220 |goto 60.01,34.39
+|tip Continue making Cranberry Chutneys to reach 220 Cooking.
+|tip Each one requires 1 Tangy Southfury Cranberries and 1 Honey.
 step
 talk Jasper Moore##34744
-turnin Cranberry Chutney##14028 |goto Elwynn Forest 33.9,50.8
-accept They're Ravenous In Darnassus##14030 |goto Elwynn Forest 33.9,50.8
+turnin Cranberry Chutney##14028 |goto Elwynn Forest/0 33.89,50.81
+accept They're Ravenous In Darnassus##14030 |goto Elwynn Forest/0 33.89,50.81
 step
-Use your Recipe: Candied Sweet Potato to learn the recipe |use Recipe: Candied Sweet Potato##44859
+collect 5 Spice Bread Stuffing##44837 |q 14030/1
+|tip You should have these from a previous step.
+step
+collect 5 Pumpkin Pie##44836 |q 14030/2
+|tip You should have these from a previous step.
+step
+Travel to Darnassus |goto Teldrassil/0 52.38,89.47 < 10000 |c |next "Turnin_They're_Ravenous_In_Darnassus" |or |q 14030
+'|goto Darkshore/0 47.43,18.01 < 10000 |c |noway |next "Travel_To_The_Past" |or |q 14030
+step
+label "Travel_To_The_Past"
+talk Zidormi##141489
+Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Darkshore/0 48.07,25.67 |q 14030
+step
+label "Turnin_They're_Ravenous_In_Darnassus"
+talk Isaac Allerton##34676
+turnin They're Ravenous In Darnassus##14030 |goto Darnassus/0 61.47,49.10
+accept Candied Sweet Potatoes##14033 |goto 61.47,49.10
+step
+use the Recipe: Candied Sweet Potato##44859
 learn Candied Sweet Potato##62051
 step
-talk Wilmina Holbeck##34682
-buy 5 Ripe Elwynn Pumpkin##46784 |condition itemcount(46784) >= 5 |goto 34.1,51.5
-buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 34.1,51.5
-buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 34.1,51.5
-buy 5 Mild Spices##2678 |condition itemcount(2678) >= 5 |goto 34.1,51.5
-buy 5 Simple Flour##30817 |condition itemcount(30817) >= 5 |goto 34.1,51.5
-step
-Cook next to the Pilgrim's Bounty Cooking Fire
-create Pumpkin Pie##62044,Cooking,5 total |q 14030 |goto 33.8,50.8
-collect 5 Pumpkin Pie##44836 |q 14030/2 |goto 33.8,50.8
-step
-create 5 Spice Bread##37836,Cooking,5 total |n |goto 33.8,50.8
-create 5 Spice Bread Stuffing##62050,Cooking,5 total |q 14030 |goto 33.8,50.8
-collect 5 Spice Bread Stuffing##44837 |q 14030/1 |goto 33.8,50.8
-step
-talk Isaac Allerton##34676
-turnin They're Ravenous In Darnassus##14030 |goto Darnassus 61.5,49.0
-accept Candied Sweet Potatoes##14033 |goto Darnassus 61.5,49.0
-step
 talk Ikaneba Summerset##34681
-buy 5 Teldrassil Sweet Potato##44855 |condition itemcount(44855 ) >= 5 |goto 61.5,49.0
-buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 61.5,49.0
-buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 61.5,49.0
+buy 5 Teldrassil Sweet Potato##44855 |goto 61.64,49.12 |q 14033
+buy 5 Honey##44853 |goto 61.64,49.12 |q 14033
+buy 5 Autumnal Herbs##44835 |goto 61.64,49.12 |q 14033
 step
-Cook next to the Pilgrim's Bounty Cooking Fire
-create 5 Candied Sweet Potatoes##62051,Cooking,5 total |q 14033/1 |goto 62.10,48.99
-collect 5 Candied Sweet Potatoes##44839 |q 14033/2 |goto 62.10,48.99
-create 5 Candied Sweet Potatoes##62051,Cooking,280
-If you need to train your Cooking skill to allow a higher max level, click here to talk to Mary Allerton |goto 66.5,35.1
+Open Your Cooking Crafting Panel:
+_<Create 5 Candied Sweet Potato>_
+Prepare #5# Candied Sweet Potatoes |q 14033/1 |goto 62.15,46.20
+step
+collect 5 Candied Sweet Potatoes##44839 |q 14033/2 |goto 62.02,49.16
+step
+Reach Cooking Level 280 |skill Cooking,280
+|tip Continue making Candied Sweet Potatoes to reach 280 Cooking.
+|tip Each one requires 1 Teldrassil Sweet Potato, 1 Autumnal Herbs, and 1 Honey.
 step
 talk Gregory Tabor##34675
-turnin Candied Sweet Potatoes##14033 |goto Elwynn Forest,34.1,51.5
-accept Slow-roasted Turkey##14035 |goto Elwynn Forest,34.1,51.5
+turnin Candied Sweet Potatoes##14033 |goto Elwynn Forest/0 34.10,51.45
+accept Slow-roasted Turkey##14035 |goto Elwynn Forest/0 34.10,51.45
 step
-Use your Recipe: Slow-Roasted Turkey to learn the recipe |use Recipe: Slow-Roasted Turkey##44861
+use the Recipe: Slow-Roasted Turkey##44861
 learn Slow-Roasted Turkey##62045
 step
 kill Wild Turkey##32820+
-|tip You can find these all around Elwynn Forest, so you are not limited to staying in this area. Ride around Elwynn Forest and look for Wild Turkeys, you should be able to find them easily if you ride around.
-collect 5 Wild Turkey##44834 |q 14035 |goto 42.5,62.8
+|tip You can find these all over Elwynn Forest.
+collect 5 Wild Turkey##44834 |q 14035 |goto 42.32,62.16
 step
 talk Wilmina Holbeck##34682
-buy 10 Honey##44853 |condition itemcount(44853) >= 10 |goto 34.1,51.5
-buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 34.1,51.5
+buy 10 Honey##44853 |goto 34.15,51.52 |q 14035
+buy 5 Autumnal Herbs##44835 |goto 34.15,51.52 |q 14035
 step
-Cook next to the Pilgrim's Bounty Cooking Fire
-create 5 Slow-Roasted Turkey##62045,Cooking,5 total |q 14035/1 |goto 33.8,50.8
-collect 5 Slow-Roasted Turkey##44838 |q 14035/2 |goto 33.8,50.8
-Earn the Now We're Cookin' Achievement |achieve 3576
-create 5 Slow-Roasted Turkey##62045,Cooking,300
-If you need to train your Cooking skill to allow a higher max level, click here to talk to Ellen Moore |goto 33.7,50.6
+Open Your Cooking Crafting Panel:
+_<Create 5 Slow-Roasted Turkey>_
+Prepare #5# Slow-Roasted Turkeys |q 14035/1 |goto 33.83,50.73
+step
+collect 5 Slow-Roasted Turkey##44838 |q 14035/2 |goto 33.83,50.73
 step
 talk Isaac Allerton##34676
-turnin Slow-roasted Turkey##14035 |goto Darnassus 61.5,49.1
+turnin Slow-roasted Turkey##14035 |goto Darnassus/0 61.47,49.10
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests",{
 author="support@zygorguides.com",
 condition_suggested=function() return isevent("Pilgrim's Bounty") end,
 description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
 },[[
 step
-label "start"
-These are the Dailies and Achievements for Pilgrim's Bounty. You can only do the Dailies once per day
-You will need to have 300 cooking in order to complete this guide
-Open your cooking window before you continue, to detect your ability |cast cooking##2550
-confirm always
-step
-talk Innkeeper Allison##6740
-home Trade District |q 14022 |future |goto Stormwind City,60.4,75.3
-step
-talk Human Commoner##18927
-accept Pilgrim's Bounty##14022 |goto Stormwind City 61.7,74.1
-step
-talk Gregory Tabor##34675
-turnin Pilgrim's Bounty##14022 |goto Elwynn Forest 34.1,51.5
-step
-clicknpc The Turkey Chair##34812
-|tip They look like wooden chairs around a round white and green table with food on it.
-Use the first ability on your hotbar to Pass the food to other players who are sitting at the table
-|tip You must target the other players and use the Pass the Food ability. Do this repeatedly until you get an achievement.
-Start a Food Fight! |achieve 3579 |goto Elwynn Forest 34.3,51.1
-Use the other abilities on your hotbar to eat the food
-|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-Earn the Pilgrims Paunch in Stormwind |achieve 3556/4 |goto Elwynn Forest 34.3,51.1
-step
-While still at the table, go to each of the chairs
-While in each of the chairs, press 1
-Pass the Candied Sweet Potatoes |achieve 3558/1 |goto Elwynn Forest 34.3,51.1
-Pass the Cranberry Chutney |achieve 3558/2 |goto Elwynn Forest 34.3,51.1
-Pass the Pumpkin Pie |achieve 3558/3 |goto Elwynn Forest 34.3,51.1
-Pass the Slow-Roasted Turkey |achieve 3558/4 |goto Elwynn Forest 34.3,51.1
-Pass the Spice Bread Stuffing |achieve 3558/5 |goto Elwynn Forest 34.3,51.1
-Earn the Sharing is Caring Achievement |achieve 3558 |goto Elwynn Forest 34.3,51.1
+label "Guide_Start"
+Complete the "Pilgrim's Bounty Quests" Event Guide |condition completedq(14035)
 step
 talk Jasper Moore##34744
-accept She Says Potato##14055 |goto Elwynn Forest 33.9,50.8
+accept She Says Potato##14055 |goto Elwynn Forest/0 33.88,50.80
 step
 talk Ellen Moore##34710
-accept We're Out of Cranberry Chutney Again?##14053 |goto 33.7,50.6
+accept We're Out of Cranberry Chutney Again?##14053 |goto 33.71,50.63
 step
 talk Wilmina Holbeck##34682
-buy 20 Ripe Elwynn Pumpkin##46784 |condition itemcount(46784) >= 20 |q 14054/1 |goto Elwynn Forest,34.1,51.5
-buy 20 Honey##44853 |condition itemcount(44853) >= 20 |q 14054/2 |goto Elwynn Forest 34.1,51.5
+buy 20 Ripe Elwynn Pumpkin##46784 |goto 34.15,51.52 |q 14054 |future
+buy 20 Simple Flour##30817 |goto 34.15,51.52 |q 14051 |future
+buy 20 Mild Spices##2678 |goto 34.15,51.52 |q 14051 |future
+buy 60 Autumnal Herbs##44835 |goto 34.15,51.52 |q 14055
+buy 100 Honey##44853 |goto 34.15,51.52 |q 14054 |future
 step
 kill Wild Turkey##32820+
-|tip You can find these all around Elwynn Forest, so you are not limited to staying in this area.
-collect 20 Wild Turkey##44834 |q 14048 |future |goto 42.5,62.8
-step
-talk Mary Allerton##34711
-accept Easy As Pie##14054 |goto Darnassus 61.9,46.2
-step
-create 20 Pumpkin Pie##62044,Cooking,20 total |q 14054/1 |goto 62.1,46.0
-step
-clicknpc The Turkey Chair##34812
-|tip They look like wooden chairs around a round white and green table with food on it.
-Use the other abilities on your hotbar to eat the food
-|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-Eat each type of food 5 times in a row
-|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-Earn the Pilgrims Paunch in Darnassus |achieve 3556/1 |goto Darnassus 62.8,48.2
-step
-talk Ikaneba Summerset##34681
-buy 20 Teldrassil Sweet Potato##44855 |condition itemcount(44855) >= 20 |goto 61.7,49.1
-buy 20 Honey##44853 |condition itemcount(44853) >= 20 |goto 61.7,49.1
-buy 20 Autumnal Herbs##44835 |condition itemcount(44835) >= 20 |goto 61.7,49.1
-step
-talk Mary Allerton##34711
-turnin Easy As Pie##14054 |goto Darnassus 61.9,46.2
-Choose one of the following until you have all three pieces:
-collect Pilgrim's Hat##46723
-collect Pilgrim's Attire##46800
-collect Turkey Shooter##44812
-|tip You can collect multiple Turkey Shooters if you have the other 2 pieces.
-Choose the Pilgrim's Bounty Bag and open it to get the Turkey Shooter |use Pilgrim's Bounty##116404
-confirm
-step
-create 20 Candied Sweet Potato##62051,Cooking,20 total |q 14055/1 |goto 61.9,46.2
-step
-Go up the ramp in Exodar |goto The Exodar 53.2,33.9 < 20 |only if walking
-Continue up the main ramp |goto The Exodar 64.8,35.5 < 20 |only if walking
-clicknpc The Turkey Chair##34812
-|tip They look like wooden chairs around a round white and green table with food on it.
-Use the other abilities on your hotbar to eat the food
-|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-Eat each type of food 5 times in a row
-|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-Earn the Pilgrims Paunch in The Exodar |achieve 3556/2 |goto The Exodar,75.7,52.3
+|tip You can find these all over Elwynn Forest.
+collect 20 Wild Turkey##44834 |goto 42.32,62.16 |q 14048 |future
 step
 talk Caitrin Ironkettle##34708
-accept Don't Forget The Stuffing!##14051 |goto Dun Morogh 60.1,34.3
-accept Can't Get Enough Turkey##14048 |goto Dun Morogh 60.1,34.3
-step
-clicknpc The Turkey Chair##34812
-|tip They look like wooden chairs around a round white and green table with food on it.
-Use the other abilities on your hotbar to eat the food
-|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair.  Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-Eat each type of food 5 times in a row
-|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-Earn the Pilgrims Paunch in Ironforge |achieve 3556/3 |goto Dun Morogh 59.9,34.6
-Earn the Pilgrims Paunch Achievement! |achieve 3556 |goto Dun Morogh 59.9,34.6
+accept Don't Forget The Stuffing!##14051 |goto Dun Morogh/0 60.04,34.31
+accept Can't Get Enough Turkey##14048 |goto 60.04,34.31
 step
 talk Elizabeth Barker Winslow##34645
-buy 20 Tangy Wetland Cranberries##44854 |condition itemcount(44854) >= 20 |goto 59.8,34.3
-buy 20 Mild Spices##2678 |condition itemcount(2678) >= 20 |goto 59.8,34.3
-buy 20 Simple Flour##30817 |condition itemcount(30817) >= 20 |goto 59.8,34.3
-buy 60 Honey##44853 |condition itemcount(44853) >= 60 |goto 59.8,34.3
-buy 40 Autumnal Herbs##44835 |condition itemcount(44835) >= 40 |goto 59.8,34.3
-buy 20 Tangy Wetland Cranberries##44854 |condition itemcount(44854) >= 20 |goto 59.8,34.3
+buy 20 Tangy Wetland Cranberries##44854 |goto 59.77,34.34 |q 14051
 step
-create 20 Spice Bread##37836,Cooking,20 total |q 14051 |goto 60.0,34.4
+Travel to Darnassus |goto Teldrassil/0 52.38,89.47 < 10000 |c |next "Buy_Teldrassil_Sweet_Potato" |or
+'|goto Darkshore/0 47.43,18.01 < 10000 |c |noway |next "Travel_To_The_Past" |or
 step
-create 20 Spice Bread Stuffing##62050,Cooking,20 total |q 14051/1 |goto 60.0,34.4
+label "Travel_To_The_Past"
+talk Zidormi##141489
+Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Darkshore/0 48.07,25.67
+step
+label "Buy_Teldrassil_Sweet_Potato"
+talk Ikaneba Summerset##34681
+buy 20 Teldrassil Sweet Potato##44855 |goto Darnassus/0 61.64,49.13 |q 14055
+step
+talk Mary Allerton##34711
+accept Easy As Pie##14054 |goto 61.90,46.17
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Pumpkin Pie>_
+collect 20 Pumpkin Pie##44836 |q 14054/1 |goto 62.19,46.22
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Spice Bread>_
+collect 20 Spice Bread##30816 |goto 62.19,46.22 |q 14051
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Spice Bread Stuffing>_
+collect 20 Spice Bread Stuffing##44837 |q 14051/1 |goto 62.19,46.22
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Slow-Roasted Turkey>_
+collect 20 Slow-Roasted Turkey##44838 |q 14048/1 |goto 62.19,46.22
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Candied Sweet Potato>_
+collect 20 Candied Sweet Potato##44839 |q 14055/1 |goto 62.19,46.22
+step
+Open Your Cooking Crafting Panel:
+_<Create 20 Cranberry Chutney>_
+collect 20 Cranberry Chutney##44840 |q 14053/1 |goto 62.19,46.22
+step
+talk Mary Allerton##34711
+turnin Easy As Pie##14054 |goto 61.90,46.17
 step
 talk Caitrin Ironkettle##34708
-turnin Don't Forget The Stuffing!##14051 |goto Dun Morogh 60.1,34.3
-Choose one of the following until you have all three pieces:
-collect Pilgrim's Hat##46723
-collect Pilgrim's Attire##46800
-collect Turkey Shooter##44812
-|tip You can collect multiple Turkey Shooters if you have the other 2 pieces.
-Choose the Pilgrim's Bounty Bag and open it to get the Turkey Shooter |use Pilgrim's Bounty##116404
-confirm
-step
-create 20 Slow-Roasted Turkey##62045,Cooking,20 total |q 14048/1 |goto 60.0,34.4
-step
-talk Caitrin Ironkettle##34708
-turnin Can't Get Enough Turkey##14048 |goto Dun Morogh 60.1,34.3
-Choose one of the following until you have all three pieces:
-collect Pilgrim's Hat##46723
-collect Pilgrim's Attire##46800
-collect Turkey Shooter##44812
-|tip You can collect multiple Turkey Shooters if you have the other 2 pieces.
-Choose the Pilgrim's Bounty Bag and open it to get the Turkey Shooter |use Pilgrim's Bounty##116404
-confirm
-step
-create 20 Cranberry Chutney##62049,Cooking,20 total |q 14053/1 |goto 60.0,34.4
-step
-talk Jasper Moore##34744
-turnin She Says Potato##14055 |goto Elwynn Forest 33.9,50.8
-Choose one of the following until you have all three pieces:
-collect Pilgrim's Hat##46723
-collect Pilgrim's Attire##46800
-collect Turkey Shooter##44812
-|tip You can collect multiple Turkey Shooters if you have the other 2 pieces.
-Choose the Pilgrim's Bounty Bag and open it to get the Turkey Shooter |use Pilgrim's Bounty##116404
-confirm
+turnin Can't Get Enough Turkey##14048 |goto Dun Morogh/0 60.04,34.31
+turnin Don't Forget The Stuffing!##14051 |goto 60.04,34.31
 step
 talk Ellen Moore##34710
-turnin We're Out of Cranberry Chutney Again?##14053 |goto 33.7,50.6
-Choose one of the following until you have all three pieces:
-collect Pilgrim's Hat##46723
-collect Pilgrim's Attire##46800
-collect Turkey Shooter##44812
-|tip You can collect multiple Turkey Shooters if you have the other 2 pieces.
-Choose the Pilgrim's Bounty Bag and open it to get the Turkey Shooter |use Pilgrim's Bounty##116404
-confirm
-Earn the Pilgrims Progress Achievement |achieve 3596
+turnin We're Out of Cranberry Chutney Again?##14053 |goto Elwynn Forest/0 33.71,50.63
+step
+talk Jasper Moore##34744
+turnin She Says Potato##14055 |goto 33.89,50.81
+step
+Click Here to Repeat the Daily Quests |confirm |next "Guide_Start"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\\"FOOD FIGHT!\"",{
+author="support@zygorguides.com",
+description="Bounce food off a fellow feaster's head at a Bountiful Table.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3579},
+},[[
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Pass The Cranberries" ability to pass the food to other players at the table.
+|tip You must target the other players and use the "Pass the Cranberries" ability.
+|tip Do this repeatedly until you earn the "FOOD FIGHT!" achievement.
+Start a Food Fight! |achieve 3579 |goto Elwynn Forest/0 34.29,51.07
+step
+_Congratulations!_
+You Earned the "FOOD FIGHT!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Now We're Cookin'",{
+author="support@zygorguides.com",
+description="Cook up each of the following Pilgrim's Bounty dishes:\n\n"..
+"Candied Sweet Potato\nCranberry Chutney\nPumpkin Pie\n"..
+"Slow-Roasted Turkey\nSpice Bread Stuffing",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3576},
+},[[
+step
+talk Wilmina Holbeck##34682
+buy 1 Bountiful Cookbook##46809 |goto Elwynn Forest/0 34.14,51.53
+|only if not achieved(3576)
+step
+talk Ellen Moore##34710
+Train Cooking |skillmax Cooking,300 |goto 33.71,50.63
+step
+talk Ellen Moore##34710
+learn Spice Bread##37836 |goto 33.71,50.63
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Spice Bread Stuffing##44860
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Pumpkin Pie##44862
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Cranberry Chutney##44858
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Candied Sweet Potato##44859
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Slow-Roasted Turkey##44861
+|only if not achieved(3576)
+step
+use the Recipe: Spice Bread Stuffing##44860
+learn Spice Bread Stuffing##62050
+step
+talk Wilmina Holbeck##34682
+buy 1 Simple Flour##30817 |goto 34.14,51.53
+buy 1 Mild Spices##2678 |goto 34.14,51.53
+buy 1 Autumnal Herbs##44835 |goto 34.14,51.53
+|only if not achieved(3576)
+step
+Open Your Cooking Crafting Panel:
+_<Create 1 Spice Bread>_
+collect 1 Spice Bread##30816 |goto 33.82,50.84
+|only if not achieved(3576)
+step
+Open Your Cooking Crafting Panel:
+_<Create 1 Spice Bread Stuffing>_
+Prepare 1 Spice Bread Stuffing |achieve 3576/5 |goto 33.82,50.84
+step
+use the Recipe: Pumpkin Pie##44862
+learn Pumpkin Pie##62044
+step
+talk Wilmina Holbeck##34682
+buy 1 Ripe Tirisfal Pumpkin##46796 |goto 34.14,51.53
+buy 1 Honey##44853 |goto 34.14,51.53
+|only if not achieved(3576)
+step
+Open Your Cooking Crafting Panel:
+_<Create 1 Pumpkin Pie>_
+Prepare 1 Pumpkin Pie |achieve 3576/3 |goto 33.82,50.84
+step
+use the Recipe: Cranberry Chutney##44858
+learn Cranberry Chutney##62049
+step
+talk Elizabeth Barker Winslow##34645
+buy 1 Tangy Southfury Cranberries##44854 |goto Dun Morogh/0 59.77,34.34
+buy 1 Honey##44853 |goto 59.77,34.34
+|only if not achieved(3576)
+step
+Open Your Cooking Crafting Panel:
+_<Create 1 Cranberry Chutney>_
+Prepare 1 Cranberry Chutney |achieve 3576/2 |goto 60.01,34.39
+step
+use the Recipe: Candied Sweet Potato##44859
+learn Candied Sweet Potato##62051
+step
+Travel to Darnassus |goto Teldrassil/0 52.38,89.47 < 10000 |c |next "Buy_Candied_Sweet_Potato_Mats" |or
+'|goto Darkshore/0 47.43,18.01 < 10000 |c |noway |next "Travel_To_The_Past" |or
+step
+label "Travel_To_The_Past"
+talk Zidormi##141489
+Ask her _"Can you show me what the world was like before the burning of Teldrassil?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Darkshore/0 48.07,25.67 |q 14030
+step
+label "Buy_Candied_Sweet_Potato_Mats"
+talk Ikaneba Summerset##34681
+buy 1 Mulgore Sweet Potato##46797 |goto Darnassus/0 61.47,49.10
+buy 1 Honey##44853 |goto 61.47,49.10
+buy 1 Autumnal Herbs##44835 |goto 61.47,49.10
+|only if not achieved(3576)
+step
+Open Your Cooking Crafting Panel:
+_<Create 1 Candied Sweet Potato>_
+Prepare 1 Candied Sweet Potato |achieve 3576/1 |goto 62.15,46.20
+step
+use the Recipe: Slow-Roasted Turkey##44861
+learn Slow-Roasted Turkey##62045
 step
 kill Wild Turkey##32820+
-Quickly kill 40 Wild Turkeys and keep killing them until you earn the achievement:
-|tip You can see how many turkeys you have killed with the Turkey Tracker buff.
-|tip You can find more Turkeys all around Elwynn Forest.
-The Turkinator! |achieve 3578 |goto 42.5,62.8
+|tip You can find these all over Elwynn Forest.
+collect 1 Wild Turkey##44834 |goto Elwynn Forest/0 42.32,62.16
+|only if not achieved(3576)
 step
-You should have three pieces of the Pilgrim's Attire now
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
+talk Wilmina Holbeck##34682
+buy 2 Honey##44853 |goto 34.15,51.52
+buy 1 Autumnal Herbs##44835 |goto 34.15,51.52
+|only if not achieved(3576)
 step
-While wearing your Pilgrim's Attire, sit at any table's chair
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
-Pilgrim's Peril of Undercity |achieve 3580/4 |goto Undercity,68.6,6.7
+Open Your Cooking Crafting Panel:
+_<Create 1 Slow-Roasted Turkey>_
+Prepare 1 Slow-Roasted Turkey |achieve 3576/4 |goto 33.83,50.73
 step
-While wearing your Pilgrim's Attire, sit at any table's chair
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
-Pilgrim's Peril of Silvermoon City |achieve 3580/2 |goto Eversong Woods 55.2,53.2
+Cook a Pilgrim's Bounty Feast |achieve 3576
 step
-While wearing your Pilgrim's Attire, sit at any table's chair
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
-Pilgrim's Peril of Thunder Bluff |achieve 3580/3 |goto Thunder Bluff 28.6,62.8
+_Congratulations!_
+You Earned the "Now We're Cookin'" Achievement.
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim",{
+author="support@zygorguides.com",
+description="Complete the following Pilgrim's Bounty achievements:\n\n"..
+"\"FOOD FIGHT!\"\nNow We're Cookin'\nPilgrim's Paunch\n"..
+"Pilgrim's Peril\nPilgrim's Progress\nSharing is Caring\n"..
+"Terokkar Turkey Time\nThe Turkinator\nTurkey Lurkey",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3478},
+},[[
 step
-While wearing your Pilgrim's Attire, sit at any table's chair
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
-Pilgrim's Peril of Orgrimmar |achieve 3580/1 |goto Durotar 46.2,15.1
-Earn the Pilgrim's Peril Achievement! |achieve 3580 |goto Durotar 46.2,15.1
+|achieve 3478
+step
+_Congratulations!_
+You Earned the "Pilgrim" Achievement.
+]])
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Paunch",{
+author="support@zygorguides.com",
+description="Acquire the Spirit of Sharing from a complete Bountiful Table feast at the following capital cities:\n\n"..
+"Darnassus\nThe Exodar\n"..
+"Ironforge\nStormwind",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3556},
+},[[
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |condition hasbuff(250623,5) |goto Elwynn Forest/0 34.24,51.23 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |condition hasbuff(250626,5) |goto 34.29,51.07 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |condition hasbuff(250622,5) |goto 34.40,51.06 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |condition hasbuff(250625,5) |goto 34.43,51.23 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |condition hasbuff(250624,5) |goto 34.33,51.33 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+label "Earn_Pilgrim's_Paunch"
+Acquire the Spirit of Sharing |achieve 3556
+step
+_Congratulations!_
+You Earned the "Pilgrim's Paunch" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Peril",{
+author="support@zygorguides.com",
+description="While wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at the following enemy capital cities:\n\n"..
+"Orgrimmar\nSilvermoon City\n"..
+"Thunder Bluff\nUndercity",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3580},
+},[[
+step
+Travel to Tirisfal Glades |goto Tirisfal Glades/0 69.30,62.75 < 10000 |c
+|only if not achieved(3580)
+step
+talk Zidormi##141488
+Ask her _"Can you show me what Tirisfal Glades was like before the Battle for Lordaeron?"_
+Gain the "Time Travelling" Buff |havebuff 609811 |goto Tirisfal Glades/0 69.46,62.80
+|only if not achieved(3580)
+step
+Collect a Pilgrim's Dress, Robe, or Attire |condition itemcount (46800) >= 1 or itemcount (44785) >= 1 or itemcount (46824) >= 1
+|tip You can choose any of these as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3580)
+step
+use Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+use Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+use Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+|only if not achieved(3580)
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Undercity |achieve 3580/4 |goto Tirisfal Glades/0 62.22,66.61
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Silvermoon City |achieve 3580/2 |goto Eversong Woods/0 55.22,53.69
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Thunder Bluff |achieve 3580/3 |goto Thunder Bluff/0 28.59,62.78
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Orgrimmar |achieve 3580/1 |goto Durotar/0 46.31,15.09
+step
+Earn the "Pilgrim's Peril" Achievement |achieve 3580
+step
+_Congratulations!_
+You Earned the "Pilgrim's Peril" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress",{
+author="support@zygorguides.com",
+description="Complete the following Pilgrim's Bounty dailies:\n\n"..
+"Can't Get Enough Turkey\nDon't Forget The Stuffing!\nEasy As Pie\n"..
+"She Says Potato\nWe're Out of Cranberry Chutney Again?",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3596},
+},[[
+leechsteps "Zygor's Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests" 1-21
+step
+Earn the "Pilgrim's Progress" Achievement |achieve 3596
+step
+_Congratulations!_
+You Earned the "Pilgrim's Progress" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Sharing is Caring",{
+author="support@zygorguides.com",
+description="Pass each of the following dishes at a Bountiful Table:\n\n"..
+"Candied Sweet Potatoes\nCranberry Chutney\nPumpkin Pie\n"..
+"Slow-Roasted Turkey\nSpice Bread Stuffing",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3558},
+},[[
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Pass the Pie" ability on your action bar five times.
+Pass the Pie |achieve 3558/3 |goto Elwynn Forest/0 34.24,51.23 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Pass the Turky" ability on your action bar five times.
+Pass the Turkey |achieve 3558/4 |goto 34.29,51.07 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Pass the Cranberries" ability on your action bar five times.
+Pass the Cranberries |achieve 3558/2 |goto 34.40,51.06 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Pass the Sweet Potatoes" ability on your action bar five times.
+Pass the Sweet Potatoes |achieve 3558/1 |goto 34.43,51.23 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Pass the Stuffing" ability on your action bar five times.
+Pass the Stuffing |achieve 3558/5 |goto 34.33,51.33 |or
+step
+label "Earn_Sharing_Is_Caring"
+Earn the "Sharing is Caring" Achievement |achieve 3558
+step
+_Congratulations!_
+You Earned the "Sharing is Caring" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Terokkar Turkey Time",{
+author="support@zygorguides.com",
+description="Defeat Talon King Ikiss while wearing a Pilgrim's Hat and either a Pilgrim's Dress, Robe, or Attire.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3582},
+},[[
+step
+Collect a Pilgrim's Dress, Robe, or Attire |condition itemcount (46800) >= 1 or itemcount (44785) >= 1 or itemcount (46824) >= 1
+|tip You can choose any of these as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3582)
+step
+collect 1 Pilgrim's Hat##46723
+|tip You can choose this as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3582)
+step
+use Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+Equip a Pilgrim's Attire |equipped Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+use Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+Equip a Pilgrim's Dress |equipped Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+use Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+Equip a Pilgrim's Robe |equipped Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+|only if not achieved(3582)
+step
+use Pilgrim's Hat##46723 |only if itemcount (46723) >= 1
+Equip a Pilgrim's Hat |equipped Pilgrim's Attire##46723 |only if itemcount (46723) >= 1
+|only if not achieved(3582)
+step
+kill Talon King Ikiss##18473
+Earn the "Terokkar Turkey Time" Achievement |achieve 3582 |goto Sethekk Halls/2 32.50,39.50
+|tip Use the "Auchindoun: Sethekk Halls" dungeon guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Terokkar Turkey Time" Achievement.
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\Turkey Lurkey",{
+author="support@zygorguides.com",
+description="Blast the following dirty, sneaking Rogues with your Turkey Shooter:\n\n"..
+"Blood Elf Rogue\nDwarf Rogue\nGnome Rogue\nGoblin Rogue\n"..
+"Human Rogue\nNight Elf Rogue\nOrc Rogue\nTroll Rogue\n"..
+"Undead Rogue\nWorgen Rogue",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3559},
+},[[
 step
 You should have a few Turkey Shooters from your daily quests, if you don't, you will need to do more dailies when possible for more
 While in Durotar, shoot Horde Rogues with your Turkey Shooter |use Turkey Shooter##44812
-Shoot a Blood Elf Rogue |achieve 3559/1 |goto Durotar 46.2,15.1
-Shoot a Orc Rogue |achieve 3559/7 |goto Durotar 46.2,15.1
-Shoot a Troll Rogue |achieve 3559/8 |goto Durotar 46.2,15.1
-Shoot a Undead Rogue |achieve 3559/9 |goto Durotar 46.2,15.1
-Shoot a Goblin Rogue |achieve 3559/4 |goto Durotar 46.2,15.1
+Shoot a Blood Elf Rogue |achieve 3559/1 |goto Tirisfal Glades/0 45.96,14.79
+Shoot a Orc Rogue |achieve 3559/7 |goto 45.96,14.79
+Shoot a Troll Rogue |achieve 3559/8 |goto 45.96,14.79
+Shoot a Undead Rogue |achieve 3559/9 |goto 45.96,14.79
+Shoot a Goblin Rogue |achieve 3559/4 |goto 45.96,14.79
 step
 You should have a few Turkey Shooters from your daily quests, if you don't, you will need to do more dailies when possible for more
 While in Elwynn Forest, shoot Alliance Rogues with your Turkey Shooter |use Turkey Shooter##44812
-Shoot a Dwarf Rogue |achieve 3559/2
-Shoot a Gnome Rogue |achieve 3559/3
-Shoot a Human Rogue |achieve 3559/5
-Shoot a Night Elf Rogue |achieve 3559/6
-Shoot a Worgen Rogue |achieve 3559/10
+Shoot a Dwarf Rogue |achieve 3559/2 |goto Elwynn Forest/0 42.20,64.77
+Shoot a Gnome Rogue |achieve 3559/3 |goto Elwynn Forest/0 42.20,64.77
+Shoot a Human Rogue |achieve 3559/5 |goto Elwynn Forest/0 42.20,64.77
+Shoot a Night Elf Rogue |achieve 3559/6 |goto Elwynn Forest/0 42.20,64.77
+Shoot a Worgen Rogue |achieve 3559/10 |goto Elwynn Forest/0 42.20,64.77
 step
-Equip your Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800
-Equip your Pilgrim's Hat |equipped Pilgrim's Hat##46723 |use Pilgrim's Hat##46723
-kill Talon King Ikiss##18473
-Earn the Achievment Terokkar Turkey Time |achieve 3582 |goto Sethekk Halls/2 32.5,39.5
+|achieve 3559
 step
-You have reached the End of this guide, you can only do the Dailys Once per day
-Click here to start the Dailys over |confirm always
-|next "end" |only if achieved(3478)
-|next "start" |only if not achieved(3478)
+_Congratulations!_
+You Earned the "Turkey Lurkey" Achievement.
+]])
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Achievements\\The Turkinator",{
+author="support@zygorguides.com",
+description="Hunt enough Wild Turkeys quickly enough to gain Turkey Triumph.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3578},
+},[[
 step
-label "end"
-Congratualtions, you have earned the Pilgrim Achievement!
+kill Wild Turkey##32820+
+|tip Kill 40 turkeys without letting your Turkey Tracker Buff expire.
+|tip You will need to fly around Elwynn Forest.
+|tip You will be given 30 seconds for each kill to find a new turkey.
+|tip Use your "Track Beast" ability and look for yellow dots on the minimap. |only Hunter
+Earn the "Turkinator" Achievement |achieve 3578 |goto Elwynn Forest/0 42.32,62.16
+step
+_Congratulations!_
+You Earned the "The Turkinator" Achievement.
 ]])

@@ -7101,6 +7101,150 @@ step
 _Congratulations!_
 You completed the Argus Leatherworking questline.
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Legion Mining 1-100",{
+author="support@zygorguides.com",
+description="This guide will walk you through leveling your Legion Mining skill from 1-100.",
+condition_end=function() return skill('Legion Mining') >= 100 end,
+condition_suggested=function() return skill('Legion Mining') > 0 and skill('Legion Mining') < 100 end,
+},[[
+step
+map Val'sharah/0
+path	follow smart; loop on; ants curved; dist 20
+path	55.74,56.76	54.98,53.52	53.82,50.33	51.50,50.94	49.04,53.18
+path	47.20,54.90	44.81,58.33	42.84,59.05	40.95,58.71	39.00,58.35
+path	37.22,58.36	34.20,54.81	32.10,56.40	31.81,59.48	33.68,61.81
+path	35.73,62.31	37.16,64.34	38.03,65.36	39.31,64.67	40.07,62.55
+path	42.03,63.65	42.90,64.59	43.51,63.91	44.47,63.50	44.97,64.11
+path	47.08,65.90	47.28,67.56	48.36,68.94	50.04,70.56	48.31,71.48
+path	47.71,72.38	46.81,72.89	46.81,76.90	49.12,78.34	49.31,80.39
+path	49.67,83.57	50.60,84.56	51.82,88.65	52.22,87.49	53.19,88.54
+path	54.64,88.29	56.37,89.53	58.03,89.16	58.13,86.50	59.72,86.38
+path	63.64,89.41	64.92,88.49	66.51,87.67	66.73,84.38	65.28,83.15
+path	64.45,82.25	63.30,83.00	62.00,82.29	60.89,80.01	59.34,79.01
+path	61.10,76.27	63.36,75.12	64.24,73.67	64.69,74.48	65.99,76.79
+path	66.83,75.38	66.83,73.63	66.43,72.56	66.63,70.44	66.53,68.16
+path	65.89,66.89	63.11,65.99	60.87,64.61	59.26,64.27	57.76,64.16
+path	56.07,61.60	56.10,58.30
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Train Legion Mining |skillmax Legion Mining,100
+|tip You will learn this automatically after mining your first node.
+step
+map Val'sharah/0
+path	follow smart; loop on; ants curved; dist 20
+path	55.74,56.76	54.98,53.52	53.82,50.33	51.50,50.94	49.04,53.18
+path	47.20,54.90	44.81,58.33	42.84,59.05	40.95,58.71	39.00,58.35
+path	37.22,58.36	34.20,54.81	32.10,56.40	31.81,59.48	33.68,61.81
+path	35.73,62.31	37.16,64.34	38.03,65.36	39.31,64.67	40.07,62.55
+path	42.03,63.65	42.90,64.59	43.51,63.91	44.47,63.50	44.97,64.11
+path	47.08,65.90	47.28,67.56	48.36,68.94	50.04,70.56	48.31,71.48
+path	47.71,72.38	46.81,72.89	46.81,76.90	49.12,78.34	49.31,80.39
+path	49.67,83.57	50.60,84.56	51.82,88.65	52.22,87.49	53.19,88.54
+path	54.64,88.29	56.37,89.53	58.03,89.16	58.13,86.50	59.72,86.38
+path	63.64,89.41	64.92,88.49	66.51,87.67	66.73,84.38	65.28,83.15
+path	64.45,82.25	63.30,83.00	62.00,82.29	60.89,80.01	59.34,79.01
+path	61.10,76.27	63.36,75.12	64.24,73.67	64.69,74.48	65.99,76.79
+path	66.83,75.38	66.83,73.63	66.43,72.56	66.63,70.44	66.53,68.16
+path	65.89,66.89	63.11,65.99	60.87,64.61	59.26,64.27	57.76,64.16
+path	56.07,61.60	56.10,58.30
+Mine along the path
+|tip Make sure you enable "Find Minerals" in the tracking menu on the mini map.
+Reach 85 Legion Mining |skill Legion Mining,85
+step
+label "Start_Seams_Route"
+Follow the path |goto Suramar/0 24.63,32.33 < 30 |n |walk
+Follow the path |goto Suramar/0 24.92,35.02 < 30 |n |walk
+Follow the path |goto Suramar/0 25.26,37.98 < 30 |n |walk
+Follow the path |goto Suramar/0 25.50,40.80 < 30 |n |walk
+Follow the path |goto Suramar/0 25.03,44.34 < 30 |n |walk
+Follow the path |goto Suramar/0 25.67,46.85 < 30 |n |walk
+Enter the cave |goto Suramar/0 24.33,50.87 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Check for Leystone or Felslate Seams |goto 24.63,52.66 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Leave the cave |goto 24.29,50.82 < 20 |n |walk
+Follow the path up |goto 24.47,50.22 < 20 |n |walk
+Follow the path up |goto 25.19,50.35 < 20 |n |walk
+Follow the path |goto 24.68,52.67 < 30 |n |walk
+Run up the hill |goto 25.63,54.17 < 30 |n |walk
+Dismount and carefull follow the path down |goto 26.70,55.22 < 20 |n |walk
+Enter the cave |goto 28.42,56.13 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 29.30,55.61 < 20 |n |walk
+Follow the path |goto 30.22,56.07 < 20 |n |walk
+Check for Leystone or Felslate Seams |goto 30.86,55.42 < 30 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 30.47,55.74 < 20 |n |walk
+Leave the cave |goto 28.42,56.10 < 20 |n |walk
+Follow the path up |goto 28.51,57.27 < 20 |n |walk
+Follow the path up |goto 29.52,56.69 < 20 |n |walk
+Follow the path up |goto 29.63,55.40 < 20 |n |walk
+Follow the path up |goto 29.95,54.85 < 20 |n |walk
+Follow the path up |goto 29.16,53.82 < 20 |n |walk
+Follow the path |goto 30.97,53.04 < 30 |n |walk
+Follow the path |goto 30.32,49.71 < 30 |n |walk
+Enter the cave |goto 29.36,50.83 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 29.71,51.71 < 20 |n |walk
+Check for Leystone or Felslate Seams |goto 29.32,53.27 < 30 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 29.71,51.71 < 20 |n |walk
+Leave the cave |goto 29.36,50.83 < 20 |n |walk
+Follow the path |goto 30.70,47.16 < 30 |n |walk
+Follow the path |goto 32.03,42.43 < 30 |n |walk
+Follow the path |goto 32.79,40.18 < 30 |n |walk
+Follow the path up |goto 34.61,39.03 < 30 |n |walk
+Follow the water |goto 37.65,36.97 < 30 |n |walk
+Follow the path up |goto 39.10,33.36 < 30 |n |walk
+Enter the cave |goto 40.39,29.33 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 40.09,28.80 < 20 |n |walk
+Check for Leystone or Felslate Seams |goto 40.01,27.15 < 30 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 40.09,28.80 < 20 |n |walk
+Leave the cave |goto 40.39,29.33 < 20 |n |walk
+Follow the path |goto 38.63,32.60 < 30 |n |walk
+Follow the path |goto 36.72,30.10 < 30 |n |walk
+Follow the path |goto 36.50,26.35 < 30 |n |walk
+Jump down and follow the path |goto 34.63,24.79 < 30 |n |walk
+Jump down the small waterfall |goto 32.05,26.46 < 30 |n |walk
+Enter the cave |goto 31.52,25.79 < 20 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 31.80,24.95 < 20 |n |walk
+Check for Leystone or Felslate Seams |goto 33.07,24.58 < 30 |c
+|only if skill("Legion Mining") <= 95
+step
+Follow the path |goto 32.55,24.86 < 20 |n |walk
+Leave the cave |goto 31.52,25.79 < 20 |n |walk
+Jump down the waterfall |goto 29.16,27.97 < 20 |n |walk
+Follow the path |goto 27.46,28.21 < 30 |n |walk
+Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
+|only if skill("Legion Mining") <= 95
+step
+Reach 95 Legion Mining Skill |skill Legion Mining,95
+step
+You will need to complete World Quests to reach 100 Legion Mining skill
+|tip Open your mini map and search for World Quests rewarding "Infernal Brimstone".
+|tip They appear in Azsuna, Val'sharah, Highmountain, Stormheim and Suramar.
+|tip Refer to the World Quests guides to accomplish this.
+|tip Only one of these type of World Quests will appear every couple of days.
+click Brimstone Destroyer Core##247965
+Reach 100 Legion Mining Skill |skill Legion Mining,100
+step
+_Congratulations!_
+You Reached 100 Legion Mining Skill.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Empyrium for various Engineering and Blacksmithing recipes.",
@@ -7241,102 +7385,6 @@ Leave the cave |goto 31.52,25.79 < 20 |n |walk
 Jump down the waterfall |goto 29.16,27.97 < 20 |n |walk
 Follow the path |goto 27.46,28.21 < 30 |n |walk
 Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Leveling Guides\\Mining 700-800 Leveling Guide",{
-author="support@zygorguides.com",
-description="This guide will walk you through leveling your Mining profession from 700-800.",
-startlevel=100.0,
-condition_end=function() return skill('Legion Mining') >= 100 end,
-condition_suggested=function() return skill('Legion Mining') > 0 and skill('Legion Mining') < 100 and level >= 100 end,
-},[[
-step
-map Val'sharah/0
-path	follow smart; loop on; ants curved; dist 20
-path	55.74,56.76	54.98,53.52	53.82,50.33
-path	51.50,50.94	49.04,53.18	47.20,54.90
-path	44.81,58.33	42.84,59.05	40.95,58.71
-path	39.00,58.35	37.22,58.36	34.20,54.81
-path	32.10,56.40	31.81,59.48	33.68,61.81
-path	35.73,62.31	37.16,64.34	38.03,65.36
-path	39.31,64.67	40.07,62.55	42.03,63.65
-path	42.90,64.59	43.51,63.91	44.47,63.50
-path	44.97,64.11	47.08,65.90	47.28,67.56
-path	48.36,68.94	50.04,70.56	48.31,71.48
-path	47.71,72.38	46.81,72.89	46.81,76.90
-path	49.12,78.34	49.31,80.39	49.67,83.57
-path	50.60,84.56	51.82,88.65	52.22,87.49
-path	53.19,88.54	54.64,88.29	56.37,89.53
-path	58.03,89.16	58.13,86.50	59.72,86.38
-path	63.64,89.41	64.92,88.49	66.51,87.67
-path	66.73,84.38	65.28,83.15	64.45,82.25
-path	63.30,83.00	62.00,82.29	60.89,80.01
-path	59.34,79.01	61.10,76.27	63.36,75.12
-path	64.24,73.67	64.69,74.48	65.99,76.79
-path	66.83,75.38	66.83,73.63	66.43,72.56
-path	66.63,70.44	66.53,68.16	65.89,66.89
-path	63.11,65.99	60.87,64.61	59.26,64.27
-path	57.76,64.16	56.07,61.60	56.10,58.30
-click Leystone Deposits##241726
-click Felslate Deposits##241743
-|tip Track them on your minimap with "Find Minerals".
-|tip Felslate Deposits are rare spawns of Leystone Deposits.
-Reach Level 730 Mining |skill Mining,730
-step
-map Val'sharah/0
-path	follow smart; loop on; ants curved; dist 20
-path	55.74,56.76	54.98,53.52	53.82,50.33
-path	51.50,50.94	49.04,53.18	47.20,54.90
-path	44.81,58.33	42.84,59.05	40.95,58.71
-path	39.00,58.35	37.22,58.36	34.20,54.81
-path	32.10,56.40	31.81,59.48	33.68,61.81
-path	35.73,62.31	37.16,64.34	38.03,65.36
-path	39.31,64.67	40.07,62.55	42.03,63.65
-path	42.90,64.59	43.51,63.91	44.47,63.50
-path	44.97,64.11	47.08,65.90	47.28,67.56
-path	48.36,68.94	50.04,70.56	48.31,71.48
-path	47.71,72.38	46.81,72.89	46.81,76.90
-path	49.12,78.34	49.31,80.39	49.67,83.57
-path	50.60,84.56	51.82,88.65	52.22,87.49
-path	53.19,88.54	54.64,88.29	56.37,89.53
-path	58.03,89.16	58.13,86.50	59.72,86.38
-path	63.64,89.41	64.92,88.49	66.51,87.67
-path	66.73,84.38	65.28,83.15	64.45,82.25
-path	63.30,83.00	62.00,82.29	60.89,80.01
-path	59.34,79.01	61.10,76.27	63.36,75.12
-path	64.24,73.67	64.69,74.48	65.99,76.79
-path	66.83,75.38	66.83,73.63	66.43,72.56
-path	66.63,70.44	66.53,68.16	65.89,66.89
-path	63.11,65.99	60.87,64.61	59.26,64.27
-path	57.76,64.16	56.07,61.60	56.10,58.30
-click Rich Leystone Deposits##245324
-click Rich Felslate Deposits##245325
-|tip Track them on your minimap with "Find Minerals".
-|tip Rich Felslate Deposits are rare spawns of Rich Leystone Deposits.
-|tip The regular Leystone and Felslate Deposits will no longer give you skill ups at this point.
-Reach Level 770 Mining |skill Mining,770
-step
-click Leystone Seams##253280
-click Felslate Seams##255344
-|tip Use the "Leystone & Felslate Seam Route" guide to accomplish this.
-|tip Track them on your minimap with "Find Minerals".
-|tip Felslate Seams are rare spawns of Leystone Seams.
-Reach Level 785 Mining |skill Mining,785
-step
-click Felslate Seams##255344
-|tip Use the "Leystone & Felslate Seam Route" guide to accomplish this.
-|tip Track them on your minimap with "Find Minerals".
-|tip Felslate Seams are rare spawns of Leystone Seams.
-|tip Leystone Seams will no longer give you skill ups at this point.
-Reach Level 795 Mining |skill Mining,795
-step
-_Complete "Brimstone Destroyer" World Quests:_
-|tip Look on your world map in all of the Legion zones.
-|tip The world quests will have a Mining icon.
-|tip Use the "World Quests" dailies guide to accomplish this.
-Reach Level 800 Mining |skill Mining,800
-step
-_Congratulations!_
-You reached level 800 with the Mining profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Quest Guides\\Legion Mining Quest Line",{
 author="support@zygorguides.com",
